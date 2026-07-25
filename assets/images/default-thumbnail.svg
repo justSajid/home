@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <rect width="400" height="250" fill="#f7f8fa"/>
+  <rect x="0" y="0" width="400" height="4" fill="#c0392b"/>
+  <text x="200" y="120" font-family="Georgia,serif" font-size="32" font-weight="bold" fill="#c0392b" text-anchor="middle" dominant-baseline="middle">jS</text>
+  <text x="200" y="155" font-family="Arial,sans-serif" font-size="12" fill="#57606a" text-anchor="middle" dominant-baseline="middle">justSajid</text>
+</svg>

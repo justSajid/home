@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Microsoft SharePoint: Create an Intranet in SharePoint | justSajid</title>
+  <meta name="description" content="Microsoft SharePoint: Create an Intranet in SharePoint — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/microsoft-sharepoint-create-an-intranet-in-sharepoint/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Microsoft SharePoint: Create an Intranet in SharePoint | justSajid">
+  <meta property="og:description" content="Microsoft SharePoint: Create an Intranet in SharePoint — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/microsoft-sharepoint-create-an-intranet-in-sharepoint/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2016/05/2016-05-08.png">
+  <meta property="article:published_time" content="2016-05-08T23:23:00Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Microsoft SharePoint: Create an Intranet in SharePoint | justSajid">
+  <meta name="twitter:description" content="Microsoft SharePoint: Create an Intranet in SharePoint — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2016/05/2016-05-08.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2016/05/2016-05-08.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Microsoft SharePoint: Create an Intranet in SharePoint</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2016-05-08 23:23:00" itemprop="datePublished">Published May 08, 2016</time></span>
+      <span class="meta-category">in <a href="../../categories/sharepoint/" class="cat-link">Microsoft SharePoint</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">4 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<p>As you should already have some hands on with SharePoint. So,&nbsp;Lets do some hands on with SharePoint Intranet for Small company.</p>
+
+<p>Simply start with a Blank Site Collection.</p>
+
+<p>Let’s assume that the company has 3 Departments: Sales, Production and Support. They each have their own area in which they should be able to share</p>
+
+<ul><li>Documents</li><li>Appointments</li><li>Tasks</li><li>Photos</li></ul>
+
+<p>Let’s say, departments collaborate a lot over boundaries. The whole intranet should share a common navigation. There should also be the link in the navigation that should open in a new window.</p>
+
+<p>Let’s say, each department area should contain 3 Pages;</p>
+
+<ul><li>Progress</li><li>Problems</li><li>Plans</li></ul>
+
+<p>Where they can describe their current department overall status. And each department area should have their own department theme.</p>
+
+<p>So Let’s start here…</p>
+
+<p>Change the Name of the site</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-rXyC-CfgdeU/Vy5DZ0kYJVI/AAAAAAAAA3U/ft0HYvBjzZoyq8_1M3pfwNsbjzc4hE2QgCLcB/s1600/1.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>First create a Sales Subsite.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-DYzGo_IicCo/Vy5DcNAgUKI/AAAAAAAAA4A/U0G4c3bCPWo7xzORWPp_SCvQ6EhMqwyWQCLcB/s1600/2.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Simply click on Site Contents in the left navigation;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-sfujf1Cs9_A/Vy5DeKyB_vI/AAAAAAAAA4s/C5rzoh-xgEkGwCYSUHosx_ipFJZZQvCKgCLcB/s1600/3.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now add the tittle Sales for the Subsite and enter the URL name Sales for the subsite. Now select the Team Site Template;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-NtM1WHE04J8/Vy5DhI4kvoI/AAAAAAAAA5Y/MIgwoSKSZL8v4xnRqJvytdFBWyWqE-JdACLcB/s1600/4.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now simply&nbsp;Click Yes to “Display this site on the top link bar of the parent site”.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-6Tod3TT6jtg/Vy5Dj08A--I/AAAAAAAAA58/E7apom9HxcQ9ThDbjVNQnn8v6P6PnGjMwCLcB/s1600/5.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now to create App, Simply an&nbsp;<strong>Appointments&nbsp;</strong>App.</p>
+
+<p>Simply go to Site Contents and click on “add an app”;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-r744owhr4oQ/Vy5Dj1HJKMI/AAAAAAAAA6A/82XyUGMmU4Ax8xw_BdhPtv_nykldvkLnACLcB/s1600/6.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>As the app for Appointment is a Calendar App. So simply search for Calendar;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-eptl6IcOgFo/Vy5DkCVqplI/AAAAAAAAA6E/-KBmzkgsrqYBmsaHp9LBrguEhHpzrRS6wCLcB/s1600/7.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now simply name it “Appointment”.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-SB7-UX3Di1A/Vy5HfdDYr8I/AAAAAAAAA6g/KUakUNhA2i8qqDOo2P6SQimUHSZzYSerwCLcB/s1600/a.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now simply add the appointment to Quick Bar by opening the Appointment App, Select the Calendar and click upon the List Sitting.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-ALE1Bm56Wjw/Vy5DkqIKVkI/AAAAAAAAA6M/8cfexsEZtnI2g8iTjoIzhzbXXiPhjxcVACLcB/s1600/9.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now click upon the link “List name, description and navigation” under General Settings and Select Yes for “Display this list on the Quick Launch?”</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-8HZaoEh2V0Q/Vy5DZxDucyI/AAAAAAAAA3Y/_WSPrT3qL2MifDpjSVH4Ji-W_o__Pyw1gCLcB/s1600/10.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now Similarly create a Tasks app by selecting Tasks App;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-IcnenOHN_cM/Vy5DZyo1hTI/AAAAAAAAA3c/P3SiKRVRMBQT0z48So9aVtA5RzZoO94FgCLcB/s1600/11.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Name it 'Tasks';</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-FWbTTRNVuBo/Vy5DaZyTXfI/AAAAAAAAA3g/nNJnKre51XkEmP7xz3V7ILifH_KtC_u2wCLcB/s1600/12.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now similarly change the setting so the app shows in the Quick Launch.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-VasRS7NQfvs/Vy5DajeYKKI/AAAAAAAAA3o/Z_KFdceLOqMWFt5Ifi4d40DWcwbJCcKzACLcB/s1600/13.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>And Similarly create App for Sharing Images…</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-gRGW9336y8U/Vy5Daqs9fDI/AAAAAAAAA3k/VbiNGZwqn0MvQqYqKEGi8NxMneCxaJx6wCLcB/s1600/14.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Add The App name;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-BWX8S1f5cro/Vy5Da81pXMI/AAAAAAAAA3s/Ek08O9_JsbEqtyoPOTpYebQRPS2QNbIIwCLcB/s1600/15.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>And then change the setting so the app shows in the Quick Launch.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-LApjMjVpKjY/Vy5DbD3QmUI/AAAAAAAAA3w/Brt7iVNAImQX-I_ehcGT6rbG3AG4wZbEgCLcB/s1600/16.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now Let’s create Pages;</p>
+
+<p>First Remove the default “Get started” content from the Sales subsite start page then go to Sales Subsite;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/--PsYIurx71A/Vy5DbX86aUI/AAAAAAAAA30/WswdM_3ZsfgQFrWRGNk9llQ45-9ASB_qACLcB/s1600/17.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Then go to Edit the Page;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-LayuoryC2Wk/Vy5Dbig7oxI/AAAAAAAAA34/4cytaDa8w9wqaRunDQtGT3Q_zP8lItklgCLcB/s1600/18.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now simply Create the wikilinks like here;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-zS7kT6yhPyg/Vy5Db1eCSBI/AAAAAAAAA38/FcfU3knXZEMTyM4rIv7bGCmmL2wHkP95gCLcB/s1600/19.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>We have write wikilinks to the three pages: [[Progress]] [[Problem]] [[Plans]].</p>
+
+<p>Now simply save it;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-1k3jkkKmhJY/Vy5DcEdsvDI/AAAAAAAAA4E/mz5vgB-iafQZZLMcsyKzlC8qdbiJptRNwCLcB/s1600/20.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>And now when we click upon these three links, three different pages will be created.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-LFHnxbm0d4M/Vy5DcR2HazI/AAAAAAAAA4I/UqVm65eUlJIALPwBxrIDRsFGxhFKvP9iQCLcB/s1600/21.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now simply go to Pages and edit the Stuff and then save;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-lAT7J-7RJSY/Vy5DcsLVazI/AAAAAAAAA4M/ix9lHLMQ-KoPkyRLiD_1fDiUnTwawdllACLcB/s1600/22.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-c6BdfOdNo24/Vy5DchUjciI/AAAAAAAAA4Q/ounfJG4uMIgn3fBG9H7TWD_VLBixzvfsQCLcB/s1600/23.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-2xsFNwx09gE/Vy5Dc3dsTZI/AAAAAAAAA4U/MpUsvv0ttrM9zJLTe7YmGnlCkOsHXoA0gCLcB/s1600/24.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>And similarly the last page;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-7f1hVx7gTJo/Vy5DdGS7SMI/AAAAAAAAA4Y/IrGqpxUvcSULcwA4XO_wsYP2GHiGyRNpgCLcB/s1600/25.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-VODWqd7u338/Vy5DddYP9-I/AAAAAAAAA4c/BmfTGZC9uzkQTiJwwceICUrTx9QrUP_cwCLcB/s1600/26.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>And Now save the Sales Subsite as the template. Simply go to navigation and select the Site Settings;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-8JOrzi6EM4w/Vy5DdqNKTYI/AAAAAAAAA4g/0N4AeFqePG4ZiB0b66F2oeNlPdcUDA38QCLcB/s1600/27.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>And then select ‘Save site as template’;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-Cg0WOKNY8gg/Vy5Ddxe2OXI/AAAAAAAAA4k/RJ9KaStYwekQSbwhR6NSZUo8V6h0bijugCLcB/s1600/28.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-n-CcDaoLVrw/Vy5Dd8j7ZpI/AAAAAAAAA4o/6re5EVUSpuoR80yJYIKox_RcGwMZq6h6QCLcB/s1600/29.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>And now life is going to be little bit easy from now. Simply go to Site Contents, create new Subsite and then go into custom</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-pH4YNDv3uTQ/Vy5DeYr1S1I/AAAAAAAAA4w/EONAsyLd5-MIKJRwOq0aYB30quisGgwZACLcB/s1600/30.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>And when you create it, you will see it will create the same template for you with same three pages.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-Fqo1tKqmz7s/Vy5Def5XKRI/AAAAAAAAA40/gnO79gFa7aQx7mG8qgdGA5gEDsejIsdOwCLcB/s1600/31.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now similarly go back to main site and create another subsite;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-KPUBJSIPOrM/Vy5DenZdqxI/AAAAAAAAA44/RFCmliHdeZAknmv3Jw16m-4BPAdXog9SwCLcB/s1600/32.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-3uzX-vdbATY/Vy5De8HltdI/AAAAAAAAA48/jVvkcV608PcR-h59JJH1H78XIaPEhrP4QCLcB/s1600/33.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now after creating all the required subsites, lets change the themes.</p>
+
+<p>Go to Site Settings and select ‘Change the Look’;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-ky_Cl9wT-p0/Vy5DfCe9zEI/AAAAAAAAA5A/iEDLaz6dmyI9Yt_JmrOSlJBe9rqnOSFLwCLcB/s1600/34.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>You will see the list of Themes available for your site;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-QcuwzRX4oaU/Vy5Dfau40PI/AAAAAAAAA5E/xvord-zxoeAKrapq3Hfh7ptu0TrwzDKggCLcB/s1600/35.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now simply select the one theme and try it out;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-VCT-wUqwzmM/Vy5DgKuwagI/AAAAAAAAA5I/gwZ18bXSzGInnVt9yK62LKZdnlgZxxdmgCLcB/s1600/36.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>It will show you a cool preview of your site.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-xxnNv8XXZ-Y/Vy5DgI0OFzI/AAAAAAAAA5M/AU_RDrKwXPoeLsktRKO8BCcme6-wA5XDQCLcB/s1600/37.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Simply choose, keep it or not and then enjoy the theme…</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-3EPmLzp9Gj0/Vy5DgiwBc0I/AAAAAAAAA5Q/fJnsH7oRmi0hc2K3p79hzqdpfSRxKVmCQCLcB/s1600/38.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now insert the link in the top navigation that open in new window.</p>
+
+<p>Simply go to Sit Settings and select ‘site collection features’;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-wBpLT7D5ZXs/Vy5DhOTG-lI/AAAAAAAAA5U/BmKX3VQEJVMoepRReT01RH3yMKVTQ0_hgCLcB/s1600/39.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-SmDaRcSZocQ/Vy5DheOP3-I/AAAAAAAAA5c/NSRl3SxdMpcZS0GJDTxeClUXytstNWhVACLcB/s1600/40.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now after Activation this, we have now a Navigation Option;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-YKRZgDJcuyc/Vy5DhhIKB8I/AAAAAAAAA5g/o-Ylev6C4EAkqg9TdJ7QTlMzmJDNOeHGQCLcB/s1600/41.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>So from here, we can add new links. There we have got lot more options;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/--cgz-ThOQ1s/Vy5Dh8mVPpI/AAAAAAAAA5k/ob4gAp6ClV41zd3v_Yl86Kvyoks2Flh3wCLcB/s1600/42.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>So we get the new links option in our Navigation;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-nz-DRItyCQE/Vy5DidDeGpI/AAAAAAAAA5o/H4ponw1ybQ06jfqlsq3FLtqNxMuhKHkRgCLcB/s1600/43.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>So we got new links that open in a new window;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-3rUWwmVMF_w/Vy5DiSnERaI/AAAAAAAAA5s/M8N8gXH_svI2tJGbzmhETMs8godN5UVSwCLcB/s1600/44.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>So you see, how easy is it to play with SharePoint site.</p>
+
+<p>Now let’s add a YouTube Video into our site;</p>
+
+<p>Simply go to Sales site and Edit the Page. Then go to Insert option;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-aHGofJ70gDM/Vy5Ditr6xuI/AAAAAAAAA5w/3mOIZGd4S9U6H11ENMpabL4Fn6_TUaSYACLcB/s1600/45.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now simply copy the embedded code of a YouTube Video and past into the option of Embedded code;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-KKpjb7czg2Q/Vy5DjEptlLI/AAAAAAAAA50/x2wJSyW_uJYUtYocXw4FyfwG_c07_rp1QCLcB/s1600/46.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>Now when you click Insert, the video will Insert into your page.</p>
+
+<p>And when you save the page, the video will be Shown at the page;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/--2cSuqM2fLk/Vy5DjhMscGI/AAAAAAAAA54/C3m9VacV9rMzBbwm7pR8KR2R2hZ-TFDDwCLcB/s1600/47.png" alt="Microsoft SharePoint: Create an Intranet in SharePoint" loading="lazy"></figure></div>
+
+<p>So! You see how easy it is to play with SharePoint and apply different tricks… : - )</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/microsoft-sharepoint-create-an-intranet-in-sharepoint/&text=Microsoft SharePoint: Create an Intranet in SharePoint" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/microsoft-sharepoint-create-an-intranet-in-sharepoint/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/microsoft-sharepoint-create-an-intranet-in-sharepoint/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Microsoft SharePoint: Create an Intranet in SharePoint%20https://www.justsajid.com/posts/microsoft-sharepoint-create-an-intranet-in-sharepoint/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+    <h3 class="related-heading">You might also like</h3>
+    <div class="related-list">
+      <article class="post-card" style="min-width:0">
+        <a href="../../posts/build-windows-app-version-of-your-website/" style="display:block;overflow:hidden;border-radius:4px">
+          <img src="../../assets/images/theme/thumbnail-medium.png" alt="Build a Windows App Version of Your Website" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+        </a>
+        <div class="post-card-content">
+          <div class="post-meta"><time datetime="2016-04-21">April 21, 2016</time></div>
+          <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/build-windows-app-version-of-your-website/">Build a Windows App Version of Your Website</a></h3>
+        </div>
+      </article>      <article class="post-card" style="min-width:0">
+        <a href="../../posts/architecture-of-net-framework/" style="display:block;overflow:hidden;border-radius:4px">
+          <img src="../../assets/images/theme/thumbnail-medium.png" alt="Architecture of .NET Framework" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+        </a>
+        <div class="post-card-content">
+          <div class="post-meta"><time datetime="2016-02-01">February 01, 2016</time></div>
+          <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/architecture-of-net-framework/">Architecture of .NET Framework</a></h3>
+        </div>
+      </article>
+    </div>
+  </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/structures/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Structures</span>
+      </a>
+    <a href="../../posts/evolve16-steve-wozniak-at-evolve16/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">EVOLVE16: Steve Wozniak at Evolve16</span>
+      </a>
+  </div>
+</nav><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

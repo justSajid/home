@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Up &amp; Running with Big Data | justSajid</title>
+  <meta name="description" content="Up & Running with Big Data — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/up-running-with-big-data/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Up &amp; Running with Big Data | justSajid">
+  <meta property="og:description" content="Up & Running with Big Data — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/up-running-with-big-data/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2019/01/0-2-3.jpg">
+  <meta property="article:published_time" content="2020-02-22T10:36:20Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Up &amp; Running with Big Data | justSajid">
+  <meta name="twitter:description" content="Up & Running with Big Data — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2019/01/0-2-3.jpg">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2019/01/0-2-3.jpg" alt="Up &amp; Running with Big Data" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Up &amp; Running with Big Data</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2020-02-22 10:36:20" itemprop="datePublished">Published February 22, 2020</time></span>
+      <span class="meta-category">in <a href="../../categories/bigdata/" class="cat-link">Big Data</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">18 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<h2>Motivation</h2>
+
+<p>Big data is an amount of data that you cannot deal with using traditional methods and it's very relative because big data five years ago is not big data today so it's constantly evolving. I think it's when you have a great amount of data. Not only can you not store it, but you can’t process this data with your home computers. : - )</p>
+
+<h2>What is Big Data?</h2>
+
+<p>Well, there is no one specific definition, we may define Big Data in different ways.</p>
+
+<p>Big data is any amount of data that can't fit in memory.&nbsp;It's an evolving definition that changes with the times. Whenever&nbsp;our dataset extends beyond the capacity&nbsp;of our systems to store and manipulate, it's big data.</p>
+
+<p>It means that if you have a laptop and your data doesn't fit on your laptop, that's big data for you. : - )</p>
+
+<p>But if you are a very large firm and you've got large clusters of storage space and even then your data exceeds&nbsp;the storage capacity of your systems,&nbsp;then that's big data for you; so big data is not something&nbsp;that you can say, well, 50 gigabytes or 50 petabytes&nbsp;would make it big data,<br>it is whenever a person, individual or firm's storage capacity or the ability to analyze data is exceeded&nbsp;by the amount of data that they have,<br>that becomes big data for them.</p>
+
+<p>We can play with big data. If we have a lot of data we can do visualization and analytics. We are generating more knowledge nowadays<br>and this is difficult for humans to get used to it. That's remarkable; really, really remarkable.</p>
+
+<p><em><strong>Data science</strong></em>&nbsp;is relevant today because we have tons&nbsp;of data available.&nbsp;We used to worry about lack of data,&nbsp;now we have a data deluge. In the past, we didn't have algorithms,&nbsp;now we have algorithms. In the past the software was expensive,&nbsp;now it's open source and it's free. In the past we couldn't store large amounts of data,&nbsp;now for a fraction of a cost, we can have gazillions of data&nbsp;sets for a very low cost. So the tools to work with data, the very availability of data and the ability to store&nbsp;and analyze data, it's all cheap, it's all available, it's all ubiquitous, it's here, there's never been a better time to be a data scientist. : - )</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-9vNTl7Psi0I/XEP2367avOI/AAAAAAAABsk/N54sjB7rvvIQDYLoQH-7bcR1C2GyLiJvACK4BGAYYCw/s1600/1.png" alt="Up &amp; Running with Big Data" loading="lazy"></figure></div>
+
+<p>So lets further define Big Data and familiar with the characteristics of Big Data.</p>
+
+<ul><li><strong>Big Data</strong>&nbsp;is the digital trace that we are generating in this digital era. This digital trace is made up of all the data that is captured when we use digital technology. The basic idea behind the phrase Big Data is that everything we do is increasingly leaving a digital trace which we can use and analyze to become smarter.&nbsp;The driving forces in this brave new world are access to ever-increasing volumes of data and our ever-increasing technological capability to mine that data for commercial insights.</li><li><strong>Big Data</strong>&nbsp;is high-volume, high-velocity, and/or high variety&nbsp;information assets that demand cost-effective, innovative forms of information processing that enable enhanced insight, decision making and process automation.</li><li>Big Data refers to the dynamic, large and disparate volumes of data being created by people, tools, and machines. It requires new, innovative, and scalable technology to collect, host and analytically processes the vast amount of data gathered in order to derive real-time business insights that relate to consumers, risk, profit, performance, productivity management, and enhanced shareholder value.</li><li><strong>Big Data</strong>&nbsp;as a collection of data from traditional and digital sources inside and outside a company that represents a source of ongoing discovery and analysis.</li></ul>
+
+<h2><strong>V</strong>s of Big Data</h2>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-6wOb_McO5Eo/XEP2ZaQQ_bI/AAAAAAAABsI/gegq-lHHGr4QPaEFqytJo-cDbD4hWzphwCK4BGAYYCw/s1600/2.jpg" alt="Up &amp; Running with Big Data" loading="lazy"></figure></div>
+
+<p>Well, as there is no one definition of Big Data, but there are certain elements that are common across different definitions, such as&nbsp;<strong>velocity</strong>,&nbsp;<strong>volume</strong>,&nbsp;<strong>variety</strong>, and&nbsp;<strong>veracity</strong>. These are the V's of Big Data.</p>
+
+<ul><li><strong>Velocity</strong>&nbsp;is the speed of the data or the speed at which data accumulates.<ul><li>Velocity is the idea that data is being generated extremely fast, a process that never stops. Attributes include near or real-time streaming and local and cloud-based technologies that can process information very quickly.<ul><li>E.g.&nbsp;Every 60 seconds, hours of footage are uploaded to YouTube.<ul><li>This amount of data is generated every minute. So think about how much accumulates over hours, days, and in years.</li></ul></li></ul></li></ul></li><li><strong>Volume</strong>&nbsp;is the scale of the data or the increase in the amount of data stored.<ul><li>Volume is the amount of data generated. For example, exabytes, zettabytes, yottabytes, etc...&nbsp;Drivers of the volume are the increase in data sources, higher resolution sensors and scalable infrastructure.<ul><li>E.g. Every day we create approximately 2.5 quintillion bytes of data. That's 10 million Blu-ray DVD's every day. The world population is approximately seven billion people, and the vast majority of people are now using digital devices. These devices all generate, capture, and store data.<br>And with more than one device, for example, mobile devices, desktop computers, laptops, et cetera,<br>we're seeing even more data being produced.</li></ul></li></ul></li><li><strong>Variety</strong>&nbsp;is the diversity of the data.&nbsp;We have structured data that fits neatly into rows and columns, or relational databases and unstructured data that is not organized in a pre-defined way, for example, Tweets, blog posts, pictures, numbers, and even video data.<ul><li>Veracity is the quality and origin of data. Attributes include consistency, completeness, integrity, and ambiguity. Drivers include cost and the need for traceability.<ul><li>E.g.&nbsp;Let's think about the different types of data, text, pictures, and film.&nbsp;What about sound, health data from wearable devices, and many different types of data from devices connected&nbsp;to the internet of things.</li></ul></li></ul></li><li><strong>Veracity</strong>&nbsp;is the conformity to facts and accuracy.&nbsp;With a large amount of data available, the debate rages on about the accuracy of data in the digital era. Is the information real, or is it false?<ul><li>Variety is the idea that data comes from different sources, machines, people, processes,&nbsp;both internal and external to organizations. Attributes include the degree of structure and complexity and drivers are mobile technologies, social media, wearable technologies, geo-technologies,&nbsp;video, and many, many more.<ul><li>E.g.&nbsp;80% of data is considered to be unstructured and we must devise ways&nbsp;to produce reliable and accurate insights. The data must be categorized, analyzed and visualized.</li></ul></li></ul></li><li>And the last and&nbsp;emerging V is&nbsp;<strong>Value</strong>.<ul><li>This V refers to our ability and needs to turn data into value.<ul><li>Value isn't just profit. It may be medical or social benefits, or customer, employee, or personal satisfaction. The main reasons why people invest time to understand Big Data is to derive value from it.</li></ul></li></ul></li></ul>
+
+<h2>Big Data in Bussiness</h2>
+
+<p>Many of us are generating and using big data without being aware that we are. How is big data impacting business and people?</p>
+
+<p>If we searched for or bought a product on Amazon or famous e-commerce platform. We can notice that we start getting recommendations related to the product we searched for. So that recommendation engines are a common application of big data.</p>
+
+<p>Companies like Amazon, Netflix and Spotify use algorithms based on big data to make specific recommendations based on customer preferences and historical behavior.</p>
+
+<p>Personal assistants like Siri on Apple devices use big data to devise answers to the infinite number of questions end users may ask. Google now makes recommendations based on the big data on a user's device.</p>
+
+<p>Let's take a look at how big data is impacting business.</p>
+
+<ul><li>In 2011, McKinsey &amp; Company said that big data was going to become the key basis of competition<br>supporting new waves of productivity growth and innovation.</li><li>In 2013, UPS announced that it was using data from customers, drivers, and vehicles in a new route guidance system aimed to save time, money and fuel.</li></ul>
+
+<p>Initiatives like this one support the statement that big data will fundamentally change the way businesses compete and operate.</p>
+
+<ul><li>Netflix has a lot of data. Netflix knows the time of day when movies are watched. It logs when users pause, rewind and fast forward.<br>It has ratings from millions of users as well as the information on searches they make.<br>By looking at all these big data, Netflix knew what many of its users had streamed. All these information suggested that buying the series would be a good bet for the company.<ul><li>In other words, thanks to big data, Netflix knows what people want before they do.</li></ul></li></ul>
+
+<p>Now let's review another example.</p>
+
+<ul><li>Market saturation and selective customers will require Chinese e-commerce companies to make better use of big data in order to gain market share.</li><li>Companies will have to persuade customers to shop more frequently, to make larger purchases&nbsp;and to buy from a broader array of online shopping categories.</li><li>E-commerce players already have the tools to do this as digital shopping grows. Leading players are already using data to build models aimed at boosting retention rates and spending per customer based on e-commerce data.</li><li>They have also started to adopt analytics backed pricing and promotional activities. The Internet of Things refers to the exponential rise of connected devices.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-u2LlLHvOE_E/XEP2ZBV0ELI/AAAAAAAABsA/A3ez0J6aqb4t0Z8XXHlarTFsM4L_oVFpACK4BGAYYCw/s1600/3.jpg" alt="Up &amp; Running with Big Data" loading="lazy"></figure></div>
+
+<p>IoT suggests that many different types of data today products will be connected to a network or to the internet for example refrigerators, coffee machines or pillows. Another connection of IoT is called wearables and it refers to items of clothing or things we wear that are now connected. These items include Fitbits, Apple Watches or the new Nike running shoes that tie their own shoelaces.</p>
+
+<h2>Sources and Types of Big Data</h2>
+
+<p>Well, why is everyone talking about Big Data?</p>
+
+<p>More data has been created in the past two years than in the entire history of humankind. By 2020, about 1.7 megabytes of new information will be created every second for every human being in the world.</p>
+
+<p>By 2020, the data we create and copy will reach around 35 zettabytes, up from only 7.9 zettabytes today. Note the jump from 2015 to 2020 of 343%.</p>
+
+<ul><li>* How big is a Zettabyte?<ul><li>One Terabyte is 1025 Gigabytes.</li><li>1024 Terabytes make up one Petabyte,</li><li>And 1024 Petabytes make up an Exabyte.</li></ul></li></ul>
+
+<p>Think of a big urban city or a busy international airport And now we're talking petabytes and exabytes.</p>
+
+<ul><li>All those airplanes are capturing and transmitting data.</li><li>All the people in those airports have mobile devices.</li><li>Also, consider the security cameras and all the staff in and around the airport.</li></ul>
+
+<p>A digital universe study conducted by IDC claimed;</p>
+
+<ul><li>Digital information reached 0.8 zettabytes last year and predicted this number would grow to 35 zettabytes by 2020.</li></ul>
+
+<p>It is predicted that;</p>
+
+<ul><li>By 2020, one-tenth of the world's data will be produced by machines, and most of the world's data will be produced in emerging markets.</li></ul>
+
+<p>It is also predicted that;</p>
+
+<ul><li>The amount of data produced will increasingly outpace available storage.</li></ul>
+
+<p>Advances in cloud computing have contributed to the increasing potential of Big Data.</p>
+
+<p>Cloud computing allows users to access highly scalable computing and storage resources through the internet. By using cloud computing, companies can use server capacity as needed and expand it rapidly to the large scale required to process big data sets and run complicated mathematical models.</p>
+
+<p>Cloud computing lowers the price to analyze big data as the resources are shared across many users, who pay only for the capacity they actually utilize.</p>
+
+<p>A survey by IBM and SAID Business School identified three major sources of Big Data.</p>
+
+<ul><li>People-generated data</li><li>Machine-generated data</li><li>Business-generated data</li></ul>
+
+<p>Which is the data that organizations generate within their own operations.</p>
+
+<p>Big Data will require analysts to have Big Data skills. Big Data skills include discovering and analyzing trends that occur in Big Data.</p>
+
+<p>Big Data comes in three forms.</p>
+
+<ul><li><strong>Structured</strong><ul><li>Structured data is data that is organized, labeled, and has a strict model that it follows.<ul><li>Some sources of structured Big Data are relational databases and spreadsheets.</li><li>With this type of structure, we know how data is related to other data.<ul><li>What the data means, and the data is easy to query, using a programming language like SQL.</li></ul></li><li>Structured data refers to any data that resides in a fixed field within a record or file. It has the advantage of being easily entered, stored, queried, and analyzed.</li><li>In today's business setting, most Big Data generated by organizations is structured and stored in data warehouses. Highly structured business-generated data is considered a valuable source of information and thus equally important as machine and people-generated data.</li></ul></li></ul></li><li><strong>Unstructured</strong><ul><li>Unstructured data is said to make up about 80% of data in the world, where the data is usually in a text form and does not have a predefined model or is organized in any way.</li></ul></li><li><strong>Semi-structured</strong><ul><li>Semi-structured data is a combination of the two. It is similar to structured data, where it may have an organized structure, but lacks a strictly-defined model.<ul><li>Some sources of semi-structured Big Data are XML and JSON files. These sources use tags or other markers to enforce hierarchies of records and fields within data.</li></ul></li></ul></li></ul>
+
+<p>A large multi-radio telescope project called Square Kilometer Array, or SKA, produced about 1000 petabytes, in 2011 at least, of raw data a day.</p>
+
+<ul><li>It is projected that it will produce about 20,000 petabytes or 20 billion gigabytes of data each day in 2020.</li><li>Currently, there is an explosion of data coming from internet activity and in particular, video production and consumption as well as social media activities.</li></ul>
+
+<p>These numbers will just keep growing as internet speeds increase and as more and more people all over the world have access to the internet.</p>
+
+<h2>Big Data relates to Data Science;</h2>
+
+<p>When we look at big data, we can start with a few broad topics, the 6 aspects:</p>
+
+<ul><li><strong>Integration</strong><ul><li>&nbsp;To integrate means to bring together or incorporate parts into a whole.<ul><li>In big data, it would be ideal to have one platform to manage all of the data, rather than individual silos, each creating separate silos of insight.</li><li>Big data has to be bigger than just one technology or one enterprise solution which was built for one purpose.<ul><li>For example, a bank should be thinking about how to integrate its retail banking, it's commercial banking, and investment banking.<ul><li>One way to be bigger than one technology is to use Hadoop when dealing with big data. A Hadoop distributed file system, or HDFS, stores data for many different locations, creating a centralized place to store and process the data.</li></ul></li></ul></li></ul></li></ul></li><li><strong>Analysis</strong><ul><li>Let's look at a Walmart example.<ul><li>Walmart utilizes a search engine called&nbsp;<em><strong>Polaris</strong></em>,<ul><li>That helps shoppers search for products they wish to buy.</li><li>It takes into account how a user is behaving on the website in order to surface the best results for them.</li><li>Polaris will bring up items that are based on a user's interests and because many consumers visit Walmart's website, large amounts of data are collected, making the analysis on that big data very important.</li></ul></li></ul></li></ul></li><li><strong>Visualization and Optimization</strong><ul><li>Some people work well with tables of data, however, the vast majority of people need big data to be presented to them in a graphical way so they can understand it.</li><li>Data visualization is helpful to people who need to analyze the data, like analysts or data scientists, and it is especially useful to non-technical people who need to make decisions from data, but don't work with it on a daily basis.<ul><li>An example of visualizing big data is in displaying the temperature on a map by region.</li><li>By using the massive amounts of data collected by sensors and satellites in space, viewers can get a quick and easy summary of where it's going to be hot or cold.</li></ul></li></ul></li><li><strong>Security and Governance</strong><ul><li>Data privacy is a critical part of the big data era. Business and individuals must give great thought to how data is collected, retained, used, and disclosed. A privacy breach occurs when there is unauthorized access to or collection, use, or disclosure of personal information and, often, this leads to litigation.</li><li>Companies must establish strict controls and privacy policies in compliance with the legal framework of the geographic region they are in.</li></ul></li></ul>
+
+<ul><li>* Big data governance requires three things:<ol><li>Automated integration, that is, easy access to the data wherever it resides,</li><li>Visual content, that is, easy categorization, indexing, and discovery within big data to optimize its usage,</li><li>Agile governance is the definition and execution of governance appropriate to the value of the data and its intended use.</li></ol></li></ul>
+
+<p>Looking at these three things provides businesses with a quick way to profile the level of importance of the data and, therefore, the amount of security required to protect it.</p>
+
+<h2>Big Data Tools</h2>
+
+<p>Some of the applications used in big data are;</p>
+
+<ul><li>Hadoop</li><li>Oozie</li><li>Flume</li><li>Hive</li><li>HBase</li><li>Apache Pig</li><li>Apache Spark</li><li>MapReduce and YARN</li><li>Sqoop</li><li>ZooKeeper</li><li>Text analytics.</li></ul>
+
+<p>Data science is the process of cleaning, mining, and analyzing data to derive insights of value from it.</p>
+
+<ul><li>In data science, the size of the data is less important.</li><li>One can use data of all sizes, small, medium, and big data that is related to a business or scientific case.</li><li>Insights are extracted through a combination of exploratory data analysis and modeling.</li></ul>
+
+<p>Data science is the process of distilling insights from data to inform decisions.</p>
+
+<h2>Data Scientist Skills;</h2>
+
+<p>A data scientist is a person who is qualified to derive insights from data by using skills and experience from computer science, business, or science, and statistics.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-7eGpry19U-4/XEP2Y4b-6AI/AAAAAAAABr8/SADXVZ5nysQL1W0axUz9E_KwxaM4RZt1QCK4BGAYYCw/s1600/4.png" alt="Up &amp; Running with Big Data" loading="lazy"></figure></div>
+
+<p>Here are more skills that a data scientist must have. One can use the following process to make sense of big data.</p>
+
+<ul><li>Determine the problem.</li><li>What is the business problem?</li><li>What is the project objective?</li><li>What would you do if you had all the data?</li><li>Collect data.</li><li>Which data is relevant?</li><li>Are there any privacy issues?</li><li>Explore the data.</li><li>Plot the data.</li><li>Are there any patterns?</li><li>Analyze the data.</li><li>Build a model.</li><li>Fit the model.</li><li>Validate the model.</li><li>Storytelling.</li><li>Visualization plus communication.</li><li>Can we tell a story?</li><li>Take action and make decisions.</li></ul>
+
+<h2>Processing Big Data;</h2>
+
+<h3>Component and Ecosystem of Big Data;</h3>
+
+<p>In a report by the McKinsey Global Institute from 2011, the main components and ecosystems are out outlined as follows: Techniques for Analyzing Data, such as A/B Testing, Machine Learning, and Natural Language Processing.</p>
+
+<p>Big Data Technologies like Business Intelligence, Cloud Computing, and Databases. Visualization such as Charts, Graphs, and Other Displays of the data.</p>
+
+<p>The Big Data processing technologies we will discuss work to bring large sets of structured and un-structured data into a format where analysis and visualization can be conducted.</p>
+
+<p>Value can only be derived from Big Data if it can be reduced or repackaged into formats that can be understood by people.</p>
+
+<p>One trend making the Big Data revolution possible is the development of new software tools and database systems such as Hadoop, HBase, and NoSQL for large, unstructured data sets. what is the Hadoop framework?</p>
+
+<p>Hadoop is an open-source software framework used to store and process huge amounts of data. It is implemented in several distinct, specialized modules:</p>
+
+<ol><li>Storage, principally employing the&nbsp;<strong>Hadoop Distributed File System</strong>&nbsp;or&nbsp;<strong>HDFS</strong></li><li>Resource management and scheduling for computational tasks,</li><li>Distributed processing programming models based on MapReduce,</li><li>Common utilities and software libraries necessary for the entire Hadoop platform.</li></ol>
+
+<p>Hadoop is a framework written in Java, originally developed by Doug Cutting who named it after his son's toy elephant.</p>
+
+<p>Hadoop uses Google's MapReduce technology as its foundation. Let's review some of the terminology used in any Hadoop discussion.</p>
+
+<ul><li>A&nbsp;<strong>Node</strong>&nbsp;is simply a computer. This is typically non-enterprise, commodity hardware that contains data. So in this example, we have node one, then we can add more nodes such as node two, node three, and so on.</li><li>This would be called a&nbsp;<strong>Rack</strong>;<ul><li>A rack is a collection of 30 or 40 nodes that are physically stored close together and are all connected to the same network switch.</li><li>Network bandwidth between any two nodes in a rack is greater than bandwidth between two nodes on different racks.</li></ul></li><li>The&nbsp;<strong>Hadoop Cluster</strong>&nbsp;is a collection of racks.<ul><li>IBM analytics defines Hadoop as follows,&nbsp;"Apache Hadoop is a highly scalable storage platform designed to process very large data sets across hundreds to thousands of computing nodes that operate in parallel.</li><li>It provides a cost-effective storage solution for large data volumes with no format requirements.</li></ul></li><li>MapReduce, the programming paradigm that allows for this massive scalability, is the heart of Hadoop."</li></ul>
+
+<h3>Why Hadoop?</h3>
+
+<p>According to IBM analytics, some companies are delaying data opportunities because of organizational constraints. Others are not sure what distribution to choose and still others simply can't find time to mature their Big Data delivery due to the pressure of day to day business needs.</p>
+
+<p>The smartest Hadoop strategies start with choosing recommended distributions, then maturing the environment with&nbsp;<strong>modernized hybrid architectures</strong>, and adopting a&nbsp;<strong>data lake strategy</strong>&nbsp;based on Hadoop technology.</p>
+
+<ul><li><strong>Data lakes</strong>&nbsp;are a method of storing data that keep vast amounts of raw data in their native format and more horizontally to support the analysis of originally disparate sources of data.</li><li>Big Data is best thought of as a platform rather than a specific set of software. Data Warehouses are part of a Big Data platform.</li><li>They deliver deep insight with advanced in-database analytics and operational analytics.</li></ul>
+
+<p><strong>Data Warehouses</strong>&nbsp;provide online analytic processing or OLAP.</p>
+
+<ul><li>Data Warehouse Modernization, formerly known as Data Warehouse Augmentation, is about building<br>on an existing Data Warehouse infrastructure leveraging Big Data technologies to augment its capabilities, essentially an upgrade.</li></ul>
+
+<p>Given a set of data, there are three key types to Data Warehouse Modernizations.</p>
+
+<ol><li><strong>Pre-Processing</strong>, using Big Data as a landing zone before determining what data should be moved to the Data Warehouse.<ul><li>It could be categorized as Irrelevant Data and Relevant Data, which would go to the Data Warehouse.</li></ul></li><li><strong>Offloading</strong>, moving infrequently accessed data from Data Warehouses into enterprise grade Hadoop.</li><li><strong>Exploration</strong>, using big data capabilities to explore and discover new high value data from massive amounts of raw data and free up the Data Warehouse for more structured deep analytics.</li></ol>
+
+<hr class="wp-block-separator"/>
+
+<p>Conclusion</p>
+
+<p>So that can be a quick overview of Big Data and its tools along with skills used nowadays. One can have a good understanding of Bid Data after the quick review of this blog. Further, you can have a quick look at the Big Data implementation at Microsoft Platform&nbsp;<a href="../../posts/jumpstart-into-big-data-with-hdinsight/">here</a>;&nbsp;<a href="http://justsajid.com/dev/jumpstart-into-big-data-with-hdinsight/" target="_blank" rel="noreferrer noopener">http://justsajid.com/dev/jumpstart-into-big-data-with-hdinsight/</a></p>
+
+<pre class="wp-block-preformatted">* The Blog post was tribute the big data course available at Cognitive class. It is highly recommended to review the course from here; https://cognitiveclass.ai/courses/what-is-big-data/</pre>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/up-running-with-big-data/&text=Up &amp; Running with Big Data" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/up-running-with-big-data/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/up-running-with-big-data/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Up &amp; Running with Big Data%20https://www.justsajid.com/posts/up-running-with-big-data/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/jumpstart-into-big-data-with-hdinsight/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2020/02/0.jpg" alt="JumpStart Into Big Data With HDInsight" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2016-08-10 17:36:00">August 10, 2016</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/jumpstart-into-big-data-with-hdinsight/">JumpStart Into Big Data With HDInsight</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/jumpstart-with-devops/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">JumpStart with DevOps</span>
+      </a>
+    <a href="../../posts/jumpstart-with-hadoop/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">JumpStart with Hadoop</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Big Data</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/jumpstart-into-big-data-with-hdinsight/">JumpStart Into Big Data With HDInsight</a>
+        <div class="post-small-date">August 10, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

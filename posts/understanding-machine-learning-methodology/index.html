@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Understanding Machine Learning Methodology | justSajid</title>
+  <meta name="description" content="Understanding Machine Learning Methodology — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/understanding-machine-learning-methodology/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Understanding Machine Learning Methodology | justSajid">
+  <meta property="og:description" content="Understanding Machine Learning Methodology — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/understanding-machine-learning-methodology/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2020/02/5.png">
+  <meta property="article:published_time" content="2020-02-22T09:45:08Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Understanding Machine Learning Methodology | justSajid">
+  <meta name="twitter:description" content="Understanding Machine Learning Methodology — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2020/02/5.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2020/02/5.png" alt="Understanding Machine Learning Methodology" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Understanding Machine Learning Methodology</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2020-02-22 09:45:08" itemprop="datePublished">Published February 22, 2020</time></span>
+      <span class="meta-category">in <a href="../../categories/datascience/" class="cat-link">Data Science</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">10 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<h2>Motivation</h2>
+
+<p>Well, if we talk about a human cell sample extracted from a patient. The cell would have some characteristics. One of the interesting questions we can ask, what kind of statistics&nbsp;that cell have?&nbsp;One could easily presume that only a doctor with years of experience could diagnose a tumor and say if the patient is developing cancer or not.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-Re7wccunnVY/XLl1rML_-nI/AAAAAAAAB9s/J272Oj4pGRszGlgxawWkrxZxIMpip3vXQCK4BGAYYCw/s1600/1.jpg" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>Let's&nbsp;imagine that we’ve obtained a dataset containing characteristics of thousands of human cell samples extracted from patients who were believed to be at risk of developing cancer. Analysis of the original data showed that many of the characteristics differed significantly among different samples.</p>
+
+<p>We can use the values of these cell characteristics in samples from other patients to give an early indication of whether a new sample belongs to which type or characteristics.&nbsp;We should clean our data, select a proper algorithm for building a prediction model, and train our model to understand patterns of different kinds of cells within the data.</p>
+
+<p>Once the model has been trained by going through data iteratively, it can be used to predict our new or unknown cell with rather high accuracy.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-htiaO3KmSpY/XLl1rDWULvI/AAAAAAAAB98/WuwWzLmnkb8WGwsO44DAggpwYFqx_p_dQCK4BGAYYCw/s1600/2.jpg" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>This is what we called machine learning! It is the way that a machine learning model can do a doctor’s task or at least help that doctor make the process faster.</p>
+
+<h2>What is Machine Learning?</h2>
+
+<p>Machine learning is the&nbsp;ability of computers&nbsp;to learn without being explicitly programmed.</p>
+
+<p>"<strong>Without being explicitly programmed"&nbsp;</strong>means, e.g. we've to predict the image of animals.&nbsp;So before machine learning, each image would be transformed to a vector by features then traditionally we've to write down a lot of rules or methods in order to get computers to be intelligent and detect the animals. Perhaps it would be the failure because its highly dependent upon current data sets.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-VztxC6czmJw/XLl1rKUDN1I/AAAAAAAAB-A/Vj3YgdyHQEQzQcX2i-4fOAOcwBWN1afngCK4BGAYYCw/s1600/3.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>So here comes the machine learning, using machine learning allows us to build a model that looks at all the feature sets,&nbsp;and their corresponding type of animals, and learn it learns the pattern of each animal.&nbsp;It is a model built by machine learning algorithms. It detects without explicitly being programmed to do so.&nbsp;In essence, machine learning follows the same process that a 4-year-old child uses to learn, understand, and differentiate animals.</p>
+
+<p>So, machine learning algorithms, inspired by the human learning process, iteratively learn from data and allow computers to find hidden insights. These models help us in a variety of tasks, such as object recognition, summarization, recommendation, and so on.</p>
+
+<p>Machine Learning impacts society in a very influential way. E.g.</p>
+
+<ul><li>Paypal uses Machine Learning to detect fraud.</li><li>Amazon uses Machine Learning to give you suggestion, what you can further buy.</li><li>Banks also use Machine Learning to approve Loans.</li><li>Telcos use customers data to segment them.</li></ul>
+
+<h2>Applications of Machine Learning;</h2>
+
+<p>There are many applications of machine learning like Search engine results, voice recognition, Number Plate Recognition, Dream Reader. This small sampling is just the beginning, from automatic cars to scientific discovery, any of these things are part of today's world of machine learning.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-5-4_QrP0IyQ/XLl1rM5Om5I/AAAAAAAAB9w/MATTCkmpQRwNKmwsXmNX3pL31DLrSIPNQCK4BGAYYCw/s1600/5.jpg" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>If we talk about the search engine, Imagine if we're&nbsp;on Google, we give very reliable information and speed, it's automated and time goes on we got more information, the search engine returns better and better results.</p>
+
+<p>Same with Voice Recognition, where its better and better voice recognizing what we're saying and able to transcribe it for any of our Google commands or home devices where they recognized our voice, we can see that in a number of recognition apps.</p>
+
+<p>So the use of machine learning is because it helps make life easier. It helps our&nbsp;processes be more consistent and reliable.</p>
+
+<h2>Major Techniques of Machine Learning</h2>
+
+<p>So, let’s quickly examine a few of the more popular techniques.</p>
+
+<ul><li><strong>Regression / Estimation;</strong>&nbsp;Predict Continous Values<ul><li>This technique is used for predicting a&nbsp;<strong>continuous value</strong>;<ul><li>E.g.&nbsp;predicting things like the price of a house based on its characteristics, or to estimate the CO2 emission from a car’s engine.</li></ul></li></ul></li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-5OBj4PT3YgA/XLl1rByM6FI/AAAAAAAAB90/eTQH0JGnehYXA3_2P3clbQ7B_ZGdxseigCK4BGAYYCw/s1600/6.jpg" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<ul><li><strong>Classification;</strong>&nbsp;Predicting the item class/category of a case.<ul><li>A Classification technique is used for Predicting the class or category of a case.<ul><li>E.g. if a cell is benign or malignant, or whether or not a customer will churn.</li></ul></li></ul></li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-z96sIztj5NE/XLl1rAfFHwI/AAAAAAAAB94/VI1vTtQ6fUIz86A6agyfBtqlm6ak6QepgCK4BGAYYCw/s1600/7.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<ul><li><strong>Clustering;</strong>&nbsp;Finding the structure of data; summarization.<ul><li>Clustering groups of similar cases.<ul><li>E.g.&nbsp;Can find similar patients, or can be used&nbsp;for customer segmentation in the banking field.</li></ul></li></ul></li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-1ZPcSZcvKdY/XLl2uZehvXI/AAAAAAAAB-s/VD65F8Ll2S0ENrdp41CvXH3pYqFXfYM9gCK4BGAYYCw/s1600/8.jpg" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<ul><li><strong>Anomaly Detection;</strong>&nbsp;Discovering abnormal and unusual cases.<ul><li>Anomaly detection is used to discover abnormal and unusual cases.<ul><li>E.g.&nbsp;It is used&nbsp;for credit card fraud detection.</li></ul></li></ul></li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-wu5ita2qWDU/XLl29jSZcjI/AAAAAAAAB_U/kyZlmZaJNpYHcPlPt_SX9JZVlEAW9gzCgCK4BGAYYCw/s1600/9.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<ul><li><strong>Sequence mining;</strong>&nbsp;Predicting next events, click-stream (Morkov Model, HMM).<ul><li>Sequence mining is used for predicting the next event.<ul><li>E.g.&nbsp;the click-stream&nbsp;in websites.</li></ul></li></ul></li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-2Pq9AVReknM/XLl29fkAbnI/AAAAAAAAB_I/dsf5b2P4f8kmPdZfeXUostX3NgpCOXFwACK4BGAYYCw/s1600/10.jpg" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<ul><li><strong>Dimension Reduction;</strong>&nbsp;Reducing the size of data (PCA).<ul><li>Dimension reduction is used to reduce the size of data.</li></ul></li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-X5_XbqB6f7c/XLl29OCEvkI/AAAAAAAAB-8/dyiH33f-858fQv6gGpOsrljKJNntlavOwCK4BGAYYCw/s1600/11.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<ul><li><strong>Recommendation Systems;</strong>&nbsp;Recommending Items.<ul><li>This associates people's preferences with others who have similar tastes and recommends new items to them.<ul><li>E.g. Recommended Books or Food.</li></ul></li></ul></li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-R38M8t2q6fc/XLl2951A5UI/AAAAAAAAB_c/oXIEEFSi6aoWyFTAUFVfKO-SJJNj0aigwCK4BGAYYCw/s1600/12.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<h2>How does Machine Learning work?</h2>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-VtsFlSUPo6E/XL1ETgXLJTI/AAAAAAAACCo/7SM_0Gtw0-MW8RMQ6HQY_vH-J9tVCCoBACK4BGAYYCw/s1600/12a.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>Machine Learning works in different phases.</p>
+
+<h3>Phase#1: Learning</h3>
+
+<p>We've phase#1 which "Learning", that broken up into three different steps;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-5DoI7tZHqGc/XL1ET4-bZFI/AAAAAAAACCs/2rlLOBDDsJISzsRknW8LHvH4Og3kksBZwCK4BGAYYCw/s1600/12b.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<ul><li><strong>Pre-Processing:</strong>&nbsp;The first step is we need to clean and format the data. (That is because computers are not smart when it comes to figuring out the difference between a picture or text when we send it in), so the first thing we do is usually clean the data so all our pictures are in one file and text is being processed separately. Because if we would try to process text like we do a picture we're not gonna get the right answer and vice-versa, once we pre-process the data and we've it nicely clean, we're gonna go in and start learning.</li><li><strong>Learning:</strong>&nbsp;In this step, we take that data and learn from it. And&nbsp;here comes the&nbsp;supervised and unsupervised learning.</li><li><strong>Testing:</strong>&nbsp;In this step, we have it a test to make sure we are getting the right answer out of it.</li></ul>
+
+<h3>Phase#2: Prediction</h3>
+
+<p>In this phase, we're actually using it or putting it into commercial use and that is to do a prediction and on there now we have our train model and our new data come together and output is going to be a prediction of what we are looking for. We can see that in the form of predicted data.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-7f6NpXuU16U/XL1ET_GTcHI/AAAAAAAACCw/I_oOZaOKwsQizpqeEYmtlaNrI1cdmzbwQCK4BGAYYCw/s1600/12c.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>Machine Learning Workflow; It works iteratively;</p>
+
+<ul><li>Define Objective</li><li>Prepare the Data</li><li>Collect Data</li><li>Select Algorithm</li><li>Train Model</li><li>Test Model</li><li>Predict</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-33g2foTjeCA/XL1GGR4Se0I/AAAAAAAACDM/_wD86j2u9xwMXLjjCClxz_L9dQjkOZ-WgCK4BGAYYCw/s1600/12d.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<h2>Machine Learning with Python</h2>
+
+<p>Python is a&nbsp;preferred language among data scientists. We can&nbsp;write our machine learning algorithm using python, and it works very well.&nbsp;However, there are a lot of modules and libraries already implemented in python that can make&nbsp;our life much easier.</p>
+
+<h3>Numpy</h3>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-i4us8nLyJPA/XLl29cZSBUI/AAAAAAAAB_M/q-7U2n9fFh4tTngDSuSaBqA3jtZXYAxEQCK4BGAYYCw/s1600/14.jpg" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>Numpy is a math library to work with n-dimensional arrays&nbsp;in Python.&nbsp;It enables you to do computation efficiently and effectively.&nbsp;It is better than regular python because of its amazing capabilities.</p>
+
+<ul><li>E.g.&nbsp;for working with arrays, dictionaries, functions, datatypes, and working with images,&nbsp;we need to know Numpy.</li></ul>
+
+<h3>SciPy</h3>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-iKYijQUAuIs/XLl3zFBVnDI/AAAAAAAAB_8/FHDDniJhot0BOwKe1AYNQYm7o8kXJzDKACK4BGAYYCw/s1600/15.jpg" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>SciPy is a collection of numerical algorithms and domain-specific toolboxes, including signal&nbsp;processing, optimization, statistics and much more.&nbsp;SciPy is a good library for scientific and high-performance computation.</p>
+
+<h3>Matplotlib</h3>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-wD7Jl4o6aK4/XLl3zEudmvI/AAAAAAAACAE/CxHsyKZKp74JljtLqaP1s7zPequBcblSwCK4BGAYYCw/s1600/16.jpg" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>Matplotlib is a very popular plotting package that provides 2D plotting as well as 3D plotting.</p>
+
+<h3>Pandas</h3>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-ucs7K-huYGc/XLl3zEoc8BI/AAAAAAAACAA/Sppx633ECw4k0yOIeO-9JKdnDSXr0Bu1gCK4BGAYYCw/s1600/17.jpg" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>Pandas library is a very high-level python library that provides high-performance, easy&nbsp;to use data structures.&nbsp;It has many functions for data importing, manipulation and analysis.&nbsp;In particular, it offers data structures and operations for manipulating numerical tables&nbsp;and time series.</p>
+
+<h3>Scikit Learn</h3>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-R7xYPE9XRio/XLl4SKye8zI/AAAAAAAACBI/aAbtmxZX6XAz54uEJ2N2y4idT35Z2BZ_gCK4BGAYYCw/s1600/18.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>Scikit-learn is a collection of algorithms and tools for machine learning.&nbsp;Scikit-learn is a free machine learning library for the Python programming language.</p>
+
+<ul><li>It has most of the classification, regression and clustering algorithms.</li><li>It’s designed&nbsp;to work with the Python numerical and scientific libraries<ul><li>NumPy</li><li>SciPy.</li></ul></li></ul>
+
+<p>Most of the tasks that need to be done in a machine learning pipeline are implemented&nbsp;already in scikit learn, including</p>
+
+<ul><li>Pre-processing of data.</li><li>Feature selection</li><li>Feature extraction</li><li>Train/Test splitting</li><li>Defining the Algorithms.</li><li>Fitting models</li><li>Tuning parameters</li><li>Prediction</li><li>Evaluation, and</li><li>Exporting the model.</li></ul>
+
+<h2>Tools for Hands-On</h2>
+
+<p>Particularly if we talk about tools to start with then there are a number of tools and IDEs available to start with. One of the cool tools to start with is "<strong>Jupyter Notebook</strong>". All we need to do is install Anaconda for it. We would get a simple interface where we can easily run and test our code easily.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-uAxsKnU38cA/XL1J5rgmhSI/AAAAAAAACDY/3V0v9_NGPzUTPSa4C_reQv62yUh7i9VBACK4BGAYYCw/s1600/12e.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<h2>Supervised vs Unsupervised vs Reinforcement</h2>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-jBWSblGbk4U/XL1NfHht2RI/AAAAAAAACDk/djZii6YxxyYNfC74SAvKWYnSY9DvqqQBQCK4BGAYYCw/s1600/19a.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-QUOloCa2-n0/XLl4RiBmnuI/AAAAAAAACA8/WLz_KrJo4CY9ivFKj2YNPc0scucpinm5ACK4BGAYYCw/s1600/20.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<h3>Supervised Learning</h3>
+
+<p>It's the "Task Driven" (Predict next value). Here, we&nbsp;<strong>teach the model</strong>! then with that knowledge, it can predict unknown or future instances.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-VzWbJoy0Jp4/XLl4vNC1SgI/AAAAAAAACBk/hqHnyRMhEfcePwueF68WBpntvSZTE9mewCK4BGAYYCw/s1600/21.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>Supervise means to observe and direct the execution of a task, project, or activity.&nbsp;Obviously, we aren’t going to be supervising a person. Instead, we’ll be supervising a machine learning model that might be able to produce&nbsp;classification regions, etc.</p>
+
+<p>So, how do we supervise a machine learning model? We do this by “teaching” the model. i.e.&nbsp;we load the model with knowledge so that we can have it predict future instances.</p>
+
+<p>But! How exactly do we teach a model?&nbsp;We teach the model by training it with some data from a labeled dataset. It’s important to note that the data is labeled.</p>
+
+<p>And what does a labeled dataset look like?&nbsp;Well, it can look something like&nbsp;a spreadsheet with proper labeling over it. The top row&nbsp;is called Attributes and the columns are called Features, which include the data.</p>
+
+<p>If you plot this data and look at a single data point on a plot, it’ll have all of&nbsp;these attributes. That would make a row on this chart, also referred to as an observation.</p>
+
+<p>Looking directly at the value of the data, you can have two kinds.</p>
+
+<ul><li>The first is numerical; When dealing with machine learning, the most commonly used data is numeric.</li><li>The second is categorical;&nbsp;It’s non-numeric because it contains characters&nbsp;rather than numbers.</li></ul>
+
+<h4><strong>Supervised Learning Types</strong></h4>
+
+<p>There are two types of Supervised Learning techniques.</p>
+
+<ul><li><strong>Classification:</strong>&nbsp;is the process of predicting a discrete class label or category.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-zd1EtrkN0ws/XL1TrqjrqEI/AAAAAAAACD0/NKPney8244Ii4IPDTYtHRrMXC6K1wz6XgCK4BGAYYCw/s1600/21a.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<ul><li><strong>Regression:</strong>&nbsp;is the process of predicting a continuous value as opposed to predicting&nbsp;a categorical value in classification.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-5GlFk4Ll-Sg/XL1Trjt70xI/AAAAAAAACD4/XEc3pSw6pRkTps9-XiHDEIadUDYCqnPGgCK4BGAYYCw/s1600/21b.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<h3>Unsupervised Learning</h3>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-bKxbYgQ-gjA/XLl5TcsydOI/AAAAAAAACBw/ZKlF9-5WS4EONq8quM-cXKYGDE4LeeHwwCK4BGAYYCw/s1600/22.jpg" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>Its data-driven&nbsp;(identify clusters). Here, we&nbsp;<strong>do not supervise the model</strong>, but we let the model work on its own to discover information&nbsp;that may not be visible to the human eye.</p>
+
+<p>It means, The Unsupervised algorithm trains on the dataset, and draws conclusions on UNLABELED&nbsp;data.</p>
+
+<p>Unsupervised learning has more difficult algorithms than supervised&nbsp;learning since we know little to no information about the data, or the outcomes that are to be expected.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-0KD0jv7OLl0/XLl4RW8_zxI/AAAAAAAACAs/gyeqIRlYz6499PBhjZE7ZYBtNB_5YHpVwCK4BGAYYCw/s1600/23.jpg" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<p>Dimension reduction, Density estimation, Market basket analysis, and Clustering are the most&nbsp;widely used unsupervised machine learning techniques.</p>
+
+<ul><li><strong>Dimensionality Reduction:</strong>&nbsp;and/or feature selection plays a large role in this by reducing redundant&nbsp;features to make the classification easier.</li><li><strong>Market basket analysis:</strong>&nbsp;It is a modeling technique based upon the theory that if you buy a certain&nbsp;group of items, you’re more likely to buy another group of items.</li><li><strong>Density estimation:</strong>&nbsp;It is a very simple concept that is mostly used to explore the data to find some structure within it.</li><li><strong>Clustering</strong>: It is considered to be one of the most popular unsupervised machine learning&nbsp;techniques used for grouping data points or objects that are somehow similar. It is a grouping of data points or objects that are somehow similar by<ul><li>Discovery Structure</li><li>Summarization</li><li>Anomaly detection</li></ul></li></ul>
+
+<p>Cluster analysis has many applications in different domains, whether it be a bank’s&nbsp;desire to segment its customers based on certain characteristics, or helping an individual to organize and group his/her favorite types of books!</p>
+
+<h4>Comparison:</h4>
+
+<p>So, The biggest difference between Supervised and Unsupervised Learning is that&nbsp;supervised learning deals with labeled data while Unsupervised Learning deals with unlabeled&nbsp;data.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-SnjUcnA2OXA/XLl4RrBH4RI/AAAAAAAACA4/Ft9HQDWmtyscBP2SC6ZRsCwEDTC_B9roQCK4BGAYYCw/s1600/24.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<ul><li>In supervised learning, we have machine learning algorithms for Classification and Regression.</li><li>In unsupervised learning, we have methods such as clustering.</li><li>In comparison to supervised learning, unsupervised learning has fewer models and fewer evaluation methods that can be used to ensure that the outcome of the model is accurate.</li><li>As such, unsupervised learning creates a less controllable environment, as the machine is creating outcomes for us.</li></ul>
+
+<h3>Reinforcement&nbsp;Learning</h3>
+
+<p>Here, it involves teaching the machine to think for itself based on its past action reward.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/--wlesu1WasE/XL1c-K_4pPI/AAAAAAAACEQ/3jgOMLvRkKIn__qj39EUlWgPLjknT5rvwCK4BGAYYCw/s1600/21c.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<h2>Comparison of Machine Learning with other Key Technologies;</h2>
+
+<ul><li>AI tries to make computers intelligent in order to mimic the cognitive functions of humans.&nbsp;So, Artificial Intelligence is a general field with a broad scope including Computer Vision,&nbsp;Language Processing,&nbsp;Creativity,&nbsp;Summarization.</li><li>Machine Learning is the branch of AI that covers the statistical part of artificial intelligence. It teaches the computer to solve problems by looking at hundreds or thousands of examples,&nbsp;learning from them, and then using that experience to solve the same problem in new situations.</li><li>Deep Learning is a very special field of Machine Learning where computers can actually learn and make intelligent decisions on their own. Deep learning involves a deeper level of automation in comparison with most machine learning algorithms.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-i05Niuxi3BA/XLl29kbmlKI/AAAAAAAAB_Y/slZlwTBpAOAAcj6YIlCmczkZZ7pt43A8ACK4BGAYYCw/s1600/13.png" alt="Understanding Machine Learning Methodology" loading="lazy"></figure></div>
+
+<hr class="wp-block-separator"/>
+
+<h2>Conclusion:</h2>
+
+<p>So this is all about the basic understanding of Machine Learning. Let's do further hands-on with its key concepts one by one here;</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/understanding-machine-learning-methodology/&text=Understanding Machine Learning Methodology" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/understanding-machine-learning-methodology/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/understanding-machine-learning-methodology/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Understanding Machine Learning Methodology%20https://www.justsajid.com/posts/understanding-machine-learning-methodology/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/understanding-of-data-science-methodology/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2018/12/DvplWvIXcAEZNp-.jpg" alt="Understanding of Data Science Methodology" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 10:28:52">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/understanding-of-data-science-methodology/">Understanding of Data Science Methodology</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/ai-vs-ml-vs-dl/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/04/AI-vs-ML-vs-DL-Copy-1.png" alt="AI vs ML vs DL" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 09:41:39">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/ai-vs-ml-vs-dl/">AI vs ML vs DL</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/hands-on-with-supervised-unsupervised-learning-machine-learning/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/04/0-1.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 09:40:31">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/hands-on-with-supervised-unsupervised-learning-machine-learning/">Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/ai-vs-ml-vs-dl/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">AI vs ML vs DL</span>
+      </a>
+    <a href="../../posts/understanding-of-data-science-methodology/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">Understanding of Data Science Methodology</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Data Science</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/understanding-of-data-science-methodology/">Understanding of Data Science Methodology</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/ai-vs-ml-vs-dl/">AI vs ML vs DL</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/hands-on-with-supervised-unsupervised-learning-machine-learning/">Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

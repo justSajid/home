@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Quantum Computing | What, Why &amp; How | justSajid</title>
+  <meta name="description" content="Quantum Computing | What, Why & How — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/what-why-how/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Quantum Computing | What, Why &amp; How | justSajid">
+  <meta property="og:description" content="Quantum Computing | What, Why & How — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/what-why-how/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2020/06/0.jpg">
+  <meta property="article:published_time" content="2023-02-20T16:08:27Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Quantum Computing | What, Why &amp; How | justSajid">
+  <meta name="twitter:description" content="Quantum Computing | What, Why & How — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2020/06/0.jpg">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2020/06/0.jpg" alt="Quantum Computing | What, Why &amp; How" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Quantum Computing | What, Why &amp; How</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2023-02-20 16:08:27" itemprop="datePublished">Published February 20, 2023</time></span>
+      <span class="meta-category">in <a href="../../categories/quantum/" class="cat-link">Quantum Computing</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">21 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<p class="has-drop-cap">Now as we are starting the 5th decade after the very first proposed model in the 1980s, quantum computers are now commercially available, brought out of the lab, and into the industry by IBM Quantum.  With many experts predicting it will revolutionize the way we approach problem-solving. With the recent commercial availability of quantum computers, the possibilities are endless. Quantum computers are different from traditional computers in that they use quantum bits, or qubits, to perform calculations. These qubits can exist in multiple states simultaneously, allowing for exponentially faster computation than traditional computers.</p>
+
+<p>One of the most exciting applications of quantum computing is in the field of cryptography. Quantum computers are capable of breaking many of the encryption methods used to secure sensitive data, which has prompted researchers to develop new quantum-resistant encryption methods.</p>
+
+<p>Another area where quantum computing could have a significant impact is in the field of drug discovery. Quantum computers can simulate complex molecular interactions much faster than traditional computers, which could lead to the development of new, more effective drugs.</p>
+
+<p>Despite the many potential benefits of quantum computing, there are still significant challenges to overcome. One of the biggest challenges is the issue of error correction. Quantum computers are extremely sensitive to errors, which can cause calculations to become unstable or even fail altogether. Researchers are working to develop new error correction techniques to make quantum computers more reliable.</p>
+
+<p>Overall, the advent of commercially available quantum computers represents a major milestone in the field of computing. While it may not replace traditional computers entirely, the possibilities for hybrid computing are truly exciting. With the potential to solve problems that were previously thought impossible, quantum computing is poised to usher in a new era of innovation and discovery.</p>
+
+<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">What are Quantum Computers?</mark></h3>
+
+<p>Quantum Mechanics is the field of Physics that studies the behavior of the most basic and smallest parts of our universe at the subatomic level. Reality at this level is very different to the reality we experience every day, but it is reality. </p>
+
+<p>One of the most famous is the idea of quantum entanglement. When two particles become entangled, they become inseparably linked, even if they are separated by vast distances. This means that if you change one particle, the other particle will instantly be affected, no matter how far away it is.</p>
+
+<p>Another concept of quantum mechanics is wave-particle duality. This means that subatomic particles like electrons and photons can behave like waves or like particles depending on the experimental setup. This strange duality makes it impossible to predict with certainty the behavior of a subatomic particle, which led to the famous quote by Nobel Prize-winning physicist Richard Feynman: “I think I can safely say that nobody understands quantum mechanics.”</p>
+
+<p>Quantum mechanics is not just a fascinating topic for physicists; it has also led to many practical applications, such as quantum computing and quantum cryptography. These technologies have the potential to revolutionize the way we store and process information, making them faster and more secure than classical computers and encryption methods.</p>
+
+<p>Quantum Mechanics is a fascinating and mysterious field of study that has the potential to revolutionize our understanding of the universe and the technology we use every day. While it may seem counterintuitive and “spooky” at times, it has already given us valuable insights into the behavior of subatomic particles and the potential for future technological advancements.</p>
+
+<p><strong><span style="text-decoration: underline;">Superposition</span></strong> is the phenomenon where particles can be in two states at the same time. So, imagine a coin that is spinning on a table. At an instant, the outcome can be both head and tail at the same time. Now imagine slamming your hand down over the coin, causing it to collapse into one outcome, either heads or tails. So its the same idea with the quantum particles. Currently, computer use bits are either 0 or 1 to process information. But if we use quantum particles as data, something interesting happens. By using quantum particles called qubits and the property of superposition they can read both as 0 and 1 at the same time. This makes the amount of data that can be represented exponentially greater. This allows quantum computers to press as far more data than classical computers will ever be able to do. If a Quantum computer had one hundred Qubits, it will be more powerful for some applications than all of there super computers on earth combined. Three hundred Qubits, could hold more numbers simultaneously than there are atoms in the universe. So what could a billion Qubits do? Think!</p>
+
+<p>Entanglement is another phenomenon where two particles can be linked, so that one particle always gives the same outcome as the other. Imagine two quantum entangled dies, even if those separated on opposites of the earth or even universe, when rolled, they would show the same result as each other, EVERY SINGLE TIME! Because the communication is very instance regardless the distance. Could be great for security too. Since it potentially doesn't use any physical infrastructure to transfer this information, this mean in the future it may be impossible for communication to be intercepted or hacked without the knowledge of the information owner. </p>
+
+<p>Classical computers use logic gates to run functions, these take inputs and produce an output, e.g. if both inputs are 1 then output is 1 else 0 etc. Quantum gates can do a lot more the gates entangle, change probabilities and collapse superpositioned qubits to produce results. Simply put, they can run all possibilities at once. Normally on a classical computer, it would check probabilities one by one, hence that's mean, qunatum computer can find such solution much faster especially on large datasets. But it goes far beyond this.</p>
+
+<p>if we want to model the world, we can encode the very rules of physics into its operations on qubits, just like we would use logic gate circuits on classical bits. It's an incredible idea, its almost like coding pure physics into the fundamental essnce of nature and reality, not just some  mathimetical approximation of reality, like we do now.</p>
+
+<p>The promise of Quantum Computers</p>
+
+<p>Quantum Computers can simulate our universe allowing us to model new molecules in the arrangement we have not discovered and test them to find new materials. These new materials may help create other breakthroughs in science and engineering, never before thought possible. From new batteries and energy sources to super-strong materials and incredible effective medicines. So here is how it would work.</p>
+
+<p>We all know that the world is built up of atoms and molecules, so if we could simulate those accurately, we'll be on the way to a new paradigm. In the real world molecules are formed to an electron orbitals overlap. To accurately model real-world electrons, we need to keep track of the fact that they can exist in multiple states at once. Although this fact can be expressed as a probability or chance, it ends up being a real problem for classical systems.</p>
+
+<p>When the number of particles goes up, the number of possible states grows exponentially, for ten electrons would need to track about a thousand possible states. But for a molecule or just 20 electrons would have to keep track of over a million different probability states. If we want to model a real physical system with millions of electrons, things quickly get out of hand. E.g. A modern laptop can model electrons, a supercomputer 43 electrons, perhaps if we have a 50-electron system. Well, forget it!</p>
+
+<p>That's impossible for any classical computer in the future as far as human will exist. </p>
+
+<p>Nature and reality itself are a quantum systems, and it can't be modeled on a classical computer effectively. The information required to discribe a quantum system can only be held by another quantum system. Because of Qubits, Quantum Computers are quantum in desire, just like nature, they have not problem keeping up with nature's exponential complexity.</p>
+
+<p>Consider the case of modeling different molecules. As we can see, when we get to molecules a bit more complex than benzene, the computational time to model them approaches infinity. Perhaps for Quantum Computers, all we need to do is just add more qubits, and the computational time scales linearly with the problem. So to solve this, we just simply add on another 50 Qubits or so. For each Qubits added, the Quantum computer will exponentially more powerful. If a Quantum computer has millions of Qubits, just imagine what molecule interactions we would stimulate. There's even proposals that Quantum computers could predict climates accurately. Or for the first time accurately model the human brain. The possibilities are endless. So offcourse, if we come back to reality. the quantum computer is in its infancy, just like the classical computers were back in 1950s. At that time classical computers were taking the whole room, and a modern quantum computer is at the same stage. </p>
+
+<p>There are still decades of breakthroughs has remain before any quantum computers are capable of creating some series change, but the research is going ahead and not slowing down. So right now we don't know what secrets of the universe we might unlock when we start simulating subatomic particles, the possible breakthroughs are as unknown as they are exciting. But one thing is certain, quantum computers can hold the potential for radical change in the progress of humanity just the steam engine and the internet. And we could be looking back marveling at just how simple our lives once were.</p>
+
+<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">Qubits</mark></h3>
+
+<p>Quantum computing is based on the use of quantum bits, or qubits, which have the unique property of being able to exist in two states simultaneously. This is known as superposition, and it is what makes quantum computing so powerful.</p>
+
+<p>Unlike classical computing, where information is processed in bits that can only be in one of two states (0 or 1), qubits can exist in a state of 0 and 1 simultaneously. This is known as a quantum superposition state.</p>
+
+<p>In addition to superposition, qubits also have another unique property called entanglement. This means that the state of one qubit can affect the state of another qubit, even if they are separated by a great distance.</p>
+
+<p>There are several physical systems that can be used as qubits, including atoms, ions, and superconducting circuits. Each of these systems has its own advantages and challenges.</p>
+
+<p>For example, superconducting qubits are currently the most promising for building large-scale quantum computers, as they are relatively easy to control and can be manufactured using standard fabrication techniques. However, they are also highly susceptible to environmental noise and require extremely low temperatures to operate.</p>
+
+<p>One of the biggest challenges in building a quantum computer is preserving the delicate quantum state of the qubits. Any interaction with the environment can cause the quantum state to collapse, which is known as decoherence. Scientists are working on developing error-correcting codes and new materials to reduce this effect.</p>
+
+<p>Despite the challenges, quantum computing has the potential to revolutionize many fields, including medicine, finance, and cybersecurity. By using qubits and the properties of superposition and entanglement, quantum computers will be able to process vast amounts of data at a speed far beyond what is currently possible.</p>
+
+<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">Replacement to Traditional Computers?</mark></h3>
+
+<p>Again if one is thinking, the quantum computers will replace the traditional computers, so the answer is <strong>"NO!"</strong>. They are not universally faster. Only faster to the specific types of calculations where we can use the fact that we have all of the quantum super positions available to us at the same time to do some computational parallelism. E.g. If we want to watch an HD Video or write some docs, they are not going to give us any particular help if we need to use the classical algo to get get the result. In fact, every operation will probably going to be slower than in the computer we have at the front of us today. </p>
+
+<p>we need to first understand the key differences between traditional and quantum computers. Traditional computers use binary digits, or bits, to process information. These bits can be either 0 or 1, and calculations are performed by manipulating these values. In contrast, quantum computers use quantum bits, or qubits, which can be in a state of 0, 1, or a superposition of both. This means that quantum computers can perform multiple calculations simultaneously, making them much faster and more powerful than traditional computers for certain types of calculations.</p>
+
+<p>However, it's important to note that quantum computers are not a replacement for traditional computers. They are better suited for certain types of problems, such as complex mathematical calculations and optimization problems. Traditional computers, on the other hand, are better suited for general-purpose computing tasks, such as word processing, web browsing, and email.</p>
+
+<p>Another factor to consider is the cost and accessibility of quantum computers. Currently, quantum computers are extremely expensive and difficult to operate, with only a handful of companies and research institutions having access to them. As the technology develops, we can expect the cost to decrease and access to increase, but it's unlikely that quantum computers will become as ubiquitous as traditional computers.</p>
+
+<p>Additionally, the development of quantum computing will likely lead to new applications and technologies that complement traditional computing. For example, hybrid systems that combine traditional and quantum computing could offer the best of both worlds, with the ability to perform both general-purpose computing tasks and quantum-specific tasks.</p>
+
+<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">What are Quantum Computers Good At?</mark></h3>
+
+<p>Well, they are very good at things that have small inputs and outputs by having a vast array of possibilities. E.g. breaking encryption would be a great example here. A traditional computer would take billions of years where the quantum computers could perform the task in a number of minutes. Here, the input would be a single large number, and the output is the how many sets of prime numbers multiplied together to give the large number. So the possibilities here are like infinite.</p>
+
+<p>Quantum computers are a promising technology that has the potential to revolutionize many fields, from medicine to finance to cybersecurity. They are fundamentally different from classical computers, using quantum bits, or qubits, to process information instead of classical bits.</p>
+
+<p>So, what are quantum computers good at?</p>
+
+<ol>
+<li>Optimization problems: Quantum computers are excellent at solving optimization problems. These are problems where you need to find the best solution from a large number of possibilities. For example, optimizing the routes of delivery trucks, finding the best way to schedule airline flights, or optimizing the layout of a factory.</li>
+
+<li>Cryptography: Quantum computers could also be used to break existing cryptographic codes. This is because they can factor large numbers much faster than classical computers, which would render many current encryption methods obsolete. However, they could also be used to create new, unbreakable codes based on quantum mechanics.</li>
+
+<li>Simulating complex systems: Quantum computers can simulate the behavior of complex systems much more efficiently than classical computers. This could be used to simulate the behavior of atoms and molecules, leading to new insights into the behavior of matter and the development of new materials.</li>
+
+<li>Machine learning: Quantum computers could be used to improve machine learning algorithms, which are used in fields such as image recognition and natural language processing. By processing data in parallel and taking advantage of quantum interference effects, quantum computers could speed up machine learning algorithms significantly.</li>
+
+<li>Scientific research: Quantum computers could also be used in scientific research to model complex phenomena, such as climate change, drug development, and protein folding.</li>
+</ol>
+
+<p>While quantum computing is still in its early stages, there are many potential applications for this technology. As research continues and quantum computers become more powerful and accessible, we can expect to see a new era of computing that will push the boundaries of what is possible in science and technology.</p>
+
+<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">The Limitations</mark></h3>
+
+<p>Quantum Physics itself is a problem, e.g. an observer can never directly know all the vast number of qubits states at the same time. All the observer knows is the probability of the state qubits will be in the very act of observing or measuring the overall state of the quantum computer qubits, will force the system to decide on which state they are in. So instead of the quick trillions of the answers, we can only see one. Which is another quirk of the quantum world. </p>
+
+<p>There are several limitations that must be overcome before quantum computers can reach their full potential. In this article, we will explore some of the most significant limitations of quantum computing.</p>
+
+<ol>
+<li>Quantum Decoherence</li>
+</ol>
+
+<p>Quantum decoherence is one of the biggest challenges facing quantum computing. It occurs when a quantum system interacts with its environment, causing it to lose its quantum state and become a classical system. Decoherence limits the amount of time that a quantum computer can maintain its quantum state, making it difficult to perform calculations accurately.</p>
+
+<ol start="2">
+<li>Limited Qubit Count</li>
+</ol>
+
+<p>Quantum computers use qubits, which are the quantum equivalent of classical bits. However, building and maintaining large numbers of qubits is extremely challenging, and quantum computers with more than a few dozen qubits are currently very expensive and difficult to operate. This limits the complexity of problems that quantum computers can solve.</p>
+
+<ol start="3">
+<li>Error Correction</li>
+</ol>
+
+<p>Errors are inevitable in any computing system, but they are particularly challenging in quantum computing. In classical computing, errors can be corrected by repeating calculations and comparing the results. However, in quantum computing, the act of measuring a qubit can cause it to lose its quantum state. This makes error correction in quantum computing much more difficult and requires the development of new algorithms and hardware.</p>
+
+<ol start="4">
+<li>Limited Applications</li>
+</ol>
+
+<p>Quantum computers are well-suited for certain types of calculations, such as simulating chemical reactions or optimizing complex systems. However, they are not well-suited for all types of problems. For example, quantum computers are not yet able to perform basic arithmetic as quickly as classical computers.</p>
+
+<ol start="5">
+<li>Energy Requirements</li>
+</ol>
+
+<p>Quantum computing is an energy-intensive process. Quantum computers must be kept at extremely low temperatures, which requires significant amounts of energy. Additionally, running quantum algorithms requires a significant amount of energy, which can limit the scalability of quantum computing.</p>
+
+<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">How this will be useful?</mark></h3>
+
+<p>Well, answer that come from out of Quantum Computers are in the form of probability, if we repeat the question, the answer would change slightly and the quantum computer stay will begin to approach the theoretical percentage or correct answer. The more times we will repeat, we might ask the quantum computer several times but getting a good answer on the second or third attempt may still be much faster than waiting for certain answers on classical computers.</p>
+
+<p>In order for quantum systems to push toward the right answer when asked repeatedly, the code must be designed so the qubits are likely to be in the correct state for a given problem hence giving the write answer. The quantum code is designed to use the wave-like properties found in particle physics to cancel out the wrong answers and amplify the correct answer, the answer can then be detected and viewed.</p>
+
+<p>The manipulation of the nature through code is called a quantum algorithm. Mathematicians and scientists around the world are on the race to build these algorithms for when capable quantum computers arrive.</p>
+
+<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">Challenges in Powerful Quantum Computers</mark></h3>
+
+<p>The practicality of maintaining and quantum environment something we can say at this moment. 'Qubit is like a very girl'. To be in their quantum superposition state that is being in multiple states at once, they need to be comfortable or technically we can say in their ideal condition. Qubits must be free from all radiation and kept at a temperature just above that of absolute zero. If the particle interacts with anything the quantum effects are scared away any slight disturbances such as light particles radiation or even the quantum vibrations can snap the particles out of their superposition state. This voids the entire advantage of the machine.</p>
+
+<p>Right now, we can only achieve a quantum superposition for a tiny fraction of the second, not long enough to carry out a useful algorithm. </p>
+
+<p>Mastering this fragile quantum state still remains one of the biggest challenges for engineers and scientists to build a practical quantum computer. </p>
+
+<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">How to Build This?</mark></h3>
+
+<p>Our current quantum computer designs consist of two main types of construction, the superconductor type and the spin type i.e these are small particles. The most popular spin method uses single electrons within silicon to create Qubits, the reason for this is that the infrastructure for nanoscale silicon components is ready established so it makes economic sense to just leverage what we already have for a new kind of computing. These electrons within the silicon are called quantum dots, only several nanometers in size, they can operate at slightly high temperatures making them more stable research on this method only started to pick in 2017. </p>
+
+<p>The older, more stable Qubit uses a metallic superconductor to create a quantum state. Superconductor Qubits defy the misconception that the strange quantum effects are impossible for larger objects. This not strictly true, the way we get large objects to produce quantum states is by letting the material reach that fragile 'shy girl' state. This is done by subjecting them to super cold of vacuum environment.</p>
+
+<p>The result is Qubit that's visible to the naked eye. The most popular method is a super cold metallic ring almost at absolute zero. At these temperatures, electrons can flow around forever without ever bumping into anything. Strange is still all these electrons flow clockwise but at the same time, all the electrons also flow counterclockwise. </p>
+
+<p>If the clockwise flow is read as 1 and the counterclockwie flow is read as 0. It's essentially a superposition Qubit.</p>
+
+<p>A superconductor method is Hello way of IBM and Google quantum computers work. </p>
+
+<p>So to round out, let's take a look at a few achievements. The best computer we have at this moment, using the quantum dot method, so most of those Qubits are used for error detentions.</p>
+
+<p>MIT Scientists have reported the discovery of new triple photon form of light. An Australian team set the record for the most accurate one qubit gate in a silicon quantum dot. They had accuracy of 99.96%.</p>
+
+<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">The Future</mark></h3>
+
+<p>Chinese scientist achieved the quantum teleportation from a station on the ground to satellite in the orbit few years back. Perhaps it was not the kind of we think i.e. teleportation of an object from one place to other. It actually like the teleportation of the state of that object. But! for that, the state of one particle must be totally opposite to the other particle, the distant don't matter perhaps the state must be opposite. So this transfer of information about which state the particle are in, by definition is called quantum teleportation.</p>
+
+<h3><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">The Alternative</mark></h3>
+
+<p>some of the alternatives to quantum computing that are being explored by researchers.</p>
+
+<ol>
+<li>Nano-Biological Computing</li>
+</ol>
+
+<p>Nano-biological computing is a field of study that combines nanotechnology and biology to create new types of computing devices. These devices use biological molecules, such as DNA or proteins, to store and process information. One of the main advantages of nano-biological computing is its potential for high-speed parallel processing and low energy consumption. Additionally, nano-biological computing has the potential to create highly targeted and efficient medical treatments by using biological molecules to target specific cells or proteins in the body. However, this field is still in its early stages, and much research is needed before nano-biological computing can become a mainstream technology.</p>
+
+<ol start="2">
+<li>Neuromorphic Computing</li>
+</ol>
+
+<p>Neuromorphic computing is a type of computing that is inspired by the architecture of the human brain. Neuromorphic computers use networks of artificial neurons to process information, which can be more efficient than traditional digital computing for certain types of problems, such as pattern recognition and data analysis. Neuromorphic computing is still in the early stages of development, but it shows promise as an alternative to quantum computing.</p>
+
+<ol start="3">
+<li>DNA Computing</li>
+</ol>
+
+<p>DNA computing is a type of computing that uses DNA molecules to store and process information. DNA computing is still in the experimental stages, but it has the potential to be extremely efficient at solving certain types of problems, such as sorting and searching algorithms. DNA computing is a relatively new field, and much research is needed before it can become a mainstream technology.</p>
+
+<ol start="4">
+<li>Optical Computing</li>
+</ol>
+
+<p>Optical computing is a type of computing that uses photons, rather than electrons, to process information. Optical computing has the potential to be much faster than traditional digital computing, but it is still in the experimental stages and faces significant technical challenges.</p>
+
+<h1 class="has-vivid-cyan-blue-color has-text-color">Conclusion</h1>
+
+<p>Quantum computing is a rapidly advancing field with the potential to revolutionize many industries. By using quantum particles called qubits and the property of superposition, quantum computers have the potential to process exponentially more data than classical computers. However, building and maintaining quantum computers with large numbers of qubits is extremely challenging and expensive, and there are still many technical hurdles to overcome before quantum computing can become a mainstream technology. Despite these challenges, researchers are working hard to develop new techniques and algorithms that can harness the power of quantum computing, and the future looks bright for this exciting and innovative field. As technology continues to advance, we can expect to see new breakthroughs in quantum computing that will continue to push the boundaries of what is possible.</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/what-why-how/&text=Quantum Computing | What, Why &amp; How" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/what-why-how/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/what-why-how/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Quantum Computing | What, Why &amp; How%20https://www.justsajid.com/posts/what-why-how/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  <div class="single-tags"><span class="tag-label">Tags:</span><a href="../../tags/ibm/" class="tag-link">IBM</a> <a href="../../tags/quantumcomputing/" class="tag-link">QuantumComputing</a> <a href="../../tags/quantumcomputer/" class="tag-link">QuantumComputer</a></div>
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/quantum-computing/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2020/06/0.jpg" alt="What is Quantum Computing || IBM Technology" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2022-06-10 06:15:36">June 10, 2022</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/quantum-computing/">What is Quantum Computing || IBM Technology</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/digital-transformation-justsajidbank/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Case Study: Digital Transformation of &quot;justSajid Bank&quot;</span>
+      </a>
+    <a href="../../posts/ibm-gss/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">:: GRADUATED FROM IBM GLOBAL SALES SCHOOL || IBM</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Quantum Computing</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/quantum-computing/">What is Quantum Computing || IBM Technology</a>
+        <div class="post-small-date">June 10, 2022</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

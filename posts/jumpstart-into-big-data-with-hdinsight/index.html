@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>JumpStart Into Big Data With HDInsight | justSajid</title>
+  <meta name="description" content="JumpStart Into Big Data With HDInsight — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/jumpstart-into-big-data-with-hdinsight/">
+  <meta property="og:type" content="article"><meta property="og:title" content="JumpStart Into Big Data With HDInsight | justSajid">
+  <meta property="og:description" content="JumpStart Into Big Data With HDInsight — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/jumpstart-into-big-data-with-hdinsight/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2020/02/0.jpg">
+  <meta property="article:published_time" content="2016-08-10T17:36:00Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="JumpStart Into Big Data With HDInsight | justSajid">
+  <meta name="twitter:description" content="JumpStart Into Big Data With HDInsight — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2020/02/0.jpg">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2020/02/0.jpg" alt="JumpStart Into Big Data With HDInsight" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">JumpStart Into Big Data With HDInsight</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2016-08-10 17:36:00" itemprop="datePublished">Published August 10, 2016</time></span>
+      <span class="meta-category">in <a href="../../categories/bigdata/" class="cat-link">Big Data</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">16 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<p>What would happen when the volume of your data increased repeatedly over time and you need high velocity at the same time. Not only that but you have a different variety of data and Variability also exists in your data. So how would you handle all that data?</p>
+
+<p>If we particularly talk about an existing example, NASA is going to launch a Telescope very soon that would generate a huge amount of data in 1 sec which would be more than the data generated by Google in a year. So from that, we can predict the complexity of data which would come in the near future,</p>
+
+<p>So, the biggest question arises here is who and how would we able to handle that huge amount of data. Do we need the infinite number of machines who can handle all of that data? But, as we all know that machines are quite limited and we also do not put supercomputers everywhere. So what we would do?</p>
+
+<p>But wait! Here comes the concept of Big Data.</p>
+
+<p>So, what exactly Big Data is.&nbsp;Big Data is the solution for that huge amount of data under limited resources.</p>
+
+<p>According to the experts, the third generation web will rotate around Big Data. And as we all know Moore’s Law, that can also be applied to Computing Data but in the case of data, it's not the double but an increased number of times. So Big Data provides the solution that handles high volume data under limited resources.</p>
+
+<p>Moreover, we need high velocity to process that large amount of data. If we talk about the normal computing machine, it takes a lot of time to process data even in GBs. But in Big Data, we are talking about Zettabyte (ZB) and Yottabyte (YB) and we also want to process that huge data in a very limited time to get results in time. So, don't worry! Big Data provides that solution and handle that huge amount of data in high velocity.</p>
+
+<p>Further, as we all know that data exist in a large variety. In that we take the simplest example then we have Facebook and Twitter at the front of us where we people own different types of data. And we also know that billions of users exist in those huge social network sites (SNS). So how SNSs would handle the different variety of data in the meantime when they have a large number of users processing data at the same time. So, again Big Data provides that solution to handle the different variety of data in huge quantities.</p>
+
+<p>As we see variability in data. So when we talk about Inconsistency which can be shown by the data at times at high level, how would we handle that data. So again it's the Big Data that provides the solution that handles the variability of data at the big level.</p>
+
+<p>But wait! The Big Data solution provides by different organizations. The best solution is found from Microsoft. Microsoft Provides Big Data solution through Microsoft Azure HDInsight!</p>
+
+<p>Data is there forever and there had been awesome technologies build by Microsoft also by its competitors. Hadoop is an Open Source, Scalable, Fault Tolerant Platform for the large amount of unstructured data storage and processing, distributed across a large number of machines.</p>
+
+<p>Here the scale is big, so the challenges are really really entrusting that is why Big Data and whole new set of technologies have come. So we are primarily going to talk about Hadoop. Again, Big data is a huge topic. It cannot be defined simply. So for better understanding we are defining it simply.</p>
+
+<p>There are three things. 'Batch', 'NoSQL Store' and a streaming solution 'Storm' and some others. So these are all technologies that come under the umbrella of HDInsight that is Big Data service on Azure.</p>
+
+<p>Microsoft cloud Big Data offering 100% open source Apache Hadoop Up and running in minutes with no hardware to deploy Harness existing .NET skills utilize familiar BI tools and application frameworks.</p>
+
+<p>So as described above HDInsight is Azure Big Data offering, what they do is, they take the open source which is Hadoop. Microsoft like other enterprise competitors goes back in the main trunk so everyone else can take benefit. In Microsoft, it is fully managed. No Worries!</p>
+
+<p>In other technologies, people have to set their Clusters manually, which is so hard. So, the first thing we can do is, we just go in Azure and say I want H-base, I want Hadoop and I want a five hundred node cluster. In just 15 minutes we'll have every set up for us by Microsoft Azure. It is a fully managed service.</p>
+
+<p>So there are few things, first, one is HIVE. The HIVE is a powerful query language. In the traditional way, we define the schema first and then we write it. But, in Big Data world, first, we write the scheme and then we define it. So that is changed the way we handle the data. Here we don't need to worry about the data. How will the relationship will be defined? So all we do is, storing the data. And whenever we need to do something we define the table and start writing our queries.</p>
+
+<p>The second one is HBase that is a NoSQL store. It gives us a really fast read and writes access. Like Facebook messaging it build on HBase. Skype also do their lot of stuff in HBase. Now you can understand the power of that where we can go, store our data and then build our apps on top of it.</p>
+
+<p>The last one is Storm, it is used for Streaming. Here we have a thing 'Topology' that is made of 'Spouts' and 'Bolts'. We just write a Spout which is a connector. After that, we go and connect to a source or Node. And when we do our business operations, and those are the Bolts, the Storm is the pipeline, that is how the data is flowing and when we do multiple operations in there.</p>
+
+<p>Long story short; Big Data has the capability to query through HIVE. It has NoSQL store which is HBase. It has the streaming pipeline which is called the Storm and in there we build the Topology which is made of Spouts and Bolts.</p>
+
+<p>Well, the story of Big Data is very big. I have just written small things from it. From that one can develop any type of App; that can give the live stream of data anywhere.</p>
+
+<p>Here is an app that is a perfect example of Big Data,</p>
+
+<ul><li><a href="http://www.internetlivestats.com/" target="_blank" rel="noopener noreferrer">Internet Live Stats</a></li></ul>
+
+<figure><iframe src="http://www.internetlivestats.com/" allowfullscreen="allowfullscreen" width="800" height="500"></iframe></figure>
+
+<p>So, HDInsight is one of the greatest services through Microsoft Azure for Big Data Solutions provided by Microsoft. Technically that is used to deploy and provision Hadoop clusters in the Azure cloud, providing a software framework designed to manage, analyze and report on big data.</p>
+
+<p>It makes the different software framework and related projects such as HDFS/MapReduce Pig, Sqoop, and Hive available in a simpler, more scalable, and cost-efficient environment.</p>
+
+<p>In conjunction with the general availability of Azure HDInsight, Microsoft also provides HDInsight Emulator for Azure. The Emulator targets developer scenarios and only supports single-node deployments.</p>
+
+<p>HDInsight uses the Hortonworks Data Platform (HDP) Hadoop distribution. Hadoop often refers to the entire Hadoop ecosystem of components, which includes Storm and HBase clusters, as well as other technologies under the Hadoop umbrella.</p>
+
+<p>Let’s do some hands-on HDInsight.</p>
+
+<p>Let’s assume, you have a large unstructured data set and you want to run a Hive query on it to extract some meaningful information.</p>
+
+<p>So, let’s start by provisioning a Hadoop cluster. When you provision a cluster, you provision Azure compute resources that contain Hadoop and related applications.In order to provision a Hadoop cluster simply Sign in to your Azure Portal,</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci6.googleusercontent.com/proxy/TBaphOWhwgodlaaFaTvBfVVxnWLoCx6XGtlbp_1mTZeqL2pLpeLYGDiF4jw3ZJ6a0NljDcUtc1O7kILx8SC5slff3WaGFH0YFbTHy9yBV9b1IqK6OSZxO-Upsg=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145469/1/2download.png" alt=" " loading="lazy"></figure></div>
+
+<p>Now click&nbsp;<strong>NEW</strong>, then click&nbsp;<strong>Data + Analytics</strong>, and click&nbsp;<strong>HDInsight</strong>;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/l24_D4754p4m94gNC4MDluh20y0yziNNF_OywoV5kb3CzuQN15rniXLuJIcpp1AodulbJRxt3yXKQOF9n8Oo9ETS1VsugZMsNcLwlLW9TVGgsBGLfRkfK8He8dzfkiHG=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145470/1/download%20(1).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now enter a Cluster Name, select Hadoop for the Cluster Type, and from the Cluster Operating System drop-down, select Windows. If you have more than one subscription, click the Subscription entry to select the Azure subscription that will be used for the cluster:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci6.googleusercontent.com/proxy/AdnfJivrvr63txweWcodnXRCAC28W61fn5tlJxZ5d0U9KEW4JnJo0JsKGfWIZ833XkuOs5sAFCMkd6rlI4RQ-WlaA6finnQIpHl49NJLCXmsJFbGUak8Dh-7qonR8Je-=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145471/1/download%20(2).png" alt=" " loading="lazy"></figure></div>
+
+<p>In&nbsp;<strong>Cluster Credentials</strong>, simply give smart credentials. If you want to enable remote desktop on the cluster node, for&nbsp;<strong>Enable Remote Desktop</strong>, click Yes, and then specify the required values. After that hit&nbsp;<strong>Select</strong>:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/-V-wneSRvDoP1652X-oqDmO7NNLhhYeQm48qWiP0togkzBYknt49ZKjYpDvgFpSWJ9CTZSzgbyqjUYHMPZJL7xIl0TnRwz73jtd8H-jxsninU6QIIM0yH-3jZFJ2dIIt=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145472/1/download%20(3).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now in&nbsp;<strong>Data Source</strong>, choose an existing data source for the cluster, or create a new one. Basically, when you provision a Hadoop cluster in HDInsight, you specify an Azure Storage account. A specific Blob storage container from that account is designated as the default file system, like in the Hadoop Distributed File System (HDFS). By default, the HDInsight cluster is provisioned in the same data center as the storage account you specify:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci6.googleusercontent.com/proxy/srR9UGoAj_-QAEv306UOY7jP5AWnQ46jbo5_vGqm4SH6e3maDPvliOe5j1v_fAcFoXmE_8E6SfUkCPvpbVMt9UlTpvOLlxUOxplzIiE_Y98fbtjmE9gQRilBDrXRYfYa=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145477/1/download%20(4).png" alt=" " loading="lazy"></figure></div>
+
+<p>From the above Blade, you can realize that currently you can select an Azure Storage Account as the data source for an HDInsight cluster. Use the following to understand the entries on the Data Source blade.</p>
+
+<p>Now, click ‘<strong>Node Pricing Tiers</strong>’ to display information about the nodes that will be created for this cluster. Set the number of worker nodes that you need for the cluster. The estimated cost of the cluster will be shown within the blade:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci6.googleusercontent.com/proxy/0BqnrMi7-Uet5SgC_SfzHRtK1UKmsB64rN_o_EATDQWyB3wwweblg0LVgBpu9gI2gssMbW0iQvWtcMK_pN0bGfj2eNS4PtixdoNRnzVRQsb_lc0m3EhUi7XAxiBtJowL=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145480/1/download%20(5).png" alt=" " loading="lazy"></figure></div>
+
+<p>You may change the&nbsp;<strong>Pricing Tiers</strong>&nbsp;according to your needs and demands.Now simply click to Create the Cluster. You will see that the magic will happen and Azure will start creating Cluster for you. While provisioning the Cluster you’ll see the image like here on your Azure Home Screen:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci5.googleusercontent.com/proxy/XWyodsWn92Ro24BhHcJZpnDd13Xc7eYDA_MzlIoUA2AHIeJ-LNUBKbkbcA5C1Vyqnl5kidf9aDRKC-DAlXFsfY1htmQno7oJyhVpaoLFqzdFuK4G33IIvrWEhiSIypNk=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145481/1/download%20(6).png" alt=" " loading="lazy"></figure></div>
+
+<p>While the Provisioning will complete, you will see the &nbsp;following image:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci6.googleusercontent.com/proxy/xDCTm8A2ArovMTxBbl0m3iLoSLPKFjDwmloYH9iVIMvfbqckZXZEb5hx_icpZfOoorrpCGzO9Ox2NFi9_QZF_z2yvhi06PS_cuqlFjBrkGrs7azkrB-Kn11jIcgnrRMs=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145483/1/download%20(7).png" alt=" " loading="lazy"></figure></div>
+
+<p>So by playing with a few clicks, you’ve easily created Cluster. If you ever did that manually that must realize the importance and value of Microsoft Azure.It will take a few minutes to complete. Once the provisioning completes, click the title for the cluster from the Starboard to launch the cluster blade.A successfully provisioned HDInsight cluster provides a query console that includes a Getting Started gallery to run samples directly from the portal.You can use the samples to learn how to work with HDInsight by walking through some basic scenarios. These samples come with all the required components, such as the data to analyze and the queries to run on the data. To learn more about the samples in the Getting Started gallery, see Learn Hadoop in HDInsight using the HDInsight Getting Started Gallery.So! In order to run the sample. Simply go to Dashboard. When prompted, enter the credentials for the cluster:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci6.googleusercontent.com/proxy/9wMtcMxffKzg1Az_kJeb3AIn9gUROSpMcP4nWQ_wjp-g4cvUkj95LU2BtV0mSwDaimRjyycD9RG_62qlnO1DeZVX_BJ53mNADYH1dXgJFmlWAmazGPqNHB7oAzORlQTc=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145485/1/download%20(8).png" alt=" " loading="lazy"></figure></div>
+
+<p>So, a new page will open:</p>
+
+<figure class="wp-block-image"><img src="https://ci6.googleusercontent.com/proxy/X0luznVCXFAkAMmabWq_dxU-aGnvaoH31m_gv-nlBdnlg3xprEPVIicV1ngzvpqrlkj4iXA3LmyouOlNCUjjzAHzX0TQfu8epOcVuQzCiGZePMxER6Swz_jWthSEam61=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145486/1/download%20(9).png" alt=" " loading="lazy"></figure>
+
+<p>Now, after clicking the Getting Started Gallery tab, under the "<strong>Solutions With Sample Data"</strong>&nbsp;category, click the sample that you want to run…Follow the instructions on the Web page to finish the sample. The following lists a couple of samples and provides more information about what each sample does:</p>
+
+<ul><li>Sensor Data Analysis - Learn how to use HDInsight to process historical data that is produced by heating, ventilation, and air conditioning (HVAC) systems to identify systems that are not able to reliably maintain a set temperature.</li><li>Website Log Analysis- Learn how to use HDInsight to analyze website log files to get insight into the frequency of visits to the website in a day from external websites, and a summary of website errors that the users experience.</li><li>Twitter Trend Analysis - Learn how to use HDInsight to analyze trends in Twitter.</li></ul>
+
+<p>Now to run a Hive Query and simply click the ‘Hive Editor’ tab:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/621m3mqtnm2c9ffe5jKoeM63G_DGgMuoxOqwJaQwLDesNSTS0bON30pYsgbcUP_J7Kohp0JF6UUsWQHkywewAT-xo50CWPV3uVHKoXwCBT6Ysabp7VlsZaOs92hU38Cf8w=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145487/1/download%20(10).png" alt=" " loading="lazy"></figure></div>
+
+<p>There are several tabs at the top of the page. The default tab is&nbsp;<strong>Hive Editor</strong>, and the other tabs are&nbsp;<strong>Job History</strong>&nbsp;and&nbsp;<strong>File Browser</strong>. By using the dashboard, you can submit Hive queries, check Hadoop job logs, and browse files in storage.</p>
+
+<p>Now on the Hive Editor tab, for&nbsp;<strong>Query Name</strong>, enter H20. The query name is the job title. In the query pane, enter the Hive query as shown in the image:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/mviGgiKFSZbK2NyAb14P8D_CoOuVyK4xcrjKtIoXcco2WCfLdg8lLYISX8VqyP4HBSrkuqZTzsGcrQwfMvnP3J81egyVKSolzXY6ZSneMW21G-Y7f8pNi4gKO01HUksZTQ=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145489/1/download%20(11).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now simply click Submit. It takes a few moments to get the results back. The screen refreshes every 30 seconds. You can also click&nbsp;<strong>Refresh&nbsp;</strong>to refresh the screen:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci5.googleusercontent.com/proxy/ZeeGyjzOmV6TsLLkzmMb7CWk7ikbI3PvQwDDMyS9QN2Oz5gIi91RxStVcAa2FlvnS2_GeCHuEtdYRpOMIBUWXI03EnB8uzbJ34OKi0eRDbUeM_HHEUWD2OoiaFb6RC3IPQ=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145490/1/download%20(12).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now, after the status shows that the job is completed, click the query name on the screen to see the output. Make a note of Job Start Time (UTC) since you will need it later. The page also shows the Job Output and the Job Log. You also have the option to download the output file (_stdout) and the log file (_stderr):</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci4.googleusercontent.com/proxy/VOu6EB7K_qa9YgVPV4y6vrwiCLP-difeoWQeuDs6JgOV74Tc6EmI4NrvlG943TygBo-3u6QR7SFCLjC_j8M8nTbLqqnx2Nlr8rLRA6DtOVbC6PpzrYqKQjZB7ER7LNnKQA=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145491/1/download%20(13).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now, in order to browse to the output file.; Simply go to the On the cluster dashboard, click&nbsp;<strong>File Browser</strong>:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci5.googleusercontent.com/proxy/emlwaYWEbwBMaz8nSrz6IQDHKT_wLlg945td6Fk0PZLy_GNOcV6x4cgdQ6dl8Ya0fTEv6QUZOPVVeQAc_JRMI6_oHAvj8779OkHkTlk0dQx6-dyFs9bv0iHIIk-Ndnryvg=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145492/1/download%20(14).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now click your storage account name, click your container name (which is the same as your cluster name), and then click user. After that lick admin and then click the GUID that has the last modified time (a little after the job start time you noted earlier). Copy this GUID. You will need it in the next section:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci6.googleusercontent.com/proxy/mztOG8Th7IeRB8YZX1L6z_riy0aZGZm8RRM_zdM-FqoaCMm9IeP-7lpVb3226986t072cRZdmoTe3KabiYm4CIpJ75kGYakVzeMiSkHKZ6jMt079CWpcyi5c8E_VsVjRdg=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145493/1/download%20(15).png" alt=" " loading="lazy"></figure></div>
+
+<p>Further you can use the Power Query add-in for Microsoft Excel to import the job output from HDInsight into Excel, where Microsoft business intelligence tools can be used to further analyze the results:</p>
+
+<ul><li>Download Microsoft Power Query for Microsoft Excel from the <a href="http://www.microsoft.com/download/details.aspx?id=39379" target="_blank" rel="noopener noreferrer">Microsoft Download Center&nbsp;&nbsp;</a>and install it.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci4.googleusercontent.com/proxy/7qWPq9ik-5SrAyt2_qMi3_o_ShNVtbsv2TpAYz_P4d-kfyXUNMigklXJ5S7NKCiyXoPN4jYTE-VGfZyMzn_V6exlwMC5KcJ45WJNTdwadDbrqXu2gLxu-s1FWldMqciYCg=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145494/1/download%20(16).png" alt=" " loading="lazy"></figure></div>
+
+<p>So, in order to import HDInsight data, simply Open Excel, and create a new workbook:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/LFMYCZp7hCGliIcppWUwM6Pr8NrCkAePQlQWr-cTDYgieoFzY_x4HyR-sQnSRg_hvR98ROVmy_9Y5xDnoPqstiak80veFGUdhIEltpV1200lnJ_pmESSoERIq5xDjCrGYw=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145495/1/download%20(17).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now simply enter the Account Name and Access Key of the Azure Blob Storage account that is associated with your cluster, and then click OK.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/PDZPe5Wwd9twUvnftYBrGhBjkUMA0AmOeaJU_HctI9CJH0YFDrcdA6Ef4R09IyONUfLOUh1VdXjOtkd8Dtv8EZvqMtRpC-VYBFHm6WXzwlhuds-gqQ8JSJ7obBB7dSDxVg=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145496/1/download%20(18).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now simply in the right pane, double-click the blob name. By default, the blob name is the same as the cluster name.<br></p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci4.googleusercontent.com/proxy/WAcS9uMmhSxptMDuLJLWEhbNJtxOopx0tYxR1zQ5eDqM4vTgxaTElk2FFGI05Po0Ud0iIl6y64ZwqiaGaLE_O9moPnC1oo4lxZFzDpgHPs4gqDagrhsq4TxPowFCv-6X-Q=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145497/1/download%20(19).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now in a while data will be loaded in Excel Sheet. Locate “stdout” in the&nbsp;<strong>Name&nbsp;</strong>column. Verify that the GUID in the corresponding Folder Path column matches the GUID you copied earlier. A match suggests that the output data corresponds to the job you submitted. Click&nbsp;<strong>Binary&nbsp;</strong>in the column left of ‘stdout’.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/I3Mn2zK1740-jeJ6w7A7noHxBbWeJf7DrlH2QmQvLEgnOLN6cGc5HSUHqTxO_TvIDkSgjGtiFtuyzXN36VJIuves90nj3uOSKIrm4QseWqDJ2hukYLghdIGDzcV0TLm9uQ=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145498/1/download%20(20).png" alt=" " loading="lazy"></figure></div>
+
+<p>You see, how easily by following few steps and clicks we have provision a Hadoop cluster on Windows in HDInsight, run a Hive query on data, and import the results into Excel, where they can be further processed and graphically displayed with BI tools.<br></p>
+
+<p>Now, let’s play with&nbsp;<strong>HDInsight&nbsp;</strong>Tools for Visual Studio to connect to HDInsight clusters and submit Hive queries…</p>
+
+<p>Simply install HDInsight tools for Visual Studio. But don’t worry HDInsight Tools for Visual Studio and Microsoft Hive ODBC Driver are packaged with Microsoft Azure SDK for .NET.Now simply open Visual Studio, Open Server Explorer Window, Expand Azure (Also Give Your Azure Credentials if it asks) and then expand HDInsight. In Server Explorer, you'll see a list of existing HDInsight clusters.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci5.googleusercontent.com/proxy/OsS3lETMzCT-UxpcQ7SxiJk_pgr1zViXTPvgKfH1yj_oCWIu7zc4TSyldzuTgLCw7DBUL2VunboWPq3gAvFjKEz5SgWAr-bjBtem1Ib-5PGGCAZ584zTSqU_qOZoS9wX8A=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145499/1/download%20(21).png" alt=" " loading="lazy"></figure></div>
+
+<p>You can see the HDInsight cluster, Hive Databases, a default storage account, linked storage accounts, and Hadoop Service log. You can further expand the entities.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci4.googleusercontent.com/proxy/gs2uLXaTW7z_dk-3Pc6bucPHK301ex4NkBQvrBukqRdmeHWaVc8Rn0D4y337FNxazz5ubjUPYG-OMxphUiUi7KDW57Y1lp4DpxDnvdbeq1UqYP6mANb5pajyt6eUy9T4hQ=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145500/1/download%20(22).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now Simply navigate the linked resources. If you expand the default storage account, you can see the containers on the storage account. The default storage account and the default container are marked. You can also right-click any of the containers to view the contents:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci6.googleusercontent.com/proxy/4SCgWWbH8GeyW-gsLBAmhz2-4pOuh21tuezDrn01oLN70c50kaFjUCzWfhTo8dXKZ4lKYqPGt8iKNJMxHjCe6Mptdae_q5ZLKxm_RDgyHOqRW_jtgs3ibgKMp8A8SIQE-g=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145501/1/download%20(23).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now let’s run a Hive Query. Basically, Hive is a data warehouse infrastructure built on Hadoop for providing data summarization, queries, and analysis. And HDInsight Tools for Visual Studio supports running Hive queries from Visual Studio.</p>
+
+<p>It is time consuming to test Hive script against an HDInsight cluster. It could take several minutes or more. HDInsight Tools for Visual Studio is capable of validating Hive script locally without connecting to a live cluster.</p>
+
+<p>HDInsight Tools for Visual Studio also enables users to see what’s inside the Hive job by collecting and surfacing the YARN logs of certain Hive jobs.Let’s see the Hive Sample Data. Actually all HDInsight clusters come with a sample Hive table called&nbsp;<strong>hivesampletable</strong>. We'll use this table to show how to list Hive tables, view the table schemas, and list the rows in the Hive table:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci5.googleusercontent.com/proxy/5gaDxv0BnBFbtuOVLFYpRZpwwBPint8gufMIVUsn9EqbLZkkv01Qyu4bil9nsPV1y0hL8MJx48AiaRyDgJEZnqxzVsthwqa68GuwIAG0E7j_QmeUa7xZAGBDQm81bAZDBw=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145503/1/download%20(24).png" alt=" " loading="lazy"></figure></div>
+
+<p>Simply right-click&nbsp;<strong>hivesampletable</strong>, and then click&nbsp;<strong>View Top 100 Rows</strong>&nbsp;to list the rows. It is equivalent to running the following Hive query using Hive ODBC driver: SELECT * FROM hivesampletable LIMIT 100.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/EXP_H7_i47WYT8j4y7oKvJw10qyJM3E156SIbgY7S-ac90zgdIlzam4yHR0WIEmMex9wiAM63FgxaXxg5M76H9tntFsKkLL3k7pI3muUhVm1hV_mNksmxdO0XbGaKhlOPg=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145504/1/download%20(25).png" alt=" " loading="lazy"></figure></div>
+
+<p>Further you can customize the row count:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci5.googleusercontent.com/proxy/4A5tS-i4rWeRuOehM1qd8PQNrmP5gN_ihBE-jJQybZxdvQPBF5XsrISBUVrInAMmJML3__zqV3GCcJDosgQjKyGvlmK8teT9oZ_l7LaJfxc5meJb-OXKMyNVj-rpHXPciw=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145505/1/download%20(26).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now let’s create Hive tables. Like before, you can use either the GUI to create a Hive table or use Hive queries.</p>
+
+<p>In the Server Explorer, simply go to Hive Databases, then right-click&nbsp;<strong>default</strong>, and click&nbsp;<strong>Create Table</strong>;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/_G1IYW57RwLEaDwwfP4coAd1fRmgamCkl0NIpyAY37u0PTB2amNt0ayqc874EhU2cAQb3EduqptS5J3u409iloWjZptp01ncZceRX7aDJJRoUxYSefVSJ9p_3XvniJYG8A=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145506/1/download%20(27).png" alt=" " loading="lazy"></figure></div>
+
+<p>And simply configure the table and click&nbsp;<strong>Create Table&nbsp;</strong>to submit the job to create the new Hive table:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci4.googleusercontent.com/proxy/k1j9iOce5J8vOOivW_jbnzO16VfaSCHRP1rM9ZHr8MOdt7lYKet9UCUrQeTyPWkRAQC6530A19TSzXxnagMKI9skDQjO_xOPn-71Az1r_Iu0EvBsx5CKCkhpKv8HwEVS_w=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145507/1/download%20(28).png" alt=" " loading="lazy"></figure></div>
+
+<p>So, in order to Validate and run Hive queries, there are two ways to create and run Hive queries:</p>
+
+<ol><li>Create ad-hoc queries</li><li>Create a Hive application</li><li><strong>Create Ad-Hoc queries:</strong></li></ol>
+
+<ol><li>Simply right-click the cluster where you want to run the query, and then click Write a Hive Query.</li><li>Enter the Hive queries. Notice the Hive editor also supports IntelliSense. HDInsight Tools for Visual Studio supports loading the remote metadata when you are editing your Hive script. For example, when you type "SELECT * FROM", the IntelliSense lists all the suggested table names. When a table name is specified, the column names are listed by the IntelliSense. The tool supports almost all Hive DML statements, subqueries, and the built-in UDFs.</li></ol>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/Nu8KpWoKTpZEICryUBy0au91Ktr4Y7P08r3O0sOKqZOGtsz1zxqw3qOdtQdB9mJ9h0z2MEr4GbHjoEGvA5YPCtdmciWveUUSGAAS7xYW1MK8dJjF1i_6RYVf_bSmnb1JdQ=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145508/1/download%20(29).png" alt=" " loading="lazy"></figure></div>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci4.googleusercontent.com/proxy/JeAPPgdteweOHN61Gi3FdqLN8WLqAEmduHdo88EhmXwV0n7DWUNzpMAqd6ilsW3nM_73ndiuIglI3oyHHCqLqR-o8Au4hKcP2Wo_MnlCF6OwjHAW2km8jH261f1j3IJrRg=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145511/1/download%20(30).png" alt=" " loading="lazy"></figure></div>
+
+<p>Perhaps only the metadata of the clusters that is selected in HDInsight Toolbar will be suggested.</p>
+
+<ol><li>(Optional): Click Validate Script to check the script syntax errors,</li></ol>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci4.googleusercontent.com/proxy/hoK_4hX1exWSLHnUNGURZU13fNVJKJ_h59kSb42ivJMRBSpM7Hs8r-aF_UTJaRnDbPnci9ELdimWHXVkXuAIArEn2Tre9KFkp0Go1Q2YSX1dr5zd6UNrsoiONOABISk8-g=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145512/1/download%20(31).png" alt=" " loading="lazy"></figure></div>
+
+<p>Click Submit or Submit (Advanced). With the advanced submit option, you'll configure Job Name, Arguments, Additional Configurations, and Status Directory for the script:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/VA5UshyATKL8htTz1lc8KGaH0kxenUZZ-bG_QhBdLYBg24fu2dVe5fE7tbDr9Zhou6_JqjL772anc6MPjRiTYhzRf-VOtw0V0vC47JDaGzINO4kLeN8gcX9WMaUr7aCBdA=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145513/1/download%20(32).png" alt=" " loading="lazy"></figure></div>
+
+<p>After you submit the job, you see a&nbsp;<strong>Hive Job Summary&nbsp;</strong>window,</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci5.googleusercontent.com/proxy/RVKO5PRkDf9jXs4VmpibXuRmGkJzbdz3nSN6NRRqSEliPo2Jc14s90GxF7xPu8L8tEDO1lZtYvGrR4C3SMP5xKOUzGTd199-WVgmuuGj1V6T65avR6U2xud7GdyZpwKpWw=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145514/1/download%20(33).png" alt=" " loading="lazy"></figure></div>
+
+<ol><li>Use the Refresh button to update the status until the job status changes to completed. Simply click the links at the bottom to see the following: Job Query, Job Output, Job log, or Yarn log.</li><li><strong>Create a Hive application:</strong></li></ol>
+
+<p>Now simply create a Hive Application Project in Visual Studio by selecting HDInsight in Project&nbsp;<strong>Templates</strong>:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/WC5l50-ryCC-nVXufWLzaHu6EURO7J8Q0jO32S-lVzXH6uXnCI3JQrycLR4BZP48w5Kych9q6xmU4T4B6i0YkUQy3aaIg-Pns84jm1hUscld4EO9FgjZVhfFJK-AsK8VeA=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145515/1/download%20(34).png" alt=" " loading="lazy"></figure></div>
+
+<p>And in Script.hql simply add queries and then to validate the Hive script, you can click the Validate Script button, or right-click the script in the Hive editor, and then click Validate Script from the context menu:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci6.googleusercontent.com/proxy/Ixw7DyqpKTouomVauVDNhCIVd0J1SBbcoktwpiGT1vu1M4FY3VXEsUcArRl6HvF_LNBZBJt2HqhZi2kYzxsQ5vn9zMlY3M7NgBjhKKVblP11kNPNH1SnX0bpHZUkBi2fCA=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145516/1/download%20(35).png" alt=" " loading="lazy"></figure></div>
+
+<p>See, how simple was that.</p>
+
+<p>Now let’s View Hive jobs. You can view job queries, job output, job logs, and Yarn logs for Hive jobs.</p>
+
+<p>The most recent release of the tool allows you to see what’s inside your Hive jobs by collecting and surfacing YARN logs. A YARN log can help you investigating performance issues.</p>
+
+<p>So, to view Hive jobs simply right-click on HDInsight cluster, and then click View Jobs. You'll see a list of the Hive jobs that ran on the cluster.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci6.googleusercontent.com/proxy/UVP2X5cNrT8hLOrye3rCgmOcoZzeIDfcgvs5fME9vewYfCq_L4PIMAxl5zNNSOV-8IKiVxnOH-A_pX4UZZZSByj5QXnxU2kksPzhsYHEEQmlYa_TRP_orgR8x86SEwlo_w=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145517/1/download%20(36).png" alt=" " loading="lazy"></figure></div>
+
+<p>Now click a job in the job list to select it, and then use the Hive Job Summary window to open Job Query, Job Output, Job Log, or Yarn log:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://ci3.googleusercontent.com/proxy/lpC4HBBhe38eCGQrs13BNYuZ-OXvBU74EqgxBApsx4y0LBrEbGx5HR03ASy1dYltFd9NbTr5VhTbUAnilSWzMoPHCYZd7DOdpHCSO8xnx5erPbrifSBKzRcvF5zDA7FoSA=s0-d-e1-ft#https://code.msdn.microsoft.com/site/view/file/145518/1/download%20(37).png" alt=" " loading="lazy"></figure></div>
+
+<p>Further there are a lot of other features Visual Studio Tools provide for Hive Query.<br></p>
+
+<p>You can see how simple it was to play with HDInsight. But behind this all magic its Microsoft Azure which control everything and user can perform their task in just few clicks. And for the Big Data solution, HDInsight is the perfect solution by Microsoft.</p>
+
+<p>To get more hands-on experience with HDInsight Solution, please do have an eye upon the following blogs as the best reference of this blog post;</p>
+
+<ul><li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-visual-studio-tools-get-started/" target="_blank" rel="noopener noreferrer">Get started using HDInsight Hadoop Tools for Visual Studio</a></li><li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-emulator-get-started/" target="_blank" rel="noopener noreferrer">Get started with the HDInsight Emulator</a></li><li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-develop-deploy-streaming-jobs/" target="_blank" rel="noopener noreferrer">Develop C# Hadoop streaming programs for HDInsight</a></li><li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-get-started/" target="_blank" rel="noopener noreferrer">Hadoop in HDInsight on Windows</a></li></ul>
+
+<p>Please do comment below to share your best practice.</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/jumpstart-into-big-data-with-hdinsight/&text=JumpStart Into Big Data With HDInsight" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/jumpstart-into-big-data-with-hdinsight/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/jumpstart-into-big-data-with-hdinsight/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=JumpStart Into Big Data With HDInsight%20https://www.justsajid.com/posts/jumpstart-into-big-data-with-hdinsight/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/up-running-with-big-data/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/01/0-2-3.jpg" alt="Up &amp; Running with Big Data" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 10:36:20">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/up-running-with-big-data/">Up &amp; Running with Big Data</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/linkedin-microsoft-to-acquire-linkedin-for-26-2-billion/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">LinkedIn: Microsoft to Acquire LinkedIn for $26.2 Billion</span>
+      </a>
+    <a href="../../posts/jumpstart-with-xamarin/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">JumpStart with XAMARIN</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Big Data</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/up-running-with-big-data/">Up &amp; Running with Big Data</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

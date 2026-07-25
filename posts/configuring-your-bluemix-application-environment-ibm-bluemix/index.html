@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Configuring Your Bluemix Application Environment | IBM Bluemix | justSajid</title>
+  <meta name="description" content="Configuring Your Bluemix Application Environment | IBM Bluemix — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/configuring-your-bluemix-application-environment-ibm-bluemix/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Configuring Your Bluemix Application Environment | IBM Bluemix | justSajid">
+  <meta property="og:description" content="Configuring Your Bluemix Application Environment | IBM Bluemix — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/configuring-your-bluemix-application-environment-ibm-bluemix/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2017/02/43.png">
+  <meta property="article:published_time" content="2017-02-10T23:02:00Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Configuring Your Bluemix Application Environment | IBM Bluemix | justSajid">
+  <meta name="twitter:description" content="Configuring Your Bluemix Application Environment | IBM Bluemix — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2017/02/43.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2017/02/43.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Configuring Your Bluemix Application Environment | IBM Bluemix</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2017-02-10 23:02:00" itemprop="datePublished">Published February 10, 2017</time></span>
+      <span class="meta-category">in <a href="../../categories/ibmcloud/" class="cat-link">IBM Cloud</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">39 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<p>If we have a better understanding of what Bluemix can offer, we can walk through the process of provisioning our first runtime and services. And see how we&nbsp;can get started coding and building out our app using the DevOps Services. For this module, we will need to have signed up for your Bluemix account, and a free DevOps Services account.</p>
+
+<h1>Provision Node.js Runtime</h1>
+
+<p>To get started provisioning our first runtime, log into your Bluemix dashboard;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-5CnaOG2hCa8/WJf0W4LXRqI/AAAAAAAAAyE/mOkUuGlxPEAsvtXKc4kdULaxyp8A7suDQCK4B/s1600/36.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Once logged in, you can click Create App under the Compute Category.</p>
+
+<p>Simply go to add New Service;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-fdWrAcjh0uQ/WJf0W4RoFCI/AAAAAAAAA14/tRjOwnLY70UsSbbd4DnaDIUvGORCL_DgACK4B/s1600/37.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Select Web when prompted, and from here you will be presented with the runtimes available. We want to selected SDK for Node.js and click Continue when prompted;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-az0ITB0TMH0/WJloDYLXqmI/AAAAAAAAA6A/rTkR_EOzvCEOqw7jTp3kebJRiokw1xaPACK4B/s1600/38a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>For our app name we are using Insights App and click finish.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-YNZCGs7E0xA/WJlpVFh-JOI/AAAAAAAAA6U/hZuxUWMOGAUpAB2NrhS5S2InyZhhJjGWQCK4B/s1600/39a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Bluemix will now run through the process of staging our application. Staging is now complete and our app is running under the host name provided. We can click on the host name and you will see we're presented with the holding page for our Node.js starter application;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-d2DOryiEb68/WJf0WwN7QXI/AAAAAAAAAxY/J4y3v9WM9bgKbDMqfSKFxaccYQLXltHBwCK4B/s1600/40.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Before we continue, we will first return to the dashboard. You can now see our newly provisioned application as shown;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-X2p9rO43ub8/WJf0W_5n5rI/AAAAAAAAA1Y/MUZ_lvDOvzAJRR4awf1Mmbi22yRQtPizQCK4B/s1600/41.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>As we only selected a runtime, we don't see any services listed just yet. From the dashboard, you can quickly interact with your apps to check health status. You can see that our app is running, and you can click on the cog at the top right of the tile to stop, start, restart, rename, and delete our app;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-oo1-fU4QJWw/WJf0W6OGnxI/AAAAAAAAA2s/X-P_t9St30khPF-KjyT9Ey6EL559HdwyQCK4B/s1600/42.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>You can also modify the roots for your application here. You can open URL to link directly to your application, but for now, to return to the application overview page, simply click on the title.</p>
+
+<p>The application overview page gives access to some useful information and features. At the top, you can see the resource configuration for the application. You can see we have one instance with 256 megabytes of RAM per instance;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-I77eCxpS8wI/WJlwaOOevoI/AAAAAAAAA6o/TP6zTzUA1GQ6Ouin_riDJpCJzUAJXFQrgCK4B/s1600/43a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>You can increase these, and click Save to allocate these resources to your application. For now, we will click Reset. On the right-hand side, we have our Application Health. You can see our application is running and we have the option to restart or stop our application. If you've created a small prototype application that doesn't need to be running all the time, you may want to stop the app when you're not using it so you're not billed for something not needed. Below is your Activity Log and at the bottom, a link to the Cost Estimator Total. In the middle of the page, we have options to add or provise a new service and this will allow you to access the catalog or you can bind to an existing service you have already provisioned. At the bottom you can also mobile-enable your application.</p>
+
+<h1>Configure DevOps Services</h1>
+
+<p>To start modifying the code for our application, we can use DevOps Services. You can work with your app's code in many ways. For example, with auto-deploy, you can modify the code that runs in your app by pushing changes to the Git Repository. You can auto-deploy your code if you use the Build and Deploy capabilities of DevOps Services. To enable auto-deploy from your Application Overview page, click Add Git;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-qwC6vZw5O4Q/WJf0XIHLxnI/AAAAAAAAAvQ/Cn5QwU5o7lE5PS4rmRMXqTkVsokeCC5swCK4B/s1600/43.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>This will allow us to create a Git Repository and populate it with the starter app code;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-6ItRhk5UcVw/WJf0W6q8ecI/AAAAAAAAAvg/Eh6fkpJ745IcNymau1g4Ztq9hH37TeKkwCK4B/s1600/44.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We can click Continue and you will see the Git Repository has now been created and it will be configured with the starter app application code;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-Pp7kvhEFSYo/WJf0W-ioF0I/AAAAAAAAAzs/zuRjHKvgukUxVm2YETmhxq4fCMHmxqP3gCK4B/s1600/45.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We can now click Close and you will see our Git URL is now available;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/--v50GzANBv4/WJf0XNGVNkI/AAAAAAAAAuY/uUz2yILaa7YIINb1C8rGXzeArC4xF8_LQCK4B/s1600/46.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we click Edit Code it will launch the WebIDE and we will do this now. Our browser has now loaded the WebIDE located at hub.jazz.net;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/--VEvukYuwR8/WJlzZm5EJtI/AAAAAAAAA60/Rijyii7xTSUpL-tTKj24zEU5hFEzKpj3wCK4B/s1600/46a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>The integrated WebIDE is based on the Eclipse Orion open-source project. It enables you to edit files with syntax caller and support for multiple languages including HTML, CSS, JavaScript, Ruby, and Python. Some languages, such as JavaScript, also have support for syntax checking and code completion. Both for standard language constructs and for the services that Bluemix provides. Along the top we have our Main Menu. Next we have our Run Bar. Here you can see the state of your deployed app, you can stop, start, and deploy your app, open the dashboard and view it's log or if you're developing a Node.js app, the Run Bar contains additional icons for Live Edit Mode, where you can quickly restart the app and open debugging tools. We also have links to our add-on planning tools and finally our Build and Deploy, where we can access our continuous delivery pipeline. On the left is our File Explorer and at the far left are links to features such as the Git Repository, Applications, and Settings. If we next open a file, let's say App.js, using the File Explorer, you can see the code file opens on the right-hand side;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-h2fX4KTVRM4/WJf0XIzeuoI/AAAAAAAAAsg/MW8yxyFjdhM6hrV5IsqyOfEy_K66PLz6ACK4B/s1600/47.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We have the ability to make changes directly in our browser. We can also use intellisense during code. Any changes made will be saved automatically or you can use File and Save from the Main Menu.</p>
+
+<p>Next if we expand the public folder from your File Explorer, we can edit the Index.html page and publish this change live;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-8Zl9sUd0Ikg/WJf0XCdCZzI/AAAAAAAAAuM/RGOD3gj6Zbw0H0wGfHMiBEZ3jpeZuMtDgCK4B/s1600/48.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now to publish our change we will click on the Git Repository icon at the far left. Under our Working Directory we will see changes that have been modified and we can see our Index.HTML page is listed. If we tick the checkbox beside the file, we can enter a commit message, Changed Header Title, and commit our change. Now on the left-hand side you can see we have our Changed Header Title commit is outgoing;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-WsTYydvXQtk/WJf0W3i2JfI/AAAAAAAAAxc/7e8IemOjbQs43weV73cWkUVrleJDy-7eACK4B/s1600/49.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Finally, we just need to click Push to publish this change and you can see along the top that it said our push has succeeded;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-frVs3YGFnTw/WJf0WzMZiFI/AAAAAAAAAwM/j_q297v4LnkGaX7t0kG_1yw7sdk7ykMMgCK4B/s1600/50.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>To verify that your code was deployed, we can now click on Build and Deploy. We have now loaded our delivery pipeline and as you can see the Build Stage has passed successfully, along with the Deploy Stage. To view our changes, we can simply click on the link within the last execution result and you can see our changes have now been published. Our header has been updated to Insights App. You have now walked through the process of creating and running a Node.js Web App on Bluemix. You created a Git repository, populated with some example code, and automatically deployed the app. You also changed your code, and pushed the changes to the Git repository by using the WebIDE, and finally, automatically built and deployed your changes to production.</p>
+
+<p>Now that we have seen how we can use the WebIDE. to modify our application code directly in the browser, let's look at how we can also clone our repository to our local development environment and use our favorite IDE to make changes. There are plugins for business studio in Eclipse to support this, however we will walk through the process of cloning our code using the GIT command line codes and making changes using the Sublime Text IDE. We'll then push changes back to our GIT repository on Bluemix. Back on our Node.js Application Overview page, we now want to copy the Git URL that was generated when we created our repository.</p>
+
+<p>To clone this to your local machine we can right-click on the URL and copy the link address. We will be developing the Node.js part of our application on a Windows environment that has both Node.js and Git installed. However, the process will be similar if you wish to use Linux or MAC as your development environment.</p>
+
+<p>From your development environment you can also use Command Prompt or Terminal to clone our repository.</p>
+
+<p>(we can use the Git command git clone followed by the address we copied from Bluemix. We will be prompted for the login credentials for DevOps Services. We can now see our repository has successfully been cloned.)</p>
+
+<p>We can use the command prompt to navigate to our new application and you can see the files that have been cloned to our local environment.</p>
+
+<p>For now, let’s do clone the project repository from Eclipse. Simply go to Eclipse Welcome Window if you are new to Eclipse. From there, simply select the option of Checkout Projects from Git;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-JqUzxuBr7yc/WJf0XGi7nKI/AAAAAAAAArs/JpGXYpXw1lo0Uznt2bksFWv5OK0C7h1SACK4B/s1600/53.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now simply select the Clone URI and click Next;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-aQor8PZHn84/WJf0WwzpfQI/AAAAAAAAA1o/eIVgI81FzFo6sGi0rVwP-xoCilAaWcO3QCK4B/s1600/54.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now simply enter the URI and Credentials;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-NxR_ZUfuqLc/WJf0W5xZQUI/AAAAAAAAAzE/PSlpDNIw1K0qhMGmh09vNqInhZPgIxeogCK4B/s1600/55.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And it would take a time and take you to repository which you want to select. Further it will ask you for directory and after a moment it will ask you where you want to import your project;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-5U4CDuWMwZM/WJf0W7yvQKI/AAAAAAAAA04/1QkJUUxCUCItyxCjuxYpdwgsRhG0JkyrwCK4B/s1600/56.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And when everything is set, simply click the Finish Cloning;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-06BcPgYRYkQ/WJf0WxIuG0I/AAAAAAAAA0s/5ibeDcE6CoE5TpYqZdXTGapGVe5K--tTwCK4B/s1600/57.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And Finally you have your repository cloned and open in Eclipse;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/--_asHe8mIeU/WJf0W9geBcI/AAAAAAAAAwc/FntlmEi3s1AAa9qP27WJ-6AGWJazpGQ-gCK4B/s1600/58.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now simply to do make the changes, open the index.html file in an Eclipse editor and make appropriate changes as per your need;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-7HUa6vF651k/WJl3xSwTB3I/AAAAAAAAA7A/kt2Dl7kw3SIZxFfvCLU0T6_tXS_UEhYRQCK4B/s1600/58a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now simply save the changes whatever you need to done and simply commit and push the stuff to git. For that simply right click the project and go to Team&gt;Commit. Now you will see the Git Staging Tab will appear. Simply add a Commit Message and click the Commit and Push button;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-2CTTY_oJSvg/WJf0W0rGhmI/AAAAAAAAA1I/ujcHErHvZ9Ir3WbdbrlVp559NLKF9BLBgCK4B/s1600/59.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now simply right Unstaged Changes and conform it. And when everything is done simply click Commit and Push Button;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-wJR2v4YSjH4/WJf0WwiFI-I/AAAAAAAAAxk/gFeST2yCt5Y_1TDuOmbZFkdfo8IoOavmQCK4B/s1600/60.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now process will take its time and after it done you will see the result dialog;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-NOxIWJUXem4/WJf0W3_2NCI/AAAAAAAAA0c/Ra6nGf_pm2oXnGe06Dpt8Y4-LdjR7vCewCK4B/s1600/61.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now, to assure the pushed happened, simply go to the dashboard of the portal and if you go to the app URL you can see the changes accord;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-6z7TqnCyP7A/WJf0W_5ve2I/AAAAAAAAAyU/ElhS59QsV8o9P2s6ITgfKfw5GpIsqb8MQCK4B/s1600/62.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now if you go to the active branch of Git, you can see your changes history over there;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-2NkiHAQq3SA/WJl42w4a28I/AAAAAAAAA7M/19W24qQ4hZQOCVxQNgl99QtQKNCPBGQowCK4B/s1600/62a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So the change has been detected by the DevOps Services and it will stop and restart our application deployed with the new changes. If we now open our app, we can see our change has been updated, Insights App Local Git Change, which we modified from our local development enviroment and the change has been published live. This is because the Build and Deploy pipeline is configured to automatically detect any changes pushed to Git and rebuild and deploy the application. If we open our WebIDE again by clicking Edit Code and have a look at the Build and Deploy pipeline, we can see there are two steps configured, the Build Stage and the Deploy Stage. If we have a look at the configuration for the Build Stage by clicking on the cog and Configure Stage onto the Input tab, we can see the stage trigger runs when a change is pushed to Git. So, as soon as a change is detected within the Git repository the Build Stage will automatically run. Under the Deploy Stage configuration, under the Input tab, again we can see there is a trigger that will automatically run when the previous stage is completed, in this case the Build Stage. This is a very basic Build pipeline, however, you can add the stages necessary for your Build pipeline, including execution of your tests.</p>
+
+<h1>Provision Node-RED Starter</h1>
+
+<p>You're now ready to provision our Node-RED boilerplate and have a look at creating some basic workflows. From our dashboard, to access the boilerplates we can go to Compute Category and go to add new runtimes or boiler points. From there, in Boilerplates, simply select the Node-RED Starter;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-Md8OfVmu9QM/WJf0XFrM4FI/AAAAAAAAAu4/o3ijnrIGIeg__U48I_NVWK-vbmoHkgcswCK4B/s1600/63.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now simply enter your credentials and click Create to begin staging the boilerplate app.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-sqk99HHkD9s/WJf0XOCOJaI/AAAAAAAAAsY/AJ4x6_nSh3QqGijg3zFQV0lzrh_rh0Q0ACK4B/s1600/64.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Staging is now complete and the app is running under the host name provided;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-1yg-5WVabnU/WJf0XQzg1FI/AAAAAAAAAsk/FV2voDk_12sKtELhHp74-TOGLA5B6-FPwCK4B/s1600/65.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<h1>First Look at Node-RED Workflows</h1>
+
+<p>To launch our Node-RED application we can simply click on the URL. We are now on the Node-RED landing page and the first thing you will notice is the description, A visual tool for wiring the Internet of Things;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-8iYBLd7xGb4/WJf0Xh6xfJI/AAAAAAAAAtE/DGW3hmO6MVEqwoojpNXnDfaFQDojRzFpgCK4B/s1600/66.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Node-RED is a fantastic entry point for exploring some of the services available on IBM Bluemix and trying out or brainstorming ideas very quickly without having to worry about any plumbing code. This is just one of many different ways that you can leverage and interact with Bluemix and others will be demonstrated throughout this course.</p>
+
+<p>To start building our first workflow, we can click on Go to your Node-RED flow editor;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-rg3Em7i_xNo/WJf0W_NpTjI/AAAAAAAAA0o/ylPD0oJBE8UVoLYu64JYgmeOlwwetXrIQCK4B/s1600/67.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now that our editor has loaded I'm just going to highlight some of the key features;</p>
+
+<ul><li>In the center we have our workspace, this is where we will drag and configure nodes.</li><li>On the right we have tabs for info on a selected node or debug, where we can output messages from our workflows or identify issues.</li><li>At the top we have a button which will allow us to deploy our workflows when they are ready.</li><li>And finally, on the left-hand side, we have the series of nodes available. We have nodes for input, which will allow us to capture data into our workflows. This may be for a HTTP request, websockets, or even from devices on censors when building an IOT application.</li></ul>
+
+<p>There are nodes to push data back out from our workflow. Functions to manipulate data. We have social, storage, analysis, and finally IBM watts and nodes. We will cover these in more detail throughout the course.</p>
+
+<p>To get started building our first basic workflow we can simply click and drag a node. We will start with the inject node, click and drag onto the workspace;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-rm4BxvlgtT8/WJf0XBJ1oSI/AAAAAAAAAvU/FZ-_UG2OXPoP5CPsNIsnboR_fa0HI7m1QCK4B/s1600/68.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>The inject node is very useful if you just want to test the flow of data through any connected nodes.</p>
+
+<p>Next, we will provide an output and in this case we will select debug, click and drag;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-1FXcF6zVg6E/WJf0XAcGbgI/AAAAAAAAAro/EcXyznlmOXM6ZOA3jQ4KQTZ9zh2BrduFQCK4B/s1600/69.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Debug is very useful, as it will display any message data that is sent to the node.</p>
+
+<p>You can see the little blue icon at the top of each of the nodes and this denotes a change has been made to the workflow but has not yet been deployed. To link two nodes together, you can click on the little connector and drag between two nodes;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-4PJZzi8S5dU/WJf0W76q9_I/AAAAAAAAA2I/AyBp-MzKjxMXQSIrv0_b1n03tAwezJunwCK4B/s1600/70.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>You can see these have now been connected. To test our workflow we can click on the button at the left-hand side of the inject node. This will push a timestamp into our workflow and the debug node will then output the message to the debug tab. Before we can use our workflow, we must first Deploy. We can do this by clicking the Deploy button at the top right of the page. You can see the message it has been successfully deployed;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-CEJ_4_ZkVxM/WJf0W1OYykI/AAAAAAAAAx4/v9yACLTg7F4xEVLHEFB2y9SMxYuxqAQ4ACK4B/s1600/70a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And now if I click on the button on the left-hand side you can see a timestamp has been injected and if we look at the debug you can see the timestamp has been output;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-dE31BppMQ8E/WJf0W3s6UoI/AAAAAAAAA0M/7E_kFJ-gbpsXBxTGlLaFjEG7ZPA5WfE3ACK4B/s1600/70b.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So the data has gone from the first node successfully into the debug node. Now that we have seen a very basic workflow let's build upon this to create a workflow that will hopefully give you a better idea of the par and flexibility Node-RED can offer and why I feel it is such a great tool to use when trying out or experimenting with services or brainstorming or prototyping your ideas on Bluemix. The flow will allow us to capture information from Twitter, store it into a database, and make the results available for an HTTP request.</p>
+
+<p>First, empty your workspace along with Debug window to build our new workflow.</p>
+
+<p>To start building our next workflow, under our nodes scroll down to the social category. Here you can see we have nodes for twitter and e-mail. We want to use the twitter-n node, which can be used to search Twitter. Click and drag onto the workspace;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-vIoBbcb0afw/WJf0W99TraI/AAAAAAAAAv8/4KilamIpfTA_AR6RR0hH4DhnoRvkz6P9gCK4B/s1600/71.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Once the node has been added you will notice, along with the blue circle icon, there is also a red triangle icon. This means that configuration is required before we can deploy the workflow. Double-click on the node and you will see it requires Twitter credentials along with some options on what we want to scan Twitter for;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-WgaUTRRFiS0/WJf0WwytZHI/AAAAAAAAA0I/WtYUp9BfcYU4BMsrMSnLa3tzxfF-MQwxwCK4B/s1600/71a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>To configure the Twitter credentials, click the pencil icon to the right of the box and click here to authenticate with Twitter. From here you can add the Twitter account you want to use for Bluemix. Click to authorize the app and once authenticated you will be prompted to close the window. You will now see the Twitter ID is displayed. We can click add and next we will provide the details of what we want to scan Twitter for. We will you the hashtag, #justSajid We will give it a friendly name, Scan Tweets, and click Done;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-vwWe-wB3Iyo/WJf0W2rt25I/AAAAAAAAAz4/Z4O72TDXbfkPj38y2U4tpIAzI5UEVyz0wCK4B/s1600/71b.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>You will now see the red triangle icon has disappeared.</p>
+
+<p>Next, we want to store the tweets to a database and we will use Cloudant NoSQL database for this. On the nodes from the left, this time we want to look under storage. You can see we have options for mongodb, cloudant, dashDB, and others. In this case we want to use the cloudant out node, which will allow us to store information into Cloudant. We can click and drag on to the workspace;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-Lk-LzQfJa7Q/WJf0W5imRiI/AAAAAAAAAxI/LH02o4RpZl8dI0kNOz1aQfp2JpXtMnTGACK4B/s1600/72.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And again, you can see the red triangle denoting it needs some configuration. We can double click on the node and in this case we want to select the service.</p>
+
+<p>In our case it will be Insights workflows Cloudant NoSQL database and this was provisioned when we provisioned the Node-RED boilerplate application. Next, we want to provide the database name. We will use tweets and ensure this is in all lowercase. We have the option of insert or remove. We want to insert data. We can select, Only store the msg-payload object, and we will go into more details on the message object in the next module. Finally, we will give it a name, Save Tweets, and click Done;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-zTgPJMb4nDw/WJf0W8YxX5I/AAAAAAAAA0Y/bKOxyjU-6nseEniDtjgS9_hp0zYKNIXQACK4B/s1600/73.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now, we just need to link these two nodes together and again we can click on the left of the Scan Tweets node, drag with our mouse to the right of the Save Tweets node;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-q6i3RQiNCSM/WJf0W3qC5SI/AAAAAAAAAxo/G6M_lGYir3sKNYtEdQQqbOlDKkQSjo_OwCK4B/s1600/74.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We can click Deploy, Successfully Deployed and you can see the blue icons at the top right are now gone. We could just test this workflow as it is, however I'm going to add the debug node as well.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-sEgWUMbPVBc/WJf0W51UqdI/AAAAAAAAAzY/HkAa_nJqEPUzNFC5W6FXwQcR-kaIZ81rQCK4B/s1600/75.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>This is very useful when you want to see what data is flowing through your workflows. And again, I will deploy this.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-9xVpxuGlOgw/WJf0W-wILEI/AAAAAAAAAzo/V15QG85N8pAN5hJE95OvUpbnL8vf8mQKACK4B/s1600/76.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now, let's post a Tweet using our hashtag. Hello Bluemix and our hashtag was #justSajid. If I now click Tweet, you can see the Tweet was posted and if we return to our Node-RED flow editor, have a look at the debug, you can see the Tweet was picked up within the debug;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-Vgko0D43wjU/WJf0W39O5AI/AAAAAAAAArE/ZmHFauzOQ5Ifg7SlUpALPkRTWaTHBRetQCK4B/s1600/77.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>To check the Tweet was saved, we can go into our Bluemix dashboard, find the Cloudant service, and check for the data directly in the Cloudant database. But an even easier way is to use the HTTP notes to create a simple REST API. To do this we will drag on the http-n node from the input category;</p>
+
+<figure class="wp-block-image"><img src="https://1.bp.blogspot.com/-ewHx6tL74kg/WJf0W-jAtBI/AAAAAAAAAx0/hpBHduny9vIQGTk62VoV_0FpsS2fYxRQgCK4B/s1600/78.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure>
+
+<p>We will double-click to configure, add the URL, get tweets, and add a friendly name.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-lACJ-do3hFM/WJf0WxrPMeI/AAAAAAAAA08/UH1oTNAoQSYo59gfWWSHy2Pvtqh6iAvpQCK4B/s1600/79.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Next, we want to drag on the Cloudant-n node;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-5zQBYa6NeyA/WJf0W51nRDI/AAAAAAAAAwI/6vVlatEKUuILVMNv6Y8I-q7itDKoln9BwCK4B/s1600/80.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Again, we can configure it. We can select our service. The database name, which we provided as tweets. And we will return all documents under the search-by. Finally, we will give it a name, get tweets from db, and click okay;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-WgoXNi1OivA/WJf0W4ToCtI/AAAAAAAAAz8/T5vWccxA_agR7_bI5FD3N2Y-yiL36ht9QCK4B/s1600/81.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Because we are using the http input node, we must always return a response back to the browser. For this we will use the http response under the output category;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-3OBr8xd3yNY/WJf0WyILYII/AAAAAAAAAw4/ahsTQmDxpVwfB74uikmlxxwITBu-QNDCACK4B/s1600/82.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We can link this to our cloudant node. Click Deploy;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-US4VOtl7cJE/WJf0Wx409sI/AAAAAAAAAxM/OklScEzSglIPsufBAN6nW31UJygiueR_ACK4B/s1600/83.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And we can now test our new flow. To do this we can copy our host name and the (mumbles) URL we had specified when configuring our node;</p>
+
+<p>You can see the Tweet we had posted, Hello Bulemix, is now avilable under our API endpoint. Hopefully this helps give you an idea of how useful Node-RED is for building applications on Bluemix. In the next module we will be using the skills we have learned so far to build a Node.js application using DevOps Services that interact with workflows on Node-RED, pull-in services such as Watson and Twitter.</p>
+
+<h1>Building Your Application: Workflows</h1>
+
+<p>We will now take a look at the application we will be building for the remainder of this course. We will start by taking a look at the workflows within this module. This will build upon the NodeRed application we presented in the previous module. In the next module, we will then look at how we can build out a client Node.js application that interacts with the workflows.</p>
+
+<ul><li>Application Architecture</li></ul>
+
+<p>We will quickly walk through the workflow our application will follow. From the Node.js application, a user can search justSajid author data stored in the JSON file. The user can see the author profile and click analyze to analyze the data. This pushes the author data to a NodeRed workflow via an HTTP post request;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-sDMbDOty8uc/WJf0W82S0WI/AAAAAAAAAw8/TH2aU8X6NFMBN7U9oB4fTzYs6F83Ro-lACK4B/s1600/85.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Within the NodeRed workflow, the data is post to a Watson service for analysis. In this case, we're using the Personality Insight Service. However, it can be any of the Watson services that have a node available. And we will show how you can use the workflow to select the desired service;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-QJN_pIwk0CI/WJf0XKcyU6I/AAAAAAAAAvA/_UZ9Py9BoNEVK7oPNdfjFF0GQhEtNO5-QCK4B/s1600/86.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>The Watson results are formatted and appended to the original message data.</p>
+
+<p>We then store the data to a Cloudant DB Database;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-aj5oTbhHCqs/WJf0XJFeKUI/AAAAAAAAAr8/wtTLO4feNAMnp04CNg-Pzc1Oy0mwInShgCK4B/s1600/87.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And the full message data is returned back to the Node.js application found on its HTTP response;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-BwOdaLP8il0/WJf0XOU25JI/AAAAAAAAAsU/5quY8cuLe0EOJThVQUlwnHPwEDYU0M-ZgCK4B/s1600/88.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Within the Node.js application, we parse the return data to display the Personality Insights results generated from Watson. We render all of the AI using angular js and a chart plugin.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-WfE2FnwoSa8/WJmVFI2fJbI/AAAAAAAAA7c/aewFrGgB7wQqdmcYMw2dQLVODETvLjytQCK4B/s1600/88a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Next, we add social media support to our application by adding a Tweet Results button to our results page and clicking the Tweet will post the URL of the results page to NodeRed, via an HTTP post request and NodeRed workflow then posts the message to Twitter, along with a hashtag, #justSaijd;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-amyeZgK9eIA/WJmVnLM2BnI/AAAAAAAAA7k/qWbT8zXAsoUJ2EExRq2xOtPSCsV4gLIbQCK4B/s1600/88b.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And we append this tweet to the original data in Cloudant DB. Finally, an HTTP get request will return all data, including the personality insights and any associated tweets for the author. Back in our Node.js application, we can update our results page to display all of the associated tweets;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-7Gh1uiDgB58/WJmV64z3ZcI/AAAAAAAAA7w/bazSP9DC5bYb40lBbLWtyhFS6S_ljaY3ACK4B/s1600/88c.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>The application we are developing is quite generic and can easily be adapted for many different use cases. For example, instead of Pluralsight authors, the data could be from an online API for pretty much any data set containing a body of content, such as publications, or the data may come from a center or device and instead of using Watson, it may use a push notification service to alert when a threshold has been reached, such as a room being too warm or too cold. This is just another example of how you may want to build out your workflow for your application.</p>
+
+<h1>Start the Node-RED Workflows</h1>
+
+<p>We will start by building the workflows needed for our application in NodeRed. Open your Bluemix dashboard and navigate to the insights workflows application we provisioned in the previous module. From our application overview page, we can click at the URL at the top to open our NodeRed application and click to continue to the NodeRed flow editor.</p>
+
+<p>Highlight the existing nodes we created in the previous module using your mouse, and click Delete to get a fresh workspace ready for our new workflow.</p>
+
+<p>The first node we want to add is an input node to capture data from our client application. We will use the HTTP input node to create an API however, you could use some of the other inputs, such as the imbiot node, if you wanted to capture data from a device or sensor.</p>
+
+<p>To get started, click and drag the HTTP input node;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-KlAu2TeqkBw/WJf0W5lNaxI/AAAAAAAAAzI/9wAtr2RZ3wU8bHi9QCJJ8fnL9f9ZvPuuwCK4B/s1600/89.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>You can see it requires some configuration so we will double click and provide a URL. Process Author, this will allow us to capture the author data from our Node.js application. The data will be in the form of a post request and we will name our node Request to Process Content;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-lETYgcJh6BI/WJf0W6EBOLI/AAAAAAAAAzc/1FG0I6H-TVIVQaH5q844pTV8y810UxD3wCK4B/s1600/90.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>To complete the HTTP request, we will want to add the HTTP response output node. When using the HTTPN node, you will always want to complete the request in this way. Finally, we will link the two nodes together. We will also add the debug node under the output and also link this to the HTTPN. The debug node is very good for getting output messages on the data that's flowing through your workflows. Finally, we can click Deploy;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-h1LUvXQ0Q34/WJf0W0gr2iI/AAAAAAAAAws/C6TmBuGjJJwE_fGossqmz8vMYWofYMuvwCK4B/s1600/91.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We are ready to test our workflow and to do this, we will use the free HTTP debugging tool, Fiddler. From Fiddler, we can compose an HTTP request to simulate our Node.js application, pushing data into our workflow. We will create a post request and URL will be comprised of our host name, justsajidappwordflows.mybluemix.net. And the URL be specified in our HTTP input node, process author;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-hntHu5b9p6M/WJf0W_tKaHI/AAAAAAAAAyo/vzxpyWCo9GYOIrK0kjcq4cXUAd4xrVHlACK4B/s1600/92.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We will want to set a header for the content type to be application JSON, and a request body, which will be some JSON data. We will provide a title, and some content;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-5dw6CTMhJvU/WJf0WyvBpGI/AAAAAAAAAy0/Opy6L1bvvr4wsBKyBMNnqFPMVeeDwOoCACK4B/s1600/93.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Finally, to test our workflow, we can click Execute. You can see we have had a 200 response, which means the request was successful and if we view the request, you can see the data has been returned to us;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-ChH0tk73qjk/WJf0W38CTMI/AAAAAAAAAy4/aSGPQ--k0ZIBaCMCu5MPAUzToyZa-BRqgCK4B/s1600/94.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we return to our workflow, this is because we have simply taken a message that was input from the request and returned it directly back to the client. If we have a look under the Debug tab, you will also see the message that was parsed in was output, this is a very simple workflow. So what we will do now is add a step to persist the data that's posted to our API to a database. To do this, navigate to the storage nodes. From here, we want to use the cloudant out node, which will allow us to store information into the Cloudant database. We can click, and drag the node into our workspace. Next, we want to link our HTTP input node to the cloudant node. You can see it also requires some configuration. We can select the service and we will use the Cloudant database that was provisioned when we provisioned the starter and we will provide a database name. Insightsdata, and make sure it's all lowecase. Finally, we want to leave the operation as insert and only store the msg.payload object. Finally, we can give it a name. Save Data, and Okay, and you can see all nodes are now configured correctly and we can click to deploy;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-o9aNsYTZHbI/WJf0W4Gx4EI/AAAAAAAAAwo/SQhqOYNAyNw5eL1rrEmbIMJ9-02yy_cwwCK4B/s1600/95.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we return to Fiddler, we can run our request again and this time, it should be stored to Cloudant. We can simply just click Execute again and you can see we had a 200 response again, which means it was successful, and within our debug, we can see the data has been output. To check if our data has been saved, we could navigate to our Bluemix dashboard, find the Cloudant service, and interrogate the data from there;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-GtzQP9BPRmI/WJf0W2W3HoI/AAAAAAAAAyY/e9HiuyroZXU2V2BHozfyB7CK6sTQadZ1wCK4B/s1600/96.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>However, we will create a simple API to return all of the data stored in Cloudant. To do this, we need three nodes. We need another HTTP input node, an HTTP response, and the cloudant in node, under the storage tab. The cloudant in node allows us to search and retrieve data from the Cloudant database. We can connect these nodes and as you can see, the HTTP input node and cloudant both need configuration;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-SlARtm_XKdU/WJmXZBTg7gI/AAAAAAAABBA/_yF1GOuQGDkyfxxPO8HiQEgCQbhyq8HBwCK4B/s1600/97.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>This time, we're going to use get as a get request, and our URL will be GetAuthorData, GetAuthorData, okay;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-0PMh2kKspuI/WJmXYgSZVBI/AAAAAAAAA8E/tUf8IY7YA4IpE4F9wDcHBCEIdNG_mL8ZwCK4B/s1600/98.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Next, we will configure Cloudant. Again, we will use the default service, our database, insightdata, and we will just return all documents for this part of the course. We will name our node Get Data;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-x3DEJwsnM7w/WJmXY7vgWlI/AAAAAAAAA8Q/NmYjGehCBJg2D2Cm-IhbrJb6jKrssBtzwCK4B/s1600/99.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And you can see all nodes are now configured correctly.</p>
+
+<figure class="wp-block-image"><img src="http://3.bp.blogspot.com/-4zvfvn_eU40/WJmXZAj7WRI/AAAAAAAAA-E/8oh1H0VEqLYM-h6ud69ejY-xoYVDDoTZACK4B/s1600/100.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure>
+
+<p>We can run Fiddler again, and this time we're going to craft a get request using the composer. So this time we will leave it as a get and we will use our host name plus the GetAuthorData URL that we specified on our HTTP input node;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-Q4BSDRQZnS0/WJmXZOpVTOI/AAAAAAAABAc/9tIrG32Zy7M8HzJLpNMJn4zrjfFxCbcpQCK4B/s1600/101.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we click Execute, you can see we have a 200 response and if we double click, we can see our JSON content has been returned. If we return back to our browser, we can also open a new tab and paste the URL into our browser and we will see the content has also been returned. You can see Cloudant has appended an ID for this new piece of data. If we return to Fiddler again, and this time, we will compose another post request, ProcessAuthor, we will send some JSON data and this time, we will send title Saved Data with some content. This is the test data. If we now click Execute, again, we can see our 200 response and if we return to our browser, we can now see we have two rows of data being returned from our Cloudant database. And we can close this tab.</p>
+
+<p>We now have a basic API to capture data, save it to a database, and make it available again via an HTTP request.</p>
+
+<h1>Add Watson Personality Insights</h1>
+
+<p>The next step will be to add some intelligence to our workflows and we can do this using the Watson services. Under the IBM_Watson nodes, at the bottom of the node list, we have all of the Watson nodes and we want to select personality insights. Again, we can click and drag it onto our workspace;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-dbyptOAv-hw/WJmXZMn2chI/AAAAAAAABAQ/L6CGfUme14sieNwpZANE6LWrnBo3tqV8wCK4B/s1600/102.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>This time, we want to delete the connectors between the cloudant node and the HTTP response node so that we can add our personality insights node. We will connect up our HTTP input node to the personality insights and the personality insights will output to our Save Data and our HTTP response;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-kMGIreXT2ZU/WJmYvhMHrnI/AAAAAAAABBU/J8o3VpoMtKMYD-rMtlfYNazMrQxLenUSwCK4B/s1600/102a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now, if we double click on personality insights, you can see a username and password are required. We need to provision the personality insight service and make it available for NodeRed before we can deploy this workflow. We will give it a name, Get Insights, and click Okay;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-fkesx2aF8X8/WJmXY7W32yI/AAAAAAAAA8I/3Ogv9zRggXUuFs8bRbOEBwcRtvdhC6K_QCK4B/s1600/103.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now, let's go on pervasing the service and get the credentials. To do this, return to your justSajidAppWordflows dashboard and from go to Connections Tab, from here simply select Connect New;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-f4M11a4XwlQ/WJmaAg_So5I/AAAAAAAABBg/zTv4MzbJC-UWy60LamXrBXnYjN0VhP0DQCK4B/s1600/103a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>This will allow us to browse the catalog. Now from All Categories, go to Watson to select a service to make available within our NodeRed workflows;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-xY3fmmw83GU/WJmaQ9Ww0cI/AAAAAAAABBo/LW7KdjG6T9U6Kqesk304eWBXgVGtw0hMACK4B/s1600/103b.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>From the catalog, we can select the Personality Insight service, we could leave the service name as is, and click Create;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-N9u29fWXAK8/WJmXZXmUhYI/AAAAAAAAA88/urGMxum27vgzaP-XxZZbqUACyTKYD0GhACK4B/s1600/104.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>This will create the service and bind it to your NodeRed application. We will be prompted to restage our application. This is required to make the service available within our workflows. We can click Restage;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-uuFuh-4UV6Q/WJmXZAHZJNI/AAAAAAAAA_8/R9mFRNMWTMcI9IlcoiDnlYOuVMACQX01wCK4B/s1600/105.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now that NodeRed is up and running again, we need to get the credentials from the Personality Insights service. To do this, return to the dashboard and at the bottom in the Connections section, you will see the number of Connections we have provisioned;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-rlT98SYTEmU/WJmXZMVeAWI/AAAAAAAAA8w/VQ93FUXRbpgf_faLDnJU0TjWH6JriSKOwCK4B/s1600/106.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We want to click on the Personality Insights and this will take us to the service. From there, simply click on ‘Service Credential’ Tab;</p>
+
+<figure class="wp-block-image"><img src="http://1.bp.blogspot.com/-UTl2x-c8Osw/WJmXZNdJbdI/AAAAAAAAA_g/I2hb4qyMSEwEhjKbcaW1cMlOwcbUKZ9CQCK4B/s1600/107.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure>
+
+<p>You can see we currently have no credentials configured. Click New Credential Button, you can give your credentials a name, and click Add;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-qPI-i7_3Wmk/WJmXZDUioAI/AAAAAAAABAs/bpECCROAoyslFG-QuRaebGm9i9yPm5lLACK4B/s1600/108.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we now return to our workflows, and double click on our Get Insights node, we are no longer prompted for credentials. And this is because it has detected we have credentials configured. We can now click Okay and click Deploy;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-8oaXCYXHrEQ/WJmXZNdpryI/AAAAAAAAA_M/jHhHgPn6tXcC-K88L3C8DTzEtrlM8w8lwCK4B/s1600/109.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We are now ready to test our workflow containing the Personality Insight service. Now let's return to Fiddler and we can rerun our post request.</p>
+
+<p>This time, we want to update our request body to include some real content. We are going to use my biography from the Pluralsight website. This is because Personality Insights will require a minimum of 100 words;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-LpYwHHamhck/WJmXZDX1N2I/AAAAAAAABAw/A0y4dluDT4YhuwFXWfC2OvUf4qCqwt33gCK4B/s1600/110.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we now click Execute, you would see we haven't got a 200 response just yet. This may be because there was an issue in the workflow. If we return to our flow editor, you can see the payload has been output because we have our debug by putting the input request;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-XLCV0LJiqHw/WJmXZPs8BYI/AAAAAAAAA-Y/0IVSBHyWDBsYwaGqNz_FO7vBCnHK321JACK4B/s1600/111.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>However, you can see there's an error. If we click on Info and select the Get Insights tab, you can see under the documentation, service requires text to be parsed into the message payload;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-lPwfYmHlbgE/WJmXZHhyhOI/AAAAAAAAA-4/pClejglkuDca0F0-1BYx8N4Et2b0ebnUACK4B/s1600/112.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>However, we are parsing a full JSON object, including our name and content. To make this work, we must add a function which strips out only the content required. From our nodes, if we drag on the function node;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-_V5zVlA0CUM/WJmXZIR2cTI/AAAAAAAABAg/zpIFIQnv7uUVNoVo84IM-JX-6zQgtlYMQCK4B/s1600/113.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And now double click, we can add the following script;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-4pgTSpf-yM8/WJmXZJsjyRI/AAAAAAAABAM/-ZAYqrQ3kvQsW-EJpWtC3Ze7qJZipymCACK4B/s1600/114.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>This will get the message payload and send it to the parsed variable. We will append the original message so that we can use it later in our workflow. We then create a variable called Output, which parses only the content and finally, we set the message payload to this content and return the message. We can now link this node up and you can see we're finding it tight for room so we can use the plus and minus icons at the bottom to increase or decrease the size of our workspace and I can just give myself a bit more room here.</p>
+
+<p>Okay, if we select on Get Insights again, we will also notice the insights data will be returned on the msg.insights property of the message. For this part of the course, what we will do is we will just modify our payload data to be returned to our HTTP response to be the insights data. We will modify this later on and build up the entire message. But for now, to demonstrate this, we will add the following code;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-0djMLvIH5mo/WJmXZEW37XI/AAAAAAAABAA/xRPZd3ZrImAiHXhEfc-56f4slXyrL_uBgCK4B/s1600/115.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We will set the message payload simply to be the msg.insights data returned from personality insights and return the message again;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-XpqAIMGhNGI/WJmXZAo6auI/AAAAAAAABBI/lMXiiW2INo0dwblDrpmKfYfUM02DyOYtACK4B/s1600/116.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We can link these up and we can see we need to deploy before we can test our workflow;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-eBkLss9ONF8/WJmXZKnYXRI/AAAAAAAAA9g/pmNHRqHUm5YhXDknlVHNVkSfvIfyuZ5BQCK4B/s1600/117.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we return to Fiddler again, and run the request one more time, we can see we now have a 200 response. If I double click on this request, you can see we have had some JSON returned, which includes the raw data from the personality insight analysis;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-H74CaY45noo/WJmXZBcRo4I/AAAAAAAAA8s/NYHd5x9VhscuLB-T8YP7WWa9xRq3PZxqwCK4B/s1600/118.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we return to our flow editor, we can see the payload object however, we no longer have an error.</p>
+
+<p>So now, we have parsed in a request, including my biography data, we have trimmed out only the content required for the personality insight service, parsed it to the service, and then returned only the personality insights service data to the HTTP response and we can see the service is actually analyzing the content and returning it. Now that we have our personality insight service, added to our workflow, we want to make a few changes to make the data ready for consuming within our Node.js application. We will add some summary information from the raw personality insights data. To do this, we want to add another function. We will add this between the existing function and the Save Data and HTTP output;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-DN3FmSVQSlE/WJmXZJhk_HI/AAAAAAAAA_I/p0uTiQi6OjI0B7eKBfhLjY7eF6t4pIhywCK4B/s1600/119.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We will connect up our nodes, and this time within this function, we will add the following script;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-8uf3haRKsq4/WJmXZE99XgI/AAAAAAAAA9k/FXD9_u33-zEtcpmNaO-pPG1gP7SHb_qfwCK4B/s1600/120.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>This script has a get big5 function, which innervates over the raw personality insights content and returns some high level percentages. We then build up our message payout again, using our content from the original message and if you remember in the first function, we assigned msg.original to the payload request from the start of the workflow and we're also going to add a PISummary, which is our get big5 summary data and finally, we will append the raw msg.insights data from the personality insights service to personalityInsightsRaw. We can now see our payload building up very well. However, one thing you may notice is that we are also appending an ID from the original message. If you remember the JSON we posted from Fiddler, we didn't have an ID. The reason we are now including an ID is as we build up our workflow, we need to have a consistent ID available to keep the context throughout the workflow. This means we will now need to parse an ID in from our original request. Cloudant uses GUIDs for its keys so we can simply generate a GUID form our Node.js application or from Fiddler and parse that along with our content.</p>
+
+<p>If we click Okay and now deploy our application, we can run our request again from Fiddler. Only this time, we need to require an ID. To get a GUID, I will use an online tool. If you search for GUID generator, and the top result in Google should help you generate a GUID. I will copy that ID and we can now rerun our post request, this time, appending our ID properly. It will be _id plus the GUID we just created. Now, if we click Execute, we will see we have a 200 response;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-uFomamDRuhM/WJmXZBoXERI/AAAAAAAAA9w/dO76kxwEPGYXAcKddOVnY64f8kr4EAMUwCK4B/s1600/121.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we double click, we will see we've got our full message back, including our ID, the content we sent, the raw personality insights data, and the summary data we have also appended;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-R-OimYW2qus/WJmXZBJ__cI/AAAAAAAAA-Q/SlMg3XCeTKc_DPc5hhrq2XC03fNUZyf2ACK4B/s1600/122.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we return back to our flow editor, we can see the payload object has come through and there are no errors;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-meZ_FXu8YOA/WJmXZAdtwFI/AAAAAAAAA_c/l4FIMQzUBGMyGzIMCLS9aTqbA96Ss53oQCK4B/s1600/123.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We will now want to modify our Get Author API to allow us to filter based upon ID. To do this, within the cloudant node, change all documents to _id and click okay;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-banfmioQx-Q/WJmXZBPoP5I/AAAAAAAAA-0/-KZxsVMbdEkmfkHkN6IPxYR-dztGq-AwQCK4B/s1600/124.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we deploy this, and now, we view our Get Author data, we will see it's returning null as opposed to the full list of author data;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-hGuFkcK-RgM/WJmXZEtW6yI/AAAAAAAABA8/ESyER6QqIPMPNPCERn3u8Sh5iowAsh8uACK4B/s1600/125.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we add ?_id and our GUID, this will allow us to filter by individual records. And you can see we now have the full message data coming back from our Cloudant database, including our personality insights and our summary data;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-DaHAZg-UNQM/WJmmrgP1iQI/AAAAAAAABB8/8Q3Spz7lqQ8FLI5iC1hDW6GLdkWYmACBQCK4B/s1600/125a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Another way to view the Cloudant data and indirect with the Cloudant database, is via the service itself. If we return to Bluemix, and from our Insights Workflows Overview page, we can see the services that are configured against this application. We can see we have our personality insights, monitoring and analytics, and also the Cloudant NoSQL database.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-nh_51rYZGpw/WJmXZI7hIHI/AAAAAAAAA-o/NgSx4kcNlcYuHLqgXx8TP1vDx81WlHuNgCK4B/s1600/126.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If I click on this tab, it will take me to the Overview page for the Cloudant database;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-XIAMHkbSn0Y/WJmXZEe9nDI/AAAAAAAAA9c/b22KOVt0wN8iBR_BNSmixQUwQUeKo2OyQCK4B/s1600/127.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If I click Launch, it will launch the online tool for interacting with Cloudant;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-8Q2Sy5FKL2k/WJmoPqeVWOI/AAAAAAAABCI/Ag7eoBI1S4scbJGpiug7tqSEnlN-voFsACK4B/s1600/128a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>From here, you can interact with your databases, your data, add or remove rows, write queries;</p>
+
+<figure class="wp-block-image"><img src="http://4.bp.blogspot.com/-Wg4N7zUGQ9k/WJmXZD_Yw9I/AAAAAAAAA90/0ri2NXzlOtgAAMgK5QxMy-u_qhutDintwCK4B/s1600/128.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure>
+
+<p>And there are a whole range of other features within the Cloudant database. It's just useful to know how you can access these.</p>
+
+<p>And you can do the same for any of the other services that are configured, simply click on the tab and you can get options for configuration.</p>
+
+<h1>Add Watson Language Translation</h1>
+
+<p>If we return to our NodeRed flow editor, we will now take a look at how we can expand our workflow to handle multiple Watson services. At the moment, a request will always push data through the personality insights. We may want to use additional services, such as Aclchemy API or even the translation service, which we will look at how we can implement into our workflow now.</p>
+
+<p>To select different workflows based upon a property, you can use the switch function. You drag on the switch function and double click;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-mgkkBNTgaGk/WJmXZDDa2qI/AAAAAAAAA-A/E-oLHs3KP1caBfJ-51_OeJjiK3n73sF5QCK4B/s1600/129.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>It will allow us to configure the switch. We will name it Select Watson and we will determine which workflow to take based upon the payload.service property and we can append this to our message that we send into the request. If the service property matches translate, we could select the translate service, we could have others such as the AlchemyAPI but for now, we will just use translate and if a service property isn't parsed in or doesn't match translate, we will use the otherwise option and always go through the personality insights workflow. We can modify this to stop after the first match, so as soon as it detects translate, it will go through that workflow. And finally, click Okay;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-WjT6d39K-1M/WJmXZO5-2BI/AAAAAAAAA-8/GlFtFNUvLUEsvPZv7H0UXgPwDHlH08yRACK4B/s1600/130.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>We will just move around our workflows a little. You can click and drag nodes to make some more space. And we will want to move all of these ones down and wire up our Select Watson node. You can see Select Watson now has two connectors. These will be in order of the rules that you have specified. So the first will be translate, the second will be otherwise, and depending on how many rules you have, you will have connectors. So the second will be otherwise so we will connect that to our personality insights workflow;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-p7SKXKiyhkA/WJmXZIjbaFI/AAAAAAAAA_s/Qv0Wg0PiFAUhr1PGXVTozKVIpMH7zDSyQCK4B/s1600/131.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So now we want to use the language translation Watson service. We can find it from the nodes, click, and drag into our workspace;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-Tm-o_Z_0wzY/WJmXZL7H9lI/AAAAAAAAA-k/17x1QWkcXxQosKWB137lkzt7dNRxBvsTQCK4B/s1600/132.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>To configure this, double click again and you can see we are being prompted for some credentials, as its saying This node cannot be further configured without a valid service. Try entering valid credentials;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-ANi3oTwR43w/WJmp2T5yzPI/AAAAAAAABCU/JBpvu6RrO4ckcCj9cq1yxv9mrWB5yjQOwCK4B/s1600/132a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>(well as being able to specify a domain and source and target languages for translation.)</p>
+
+<p>To get these username and password details, we must first provision the service. We will do that now. If we return to our Bluemix dashboard, and under our Connections Tab, simply add New Connection;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-HRc17HHRzLw/WJmXZFuWmXI/AAAAAAAAA9Q/whSvEMBWgIEBCLAGkOTLwkM1sU-OdSkuwCK4B/s1600/133.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now similarly go to Watson Services and select Language Translation Services;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-TihYUr-TLTQ/WJmXZIK4G3I/AAAAAAAAA9A/rH6EQBwqtZksJNDYrdMu7D-V5jv6R9RqgCK4B/s1600/134.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we click on this, similar to when we provisioned the personality insights, we have the option to browse the catalog. This time, we will select Machine Translation. We can leave the details as they are, and click Create;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-Q872fcwbn8o/WJmXZQWd8xI/AAAAAAAAA9M/usxuUoNTRyYUtP0pd3dAb7EpbqxMScwBwCK4B/s1600/135.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>This will provision the service and bind it to our node workflow. We can restage, our application is now running again, so we can return to our flow editor. If we now double click on language translation, you will see we are no longer prompted for credentials. Our flow editor has automatically detected the credentials from the language translation service. We can just give it a name. And we will leave the default options as they are. Our content will be translated from Spanish to English</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-BF0YQ3O6x9w/WJmXZMjs1bI/AAAAAAAAA_Q/nv_7OJe4W2MwJf508BgpWkS80bQrFBz-QCK4B/s1600/136.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If we click Okay, now we want to wire up our connector from the first node to our translate service. if we look at the translate, however, you will see, similar to the personality insights, the text we translate should be the msg.payload and we are still parsing in the full message at this point so what we want to do is replicate this node, which parses the original payload content and strips out only the content we want to use within the service. We can either copy this text and create a new function or even easier, if we highlight the node we wish to copy, we can use Control C on our keyboard to copy the node. If we click where we want to paste, we can then use our Control V to paste the node and it saves us having to drag on the node and reconfigure. We can now link that up and I'm actually going to do the same with the Save Data and HTTP nodes. I can click with my mouse and highlight the nodes I wish to copy. Again, Control C, two nodes have been copied. If I click on the workspace and paste, I can now link these up. So our workflow has now been modified to process a request;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-bjRFsp4QI2I/WJmXZLLzNRI/AAAAAAAAA-U/MSKoRl-fVpEFKbH0Zu_0cTohThqC179iwCK4B/s1600/137.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>If the request has a payload.service property and that equals translate, it will go through the first workflow, otherwise if it has no payload.service or doesn't match any of the rules, we will then go through the second workflow, which is our personality insights workflow. You can now see a lot of nodes need deployed so we can click Deploy.</p>
+
+<p>If I return to Fiddler, and this time, I'm going to run the post request again, except I'm going to modify it to include the service property;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-hk_sIYgN8XE/WJmXZKOpMcI/AAAAAAAAA_w/HXo62vRsq_oyogP75GWrBbcT762dnB3_gCK4B/s1600/138.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And we will use translate, Execute. We can see we have a 200 respsonse that's come back and if we view, double click to view the request, you will see the response is the translated biography data</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-PtUH_wsqu2E/WJmrgNKCzLI/AAAAAAAABCg/b5LNH6N-VGwvjYAQLz5Km0RAE3JYqwXZwCK4B/s1600/138a.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy"></figure></div>
+
+<p>You can now see we have updated our workflows to handle some conditional logic based upon an attribute we can parse into the message. We have added increased flexibility to our workflow. Rather than creating individual workflows based upon the service we want to use, we can simply add a switch, parse through the attribute in our message and call the desired service. We are now ready to take a look at starting our Node.js application using the two workflows that already exist. The end points will be insights.mybluemix.net/ProcessAuthor and /GetAuthorData. These end points will be important when we are building our Node.js application, as they are the entry points to our workflows.</p>
+
+<ul><li>Conclusion</li></ul>
+
+<p>So we had a look at the flexibility NodeRed can offer and how we can build workflows and work together services without the need for any plumbing code. Simply drag on your node. It could be a database for persistence or enhancing our apps with cognitive computing, using the Watson services. We can easily API enable our apps using the HTTP nodes to create end points that can be consumed by other planned apps or services. This could be mobile, or premise systems, or other services running on Bluemix. We see how this flexibility and ability to rapidly build workflows really lends itself to prototyping or experimenting with services or ideas without huge buy-in or commitment. I hope this has helped spark some creative ideas on how we can leverage the Bluemix offering using NodeRed as a way to tie your application together.</p>
+
+<hr class="wp-block-separator"/>
+
+<p>* For Discussion upon any service or query, feel free to ping me&nbsp;@&nbsp;<a href="mailto:Sajid.Ali.Khan@pk.ibm.com">Sajid.Ali.Khan@pk.ibm.com</a>.</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/configuring-your-bluemix-application-environment-ibm-bluemix/&text=Configuring Your Bluemix Application Environment | IBM Bluemix" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/configuring-your-bluemix-application-environment-ibm-bluemix/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/configuring-your-bluemix-application-environment-ibm-bluemix/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Configuring Your Bluemix Application Environment | IBM Bluemix%20https://www.justsajid.com/posts/configuring-your-bluemix-application-environment-ibm-bluemix/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/deploy-to-bluemix-button-an-easy-way-to-share-your-app-with-others/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2017/06/1-1.png" alt="Deploy To Bluemix Button | An Easy Way To Share Your App With Others" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2017-06-19 11:35:13">June 19, 2017</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/deploy-to-bluemix-button-an-easy-way-to-share-your-app-with-others/">Deploy To Bluemix Button | An Easy Way To Share Your App With Others</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/say-hello-with-node-red-starter/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2017/06/home.png" alt="Say Hello With Node-RED Starter" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2017-06-08 11:31:52">June 08, 2017</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/say-hello-with-node-red-starter/">Say Hello With Node-RED Starter</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/jumpstart-development-with-bluemix/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2017/02/M8Vj25stMN_1420636467227.jpg" alt="JumpStart Development with Bluemix" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2017-02-07 23:00:00">February 07, 2017</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/jumpstart-development-with-bluemix/">JumpStart Development with Bluemix</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/jumpstart-development-with-bluemix/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">JumpStart Development with Bluemix</span>
+      </a>
+    <a href="../../posts/ibm-watson-jumpstart-with-watson-conversation/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">IBM Watson: JumpStart with Watson Conversation</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from IBM Cloud</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/deploy-to-bluemix-button-an-easy-way-to-share-your-app-with-others/">Deploy To Bluemix Button | An Easy Way To Share Your App With Others</a>
+        <div class="post-small-date">June 19, 2017</div>
+      </div><div class="post-small">
+        <a href="../../posts/say-hello-with-node-red-starter/">Say Hello With Node-RED Starter</a>
+        <div class="post-small-date">June 08, 2017</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-development-with-bluemix/">JumpStart Development with Bluemix</a>
+        <div class="post-small-date">February 07, 2017</div>
+      </div><div class="post-small">
+        <a href="../../posts/create-a-wordpress-blog-in-bluemix/">Create a WordPress Blog in Bluemix</a>
+        <div class="post-small-date">August 13, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-ibm-bluemix/">JumpStart with IBM Bluemix</a>
+        <div class="post-small-date">August 12, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

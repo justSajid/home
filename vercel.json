@@ -1,0 +1,25 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/posts/:slug", "destination": "/posts/:slug/index.html" },
+    { "source": "/categories/:slug", "destination": "/categories/:slug/index.html" },
+    { "source": "/tags/:slug", "destination": "/tags/:slug/index.html" },
+    { "source": "/blog/page/:page", "destination": "/blog/page/:page/index.html" },
+    { "source": "/blog", "destination": "/blog/index.html" }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/404.html", "status": 404 }
+  ]
+}

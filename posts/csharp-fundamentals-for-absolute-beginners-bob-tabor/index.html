@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>CSharp Fundamentals for Absolute Beginners | Bob Tabor | justSajid</title>
+  <meta name="description" content="CSharp Fundamentals for Absolute Beginners | Bob Tabor — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/csharp-fundamentals-for-absolute-beginners-bob-tabor/">
+  <meta property="og:type" content="article"><meta property="og:title" content="CSharp Fundamentals for Absolute Beginners | Bob Tabor | justSajid">
+  <meta property="og:description" content="CSharp Fundamentals for Absolute Beginners | Bob Tabor — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/csharp-fundamentals-for-absolute-beginners-bob-tabor/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2016/06/thumbnail.png">
+  <meta property="article:published_time" content="2016-06-03T17:32:00Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="CSharp Fundamentals for Absolute Beginners | Bob Tabor | justSajid">
+  <meta name="twitter:description" content="CSharp Fundamentals for Absolute Beginners | Bob Tabor — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2016/06/thumbnail.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2016/06/thumbnail.png" alt="CSharp Fundamentals for Absolute Beginners | Bob Tabor" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">CSharp Fundamentals for Absolute Beginners | Bob Tabor</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2016-06-03 17:32:00" itemprop="datePublished">Published June 03, 2016</time></span>
+      <span class="meta-category">in <a href="../../categories/tech/" class="cat-link">Technology</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">6 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<p>Are you new to programming or you are absolute beginner looking for an awesome video tutorial for great hands on. Then there is an awesome video series available on&nbsp;Microsoft Virtual Academy&nbsp;by the&nbsp;Bob Tabor&nbsp;<a href="https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169" target="_blank" rel="noopener noreferrer">HERE</a>.</p>
+
+<p>:: Published On:&nbsp;25 March 2016</p>
+
+<figure><iframe src="https://mva.microsoft.com/en-US/training-courses-embed/c-fundamentals-for-absolute-beginners-16169/Video-Course-Introduction-Lvld4EQIC_2706218949" allowfullscreen="allowfullscreen" width="814" height="664"></iframe></figure>
+
+<p><strong>You can see the whole description provided with the course bellow;</strong>/*</p>
+
+<p>Want to learn a different programming language? C# is a great place to start. Step through 24 practical and easy-to-understand C# training episodes, with our talented friend Bob Tabor, from&nbsp;<a href="http://www.learnvisualstudio.net/" target="_blank" rel="noopener noreferrer">www.LearnVisualStudio.net</a>, as he teaches you the fundamentals of C# programming. Tune in to learn the basics of the C# language, and learn to apply them in your programming endeavors, like video games, mobile environments, and client apps.</p>
+
+<p>Learn C# by stepping through the basics with Bob: get the tools, see how to write code, debug features, explore customizations, and much more! Search for and focus on the information you need, in this C# for beginners course, which has topics separated out into individual videos. Get to know the grammar, create and use methods, manipulate strings, and see how to handle events. Plus, get a look at next steps as you learn to develop Windows and web applications.<br></p>
+
+<h4>1 | Course Introduction</h4>
+
+<p>Hear an introduction to the topic, learn expectations for the series, and hear tips on how to get the most out of it. Plus, find out where to download the software you need.&nbsp;<br></p>
+
+<h4>2 | Creating Your First C# Program</h4>
+
+<p>Learn how to create a simple application, and get an explanation of common solutions to different problems you might encounter as you begin writing and compiling code.&nbsp;<br></p>
+
+<h4>3 | Understanding Your First C# Program</h4>
+
+<p>To better understand the grammar of C# at a high level, return to the program we just built to break apart each of the key words and symbols.&nbsp;<br></p>
+
+<h4>4 | Working with Code Files, Projects, and Solutions</h4>
+
+<p>Learn how to open and close individual files in a project, the relationship between projects and solutions, and more.&nbsp;<br></p>
+
+<h4>5 | Understanding Data Types and Variables</h4>
+
+<p>Add C# syntax to your vocabulary by exploring fundamental building blocks: data types and variables. In addition, learn about basic topics, such as naming conventions and data type conversions.&nbsp;<br></p>
+
+<h4>6 | The if Decision Statement</h4>
+
+<p>Get an introduction to the if Decision statement, along with the conditional operator. Find out how to refactor code to make it more compact and less likely to produce errors.&nbsp;<br></p>
+
+<h4>7 | Operators, Expressions, and Statements</h4>
+
+<p>Learn how to create a properly formed C# statement made up of expressions that include operators and operands. Hear about compilation errors that occur when the syntax rules of C# are ignored.&nbsp;<br></p>
+
+<h4>8 | for Iteration Statement</h4>
+
+<p>Look at several different types of iteration statements, how to utilize "code snippets" to help remind you of the syntax for this complex statement, and debugging in action.&nbsp;<br></p>
+
+<h4>9 | Understanding Arrays</h4>
+
+<p>Learn about arrays, and see how to declare and utilize arrays. Watch demos on a couple of powerful built-in methods that give arrays added features.&nbsp;<br></p>
+
+<h4>10 | Defining and Calling Methods</h4>
+
+<p>Create a helper method, create and call methods to retrieve a value, create and use input parameters, learn about string formatting, and create overloaded methods.&nbsp;<br></p>
+
+<h4>11 | While Iteration Statement</h4>
+
+<p>Learn a new iteration statement that allows you to continue performing a block of code until a condition is no longer true.&nbsp;<br></p>
+
+<h4>12 | Working with Strings</h4>
+
+<p>Look at built-in String methods to manipulate the content inside of a literal string and at the StringBuilder class for concatenating many strings together in a memory- and resource-friendly manner.&nbsp;<br></p>
+
+<h4>13 | Working with Dates and Times</h4>
+
+<p>Find out how to work with Date and Time data, how to create new instances of DateTime, how to add time, and how to format the data for display. Take a look at the TimeSpan class.&nbsp;<br></p>
+
+<h4>14 | Understanding Classes</h4>
+
+<p>Learn how classes are defined and new instances are created, how to define Properties, and how to both set values and get values for a given instance of the class.&nbsp;<br></p>
+
+<h4>15 | More About Classes and Methods</h4>
+
+<p>Dig into more details about classes: create a new instance, add class references, pass the reference to a method. Plus, review overloaded methods, static versus instance methods, and constructors.&nbsp;<br></p>
+
+<h4>16 | Understanding Scope and Accessibility Modifiers</h4>
+
+<p>Explore variable scope and how accessibility modifiers are used by the .NET Framework Class Library to expose or hide implementation of their given services to consumers of that given class.&nbsp;<br></p>
+
+<h4>17 | Understanding Namespaces and Working with the .NET Class Library</h4>
+
+<p>Learn about namespaces and how to find the classes for your applications by searching Bing and MSDN.&nbsp;<br></p>
+
+<h4>18 | Creating and Adding References to Assemblies</h4>
+
+<p>Learn about .NET assemblies: code libraries and executables, debug and release versions of assemblies. Plus, see how to reference assemblies, utilize NuGet, and create references to custom libraries.&nbsp;<br></p>
+
+<h4>19 | Working with Collections</h4>
+
+<p>See an "old style" collection, along with several of the newer, strongly typed generic collections (List and Dictionary&lt;tkey, tdictionary=""&gt;) utilizing the generics syntax.&nbsp;<br></p>
+
+<h4>20 | Working with LINQ</h4>
+
+<p>Explore Structured Query Language and the LINQ syntax. See a demo projecting data onto existing types and new anonymous types.&nbsp;<br></p>
+
+<h4>21 | Enumerations and the Switch Decision Statement</h4>
+
+<p>See a demo on the use of Enumerations, create a custom enumeration, and then use it in a simple application that demonstrates a third Decision statement, the switch.&nbsp;<br></p>
+
+<h4>22 | Gracefully Handling Exceptions</h4>
+
+<p>Learn how to use the try catch finally block to anticipate potential problems so as to shield the end user from those problems as much as possible. Explore best practices when checking for exceptions.&nbsp;<br></p>
+
+<h4>23 | Understanding Events and Event-Driven Programming</h4>
+
+<p>Learn how events are utilized in the .NET Framework Class Library. Begin with the Timer class, and graduate to building a basic "Hello world" application.&nbsp;<br></p>
+
+<h4>24 | Where to Go from Here</h4>
+
+<p>Hear approaches to solving common issues, where to go for help, how to search for answers, and become part of the .NET community. View a long-term path to learn more about developing applications.&nbsp;<br><br>Learn&nbsp;<br></p>
+
+<ul><li>Learn how to declare and utilize arrays.</li><li>Create and use methods.</li><li>Use iteration statements.</li><li>Manipulate strings.</li><li>Learn how to work with Date and Time data.</li><li>Define and create classes and use properties.</li><li>Apply more advanced class details.</li><li>Contrast variable scope and accessibility modifiers.</li><li>Find and use namespaces.</li><li>Create and reference assemblies.</li><li>See how to use collections.</li><li>Learn when and how to use LINQ.</li><li>Use enumerations.</li><li>Prevent exceptions.</li><li>See a demo on how to handle events.</li><li>Explore next steps to learn more about developing Windows and web applications.</li><li>Understand course expectations, and obtain software.</li><li>Create an application.</li><li>Understand C# grammar.</li><li>Discover the relationship between projects and solutions.</li><li>Learn the fundamental building blocks of working with C#.</li><li>Use if Decision statements and the conditional operator.</li><li>Create a properly formed C# statement, and resolve compilation errors.</li><li>Understand iteration statements and when to use them.</li><li>See a demo on how to declare and utilize arrays.</li><li>Create and use methods.</li><li>Use iteration statements.</li><li>Manipulate strings.</li><li>Learn how to work with Date and Time data.</li><li>Define and create classes and use properties.</li><li>Use if Decision statements and the conditional operator.</li><li>See a demo on how to declare and utilize arrays.</li></ul>
+
+<p>Prerequisites&nbsp;<br>None&nbsp;<br>*/&nbsp;<br>So, hope that would really help you to JumpStart to the world of C# Programming with the awesome hands on experience... : - )&nbsp;</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/csharp-fundamentals-for-absolute-beginners-bob-tabor/&text=CSharp Fundamentals for Absolute Beginners | Bob Tabor" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/csharp-fundamentals-for-absolute-beginners-bob-tabor/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/csharp-fundamentals-for-absolute-beginners-bob-tabor/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=CSharp Fundamentals for Absolute Beginners | Bob Tabor%20https://www.justsajid.com/posts/csharp-fundamentals-for-absolute-beginners-bob-tabor/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/metaverse-a-whole-new-world/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Metaverse || A Whole New World." loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2022-05-09 01:34:48">May 09, 2022</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/metaverse-a-whole-new-world/">Metaverse || A Whole New World.</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/password-choose-the-secure-easy-and-cool-password/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2016/05/How-to-Pick-A-Secure-Password.jpg" alt="Password: Choose the Secure, Easy and Cool Password" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 23:28:45">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/password-choose-the-secure-easy-and-cool-password/">Password: Choose the Secure, Easy and Cool Password</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/grand-challenge-in-computer-science/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Grand Challenge in Computer Science" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 22:11:51">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/grand-challenge-in-computer-science/">Grand Challenge in Computer Science</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/uwp-things-required-to-do-right-after-creation-of-new-project/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">UWP: Things Required To Do Right After Creation of New Project.</span>
+      </a>
+    <a href="../../posts/publish-your-app-to-windows-store/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">Publish Your App To Windows Store</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Technology</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/metaverse-a-whole-new-world/">Metaverse || A Whole New World.</a>
+        <div class="post-small-date">May 09, 2022</div>
+      </div><div class="post-small">
+        <a href="../../posts/password-choose-the-secure-easy-and-cool-password/">Password: Choose the Secure, Easy and Cool Password</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/grand-challenge-in-computer-science/">Grand Challenge in Computer Science</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-xamarin/">JumpStart with XAMARIN</a>
+        <div class="post-small-date">August 10, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/linkedin-microsoft-to-acquire-linkedin-for-26-2-billion/">LinkedIn: Microsoft to Acquire LinkedIn for $26.2 Billion</a>
+        <div class="post-small-date">June 13, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

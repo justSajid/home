@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Understanding of Data Science Methodology | justSajid</title>
+  <meta name="description" content="Understanding of Data Science Methodology — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/understanding-of-data-science-methodology/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Understanding of Data Science Methodology | justSajid">
+  <meta property="og:description" content="Understanding of Data Science Methodology — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/understanding-of-data-science-methodology/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2018/12/DvplWvIXcAEZNp-.jpg">
+  <meta property="article:published_time" content="2020-02-22T10:28:52Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Understanding of Data Science Methodology | justSajid">
+  <meta name="twitter:description" content="Understanding of Data Science Methodology — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2018/12/DvplWvIXcAEZNp-.jpg">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2018/12/DvplWvIXcAEZNp-.jpg" alt="Understanding of Data Science Methodology" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Understanding of Data Science Methodology</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2020-02-22 10:28:52" itemprop="datePublished">Published February 22, 2020</time></span>
+      <span class="meta-category">in <a href="../../categories/datascience/" class="cat-link">Data Science</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">13 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<h2>Motivation:</h2>
+
+<p>It's all about the different methods used in data science.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-koFxtY9LhVU/XCmPPBvL3tI/AAAAAAAABlg/CuARLf9vKgApRyZqePSHw_ukceTO3wFbwCK4BGAYYCw/s1600/1.jpg" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<h1>Data Science Methodology:</h1>
+
+<p>There&nbsp;is the following methodology used in data science which can further categories into different phases;</p>
+
+<ul><li>From Problem to Approach<ul><li>Business Understanding</li><li>Analytical Approach</li></ul></li></ul>
+
+<ul><li>Working with Data<ul><li>Data Requirements</li><li>Data Collection</li><li>Data Understanding</li><li>Data Preparation</li></ul></li><li>Deriving the Answer<ul><li>Modeling</li><li>Evaluation</li><li>Development</li><li>Feedback</li></ul></li></ul>
+
+<p>Let's start understanding one by one;</p>
+
+<h3>From Problem to Approach;</h3>
+
+<ul><li>Business Understanding</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-iDIGYhsE-7s/XCmPQO5aVmI/AAAAAAAABl0/o1cROsG0S5Q9-Q0x7GH4UzKwbK1zzuUDwCK4BGAYYCw/s1600/2.jpg" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p>It helps clarify the goal of the entity asking the question.</p>
+
+<p>E.g.&nbsp;Say,&nbsp;<strong>We are interested in automating the process of figuring out the cuisine (style of cooking) of a given dish or recipe.</strong></p>
+
+<p>Let's apply the business understanding stage to this problem.</p>
+
+<p>So the questions will arise;</p>
+
+<ul><li>Can we predict the cuisine of a given dish using the name of the dish only? The answer is definitely,&nbsp;<strong>NO</strong>!</li><li>Following dish, names were taken from the menu of a local restaurant in Toronto, Ontario in Canada.&nbsp;<em><strong>"Beast"</strong></em>,&nbsp;<em><strong>"2 PM"</strong></em>&nbsp;and&nbsp;<em><strong>"4 Minute"</strong></em><ul><li>Are you able to tell the cuisine of these dishes? Well, these're&nbsp;the Japanese&nbsp;dishes, definitely somebody sitting in Islamabad cannot tell that.</li><li>What about by appearance only? Well,&nbsp;No, especially when it comes to countries in close geographical proximity such as Scandinavian countries, or Asian countries.</li></ul></li></ul>
+
+<p>*&nbsp;At this point, we realize that automating the process of determining the cuisine of a given dish is not a straightforward problem as we need to come up with a way that is very robust to the many cuisines and their variations.</p>
+
+<ul><li>What about determining the cuisine of a dish based on its ingredients?<ul><li>Well, the answer is&nbsp;Potentially yes, as there are specific ingredients unique to each cuisine.</li></ul></li></ul>
+
+<p>*&nbsp;As&nbsp;we guessed, yes determining the cuisine of a given dish based on its ingredients seems like a viable solution as some ingredients are unique to cuisines. For example:</p>
+
+<ul><li>When we talk about "<strong>American</strong>" cuisines, the first ingredient that comes to one's mind (or at least to my mind =D) is beef or turkey.</li><li>When we talk about "<strong>British"</strong>&nbsp;cuisines, the first ingredient that comes to one's mind is haddock or mint sauce.</li><li>When we talk about "<strong>Canadian</strong>" cuisines, the first ingredient that comes to one's mind is bacon or poutine.</li><li>When we talk about "<strong>French"</strong>&nbsp;cuisines, the first ingredient that comes to one's mind is bread or butter.</li><li>When we talk about "<strong>Italian</strong>" cuisines, the first ingredient that comes to one's mind is tomato or ricotta.</li><li>When we talk about "<strong>Japanese"</strong>&nbsp;cuisines, the first ingredient that comes to one's mind is seaweed or soy sauce.</li><li>When we talk about "<strong>Chinese</strong>" cuisines, the first ingredient that comes to one's mind is ginger or garlic.</li><li>When we talk about "<strong>Pakistani</strong>" cuisines, the first ingredient that comes to one's mind is chicken, masala or chillis.</li></ul>
+
+<p>Accordingly, can&nbsp;we determine the cuisine of the dish associated with the following list of ingredients?</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-wZsk3G8Lug8/XCmPO0nVqcI/AAAAAAAABlc/cO7XrGhhptwPSd2m6rXJYnQaQvvvQoSHACK4BGAYYCw/s1600/3.jpg" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p>Its Pakistani since the recipe is most likely of a Chicken Biryani.</p>
+
+<ul><li>Analytical Approach</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-NKSP_CQ4mO4/XCmPUsPKLUI/AAAAAAAABnU/8BW6JLLP6ZcfH_vyCtRX8Ks3wUfM48AYwCK4BGAYYCw/s1600/4.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p>So why are we interested in data science?&nbsp;Once the business problem has been clearly stated, the data scientist can define the analytic approach to solve the problem. This step entails expressing the problem in the context of statistical and machine-learning techniques so that the entity or stakeholders with the problem can identify the most suitable techniques for the desired outcome.</p>
+
+<p>Why is the analytic approach stage important?&nbsp;Because it helps into definity what type of patterns will be needed to address the question most effectively.</p>
+
+<p>E.g.&nbsp;Let's explore a machine learning algorithm, decision trees, and see if it is the right technique to automate the process of identifying the cuisine (style of cocking) of a given dish or recipe while simultaneously providing us with some insight on why a given recipe is believed to belong to a certain type of cuisine.</p>
+
+<p>This is a decision tree that a naive person might create manually. Starting at the top with all the recipes for all the cuisines in the world, if a recipe contains&nbsp;<strong>rice</strong>, then this decision tree would classify it as&nbsp;<strong>Japanese</strong>&nbsp;cuisine. Otherwise, it would be classified as not a&nbsp;<strong>Japanese</strong>&nbsp;cuisine.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-fQkkVtTzGt4/XCmPVP03SSI/AAAAAAAABnk/vJEqkXECKgA0YPsnTZSYOBE46yL4hHVfQCK4BGAYYCw/s1600/5.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p>Is this a good decision tree?&nbsp;No, because a plethora (a large or excessive amount) of dishes from other cuisines contain rice. Therefore, using rice as the ingredient in the Decision node to split on is not a good choice.</p>
+
+<p>Decision Trees;</p>
+
+<p>In order to build a very powerful decision tree for the recipe case study, let's take some time to learn more about decision trees.</p>
+
+<ul><li>Decision trees are built using recursive partitioning to classify the data.</li><li>When partitioning the data, decision trees use the most predictive feature (an ingredient in this case) to split the data.</li><li><strong>Predictiveness</strong>&nbsp;is based on a decrease in entropy - gain in information, or&nbsp;<em>impurity</em>.</li></ul>
+
+<p>Suppose that our data is comprised of green triangles and red circles.</p>
+
+<p>The following decision tree would be considered the optimal model for classifying the data into a node for green triangles and a node for red circles.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-sil0yBHjy1k/XCmPUD5--uI/AAAAAAAABm0/0kA1o9JjGiwi09w4i09_Vb3JhnStfkv7gCK4BGAYYCw/s1600/6.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p>Each of the classes in the leaf nodes is completely pure – that is, each leaf node only contains data points that belong to the same class.</p>
+
+<p>On the other hand, the following decision tree is an example of the worst-case scenario that the model could output.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-0cgqRxHq1U8/XCmPUciQdjI/AAAAAAAABm8/SqgSX03skmI9BCIYHhAskNiT7qR1_lSCgCK4BGAYYCw/s1600/7.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p>Each leaf node contains data points belonging to the two classes resulting in many datapoints ultimately being misclassified.</p>
+
+<h4 id="A-tree-stops-growing-at-a-node-when%3A">A tree stops growing at a node when:</h4>
+
+<ul><li>Pure or nearly pure.</li><li>No remaining variables on which to further subset the data.</li><li>The tree has grown to a preselected size limit.</li></ul>
+
+<h4 id="Here-are-some-characteristics-of-decision-trees%3A">Here are some characteristics of decision trees:</h4>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-wwKiVFo31KQ/XCmPRvm4U8I/AAAAAAAABmc/glRKmQxW0gIdLWiSHTV9awK2oUsOhUJQgCK4BGAYYCw/s1600/8.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p>Now let's put what we learned about decision trees to use. Let's try and build a much better version of the decision tree for our recipe problem.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-RD7TqZNx330/XCmPU6Ff0iI/AAAAAAAABnY/Mc26kXvRgPoSFJqt47Y_twZjKJNshjtiQCK4BGAYYCw/s1600/9.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p>I hope you agree that the above decision tree is a much better version than the previous one. Although we are still using&nbsp;<strong>Rice</strong>&nbsp;as the ingredient in the first&nbsp;<em>decision node</em>, recipes get divided into&nbsp;<strong>Asian Food</strong>&nbsp;and&nbsp;<strong>Non-Asian Food</strong>.&nbsp;<strong>Asian Food</strong>&nbsp;is then further divided into&nbsp;<strong>Japanese</strong>&nbsp;and&nbsp;<strong>Not Japanese</strong>&nbsp;based on the&nbsp;<strong>Wasabi</strong>ingredient. This process of splitting&nbsp;<em>leaf nodes</em>&nbsp;continues until each&nbsp;<em>leaf node</em>&nbsp;is pure, i.e., containing recipes belonging to only one cuisine.</p>
+
+<p>Accordingly, decision trees is a suitable technique or algorithm for our recipe case study.</p>
+
+<h3>From Requirements to Collection</h3>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-FL6ApHRENzA/XCmPVARpuoI/AAAAAAAABnc/BW2800nO4pIXX8z_9sTkU2HI2tbDK-VWQCK4BGAYYCw/s1600/10.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<ul><li>Data Requirements</li></ul>
+
+<p>Check, what are the data requirements?</p>
+
+<p>E.g.&nbsp;If a problem is a dish, then data is an ingredient.&nbsp;A data requirement is the initial set of ingredients.</p>
+
+<ul><li>Data&nbsp;Collection</li></ul>
+
+<p>Check, what occurs during the data collection? Gather available data.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-SU62a8YXe2E/XCmPQ-Ab9HI/AAAAAAAABmI/P1K8NFf7eU0CLace4tVMQ9FOTaXkKc1hACK4BGAYYCw/s1600/11.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p>In the initial data collection stage, data scientists identify and gather the available data resources. These can be in the form of structured, unstructured, and even semi-structured data relevant to the problem domain.</p>
+
+<p>Defining the Inaccessible data. E.g. Data Wanted but not available.</p>
+
+<p>Data scientist determine how to prepare the data.&nbsp;He&nbsp;identifies the data that is required for data modeling.&nbsp;He&nbsp;determines how to collect the data.</p>
+
+<h3>From&nbsp;Understanding to&nbsp;Preparation</h3>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-P41ua-kkJyI/XCmPVDD1TTI/AAAAAAAABno/AGWyg7ZVCWgM1mKUHgNrya5sufzL7_JwQCK4BGAYYCw/s1600/12.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<ul><li>Data&nbsp;Understanding</li></ul>
+
+<p>Like, What does it mean to "prepare" or "clean" data?</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-ZlloIsfD7dA/XCmPQCWwHXI/AAAAAAAABl4/y_7n1vYsPgIGCOTYCBFBNMzj09f6UsKUQCK4BGAYYCw/s1600/13.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<ul><li>Understanding of data, like descriptive statistics<ul><li>Univariable Statistics</li><li>Pairwise corrections</li><li>Histogram - Are good way to understand how values or variables are distributed, and what sorts of data preparation may be needed to make the variable more useful in a model.</li></ul></li><li>Looking at data quality, like Data quality<ul><li>Missing Values</li><li>Invalid or misleading values</li></ul></li><li>This is an iterative process<ul><li>Iterative data collection and understanding.</li></ul></li></ul>
+
+<p>Data understanding encompasses all activities related to constructing the dataset.</p>
+
+<ul><li>Data&nbsp;Preparation</li></ul>
+
+<p>Like, What&nbsp;are ways in which data is prepared? This is the most time-consuming phase. Like 70% to 90% of overall project time. Automation some of data collection and preparation process in the code/database can reduce this time up to 50%.</p>
+
+<p>Its simply like cleaning of data or removing useless stuff. Its all about the transforming data.</p>
+
+<p>Feature engineering is also the part of data preparation. It is the process of using domain knowledge of the data to create features that make the machine learning algorithms work. Feature engineering is critical when machine learning tools are being applied to analyze the data.</p>
+
+<p>Data scientist need to make sure to pay attention to the detail in this area. After all, it takes just one bad ingredient to ruin a fine meal.</p>
+
+<p>Here prepare data for the next stage of modeling.&nbsp;This stage involves exploring the data further and making sure that it is in the right format for the machine learning algorithm that we selected in the analytic approach stage, which is decision trees.</p>
+
+<p>We simply make our observations and fix the problems in the data&nbsp;to learn the data better and note any interesting preliminary observations.</p>
+
+<p>It involves the following;</p>
+
+<ul><li>Data preparation involves properly formatting the data.</li><li>Data preparation involves correcting invalid values and addressing outliers.</li><li>Data preparation involves removing duplicate data.</li><li>Data preparation involves addressing missing values.</li></ul>
+
+<p>During data preparation, data scientists and DBAs identify missing data. They&nbsp;determine the timing of events.&nbsp;They&nbsp;aggregate the data and merge them from different sources.&nbsp;They&nbsp;define the variables to be used in the model.</p>
+
+<h3>From&nbsp;Modeling to&nbsp;Evaluation</h3>
+
+<figure class="wp-block-image"><img src="http://3.bp.blogspot.com/-XCkOFfh9Ziw/XCmSwxR0SPI/AAAAAAAABoM/BoUp4T3mZBAEzFEuwpHwvhC0sakFScRXgCK4BGAYYCw/s1600/13a.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure>
+
+<ul><li>Data&nbsp;Modeling</li></ul>
+
+<p>Like, Sampling the food, I mean sampling the data. And see if&nbsp;it is appropriate or in need of more seasoning.</p>
+
+<p>In what day data can be visualized to get to the answer that is required.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-n4Axrtatpv4/XCmPPjvzQHI/AAAAAAAABlo/l_gK-aR7F9US78oGbDaUe3cc9KiWtSgdwCK4BGAYYCw/s1600/14.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p>Data Modeling focus on developing models that are either predictive or destructive.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-VLfwgigXr2o/XCmPVN6FZDI/AAAAAAAABng/FPnmaF0R4BIDOe1Ny3dX8PZxEoKNhseiwCK4BGAYYCw/s1600/15.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<ul><li><em><strong>Descriptive Model;</strong></em>&nbsp;An example of a descriptive model might examine things like: if a person did this,&nbsp;then they're likely to prefer that.</li><li><em><strong>Predictive Model;</strong></em>&nbsp;A predictive model tries to yield yes/no, or stop/go type outcomes.</li></ul>
+
+<p>These models are based on the analytic approach that was taken, either statistically driven&nbsp;or machine learning driven.</p>
+
+<p>The data scientist will use a training set for&nbsp;<em><strong>predictive modeling</strong></em>.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-GMIHB2gKF-E/XCmPQwrO3_I/AAAAAAAABmM/iy4ZY6PmUW8_vf6lKeF5I2Di1r9St5RHQCK4BGAYYCw/s1600/17.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p><br>A training set is a set of historical data in which the outcomes are already known. The training set acts like a gauge to determine if the model needs to be calibrated. In this stage, the data scientist will play around with different algorithms to ensure&nbsp;that the variables in play are actually required.</p>
+
+<p>The success of data compilation, preparation, and modeling, depends on the understanding of the problem at hand, and the appropriate analytical approach being taken.<br>The data support the answering of the question and like the quality of the ingredients in&nbsp;cooking, sets the stage for the outcome. Constant refinement, adjustments, and tweaking are necessary within each step to ensure the outcome is one that is solid.</p>
+
+<p>In descriptive Data Science Methodology, the framework is geared to do&nbsp;3 things:</p>
+
+<ol><li>Understand the question at hand.</li><li>Select an analytic approach or method to solve the problem.</li><li>Obtain, understand, prepare, and model the data.</li></ol>
+
+<p>The end goal is to move the data scientist to a point where a data model can be built to answer the question.</p>
+
+<p>E.g. With dinner just about to be served and a hungry guest at the table, the key question is: Have I made enough to eat?&nbsp;Well, let's hope so.</p>
+
+<p>In this stage of the methodology, model evaluation, deployment, and feedback loops ensure that&nbsp;the answer is near and relevant.&nbsp;This relevance is critical to the data science field overall, as it ís a fairly new field of study, and we are interested in the possibilities<br>it has to offer. The more people that benefit from the outcomes of this practice, the further the field will develop.</p>
+
+<ul><li>Data&nbsp;Evaluation</li></ul>
+
+<p>Like, Does the model used really answer the initial question or does it need to be adjusted.</p>
+
+<p>A model evaluation goes hand-in-hand with the model building as such, the modeling and&nbsp;evaluation stages are done iteratively.&nbsp;Model evaluation is performed during model development and before the model is deployed.&nbsp;Evaluation allows the quality of the model to be assessed but it's also an opportunity&nbsp;to see if it meets the initial request.&nbsp;Evaluation answers the question: Does the model used really answer the initial question&nbsp;or does it need to be adjusted?<br>Model evaluation can have two main phases.<br>Diagnostic Measures;&nbsp;which is used to ensure the model is working as intended.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-GMIHB2gKF-E/XCmPQwrO3_I/AAAAAAAABmM/iy4ZY6PmUW8_vf6lKeF5I2Di1r9St5RHQCK4BGAYYCw/s1600/17.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<ul><li><em><strong>Predictive Model;</strong></em>&nbsp;If the model is a predictive model, a decision tree can be used to evaluate if the answer&nbsp;the model can output, is aligned to the initial design.&nbsp;It can be used to see where there are areas that require adjustments.</li><li><em><strong>Descriptive Model;</strong></em>&nbsp;If the model is a descriptive model, one in which relationships are being assessed, then&nbsp;testing set with known outcomes can be applied, and the model can be refined as needed.</li></ul>
+
+<p>Statistical Significance; The second phase of evaluation that may be used is statistical significance testing.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-XxMWd0iZPPc/XCmPQ1Ild8I/AAAAAAAABmU/HFFFXmBFmbMRjD8NDhF7EyVsFaiyQ8JwgCK4BGAYYCw/s1600/18.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p>This type of evaluation can be applied to the model to ensure that the data is being properly handled and interpreted within the model. This is designed to avoid unnecessary second-guessing when the answer is revealed. So now, let's go back to our case study so that we can apply the "Evaluation" component within the data science methodology.</p>
+
+<p>So, how do we determine which model was optimal?&nbsp;By plotting the true-positive rate against the false-positive rate for different values of the relative misclassification cost, the ROC curve helped in selecting the optimal model.</p>
+
+<p>E.g. To evaluate our model of Asian and&nbsp;Pakistani cuisines, we will split our dataset into a training set and a test set. We will build the decision tree using the training set. Then, we will test the model on the test set and compare the cuisines that the model predicts to the actual cuisines.</p>
+
+<h3>From&nbsp;Development to&nbsp;Feedback</h3>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-_qFwJxRPC44/XCmUm381mOI/AAAAAAAABoY/OTFYS-F9FNgZFTnZHmP-Qm3z17BtQih4QCK4BGAYYCw/s1600/18a.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<ul><li>Development</li></ul>
+
+<p>Like, are stakeholders familiar with the new tool.</p>
+
+<p>While a data science model will provide an answer, the key to making the answer relevant&nbsp;and useful to address the initial question, involves getting the stakeholders familiar with the tool produced.</p>
+
+<p>In a business scenario, stakeholders have different specialties that will help make&nbsp;this happen, such as the solution owner, marketing, application developers, and IT administration.</p>
+
+<p>Once the model is evaluated and the data scientist is confident it will work, it is deployed and put to the ultimate test.</p>
+
+<p>Depending on the purpose of the model, it may be rolled out to a limited group of users&nbsp;or in a test environment, to build up confidence in applying the outcome for use across the board.</p>
+
+<ul><li>Feedback</li></ul>
+
+<p>Like, problem solved,? Question answered?</p>
+
+<p>The value of the model will be dependent on successfully incorporating feedback and making&nbsp;adjustments for as long as the solution is required. Throughout the Data Science Methodology, each step sets the stage for the next. Making the methodology cyclical, ensures refinement at each stage in the game.</p>
+
+<p>The feedback process is rooted in the notion that, the more you know, the more that you'll want to know.<br>Once the model is evaluated and the data scientist is confident it'll work, it is deployed and put to the ultimate test: actual, real-time use in the field.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-NkEIO8PXBTs/XCmPRxnhCZI/AAAAAAAABmg/9QgktCZ-RsER7bgGLxBy14vlzclR14iFwCK4BGAYYCw/s1600/19.png" alt="Understanding of Data Science Methodology" loading="lazy"></figure></div>
+
+<p>Data collection was initially deferred because the&nbsp;data&nbsp;might not readily available at the time.&nbsp;But after feedback and practical experience with the model, it might be determined that&nbsp;adding that data could be worth the investment of effort and time.<br>We also have to allow for the possibility that other refinements might present themselves&nbsp;during the feedback stage.&nbsp;Also, the intervention actions and processes would be reviewed and very likely refined as well, based on the experience and knowledge gained through initial deployment and feedback.</p>
+
+<p>Finally, the refined model and intervention actions would be redeployed, with the feedback&nbsp;process continued throughout the life of the Intervention program.</p>
+
+<hr class="wp-block-separator"/>
+
+<h2>Conclusion:</h2>
+
+<p>So this is all about the Data Science Methodology. One who reviewed each method with complete focus would have the data science methodology on his fingertips.</p>
+
+<pre class="wp-block-preformatted">* The Blog post was compiled with the help of the data science methodology course available at Cognitive class. It is highly recommended to review the course from here; https://cognitiveclass.ai/courses/data-science-methodology-2/</pre>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/understanding-of-data-science-methodology/&text=Understanding of Data Science Methodology" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/understanding-of-data-science-methodology/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/understanding-of-data-science-methodology/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Understanding of Data Science Methodology%20https://www.justsajid.com/posts/understanding-of-data-science-methodology/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/understanding-machine-learning-methodology/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2020/02/5.png" alt="Understanding Machine Learning Methodology" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 09:45:08">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/understanding-machine-learning-methodology/">Understanding Machine Learning Methodology</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/ai-vs-ml-vs-dl/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/04/AI-vs-ML-vs-DL-Copy-1.png" alt="AI vs ML vs DL" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 09:41:39">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/ai-vs-ml-vs-dl/">AI vs ML vs DL</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/hands-on-with-supervised-unsupervised-learning-machine-learning/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/04/0-1.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 09:40:31">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/hands-on-with-supervised-unsupervised-learning-machine-learning/">Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/understanding-machine-learning-methodology/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Understanding Machine Learning Methodology</span>
+      </a>
+    <a href="../../posts/jumpstart-programming-with-python-3/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">JumpStart Programming with Python 3</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Data Science</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/understanding-machine-learning-methodology/">Understanding Machine Learning Methodology</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/ai-vs-ml-vs-dl/">AI vs ML vs DL</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/hands-on-with-supervised-unsupervised-learning-machine-learning/">Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

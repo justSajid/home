@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Develop a C# Console Project | justSajid</title>
+  <meta name="description" content="Develop a C# Console Project — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/develop-a-c-console-project/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Develop a C# Console Project | justSajid">
+  <meta property="og:description" content="Develop a C# Console Project — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/develop-a-c-console-project/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2016/04/admin-ajax-5.png">
+  <meta property="article:published_time" content="2016-04-25T10:03:23Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Develop a C# Console Project | justSajid">
+  <meta name="twitter:description" content="Develop a C# Console Project — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2016/04/admin-ajax-5.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2016/04/admin-ajax-5.png" alt="Develop a C# Console Project" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Develop a C# Console Project</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2016-04-25 10:03:23" itemprop="datePublished">Published April 25, 2016</time></span>
+      <span class="meta-category">in <a href="../../categories/skills/" class="cat-link">Skills</a> <a href="../../categories/csharp/" class="cat-link">Microsoft Visual C#.</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">4 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      The Best Way to learn any language or a technology is to learn it by development projects in it. In C# we can do project base learning is variety of different application framework!
+The Architecture of Visual C# Project is shown below;
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zpssybwxvva.png" width="570" height="510" loading="lazy" alt="Develop a C# Console Project">
+C# programs run on the .NET Framework, an integral component of Windows that includes a virtual execution system called the common language runtime (CLR) and a unified set of class libraries. The CLR is the commercial implementation by Microsoft of the common language infrastructure (CLI), an international standard that is the basis for creating execution and development environments in which languages and libraries work together seamlessly.
+Source code written in C# is compiled into an intermediate language (IL) that conforms to the CLI specification. The IL code and resources, such as bitmaps and strings, are stored on disk in an executable file called an assembly, typically with an extension of .exe or .dll. An assembly contains a manifest that provides information about the assembly's types, version, culture, and security requirements.
+When the C# program is executed, the assembly is loaded into the CLR, which might take various actions based on the information in the manifest. Then, if the security requirements are met, the CLR performs just in time (JIT) compilation to convert the IL code to native machine instructions. The CLR also provides other services related to automatic garbage collection, exception handling, and resource management. Code that is executed by the CLR is sometimes referred to as "managed code," in contrast to "unmanaged code" which is compiled into native machine language that targets a specific system. The following diagram illustrates the compile-time and run-time relationships of C# source code files, the .NET Framework class libraries, assemblies, and the CLR.
+Language interoperability is a key feature of the .NET Framework. Because the IL code produced by the C# compiler conforms to the Common Type Specification (CTS), IL code generated from C# can interact with code that was generated from the .NET versions of Visual Basic, Visual C++, or any of more than 20 other CTS-compliant languages. A single assembly may contain multiple modules written in different .NET languages, and the types can reference each other just as if they were written in the same language.
+In addition to the run time services, the .NET Framework also includes an extensive library of over 4000 classes organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to Windows Forms controls. The typical C# application uses the .NET Framework class library extensively to handle common "plumbing" chores.
+Let start it by simplest way sort of application. Known as Console Application.
+Create a C# Console Project in Microsoft Visual Studio.
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zpsmkbcny2j.png" width="624" height="351" loading="lazy" alt="Develop a C# Console Project">
+Under C# -&gt; Windows -&gt; Classic Desktop;
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zps4v3i37br.png" width="624" height="351" loading="lazy" alt="Develop a C# Console Project">
+And from here, create the project with Name ‘HelloConsole”;
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zpsrias0llq.png" width="624" height="351" loading="lazy" alt="Develop a C# Console Project">
+As Soon you’ll click ‘OK’ to create a project, you’ll get a screen like here;
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zps5pkmieuj.png" width="624" height="351" loading="lazy" alt="Develop a C# Console Project">
+As you see in the ‘Solution Explorer the Project is part of Solution. So as soon you’ll create a project, you’ll create both the project and the solution. You can also add multiple project in a one solution.
+As you observe, Visual Studio has created some code for you, that help you to easily write your code and customize it according to your own.
+A Console Application initially consists of single C# class. Under the namespace each class is a member. So within a namespace, there’s a class. The Default name of starting class in a console application is always ‘Program’. And that has something called the Main Method! Any code you place inside the Main Method excited automatically as the Application starts up! Those’re the rules for console application. The rules are different for other languages. i.e. rules will be different for ASP.NET for the Web, Win-Forms or WPF for the desktop or the other application frameworks!
+To Say Hello World in a console application lets write something in Main Method. The Main Method always execute automatically at the runtime.
+So to output something in a Console, type the word ‘Console’. (Visual Studio would really help you through IntelliSense on your every part of the code). As we’re trying to write something. So can WriteLine method from Console pre-defined class. And Pass the Message through Parameter;
+<p style="text-align: center;"><span style="color: #ff6600;">Console.WriteLine("Hello, Console World");</span></p>
+<p style="text-align: left;"><img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zpscu9cilph.png" width="624" height="351" loading="lazy" alt="Develop a C# Console Project"></p>
+Now Run the Application. At this moment, the project will build and console screen arrive and on the very next moment the console will disappear and Application will stop! Perhaps if you will Run it without Debugging only then it will show the correct output.
+Here’s the way to build that kind of functionality in the application itself. So now use the Console class and call ReadKey method from it;
+<p style="text-align: center;"><span style="color: #ff6600;">Console.ReadKey();</span></p>
+So when now we run the application, it will show us the output but this the Console Screen will pause and waiting for the Input!
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zpsx7b0l65t.png" width="624" height="351" loading="lazy" alt="Develop a C# Console Project">
+So that's how you can easily develop a C# Console Project.
+&nbsp;
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/develop-a-c-console-project/&text=Develop a C# Console Project" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/develop-a-c-console-project/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/develop-a-c-console-project/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Develop a C# Console Project%20https://www.justsajid.com/posts/develop-a-c-console-project/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  <div class="single-tags"><span class="tag-label">Tags:</span><a href="../../tags/c/" class="tag-link">C#</a> <a href="../../tags/console/" class="tag-link">Console</a> <a href="../../tags/consoleapp/" class="tag-link">ConsoleApp</a></div>
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/c-memory-management/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2016/04/net-developer-1.jpg" alt="C# Memory Management" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2016-04-25 09:45:41">April 25, 2016</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/c-memory-management/">C# Memory Management</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/net-core/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2016/04/Difference-between-.NET-Framework-and-.NET-Core.png" alt=".NET Core" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2016-04-25 07:51:13">April 25, 2016</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/net-core/">.NET Core</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/architecture-of-net-framework/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2016/04/image_60140ec0-ce46-4dbf-a14f-4210eab7f42c.png" alt="Architecture of .NET Framework" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2016-04-25 05:36:04">April 25, 2016</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/architecture-of-net-framework/">Architecture of .NET Framework</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/c-memory-management/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">C# Memory Management</span>
+      </a>
+    <a href="../../posts/jumpstart-with-microsoft-visual-c/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">JumpStart with Microsoft Visual C#</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Skills</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/c-memory-management/">C# Memory Management</a>
+        <div class="post-small-date">April 25, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/net-core/">.NET Core</a>
+        <div class="post-small-date">April 25, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/architecture-of-net-framework/">Architecture of .NET Framework</a>
+        <div class="post-small-date">April 25, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

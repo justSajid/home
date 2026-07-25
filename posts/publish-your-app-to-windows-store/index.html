@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Publish Your App To Windows Store | justSajid</title>
+  <meta name="description" content="Publish Your App To Windows Store — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/publish-your-app-to-windows-store/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Publish Your App To Windows Store | justSajid">
+  <meta property="og:description" content="Publish Your App To Windows Store — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/publish-your-app-to-windows-store/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2016/06/Windows-Store-splash-screen-1600.png">
+  <meta property="article:published_time" content="2016-06-03T22:29:51Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Publish Your App To Windows Store | justSajid">
+  <meta name="twitter:description" content="Publish Your App To Windows Store — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2016/06/Windows-Store-splash-screen-1600.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2016/06/Windows-Store-splash-screen-1600.png" alt="Publish Your App To Windows Store" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Publish Your App To Windows Store</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2016-06-03 22:29:51" itemprop="datePublished">Published June 03, 2016</time></span>
+      <span class="meta-category">in <a href="../../categories/dev/" class="cat-link">Development</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">9 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<p>So if you have complete your app and test its all functionality and everything is going perfect then you must be felling accomplished. Because after so much hard work when you are watching your app running according to your expectations, that is really an awesome feeling which cannot be expressed in words.</p>
+
+<p>So after completion of your app, the next step is to publish the app to Windows Store. There are few easy steps which need to follow and your app will be published and that what we called up and running. : - )</p>
+
+<p>Let’s get started!</p>
+
+<p>So far you might be testing your app on Debug Mode. So let’s change it to Release Mode as you are going to Release your app;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-S3UYYWtmkbw/V1DMX84vRvI/AAAAAAAAAIk/6PTTZ7X5AQYeB_z1DPdyyeXjuHOvEyycwCK4B/s1600/1.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now simply test your app in Release mode. This time, it would take little bit more time to compile the application.</p>
+
+<p>Remember as you need to submit the app to Store so it only submits the release version. We cannot submit the debug mode app. Because as we want to give the consumer a best possible experience.</p>
+
+<p>Now! Let's build the package to send to the store. Simply go to Project Manu &gt; Sore and select ‘Create App Packages…’;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-Ze02kL3Ja0E/V1DMYQaWlQI/AAAAAAAAAI8/LKh7SbiRE3ok4v8HFIS1fosaZZRFRCy-ACK4B/s1600/2.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now there are the couple of options which you can choose for your packages. Either you can build packages so you can send them to the store and then clients can acquire that apps from the store or you can also create your packages so you can side load like you have your own solution mechanism like your own private store.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-YzehtjYLdw8/V1DMaIqfwVI/AAAAAAAAAKk/w_xu5I_mRqw5f5alNJx3VgdEJql5HVL6ACK4B/s1600/3.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>So in second case you can use the ‘No’ option in that case the mechanism will be slightly different but for now, we are going with the first case.</p>
+
+<p>So simply remain the option ‘Yes’ and click Next.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-VmyPTlh0Y7k/V1DMZ2nNDXI/AAAAAAAAAKA/CFCCuU8MlmkZTW6hMvVBG-FjzjGeRlzQgCK4B/s1600/4.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>The First thing you need to do is to Sign into your windows store associated account.</p>
+
+<p>Once you Sign in to your account, you will see the app name which you have already chosen for your apps.</p>
+
+<p>Now simply reserve an appropriate name for your app;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-Lv0kxVmj57w/V1DMaNyFczI/AAAAAAAAAKY/KqyQGfCvrAE5XO2JRtoZ5e38ckhKIYuQQCK4B/s1600/5.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>It's like a buy a domain if you ever buy before. : - )</p>
+
+<p>So simply select the app name and click next button.</p>
+
+<p>Now you will see the experience of sending a package to the store;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-yjkqkL7QYX0/V1DMcTxknmI/AAAAAAAAAOE/jblca2tcf9kQsS7kPjv9o06FyTJSueaFQCK4B/s1600/6.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>It’s the high recommendation that you test your app on all architectures. And submit the package to all architectures. That allows you the maximum device breath. E.g. if you don’t submit the mobile package then your mobile customer will totally be out of scope.</p>
+
+<p>So after configuration packages. Simply click ‘Create’ button;</p>
+
+<p>Now Let Visual Studio to create the App package for you. Visual Studio will take his time to create the app package for you so you can submit to the store.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-ehaOC61I8K8/V1DMbmy7qFI/AAAAAAAAALI/I8A0tnYTzIs_F-2L_jmM54DEqTuX8d8NQCK4B/s1600/7.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>So after few minutes of magic by Visual Studio you will see the windows of app package complete;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-o6ggKnAVYJI/V1DMdgem3jI/AAAAAAAAAN0/Z7ve6eyxe-k4Au7cMgMZSW8Pf16Z7UT_ACK4B/s1600/8.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now if you go to the Output location you will see the appxupload package is created for you which will be submitted to the store;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-r0ABj_OPO-g/V1DMY6WIx4I/AAAAAAAAAJU/_D4AyCxUOI4ji9H0jEQ6pZ4JvMZA60qiACK4B/s1600/9.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>You also see that it creates Test folder for you. Because if you directly want to test your app on a device then you also need a package for that.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-9m4tr_GHsCI/V1DMZCZFBkI/AAAAAAAAAJc/e83xUOPwlsIPFFqwLtWM9YO5EgWbhI_ZwCK4B/s1600/10.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now we can directly upload the appxupload package to the store. But! In the case of some issue, it can show some error after the app will publish. So to save from that pain. You should Run the App Certification Kit from visual studio.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-7aoqutOXVU4/V1DMYAAldRI/AAAAAAAAAIs/mYAq2NEdck00z72qmSq5c75nFkeXkELaQCK4B/s1600/11.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>What will it do, it will run a sort of the safeguard that essentially run the certification kit locally on your machine. Runs through almost the same sort of checks which the store will run. And give you a very good degree of confidence that your app is actually correct. And the chances of the success, when you submit to the store, will be much higher.</p>
+
+<p>So let’s launch that Windows App Certification Kit;</p>
+
+<p>When you launch the certification Kit you will see the number of the certification Tests and it’s the recommendation that runs each of the tests before you submitted to the store and you are free to choose which one you want to test;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-DRDXHJScmpU/V1DMc28OS9I/AAAAAAAAANw/8IDZt82aLlc7w5VfYft5SdohTxprXCQyQCK4B/s1600/12.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now simply hit Next to run the tests.</p>
+
+<p>The Windows App Certification Kit will take its time and test everything which you select for your app and from every perspective.</p>
+
+<p>Now after completion of all tests it will show you the test report and if your app passed all tests then you will see the overall result as ‘PASSED’;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-_2Eq4k315Oc/V1DMZYgI_8I/AAAAAAAAAJk/OyO3okgVDJwTr44oUZj_sMPHSkJVuqdAQCK4B/s1600/13.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Simply click Finish Button.</p>
+
+<p>So here comes the real part! Now you need to send your app package to the store.</p>
+
+<p>Simply go to the dashboard of your Windows Store and select your app name which you create earlier;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-lZh9eNFoGv0/V1DMb9TAN9I/AAAAAAAAAOU/GcXYXEB-SxsRnY7hU_gXm2fRuHAMxXJlACK4B/s1600/14.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now Simply click the “Start your submission”;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-4zCxLMckC9k/V1DMb4--aHI/AAAAAAAAALs/yX58E9qGb2gm_nDrBMBSQMXZ5XE2NP6cwCK4B/s1600/15.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Here we need to fill filled all parts.</p>
+
+<p>First, Click on “Pricing and availability”;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-meZlHsrpWhA/V1DMb4mB1fI/AAAAAAAAAMA/iDXDV8HD3_g1mBD52k-d3Gb6VmPYSoB6QCK4B/s1600/16.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Let's fill everything one by one.</p>
+
+<p>In Base Price, you can select up to Free price up to 999.99 USD.</p>
+
+<p>We are publishing our app for free so we select ‘Free’.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-zC_ydRBJ_QY/V1DMYY5ngaI/AAAAAAAAAI4/z-DJht8XddAKwUcKD5PvzJlE7lFDiMVtgCK4B/s1600/17.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>In Free Trail option, if you are giving a free trail of your app so your user can use your app up to certain period of time then you can give free trail up to different period of time from 1 day to 30 days.</p>
+
+<p>As we are giving our app free to our user. So we select ‘Trail Never Expires’;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-UeQDPCg76y8/V1DMYenrzkI/AAAAAAAAAJE/_9OvZsot7A8mFkISTg92NbPaZ7WiosckQCK4B/s1600/18.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now, in Market and Custom Prices, you can select your app market and your target users by choosing the countries and give different prices for different countries;</p>
+
+<p>As we are publishing our app for all type of users belongs to all countries and providing same free Base price, so we keep selecting all countries with the Base price.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-yEmDcnJKkIs/V1DMb6A4OwI/AAAAAAAAAMM/lRb_HVysC7UOHLnH8cqw71CQTyyzCKw4QCK4B/s1600/19.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now in Sale Pricing, you can give different types of sales to your customers.</p>
+
+<p>As we are already giving the free app to our users, so we don’t need any type of sale offer for our customers.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-NaHQVBjAQSo/V1DMai4UEcI/AAAAAAAAAKs/VWo2_eXVdnEQZaS52eKYCXzjpFfh6pi7QCK4B/s1600/20.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>In Distribution and Visibility section you can limit the visibility of your app.</p>
+
+<p>As we are targeting all type of devices so we keep selecting the default option;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-kAF7N4vNCjw/V1DMbyviktI/AAAAAAAAALg/59bKA9U27XwcVs3J302SZVEly74asbjmgCK4B/s1600/21.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>In Organizational licensing, you can allow organizations to acquire your app in volume through the options below. Note that changes will only affect new acquisitions; anyone who already has your app will be able to continue using it.</p>
+
+<p>As our app do not have much concerns with that. So we are keeping it default selected.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-LeO-Z7YFMj4/V1DMb2d-9jI/AAAAAAAAALw/OtYGekb_UFU_gG-ApsbUiGrHQps_S3TpACK4B/s1600/22.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>In Publish date section, you can Schedule your app publish date and time also publish the submission manually.</p>
+
+<p>As we need to publish the app submit the as soon as it passes the certification. So we keep the default selection.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-T_4KVSnfMh0/V1DMZszV3lI/AAAAAAAAAJs/tgG6fp-5ZqILxZ2dbpjVSLnHHK5ssGDiQCK4B/s1600/23.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now when you are done from everything on this page. Click the Save Button.</p>
+
+<p>You will see the Complete will be shown at the front of the section name;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-3C_vqO3t8Is/V1DMcDeUOFI/AAAAAAAAAL8/T42-aDgRsgkBnTmfC0dJg-8RfmGv_A3RACK4B/s1600/24.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now let’s move to the second section of App properties;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-klAE7SLqbgI/V1DMccaIHKI/AAAAAAAAAMg/KNxts93ESdcot6phtHnF1t2dPwn2SPHVACK4B/s1600/25.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Here you can customize your app properties.</p>
+
+<p>In Category and Subcategory section, simply choose appropriate category and subcategory for your app;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-1qLL7F4u9J4/V1DMZsrmi8I/AAAAAAAAAJ0/lO23pMBZEBwczivfyBvHKTqSMgCtbC7gACK4B/s1600/26.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>In Hardware features, indicate which hardware features are required in order for your app to run properly. Customers on hardware that doesn't meet your app's requirements will see a warning before they download your app, and they won't be able to rate or review it. The selected feature(s) will also appear in the Hardware requirements section of your app's Store listing.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-C2KHwOZrrW4/V1DMbfOYPeI/AAAAAAAAAMc/ea9XIvKit5wNZMSX6QSQz7tIGgO-O991QCK4B/s1600/27.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>In the App declarations, you can give your users different privileges.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-s6Hhff69On8/V1DMaxYXihI/AAAAAAAAAK0/-1-lzUIL6WQc4hjafyIA8t_M4A3IzR1wgCK4B/s1600/28.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>When everything is set from the section, simply click Save button and you will see the Complete dialog will appear at the front of your section;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-Y3_OZay92mo/V1DMcS58yzI/AAAAAAAAAOQ/0spcUnRYKBYiw2G5xmJJBY9BQYXbejbagCK4B/s1600/29.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now let's move to Age ratings section;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-NlxUQSPmYCI/V1DMc0tyBhI/AAAAAAAAANk/QKkkRfNSFK8vvCe3QootLA5OtlBtCYm0QCK4B/s1600/30.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Here you need to answer the things appropriately.</p>
+
+<p>As if you are not completed the IARC questionnaire then keep selected “I’m ready to take the International Age Rating Coalition (IARC) questionnaire.”;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-galhb_TKrBw/V1DMa2t2euI/AAAAAAAAAK8/O42Fw4F9lekbAFUhQlXpitSHss_GvsFqACK4B/s1600/31.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>In the rating questionnaire, answer appropriately according to your app type.</p>
+
+<p>As our app is more towards Reference, News, or Educational so we select that option;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-vhklEjfD6_I/V1DMcuDDUsI/AAAAAAAAAM0/Kygj7OgEmdQjpXzVhpcVnrdcCxzaVNeNACK4B/s1600/32.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now simply fulfilled all the option accordingly…</p>
+
+<p>At the end of this section select the target age.</p>
+
+<p>As our App is going to target all ages so we select all ages;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-6kjtT5y_vrI/V1DMY3pBIrI/AAAAAAAAAJM/poyC-6eLsh0UqqDW6HypYOfq4tifp44-wCK4B/s1600/33.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now when everything is complete, simply click Save and Generate.</p>
+
+<p>So IARC will take give your app rating according to your answers.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-6Q1n46iZmew/V1DMcyjEUcI/AAAAAAAAANQ/OXBE75pye4wO3q23rV0dCcMU_vEMHmLHgCK4B/s1600/34.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now if everything is correct, simply click the continue Button you will see the Complete dialog will appear at the front of your section;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-3cNfQdmk5l4/V1DMc_yybrI/AAAAAAAAAOA/7TfeFOZeTt8rn2JnorjEbWGQWeoHSvAdwCK4B/s1600/35.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now let's move to Packages section;</p>
+
+<p>In this section, you will submit your app package;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-_nIqwwOpl-U/V1DMcsgnwWI/AAAAAAAAAMw/c5qqne0XV7o3TibsebZa_GyhPgrsm2P1gCK4B/s1600/36.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now lets drop the .appxupload that was created earlier by Visual Studio;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-wFuIRPZ8o8Q/V1DMaJn6-bI/AAAAAAAAAKM/V_Vl9u1B9s4S9jzUcpWHWdhNFXCRUr7fwCK4B/s1600/37.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>After the package upload you will see your app package at the section of Device family availability section;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-Uxhi5qTVho8/V1DMbvyaICI/AAAAAAAAALc/5Az2jLhb4CcXB8rUVELXTCuENh7l35LdwCK4B/s1600/38.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>In the Device family availability section, you will see the table. The table shows which packages will be offered to specific Windows 10 device families (and earlier OS versions, if applicable) in ranked order. If a device family’s box is unchecked, new customers on that type of device won’t be able to acquire the app (though customers who already have the app can still use it, and will get any updates you submit).</p>
+
+<p>Now in the bottom section you will see the section of Windows 10 packages where you will see the package which we have uploaded to store;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-UcRjd9FMYPo/V1DMaEiLWtI/AAAAAAAAAKc/uS-cTmcsXSw_AIsepVFa5WEk19YNy6NtwCK4B/s1600/39.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>When everything is done, simply click Save button and you will see the Complete dialog will appear at the front of your section;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-8kpmKr-L_GA/V1DMc7MW96I/AAAAAAAAANA/XzbcQoL9JQo3Dwn1MWyxUzvRb9JGwmHgQCK4B/s1600/40.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now simply move to the next Section of Description.</p>
+
+<p>Here you can manage the languages for description. Add additional languages if you need;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-XyhO0t2OlFo/V1DMcfj3y-I/AAAAAAAAAMY/m1TJya_J25QDYjX9-Q81xl9EQS5DgbyNACK4B/s1600/41.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Then click on that language and add the description for your app. Also, add Screens what represent your app;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-xidtlWhdpfA/V1DMc5A3nBI/AAAAAAAAANE/pjbqt0xawX4qGBrvnT9VwGwuGc6kt_R5QCK4B/s1600/42.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>When Everything is set, simply click the save button and you will see the Complete dialog will appear at the front of your section;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-nYhoWtaPxTA/V1DMcyIHoRI/AAAAAAAAANU/RqJ_grVjbQEE2N49xpjeWyTE-rgXoxlcACK4B/s1600/43.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now if you want to add some Notes for certification the go to Notes for certification;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-AlHvXPUkep0/V1DMbs86taI/AAAAAAAAALQ/L5XGQtLGNpQeks-4K4yrfQmIBp17X3DuACK4B/s1600/44.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Here, simply add the required info if you need and click Save Button when all set and you will see the Complete dialog will appear at the front of your section;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-NsQXNWAhEps/V1DMc-DcyWI/AAAAAAAAANg/7mmzAcLjX3AHdsvXZYDgH5XOBVDoQI2HACK4B/s1600/45.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now when everything is set, simply click Submit to Store Button;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-nVKneNpQEcM/V1DMZ7DvD0I/AAAAAAAAAKU/5eK3m0tSrrEHliGZ-hvQVU2e-RG-eIVEACK4B/s1600/46.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>KaBoom! Congratulations, Your App is submitted to store.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-S_jwDrWYg7I/V1DMcf05o7I/AAAAAAAAAMk/NMe7JWd9zK0ByfRSTm0XcDvHxpJX_N_GgCK4B/s1600/47.png" alt="Publish Your App To Windows Store" loading="lazy"></figure></div>
+
+<p>Now it's all done from your end. Now it's Store turn. Windows Store will complete Pre-processing, complete certification process. And finally, after some time if everything goes well then your app will be release and then Published to store…</p>
+
+<p>And you will be informed through Email as your app get progress on Store…</p>
+
+<p>So! Dude, Have a Sarsaparilla… : - )</p>
+
+<p>You See! how easy and fun is that to Publish your app to Windows Store…</p>
+
+<figure class="wp-block-image"><img src="http://1.bp.blogspot.com/-dGkmcVsNMPQ/V1DTecoldaI/AAAAAAAAAO4/oeMU2u2CkTwUH27Dz2NYKI70Y3wOA8vpwCK4B/s1600/2016-06-03%2B%25281%2529.png" alt="Publish Your App To Windows Store" loading="lazy"></figure>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/publish-your-app-to-windows-store/&text=Publish Your App To Windows Store" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/publish-your-app-to-windows-store/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/publish-your-app-to-windows-store/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Publish Your App To Windows Store%20https://www.justsajid.com/posts/publish-your-app-to-windows-store/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/digital-transformation-justsajidbank/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Case Study: Digital Transformation of &quot;justSajid Bank&quot;" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2022-10-17 04:34:43">October 17, 2022</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/digital-transformation-justsajidbank/">Case Study: Digital Transformation of &quot;justSajid Bank&quot;</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/%f0%9d%97%94%f0%9d%97%bf%f0%9d%97%b0%f0%9d%97%b5%f0%9d%97%b6%f0%9d%98%81%f0%9d%97%b2%f0%9d%97%b0%f0%9d%98%81%f0%9d%98%82%f0%9d%97%bf%f0%9d%97%b2%f0%9d%97%96%f0%9d%97%b5%f0%9d%97%ae%f0%9d%97%bf/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="𝗧𝗼𝗽 𝟭𝟬 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲 𝗖𝗵𝗮𝗿𝗮𝗰𝘁𝗲𝗿𝗶𝘀𝘁𝗶𝗰𝘀 || Milan" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2022-10-02 18:39:34">October 02, 2022</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/%f0%9d%97%94%f0%9d%97%bf%f0%9d%97%b0%f0%9d%97%b5%f0%9d%97%b6%f0%9d%98%81%f0%9d%97%b2%f0%9d%97%b0%f0%9d%98%81%f0%9d%98%82%f0%9d%97%bf%f0%9d%97%b2%f0%9d%97%96%f0%9d%97%b5%f0%9d%97%ae%f0%9d%97%bf/">𝗧𝗼𝗽 𝟭𝟬 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲 𝗖𝗵𝗮𝗿𝗮𝗰𝘁𝗲𝗿𝗶𝘀𝘁𝗶𝗰𝘀 || Milan</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/steps-to-generate-another-ssh-key/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Steps to Generate Another ssh key:" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2021-06-11 10:03:55">June 11, 2021</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/steps-to-generate-another-ssh-key/">Steps to Generate Another ssh key:</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/csharp-fundamentals-for-absolute-beginners-bob-tabor/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">CSharp Fundamentals for Absolute Beginners | Bob Tabor</span>
+      </a>
+    <a href="../../posts/linkedin-microsoft-to-acquire-linkedin-for-26-2-billion/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">LinkedIn: Microsoft to Acquire LinkedIn for $26.2 Billion</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Development</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/digital-transformation-justsajidbank/">Case Study: Digital Transformation of &quot;justSajid Bank&quot;</a>
+        <div class="post-small-date">October 17, 2022</div>
+      </div><div class="post-small">
+        <a href="../../posts/%f0%9d%97%94%f0%9d%97%bf%f0%9d%97%b0%f0%9d%97%b5%f0%9d%97%b6%f0%9d%98%81%f0%9d%97%b2%f0%9d%97%b0%f0%9d%98%81%f0%9d%98%82%f0%9d%97%bf%f0%9d%97%b2%f0%9d%97%96%f0%9d%97%b5%f0%9d%97%ae%f0%9d%97%bf/">𝗧𝗼𝗽 𝟭𝟬 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲 𝗖𝗵𝗮𝗿𝗮𝗰𝘁𝗲𝗿𝗶𝘀𝘁𝗶𝗰𝘀 || Milan</a>
+        <div class="post-small-date">October 02, 2022</div>
+      </div><div class="post-small">
+        <a href="../../posts/steps-to-generate-another-ssh-key/">Steps to Generate Another ssh key:</a>
+        <div class="post-small-date">June 11, 2021</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-devops/">JumpStart with DevOps</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-xaml-in-uwp/">JumpStart with XAML in UWP</a>
+        <div class="post-small-date">April 11, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

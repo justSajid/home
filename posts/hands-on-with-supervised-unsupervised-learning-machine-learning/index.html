@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning | justSajid</title>
+  <meta name="description" content="Hands-On with Supervised & Unsupervised Learning | Machine Learning — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/hands-on-with-supervised-unsupervised-learning-machine-learning/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning | justSajid">
+  <meta property="og:description" content="Hands-On with Supervised & Unsupervised Learning | Machine Learning — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/hands-on-with-supervised-unsupervised-learning-machine-learning/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2019/04/0-1.png">
+  <meta property="article:published_time" content="2020-02-22T09:40:31Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning | justSajid">
+  <meta name="twitter:description" content="Hands-On with Supervised & Unsupervised Learning | Machine Learning — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2019/04/0-1.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2019/04/0-1.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2020-02-22 09:40:31" itemprop="datePublished">Published February 22, 2020</time></span>
+      <span class="meta-category">in <a href="../../categories/datascience/" class="cat-link">Data Science</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">4 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<h2>Motivation</h2>
+
+<p>In Machine Learning, all types including supervised, unsupervised and reinforcement learning have their own way of implementation. Let's do hands-on with them;</p>
+
+<h2>Supervised Learning</h2>
+
+<p>It’s the “Task Driven” (Predict next value). Here, we&nbsp;<strong>teach the model</strong>! then with that knowledge, it can predict unknown or future instances.</p>
+
+<p>Let's implement the simple code in the jupeter notebook (You may use any appropriate editor or IDE as per your ease).</p>
+
+<ul><li>Linear Regression</li></ul>
+
+<p>Lets first import all the required&nbsp;modules that we need.&nbsp;Simply import "Matplotlib" library, pyplot, "numpy", "Scikit-Learn" and linear model uses the data sets that we have to perform linear regression.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-kL9-t4Fd-O8/XMGm64W5bJI/AAAAAAAACGk/w-XM7mXJXQUitsinrBupWcKL9rO5aTJ8wCK4BGAYYCw/s1600/1.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<p>Once the import is complete, now simply load the dataset, for now just simply load directly to arrays;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-ghQgO06HDZE/XMGm7Bp9RBI/AAAAAAAACG4/1D_kEF1kYzIIuBJIvFGGga686eLK5Ox1wCK4BGAYYCw/s1600/2.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<p>Here, we can see the loaded data is like in XY plot through which we can apply the linear regression.</p>
+
+<p>Now simply reshape the input to our regression;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-ox25ROfR7ow/XMGm7P2oMkI/AAAAAAAACGw/ncYMx7oc_cIut3B-rEOvDXJ_FGvIT166ACK4BGAYYCw/s1600/3.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<p>Here, we gonna reshape to however we want to see the data from the array;</p>
+
+<p>Now, it will simply print the coefficient and intercepts;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-aAHF2mafsds/XMGm69c0vzI/AAAAAAAACGs/q1cINqbOe5I2aErG23-C6VwfDkFKAsUPQCK4BGAYYCw/s1600/4.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<p>Now by using the data, we can easily calculate the coefficient and intercept;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-X7PZWktIaY0/XMGm7FMA5_I/AAAAAAAACG0/tPUfYzeSE_EwvHrVjE5aCxyoBQV7YffoACK4BGAYYCw/s1600/5.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<p>Let's calculate or predict the price accordingly if the size is 1400.&nbsp;It will predict the price of the house accordingly.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-QXEdItralIc/XMGm60C9sZI/AAAAAAAACGo/t54TN8ah3IcPeYztksdl-tJNCeray2n7QCK4BGAYYCw/s1600/6.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<p>Now, let's visualize what we are getting;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-fre-6QVjMrc/XMGntTFlN-I/AAAAAAAACIw/TN2_nX6I9VUtY4oYNwhn7OhVAiyzqdAfQCK4BGAYYCw/s1600/7.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<p>That will&nbsp;create the visualization graph for us;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-YJ_5fCVIEv0/XMGntryAg7I/AAAAAAAACI8/vhDHMEiEtqcDW9bzp08AGmzioHP9mcaDwCK4BGAYYCw/s1600/8.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<h2>Unsupervised Learning</h2>
+
+<p>Its data-driven&nbsp;(identify clusters). Here, we&nbsp;<strong>do not supervise the model</strong>, but we let the model work on its own to discover information&nbsp;that may not be visible to the human eye.</p>
+
+<p>K-means clustering;</p>
+
+<p>Here, we have a number of steps;</p>
+
+<ol><li>First, we need to randomly initialize two points called the cluster centroids.</li><li>Now, based upon the distance from the orange cluster or green cluster centroid, it will group itself into the particular group.</li><li>Move Centroids - Now, we will take the two cluster centroids and interactively reposition them for optimization.</li><li>Repeat the previous two steps iteratively until the cluster centroids stop changing their positions and became static.</li><li>Once the cluster becomes static then the k-means clustering algorithm is said to be converged (done). (Hence we can start testing it)</li></ol>
+
+<p>Let's do the hands-on;</p>
+
+<p>Simply&nbsp;Import Numpy, Matplotlib, and skilearn libraries and load the static data to visualize a graph</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-EgXGp6xfoHE/XMGntiEA6KI/AAAAAAAACJE/cBN3IcR-KKELJKfhtAUxTh09DXFOM0qmgCK4BGAYYCw/s1600/9.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<p>Now,&nbsp;the next step is to convert the data to NP or Numpy array. This time instead of shaping it, simply load it in [].</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-M5zGdW5hsng/XMGntgRm3SI/AAAAAAAACJA/f94UAuZP4i8FFdgQU5mjm8UH4zY0KKOWwCK4BGAYYCw/s1600/10.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<p>In the next step, we can go ahead and create our cluster variable and in this case, we put a call that k-means all lower case and that assign with Kmeans which is the module we brought in and we simply send a variable "n_cluster". And we are looking to make 2 clusters, so we will simply assign it to 2. (As there is a challenge when working with K-means, that guessing how many clusters we want, that's why it's always nice to plot the data first hence we can guess how many clusters we want and set it accordingly). At last, simply use kmeans.fit(X), that would take our X data, plot it and fits it to k-means and create those different pieces of data we are looking for.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-dcJbTSS1UCo/XMGntZW04OI/AAAAAAAACI4/GgdIZQrdBfQ14bgMjRpXKGrh9BZWZpbRQCK4BGAYYCw/s1600/11.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<p>So, now we will set a variable called centroid and we can set it equal to our k-means variable "kmeans.cluster_centers_", that's the part of the k-means module, we have clusters centers and we have labels so we can create our both our centroids and our labels. Hence we can print our centroids and labels like here;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-YTvVu8TydBc/XMGntY-c71I/AAAAAAAACI0/oq80hFlj8YgifzVOa-jz5lziNNzzHUBWgCK4BGAYYCw/s1600/12.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<ul><li>Here, we can see in the output, the first centroids located at 1.16666667, 1.46666667, that's where the first point is and the second is at 7.33333333 and 9.0.</li><li>And then the labels that tell it each of those different pieces of data we put in. It says which centroid that's going to go with, so here the first one is 0 then the 1, 0, 1, 0, 1, and that's how its group those different points of data.</li></ul>
+
+<p>Now, let's print the clusters on to a graph. So let's visualize the output.</p>
+
+<p>Here, we would apply colors. Then use the loop to go through the range of the length of X, so we can see each of the X variables, then we print the coordinate and the label, so we know which coordinate goes with which label and then we actually going to plot them for each one we're gonna add that to the plt plot and finally to see where those centroids are, we're also going to add the scatter plot and put the two centroids on those plots. At the end we will simply show it;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-Zv0DwXeg3Ng/XMGodFJR7LI/AAAAAAAACJs/Z7ew2WndqfYewCzjHqV1CDv_qn-MVflEACK4BGAYYCw/s1600/14.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<p>It will visualize a nice graph for us with coordinates and labels;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-m_wwxM9ud2I/XMGoc6aC3YI/AAAAAAAACJo/sYfzmvq6jWEMhLMyNrO1rQ0JYhAxepI-gCK4BGAYYCw/s1600/15.png" alt="Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" loading="lazy"></figure></div>
+
+<hr class="wp-block-separator"/>
+
+<h2>Conclusion;</h2>
+
+<p>So you see, how cool is to play with libraries and stuff in Machine Learning. One can perform amazing things by using this. Like by using just a few lines of code we have performed clustering and other things very easily.</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/hands-on-with-supervised-unsupervised-learning-machine-learning/&text=Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/hands-on-with-supervised-unsupervised-learning-machine-learning/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/hands-on-with-supervised-unsupervised-learning-machine-learning/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning%20https://www.justsajid.com/posts/hands-on-with-supervised-unsupervised-learning-machine-learning/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/understanding-of-data-science-methodology/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2018/12/DvplWvIXcAEZNp-.jpg" alt="Understanding of Data Science Methodology" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 10:28:52">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/understanding-of-data-science-methodology/">Understanding of Data Science Methodology</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/understanding-machine-learning-methodology/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2020/02/5.png" alt="Understanding Machine Learning Methodology" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 09:45:08">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/understanding-machine-learning-methodology/">Understanding Machine Learning Methodology</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/ai-vs-ml-vs-dl/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/04/AI-vs-ML-vs-DL-Copy-1.png" alt="AI vs ML vs DL" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 09:41:39">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/ai-vs-ml-vs-dl/">AI vs ML vs DL</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/programming-with-python/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Programming with Python</span>
+      </a>
+    <a href="../../posts/ai-vs-ml-vs-dl/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">AI vs ML vs DL</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Data Science</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/understanding-of-data-science-methodology/">Understanding of Data Science Methodology</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/understanding-machine-learning-methodology/">Understanding Machine Learning Methodology</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/ai-vs-ml-vs-dl/">AI vs ML vs DL</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

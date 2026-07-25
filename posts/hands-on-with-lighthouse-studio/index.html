@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Hands-on with Lighthouse Studio (1/2) | justSajid</title>
+  <meta name="description" content="Hands-on with Lighthouse Studio (1/2) — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/hands-on-with-lighthouse-studio/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Hands-on with Lighthouse Studio (1/2) | justSajid">
+  <meta property="og:description" content="Hands-on with Lighthouse Studio (1/2) — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/hands-on-with-lighthouse-studio/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2020/09/0.png">
+  <meta property="article:published_time" content="2020-09-11T16:59:48Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Hands-on with Lighthouse Studio (1/2) | justSajid">
+  <meta name="twitter:description" content="Hands-on with Lighthouse Studio (1/2) — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2020/09/0.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2020/09/0.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Hands-on with Lighthouse Studio (1/2)</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2020-09-11 16:59:48" itemprop="datePublished">Published September 11, 2020</time></span>
+      <span class="meta-category">in <a href="../../categories/analytics/" class="cat-link">Analytics</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">5 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<h2>Overview</h2>
+
+<p>Lighthouse Studio is a platform for creating questionnaires and applying specialized research techniques such as Maximum Difference Scaling (MaxDiff) and conjoint (trade-off) analysis.</p>
+
+<h2>Hands-On (Creating Questioner)</h2>
+
+<p>Once the lighthouse studio is installed on the windows machine, simply start it.</p>
+
+<p>We'll have the home screen at the front of us;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-ItfjFz1fjJE/X1ti9HkqEbI/AAAAAAAAC-A/BGXK82QJVkEFs7pL1VMFex3ik94SN6WcACNcBGAsYHQ/s16000/1.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>Now to create a new study, simply click on the New button to create the New Button;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-m6B7K1FFtBg/X1ti_-_WJNI/AAAAAAAAC-s/LKodlUa2UgIbtnfS7zwr0_eZQ6AOAsV3gCNcBGAsYHQ/s16000/2.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>And give the study required name in an appropriate location and click OK;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-s4i2fus9To0/X1tjBkutjAI/AAAAAAAAC_Q/aojggI6A56c-ZxiSyuodbSpVqt9KHVrOACNcBGAsYHQ/s16000/3.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>We will have the write questionnaire dialog at the front of us, (Also we can do that by clicking compose &gt;&gt; Write Questionnaire from the top menu bar or by clicking <strong>Write</strong> icon in the toolbar);</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-Aj8F5xspCWM/X1tjB_DppJI/AAAAAAAAC_U/O-2S6heLjF0TXrCVBaAbSVxto8QAbnvTQCNcBGAsYHQ/s16000/4.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>Here, we can see all the questions that are currently in our survey. The "Start" question automatically add to the first page of our survey. (Later on, when we provide a survey link to launch the questionnaire, this Start "question" is actually not seen by the respondent and is used instead for specifying passwords and other related settings).</p>
+
+<p>Now to modify this Start question, we can simply click '<strong>Edit</strong>' button by highlighting this Start question.</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-RTYJMYcm7Fo/X1tjCAfyLsI/AAAAAAAAC_Y/rB0moQLMsfI5S-PlXVP5O5Tlr9XaSF0sgCNcBGAsYHQ/s16000/5.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>Now we can see the 'Questionnaire Access and Password' dialog;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-bR8DdBIN6BQ/X1tjCe25iNI/AAAAAAAAC_c/nvqrbgNjEVgiadxJIFuLm26aISLe_Z4VgCNcBGAsYHQ/s16000/6.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>Here, we can customize what the respondents will see on the first page of the survey. Like here, we can also specify the respondent password if we want to make our survey password protected.</p>
+
+<p>As we can see here, each question has different text areas. Will show on screen accordingly as 'Header 1', 'Header 2' and 'Footer'. So we can visualise our text appropriately.</p>
+
+<p>E.g. In 'Header 1' we can write the details about the question. Like "Welcome to our survey! Today we are interested in AI use during the pandemic times. Please type your user name and password and then click the “Next” button to continue…"</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-zdknQfTYI-s/X1tjCalBBAI/AAAAAAAAC_g/_q6J4Iye63MpDKQUUUIVa53zBgOe-WeegCNcBGAsYHQ/s16000/7.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>We can simply write that as it is, and also use the 'Pencil ✏️ ' button on the right side of the text bar to further customize the text. This gives us more freedom to customize the text as per our need by using the simple HTML tags;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-mByQ-Tmolz0/X1tjC9pHlZI/AAAAAAAAC_k/uI_cq06yBZEa2ZahZhGdOhZjN_gIXP1hACNcBGAsYHQ/s16000/8.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<h3><strong>Make the survey password protected;</strong></h3>
+
+<p>Well, as its an optional for us to make our survey password protected. Perhaps to do that, we can easily do the following steps;</p>
+
+<p>i) While editing the Start question, simple click upon the 'Password Fields';</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-fcaK6oA-Fxw/X1tjCxHYznI/AAAAAAAAC_o/InHrfLQzAK4JnfkSJnbcKmrF3bC3M2afgCNcBGAsYHQ/s16000/9.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>ii) We can add a number of password fields here, perhaps normally it is typical to include just one or two password fields. In our survey, we'll be using a username and a password. We'll name the variables (fields) <strong>myusername</strong> and <strong>mypassword</strong>. (The datatype for username can be 'Text' To mask the user password we can simply click the 'Masked' option, perhaps we can also use case sensitive option if we want).</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-UO-PKuvTLwo/X1ti9CRvtAI/AAAAAAAAC-E/C0PLiluGupIqO5Zk7zS0wTsv347O6w-GwCNcBGAsYHQ/s16000/10.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>Now if we click upon the preview, we can see the Preview of how this will look like;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-1SuvKLojV1Q/X1ti9zye8LI/AAAAAAAAC-I/GmamkJuBDZgp4d6ukzKbOBAkhoHa6ZZ3QCNcBGAsYHQ/s16000/11.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>* A common approach is to provide respondents a "one-click link" which already includes the respondent's password in the link (the URL), so that respondents just click the link and immediately bypass the Start question and begin the survey at the question directly following the Start question. But, for this quick-start understanding, we can assume that we will send a generic link to the Start page for each respondent.</p>
+
+<p>iii) Now, to provide the exact username, password, simply click upon Password Data button;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-CF6VvHZVBxE/X1ti-BHzpZI/AAAAAAAAC-Q/vsS73ZgQhvMPwtdJcqzub4vi2pLZhryogCNcBGAsYHQ/s16000/12.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>This will popup the message that, changes to password and merged fields must be saved. And on continue to Password Data, 'Cancel' will no longer be available.</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-mwLTnLho4nA/X1ti-MaCtvI/AAAAAAAAC-M/guDiuB3JFFUEYIdXy_FUa2fNZ0_q4pY9wCNcBGAsYHQ/s16000/13.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>iv) Now, here we can simply provide the UserName and Password that the respondent will have to enter before entering our survey;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-6ZYX2IOxnTg/X1ti-XxvV3I/AAAAAAAAC-U/c4eyRizLZLE9GK80iTR_rsTq48WENwC-gCNcBGAsYHQ/s16000/14.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>* (1000 max respondents mean, the username and password can be used by a maximum of 1000 users).</p>
+
+<p>We can also do the auto-generated password, as well as we can Import the passwords. </p>
+
+<p>In most studies, each respondent receives a unique password combination. I.e. Each respondent receives a unique password combination (Max Respondents = 1). With unique passwords for each respondent, respondents that terminate early can return and restart the survey where they left off.</p>
+
+<p>v) Once, Password Data is set, simply click Close button. And thats it.</p>
+
+<h3><strong>Adding Questions;</strong></h3>
+
+<p>Whenever we add a question to the List of Questions, the new question is placed directly below whatever question (or page break) is highlighted. If no question is highlighted, then the new question is placed at the bottom of the list. If you want to rearrange the questions within the list, you can highlight them and use the "Up" and "Down" arrows next to the list. Or, you can cut, copy, and paste questions by using the cut, copy, and paste icons.</p>
+
+<p>i) To add new question, simply click the Add button. </p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-Y78LluB-Uy8/X1ti--m0xqI/AAAAAAAAC-c/B0_3Ne5yG68iOqASt7CuzR6gun09gNlVQCNcBGAsYHQ/s16000/15.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>ii) The '<strong>Add to Questionnaire</strong>' dialog is shown. Here we can simply select the question type, simply select the question type and click OK;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-fhG1fNl2F6Y/X1ti-_iFaiI/AAAAAAAAC-Y/332iwPsj_UMvTT858I7vese0E2VXBUipQCNcBGAsYHQ/s16000/16.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>iii) Now, it will ask for the question name, simply give it an appropriate name and press OK;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-ckWVJ7gTRRU/X1ti-wyi9qI/AAAAAAAAC-g/ImrOUQGH4vMFhMGgGolbEDbeuqLfP-K_gCNcBGAsYHQ/s16000/17.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>iv) Now similarly add the question content here. E.g. In Header 1, write the question statement;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/--lfkX8YPvLE/X1ti_sjypgI/AAAAAAAAC-k/P0JoYUSgDfENtXuB0WIUzCtErDJJLXw5ACNcBGAsYHQ/s16000/18.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>v) Now as this question requires just a single response (a radio button), so we should click the Settings tab and select the Radio button (single response) in the upper-left-hand corner of this dialog (it is already selected by default).</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-wYbQFExs6gw/X1ti__1KY-I/AAAAAAAAC-o/u9HbWASowVM5G0qKZN5GdjXOV6UY_J1HQCNcBGAsYHQ/s16000/19.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>vi) Now, to add options, simply click on the 'Response Options' tab;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-kPfSyQiEn7w/X1tjAB_OxoI/AAAAAAAAC-w/it4RTOO-aykh6GJlp1cXbQFMT5fjcTciQCNcBGAsYHQ/s16000/20.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>vii) Now, simply keep adding option by clicking on the Add button. To add more options simply do enter twice and give the another option;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-OND6tQbPl6g/X1tjAWdkFMI/AAAAAAAAC-0/gWEXIqn2grIMnS_NyHiw9kRY9gsqNtw_QCNcBGAsYHQ/s16000/21.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>* It is a good practice to already have the questionnaire dataset ready either in word or excel, hence it will be a simple copy pasting activity here.</p>
+
+<p>viii) To review how our question look like, simply click Preview, we will have the question demonstration at the front of us;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-uGHCt3Gl_HE/X1tjAbiodlI/AAAAAAAAC-4/qlVXtv3m9lwHUyyblXCmfko7QAMmoz_tACNcBGAsYHQ/s16000/22.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>Similarly, we can keep adding the questions...</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-Bk9oX2il_Ns/X1tjAuc3w8I/AAAAAAAAC-8/U96q_jFqKkM3Oqg3nR2-_7CF4p7JMvbhACNcBGAsYHQ/s16000/23.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>ix) When our questionnaire is complete, we can simply conclude our survey. For that we simply select the question category as terminate;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-V80c5iFV9o8/X1tjBKdmA9I/AAAAAAAAC_E/on8lExx50YAAwd6yrWHzrD8E8YojcQ4ewCNcBGAsYHQ/s16000/24.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>x) Now, simply add conclusion remarks as, "Thank you very much. That's all we need to know today";</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-B-CfWt7el3U/X1tjBC1pTII/AAAAAAAAC_A/42CdD3Uia3UOtq0pXv_HTYmsGQEiiJfJACNcBGAsYHQ/s16000/25.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>x) For better visualization, we can 'Add Page Breaks', by clicking upon the question and click Add Page Break;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-F9DavzE3N4I/X1tjBR3XEkI/AAAAAAAAC_I/rqZaF4B6ChkBH6IZZKE0aftscO-UoKp6ACNcBGAsYHQ/s16000/26.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p>Now to test the whole survey, go to 'Test' from top menu bar and select Test Servey, this will take us to browser where we can test all the whole questionnaire;</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://1.bp.blogspot.com/-xQ_dyJhlzaA/X1tjBop0G9I/AAAAAAAAC_M/h3fBgb08EOox73adUCknQQIeLXTW8cEpQCNcBGAsYHQ/s16000/27.png" alt="Hands-on with Lighthouse Studio (1/2)" loading="lazy"></figure></div>
+
+<p></p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/hands-on-with-lighthouse-studio/&text=Hands-on with Lighthouse Studio (1/2)" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/hands-on-with-lighthouse-studio/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/hands-on-with-lighthouse-studio/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Hands-on with Lighthouse Studio (1/2)%20https://www.justsajid.com/posts/hands-on-with-lighthouse-studio/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/mapping-the-updated-sheet-with-orignal-file/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2020/06/Screenshot-2020-06-02-at-2.18.44-PM.png" alt="[Internal] Mapping the Updated Sheet with Orignal File | IBV Self Service Tool" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-06-06 21:59:06">June 06, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/mapping-the-updated-sheet-with-orignal-file/">[Internal] Mapping the Updated Sheet with Orignal File | IBV Self Service Tool</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/getting-the-required-files-ibv-self-service-tool/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2020/06/Screenshot-2020-06-02-at-2.18.44-PM.png" alt="[Internal] Getting the Required Files | IBV Self Service Tool" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-06-02 15:58:02">June 02, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/getting-the-required-files-ibv-self-service-tool/">[Internal] Getting the Required Files | IBV Self Service Tool</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/preparing-data-ibm-spss-statistics/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2020/05/5-copy.png" alt="[Internal] Preparing Data IBM SPSS Statistics" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-05-09 11:39:17">May 09, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/preparing-data-ibm-spss-statistics/">[Internal] Preparing Data IBM SPSS Statistics</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/mapping-the-updated-sheet-with-orignal-file/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">[Internal] Mapping the Updated Sheet with Orignal File | IBV Self Service Tool</span>
+      </a>
+    
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Analytics</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/mapping-the-updated-sheet-with-orignal-file/">[Internal] Mapping the Updated Sheet with Orignal File | IBV Self Service Tool</a>
+        <div class="post-small-date">June 06, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/getting-the-required-files-ibv-self-service-tool/">[Internal] Getting the Required Files | IBV Self Service Tool</a>
+        <div class="post-small-date">June 02, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/preparing-data-ibm-spss-statistics/">[Internal] Preparing Data IBM SPSS Statistics</a>
+        <div class="post-small-date">May 09, 2020</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

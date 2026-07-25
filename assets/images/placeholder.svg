@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#f4f2ec"/>
+  <rect x="0" y="0" width="800" height="4" fill="#b8860b"/>
+  <rect x="0" y="446" width="800" height="4" fill="#b8860b"/>
+  <rect x="380" y="165" width="40" height="120" fill="#dedad2" rx="2"/>
+  <rect x="320" y="205" width="160" height="40" fill="#dedad2" rx="2"/>
+  <text x="400" y="330" font-family="Georgia,serif" font-size="16" fill="#8a8070" text-anchor="middle" dominant-baseline="middle" letter-spacing="2">justSajid</text>
+  <text x="400" y="358" font-family="Arial,sans-serif" font-size="11" fill="#b8b0a0" text-anchor="middle" dominant-baseline="middle" letter-spacing="4">ARTICLE IMAGE</text>
+</svg>

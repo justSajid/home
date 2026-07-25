@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Programming with Python | justSajid</title>
+  <meta name="description" content="Programming with Python — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/programming-with-python/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Programming with Python | justSajid">
+  <meta property="og:description" content="Programming with Python — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/programming-with-python/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2019/05/0.jpg">
+  <meta property="article:published_time" content="2020-02-22T09:39:18Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Programming with Python | justSajid">
+  <meta name="twitter:description" content="Programming with Python — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2019/05/0.jpg">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2019/05/0.jpg" alt="Programming with Python" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Programming with Python</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2020-02-22 09:39:18" itemprop="datePublished">Published February 22, 2020</time></span>
+      <span class="meta-category">in <a href="../../categories/python/" class="cat-link">Python</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">5 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<h2>Motivation</h2>
+
+<p>In order to do proper hands-on with a new language, it's important to understand each part of it by applying live examples. Hence its syntax fully clear.</p>
+
+<hr class="wp-block-separator"/>
+
+<p>Let's start by playing with functions;</p>
+
+<h2>Functions</h2>
+
+<ul><li>Simply create an&nbsp;<strong>add_numbers</strong>&nbsp;a function that takes two numbers and adds them together;</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-C-LmgqdtURU/XNPNDZo2dsI/AAAAAAAACQ8/6O5zIZKFx2wtbVgMcKSNHx8G6Vbv4XIDQCK4BGAYYCw/s400/1.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li><strong>add_numbers</strong>&nbsp;updated to take an optional 3rd parameter.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-Loh7rb8H_Og/XNPNDuAoWNI/AAAAAAAACRA/nJXrkC_ADh4WXg_b7gkh6gbp4UeGPmeWgCK4BGAYYCw/s1600/2.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li><strong>add_numbers</strong>&nbsp;updated to take an optional flag parameter.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-R5oJ_3sIawo/XNPNDjPSWAI/AAAAAAAACRI/TRrD_UH3Av0IvUQD9uKfR1_JI1MEFBdJQCK4BGAYYCw/s1600/3.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Assign function&nbsp;<strong>add_numbers</strong>&nbsp;to variable add.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-r5dHi5DUZ5E/XNPNDs7LG1I/AAAAAAAACRE/F-l7pj162s4QJEyk-r7-yK2ihNgA9AUVwCK4BGAYYCw/s400/4.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<hr class="wp-block-separator"/>
+
+<h2>Types and Sequences</h2>
+
+<ul><li><strong>Tuples</strong>&nbsp;are an&nbsp;<strong>immutable</strong>&nbsp;data structure (cannot be altered).</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-4dObbwIH1IA/XNPNDoArc1I/AAAAAAAACRM/r_c2b9t3Ihg6oWOQbclBbGZHReOIzswBACK4BGAYYCw/s400/5.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li><strong>Lists</strong>&nbsp;are a&nbsp;<strong>mutable</strong>&nbsp;data structure.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-eLXVpLJLzVo/XNPvMLD0AEI/AAAAAAAACS8/LJ1cmJAPM2ci-X3uCBbHTyZUW4tfiLQ1wCK4BGAYYCw/s400/6.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use&nbsp;<strong>append</strong>&nbsp;to append an object to a list.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-JAiYB1jCaDg/XNPvMWI8p3I/AAAAAAAACTM/i8TW4Gvs9RQFZBK6VugO2b2M6amk4eltQCK4BGAYYCw/s1600/7.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>And by using the indexing operator.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-tnampxh_THc/XNPvMQ_N0AI/AAAAAAAACTA/F_bjR2Eb1JcykOJFTQ3m-YbzQKa_ZKwNgCK4BGAYYCw/s1600/8.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use&nbsp;<strong>+&nbsp;</strong>to concatenate lists</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-I8X1PhJkBVo/XNPvMb7UZPI/AAAAAAAACTE/Ky1gXCOPoKAfSfySPa6TCz5NEzJrgevbwCK4BGAYYCw/s1600/9.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use&nbsp;<strong>*</strong>&nbsp;to repeat lists</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-t2F5OUnz670/XNPvMTKMwrI/AAAAAAAACTI/SXZvbr-cvmUA36718H1RoaOgh4bIgTHagCK4BGAYYCw/s400/10.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use the&nbsp;<strong>in</strong>&nbsp;operator to check if something is inside a list.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-gFxZJF6uQWo/XNPv2MLc5fI/AAAAAAAACUA/VSLcPEpGwjwqz6ohxjAkX3HHJdyjco7gQCK4BGAYYCw/s1600/11.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Let's look at the strings. Use bracket notation to slice a string.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-5QWTKoYsCDU/XNPv2Kdua3I/AAAAAAAACUU/4pe3oF4AP6YONirRoj-DziXjf_Y6PB3-ACK4BGAYYCw/s1600/12.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>To return the last element of the string.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-jZGk5E_9TwE/XNPv2G0nojI/AAAAAAAACUM/eMEj8qmodNoJFPK6vIBRlsfC_6H0VDxdACK4BGAYYCw/s1600/13.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>This will return the slice starting from the 4th element from the end and stopping before the 2nd element from the end.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-Egb_-CGzY5A/XNPv2G25S8I/AAAAAAAACUE/5-0Xqa31gV0HOx_OLeEg2JXw_l2CZmViwCK4BGAYYCw/s1600/14.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>This is a slice from the beginning of the string and stopping before the 3rd element.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-LMIpkCnDYeE/XNPv2E3txWI/AAAAAAAACUI/zHwWWjawA6g1YNzf2I-oTv66VIrKKVTNQCK4BGAYYCw/s1600/15.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>And this is a slice starting from the 4th element of the string and going all the way to the end.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-seY8kloUXmg/XNPv2KExYxI/AAAAAAAACUQ/m7xSSbuj92ctr_ud8LL1iVo8gUp_qB9ZQCK4BGAYYCw/s1600/16.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Split returns a list of all the words in a string, or a list split on a specific character.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-zrzxey7CSG8/XNPwS1kYFRI/AAAAAAAACVA/4DSu1K8iny4y3PdaV44We85DeK6nwql1ACK4BGAYYCw/s1600/17.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>*&nbsp;Make sure we convert objects to strings before concatenating.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-FnMPIBCBMcQ/XNPwS_fyDBI/AAAAAAAACVE/XDzQWAIMtJYGPmFrFjE6CeEE5yFeWSJrQCK4BGAYYCw/s1600/18.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-FgdHWE19rVw/XNPwS1LeqOI/AAAAAAAACVM/M0YfiVE1wD4gQqTjmjePCyeIi8kwLLSNgCK4BGAYYCw/s1600/19.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Dictionaries associate keys with values.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-G3NbsgNh8bc/XNPwSyg32cI/AAAAAAAACVI/EIrB762yfJYZkSBA-MaKtFLlIm13YKNlgCK4BGAYYCw/s1600/20.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Iterate over all of the keys</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-1MwTBkO2VYY/XNPwS0s1AVI/AAAAAAAACVQ/EaPZd9i5I7o02S0l5OEPMCwA4uKo_wCbACK4BGAYYCw/s1600/21.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Iterate over all of the values</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-QrSoVoNVAKc/XNPxM-9lUXI/AAAAAAAACWs/XnAHB7FdaWMf-3gWqFViEQmTcxs_l46WACK4BGAYYCw/s1600/22.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>We can unpack a sequence into different variables:</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-EPmcmBZ4M7Y/XNPwzxQKNmI/AAAAAAAACV8/Rtm2Fm5Mt_4sTeTXQbLN_EcGDP2EmMJkQCK4BGAYYCw/s1600/23.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-qUVyQlpyrSo/XNPwzzooBYI/AAAAAAAACWA/x23ppNyKPMckZ1B2FrkMezUKsJ9W9U0mQCK4BGAYYCw/s400/24.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Make sure the number of values you are unpacking matches the number of variables being assigned.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-_fmkE4lNKxk/XNPw0Ff0XbI/AAAAAAAACWM/ZurUCtrOpgk4eF-kP03aUYI_EdxsjA0UQCK4BGAYYCw/s1600/25.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<p>More on Strings</p>
+
+<ul><li>Again, we have to use string type here;</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-pBHiY0ehkFE/XNPw0LhIHQI/AAAAAAAACWQ/a1ZQBOlci88iBuwCOTgPZvlHh7s_NWIRQCK4BGAYYCw/s1600/26.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-pBHiY0ehkFE/XNPw0LhIHQI/AAAAAAAACWQ/a1ZQBOlci88iBuwCOTgPZvlHh7s_NWIRQCK4BGAYYCw/s1600/26.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Python has a built-in method for convenient string formatting.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-18GN31NRO0k/XNPw0Lu4GyI/AAAAAAAACWI/ocYIVwj5SPEQLwgL0t-PoeQvobpediltgCK4BGAYYCw/s1600/28.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<hr class="wp-block-separator"/>
+
+<h2>Dates and Times</h2>
+
+<p>For Dates and Times, we've to import "<strong>datetime</strong>" and "<strong>time</strong>" libraries;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-WfNEyTfwA_E/XNPyD40vxJI/AAAAAAAACYA/pABE1JSf-OY4ChB-Lv8mTBv6yVcAvTOnQCK4BGAYYCw/s1600/29.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>"<strong>time</strong>" returns the current time in seconds since the Epoch. (January 1st, 1970)</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-A0GZbgTG-dw/XNPyD4tFl-I/AAAAAAAACYE/008WBKVgZc8bzDGWujC6wU-rqTeIZ3CUQCK4BGAYYCw/s400/30.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Convert the timestamp to&nbsp;<strong>datetime</strong>.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-WOk8cP8K148/XNPyD7k76GI/AAAAAAAACYM/EPRgDO4kXJwKul36P_YB6rAWs6vuZjAFwCK4BGAYYCw/s1600/31.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Handy&nbsp;<strong>datetime</strong>&nbsp;attributes.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-fwGcsTKHKio/XNPyEC2AU6I/AAAAAAAACYQ/qWw-tUSGVwACuiUZHjuh5fZluPvWOZDBgCK4BGAYYCw/s1600/32.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li><strong>timedelta</strong>&nbsp;is a duration expressing the difference between two dates.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-8HW5js-7LnM/XNPyD0-INCI/AAAAAAAACYI/0HxMjufr_aExHPrUZ9-FJE3UtphlgUC5gCK4BGAYYCw/s1600/33.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>date.today returns the current local date.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-hvWGdmGGfKM/XNPyjeJkeNI/AAAAAAAACY8/1hfjEaogwGQauw6a38PYOj6jzeIbwTR4wCK4BGAYYCw/s1600/34.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<h3><strong>Objects and map()</strong></h3>
+
+<ul><li>An example of a class in python</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-fnPH11yk0Gs/XNPyjUuv1FI/AAAAAAAACZI/tG99P6Q_NKgLBztYwawfLEZFoTn1DROiQCK4BGAYYCw/s1600/35.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>An example of mapping the min function between two lists.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-QXaiBvXSpjo/XNPyjejQPfI/AAAAAAAACZE/XsOJGSJNOPICPAWWGBbe6neSyYJv3T_OQCK4BGAYYCw/s1600/36.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Now let's iterate through the map object to see the values.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-zqLd0FX4HeI/XNPyjYwRVLI/AAAAAAAACZM/CAZpal8c9TEHZzN7YLTGnQIniBIU6xYlwCK4BGAYYCw/s1600/37.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<h3>Lambda and List Comprehensions</h3>
+
+<p>Lambda's are Python's way of creating anonymous functions. These are the same as other functions, but they have no name. The intent is that they're simple or short-lived and it's easier just to write out the function in one line instead of going to the trouble of creating a named function.&nbsp;The return of a lambda is a function reference.</p>
+
+<p>Note that&nbsp;we can't have default values for lambda parameters and&nbsp;we can't have complex logic inside of the lambda itself because we're limited to a single expression.</p>
+
+<p>So lambdas are really much more limited than full function definitions. But they're very useful for simple little data cleaning tasks. And&nbsp;we can see lots of examples regarding that. So we should be able to read and write lambdas.</p>
+
+<p>Here's an example of lambda that takes in three parameters and adds the first two.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-dZI11VaM9-w/XNPyjcAYCII/AAAAAAAACZA/_7UTVYVsUagEQXm-mOxzFZjwW6fvdK_eACK4BGAYYCw/s1600/38.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Let's iterate from 0 to 999 and return the even numbers.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-ssF0N9lYjP4/XNPzDxHy5kI/AAAAAAAACZw/Y6ohMpjLfswKi7WZohCFDoGlh4Uq0i8YgCK4BGAYYCw/s1600/39.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<hr class="wp-block-separator"/>
+
+<h2>Numerical Python (NumPy)</h2>
+
+<ul><li>Let's start with importing; "<strong>import numpy as np</strong>"</li></ul>
+
+<h3>Creating Arrays</h3>
+
+<ul><li>Create a list and convert it to a numpy array</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-wQmCG2FSrSw/XNPzDwYxFeI/AAAAAAAACaI/5NP5DngOq08QanswsXtoJTtDba7day51QCK4BGAYYCw/s320/40.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>We can also just pass in a list directly</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-AIRMSvnlu2g/XNPzDzwRFqI/AAAAAAAACZ0/eteUnfU6j0sKdCmsqJTPB1jhRv0kCBalQCK4BGAYYCw/s1600/41.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Pass in a list of lists to create a multidimensional array.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-5q6EBwzQtiU/XNPzD1NlDQI/AAAAAAAACaE/EdsAgsXeG3kfynD3qMQhszTdKqMD36E7ACK4BGAYYCw/s1600/42.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use the shape method to find the dimensions of the array. (rows, columns)</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-KoMscK16Mec/XNPzD5jc7kI/AAAAAAAACZ8/Pk9qMQR8RPM4RNi0uyA_Y242jm0OJ1_CwCK4BGAYYCw/s1600/43.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Arrange returns evenly spaced values within a given interval.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-AZP3h27RhYU/XNPzD0wr1rI/AAAAAAAACaA/BbENJ5DOGHUUXHzqgAwp9xixsBiL0HAawCK4BGAYYCw/s1600/44.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Reshape returns an array with the same data with a new shape.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-Q2dfqpIxm9c/XNPz2ao6zFI/AAAAAAAACbk/acbFLrQM2CI2zWV8vfnICaeDYNJ9l-ynACK4BGAYYCw/s1600/45.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Linspace returns evenly spaced numbers over a specified interval.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-9b6FelhR2GE/XNPz2qCyWMI/AAAAAAAACbs/gleCkFcQMm42ne1o3VWQSQrvtHXDzN3fwCK4BGAYYCw/s1600/46.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Resize changes the shape and size of the array in-place.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-Cg-XdNazEsY/XNPz2hCTOGI/AAAAAAAACb0/QgSL9tnhkyUg_7J6pezeLeP0NchFcD1_wCK4BGAYYCw/s1600/47.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Ones return a new array of given shape and type, filled with ones.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-Run8kG6YbO4/XNPz2ozG5rI/AAAAAAAACbw/4xmRgsFXfpIKJFOET3Lc0e_S0VFgriUgACK4BGAYYCw/s400/48.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>zeros return a new array of given shape and type, filled with zeros.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-DyF-T9BZnbs/XNPz2uJbz1I/AAAAAAAACbo/8aqrBiKHtmYiMbChe7oaPZcv0fjvwI4SQCK4BGAYYCw/s1600/49.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Eye returns a 2-D array with ones on the diagonal and zeros elsewhere.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-renGH0pIIBQ/XNP0YmnbFII/AAAAAAAACdQ/qYwhmGlzQBgtIkCEZ_sq0PTNnndHSTClwCK4BGAYYCw/s1600/50.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Diag extracts a diagonal or constructs a diagonal array.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-SAZildMB62U/XNP0Yh0UoAI/AAAAAAAACdc/9xAXLtFsySg6n62cIZRoklEeQNWQdJuGgCK4BGAYYCw/s400/51.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Create an array using repeating list (or see np.tile)</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-n9V55ocAcJk/XNP0YmtXxHI/AAAAAAAACdg/1_0d7NQq3qEOhMPhwzJQRKJ0uoADnT3RgCK4BGAYYCw/s1600/52.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Repeat elements of an array using repeat.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-CwDOJ6mQeZI/XNP0Ym91ICI/AAAAAAAACdY/C-wMDHgojkE648yJ5ObMokQeNwpxb-94QCK4BGAYYCw/s1600/53.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<h3>Combining Arrays</h3>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-3CdTIqCUQ58/XNP0YoPp7VI/AAAAAAAACdU/5ih51DQrc0YdzrVhp0mqq5OX44d82uBMACK4BGAYYCw/s1600/54.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use vstack to stack arrays in sequence vertically (row wise).</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-LTEN0c6TwiE/XNP5W2BVH4I/AAAAAAAACeQ/kIbKibWmSE8D6BcX7Kdq62m7jwQmPesZACK4BGAYYCw/s1600/55.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use hstack to stack arrays in sequence horizontally (column wise).</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-wUyLIMHra58/XNP5W1wriQI/AAAAAAAACeU/9jgOu86PNBMqLHze1s5EMrnWF_tJ3hiugCK4BGAYYCw/s1600/56.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<h2>Operations</h2>
+
+<ul><li>Use +, -, *, / and ** to perform element-wise addition, subtraction, multiplication, division and power.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-vioP6jMqIu8/XNP5WpYV5wI/AAAAAAAACeM/Zfddsmmua2k2RbmNa-Ynom4rdZnh8R_9gCK4BGAYYCw/s1600/57.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-w7Oe6GOL0ZI/XNVHd74VDSI/AAAAAAAAChA/o-vcyBOPANEk2JyD0GPxThutvL_P-ZyKwCK4BGAYYCw/s1600/59.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>elementwise power</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-VTom1i2M9A4/XNVHd5C9hjI/AAAAAAAAChI/ayMsLOSyCzEMjNfcBs9HBIqh-02_pKRFACK4BGAYYCw/s1600/60.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Dot Product</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-7DHEEc_tEyA/XNVHd9yvQTI/AAAAAAAAChE/aZiHMx8Qx0wDXhGQerxyRbfWRrAFrjtZQCK4BGAYYCw/s1600/61.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>number of rows of the array</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-t5KtzvJJ7fA/XNVHeEamRvI/AAAAAAAAChM/jdRtc1qagd8LCA8a-U35yVX_0lF5dGmegCK4BGAYYCw/s1600/62.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Let's look at transposing arrays. Transposing permutes the dimensions of the array.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-kXom4eZhakc/XNVHeB8iCuI/AAAAAAAAChQ/DSvpcYLQRXY4rnp7ZAvI4DlPlGdHYBLIACK4BGAYYCw/s1600/63.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>The shape of the array z is (2,3) before transposing.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-h7lAbs0Lgls/XNVIcXg4h0I/AAAAAAAACiE/_5gNb4nqA2UdnaN7MzZIMHJblYKQS9TUwCK4BGAYYCw/s1600/64.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use .T to get the transpose.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-5A4znDTPCk0/XNVIcjaMkTI/AAAAAAAACiQ/VPij7h3zaXI4KiUo5jnasxT9QLbIjDPSgCK4BGAYYCw/s1600/65.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>The number of rows has swapped with the number of columns.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-eedvrBZFVZQ/XNVIc1AqV7I/AAAAAAAACic/2rm0c5Sfrs8m1kujM_oZyPj2eddHiPegQCK4BGAYYCw/s1600/66.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use .dtype to see the data type of the elements in the array.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-d7-O5RVexvU/XNVIctboIZI/AAAAAAAACiY/QaYwVxuZYlckU9XzW-UA-uNb7i3zOIk4wCK4BGAYYCw/s1600/67.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use .astype to cast to a specific type.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-wcKaMwAox2Y/XNVIcnWux1I/AAAAAAAACiU/n4VT64ogKRAMVqhxmHDBlTdJZ5eX3eY3gCK4BGAYYCw/s1600/68.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<hr class="wp-block-separator"/>
+
+<h2>Math Functions</h2>
+
+<ul><li>Numpy has many built-in math functions that can be performed on arrays.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-jLoIawENcHg/XNVIcvUFM8I/AAAAAAAACiM/VvyZ1VJ8NcAgse6GM5YKpSN7-rWJlBbEACK4BGAYYCw/s1600/69.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<hr class="wp-block-separator"/>
+
+<h2>Indexing / Slicing</h2>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-DZN0UsoPaLI/XNVJk_dYx9I/AAAAAAAACjE/WUT8kTgJP-wP6sH_VI6mk6tvgDRpYIDdwCK4BGAYYCw/s1600/70.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use bracket notation to get the value at a specific index. Remember that indexing starts at 0.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-ItfJO2W3SH4/XNVJlNuXx2I/AAAAAAAACjQ/i_50OP3UfekbKf093PY63XZKunHxd7TLgCK4BGAYYCw/s1600/71.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use "<strong>:</strong>" to indicate a&nbsp;<strong>range. array[start:stop]</strong>. (Leaving start or stop empty will default to the beginning/end of the array.)</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-280wsXYiEYw/XNVJlMGF4FI/AAAAAAAACjU/2JcOs9Xt2TIQjpHcuKiqIUru8agWyegvwCK4BGAYYCw/s1600/72.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use negatives to count from the back.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-WkFDH7ZuOJM/XNVJlCnTC0I/AAAAAAAACjM/9pKsSazjZl8waPa4bYgzhKim_Y_dOWXdACK4BGAYYCw/s1600/73.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>A second "<strong>:</strong>" can be used to indicate&nbsp;<strong>step-size. array[start:stop:stepsize]</strong>. (Here we are starting 5th element from the end, and counting backwards by 2 until the beginning of the array is reached.)</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-xhr_iItfNeQ/XNVJkyEsAPI/AAAAAAAACjI/dMFIxEsw-EMBFlFNEnPe1UFifksbrJxiwCK4BGAYYCw/s1600/74.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Let's look at a multidimensional array.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-Hv7XROMsdYU/XNVK-FC_awI/AAAAAAAACkA/AvAmRvzQtNIv5K3KfW4eXpIsxsWs6TfcgCK4BGAYYCw/s1600/75.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use bracket notation to slice:<strong>&nbsp;array[row, column]</strong></li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-Zzc8EVrVYFQ/XNVK-NrtrDI/AAAAAAAACkM/qMPVZvvSYt8LvQvTjtHx4LNIFgPMUhBbACK4BGAYYCw/s1600/76.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>And use "<strong>:</strong>" to select a range of rows or columns</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-n-81jHXGm6E/XNVK-GIA33I/AAAAAAAACkE/cO497rroF2kIYC-RvmAjqZxDosPYDZ2lwCK4BGAYYCw/s1600/77.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Here we are selecting all the rows up to (and not including) row 2, and all the columns up to (and not including) the last column.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-V0o7KIT2-CQ/XNVK-EZ0p1I/AAAAAAAACkQ/lg7vMhzqLH82dTXv3HGO54kVvs8pDzmPwCK4BGAYYCw/s1600/78.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>This is a slice of the last row and only every other element.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-rlKdA_DEJaI/XNVMvKVKFbI/AAAAAAAACko/UtxnUTx065QQShXNv_wGm1pWvB9mQ3hYACK4BGAYYCw/s1600/79.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>We can also perform conditional indexing. Here we are selecting values from the array that are greater than 30. (Also see np.where)</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-0Uy14SELQT4/XNVK-CrY1LI/AAAAAAAACkI/y49x-n9U8JY4BWJD3BUOf-xw9nIbW4gQwCK4BGAYYCw/s1600/79.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Here we are assigning all values in the array that are greater than 30 to the value of 30.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-BONxFxg0s9Y/XNVSB4ZiE7I/AAAAAAAAClE/3BIuu0FDNlssL6PLhLs2LBNXm83WWZeMQCK4BGAYYCw/s1600/81.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<hr class="wp-block-separator"/>
+
+<h2>Copying Data</h2>
+
+<p>* Be careful with copying and modifying arrays in NumPy!</p>
+
+<ul><li>r2 is a slice of r</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-jhhLF0RyST8/XNVSCNf48iI/AAAAAAAAClI/_ehEvsF9rwMU2jLe0vWtK2C3iWNrNUrOQCK4BGAYYCw/s1600/82.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Set this slice's values to zero ([:] selects the entire array)</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-IlBDvmhW_9k/XNVSCB-5LCI/AAAAAAAAClM/zDv3ifQXCPsoWR7iYi-uSUe9qHSl8TUMQCK4BGAYYCw/s1600/83.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>r has also been changed!</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-FygbQq1e8U0/XNVSCKNwu9I/AAAAAAAAClQ/EtrgXbEGFYkHAMBvqVgAT8eZU0R5ICRygCK4BGAYYCw/s1600/84.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>To avoid this, use r.copy to create a copy that will not affect the original array</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-y-m3mHsX_ck/XNVSCFYQJ4I/AAAAAAAAClU/kehTWWmcHhMXlX40-VML1V5VR8ovdWXVQCK4BGAYYCw/s1600/85.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Now when r_copy is modified, r will not be changed.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-DmOLT1LvKpM/XNVSlkJcBwI/AAAAAAAACl4/tfq9kprv8UoYdMrTUx-zkeqtmvNBN7UTwCK4BGAYYCw/s1600/86.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<hr class="wp-block-separator"/>
+
+<h2>Iterating Over Arrays</h2>
+
+<ul><li>Let's create a new 4 by 3 array of random numbers 0-9.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-tEtpsv5eAsY/XNVSllUg7mI/AAAAAAAACmM/qRejLSFgBrUGgSk9ZuIs-RfzrSVHsb0IQCK4BGAYYCw/s1600/87.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Iterate by row</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-iovcxLkdcXE/XNVSloC4pgI/AAAAAAAACmE/RRCkApQtnTwV-1ZyQIDvGnOJr7kTJF5JwCK4BGAYYCw/s1600/88.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Iterate by index:</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-hyUvR8dOkzA/XNVSlgIb7nI/AAAAAAAACmA/TCw6iqcXs_0zq-_IzCfbWVjm7F8Wq7ZUwCK4BGAYYCw/s1600/89.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Iterate by row and index:</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-bD0jN3gVOto/XNVSly9cZeI/AAAAAAAACmQ/xlO2fBD57agNoMy2drEQ42NS8C2ZPczugCK4BGAYYCw/s1600/90.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<ul><li>Use zip to iterate over multiple iterables.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-aUHQHN8fgQw/XNVSljc4tUI/AAAAAAAACmI/qxmY1Kx0PtsZF1yVLva70GjubN7f3AbfgCK4BGAYYCw/s1600/91.png" alt="Programming with Python" loading="lazy"></figure></div>
+
+<hr class="wp-block-separator"/>
+
+<h2>Conclusion</h2>
+
+<p>Further, one can perform further hands-on of different techniques like Reading and Writing data to/from csv/spreadsheets and also by using different python libraries. : - )</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/programming-with-python/&text=Programming with Python" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/programming-with-python/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/programming-with-python/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Programming with Python%20https://www.justsajid.com/posts/programming-with-python/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/jumpstart-programming-with-python-3/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/01/0-1.jpg" alt="JumpStart Programming with Python 3" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 10:30:35">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/jumpstart-programming-with-python-3/">JumpStart Programming with Python 3</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/who-is-a-man/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Who is a Man!</span>
+      </a>
+    <a href="../../posts/hands-on-with-supervised-unsupervised-learning-machine-learning/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">Hands-On with Supervised &amp; Unsupervised Learning | Machine Learning</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Python</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/jumpstart-programming-with-python-3/">JumpStart Programming with Python 3</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

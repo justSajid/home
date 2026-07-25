@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>JUMPSTART WITH DATA BINDING IN UWP | justSajid</title>
+  <meta name="description" content="JUMPSTART WITH DATA BINDING IN UWP — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/jumpstart-with-data-binding-in-uwp/">
+  <meta property="og:type" content="article"><meta property="og:title" content="JUMPSTART WITH DATA BINDING IN UWP | justSajid">
+  <meta property="og:description" content="JUMPSTART WITH DATA BINDING IN UWP — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/jumpstart-with-data-binding-in-uwp/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2016/03/admin-ajax-7-1-1.png">
+  <meta property="article:published_time" content="2016-03-30T02:41:19Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="JUMPSTART WITH DATA BINDING IN UWP | justSajid">
+  <meta name="twitter:description" content="JUMPSTART WITH DATA BINDING IN UWP — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2016/03/admin-ajax-7-1-1.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2016/03/admin-ajax-7-1-1.png" alt="JUMPSTART WITH DATA BINDING IN UWP" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">JUMPSTART WITH DATA BINDING IN UWP</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2016-03-30 02:41:19" itemprop="datePublished">Published March 30, 2016</time></span>
+      <span class="meta-category">in <a href="../../categories/dev/" class="cat-link">Development</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">15 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      Data Binding is one of the most interesting topics in Universal App Development. In order to perform the better functionality, you really need to have some great usage of Data Binding in you Apps.
+So! First thing first. What is actually the Data Binding and is its usage in UWP. Don’t worry Data Binding is not a Rocket Science. It’s just a way to establish a connection between App UI and its Business Logic. Normally we use the terminology Binding which is known as Data Binding. Very common Dev World.
+As in the modern apps, the Three-Tier Architecture Model is commonly used which is the fundamental framework for the logical design model, segments an application's components into three tiers of services. These three tiers architecture correspond to logical layers of the App.
+The three tiers include; <strong>Presentation Tier or User Services Layer</strong>, that presents data to the user and optionally permits data manipulation and data entry. <strong>Middle Tier or Business Logic Layer</strong>, that contains all the business logic of the App. <strong>Data Ties or Data Service</strong>, that interacts with persistent data usually stored in a database or in permanent storage. This can be accessed through the business layer.
+During the App life cycle, this three-tier approach provides great benefits such as reusability, flexibility, manageability, maintainability, and scalability. You can share and reuse the components and services you create, and you can distribute them across a network of computers as needed. You can divide large and complex projects into simpler projects and assign them to different programmers or programming teams. You can also deploy components and services on a server to help keep up with changes, and you can redeploy them as the growth of the application's user base, data, and transaction volume increases. And further, there’re a lot of other benefits.
+So! In Data Binding, basically, we are trying the Presentation Layer with the Business Layer/Data Model of an Application.
+You can declaratively define the data source (most likely a collection of objects) in Data Later for a given control (let say, a grid or a list) in Presentation Layer and then tell the control to bind to the data source. It then takes care of creating a visual representation of each item in the data source as a row, a list item, etc...
+When building UWP apps in XAML, you use the Binding syntax with XAML+UWP.
+Let’s do some hands-on and see how can you bind to a static resource for the purpose of styling.
+Simply Start by creating a new Blank App project template named SimpleDataBinding in Microsoft Visual Studio 2015;
+<img class="size-full wp-image-3731 aligncenter" src="../../assets/images/uploads/2016/03/1download.png" alt="1download" width="934" height="581" loading="lazy">
+Now Simply draw TextBlock and a Button control over the Design Surface to retrieve and display values inputted in the controls we’ll learn about. This will demonstrate how to retrieve values from these controls programmatically in C#.
+<img class="size-full wp-image-3741 aligncenter" src="../../assets/images/uploads/2016/03/download-1.png" alt="download (1)" width="819" height="481" loading="lazy">
+We can use a TextBlock and a Button control to retrieve and display values inputted in the controls we’ll learn about. This will demonstrate how to retrieve values from these controls programmatically in C#.
+So! Let’s add a definition for a TextBox as follows;
+<img class="size-full wp-image-3491 aligncenter" src="../../assets/images/uploads/2016/03/1ResReader.png" alt="1ResReader" width="443" height="194" loading="lazy">
+Here TextBox will allow a user to type in text using an on-screen keyboard. The key to this example is the InputScope=”TelephoneNumber”. As we’ll see in a moment, changing the InputScope changes the types of information (or rather, the keyboard) that is displayed to the user.
+Note that myButton’s Click event is handled. We’ll need to create an event handler method stub. To do this, I’ll right-click the value “myButton_Click” and select “Go To Definition” from the context menu:
+<img class="size-full wp-image-3501 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-1.png" alt="ResReader (1)" width="500" height="167" loading="lazy">
+That will magically create a method stub in the MainPage.xaml.cs code behind;
+<img class="size-full wp-image-3511 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-10.png" alt="ResReader (10)" width="624" height="198" loading="lazy">
+Now here we’ll retrieve the number typed into the myTextBox and display it in the myTextBlock;
+<img class="size-full wp-image-4091 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-3-1.png" alt="ResReader (3)" width="624" height="107" loading="lazy">
+Now Basically here we’re Binding the Data. Now if you run the application and see. Whatever you’ll type TextBox then click upon Button that will be shown in the TextBlox. That is because in the event handler we’re binding the data of TextBox with TextBlock.
+<img class="size-full wp-image-3851 aligncenter" src="../../assets/images/uploads/2016/03/download-2.png" alt="download (2)" width="1024" height="576" loading="lazy">
+There are many different InputScope keyboard available. In the XAML editor, I can rely on Intellisense to help me see the possible enumerated values:
+<img class="size-full wp-image-3671 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-4.png" alt="ResReader (4)" width="503" height="314" loading="lazy">
+In this case, I’ll change the InputScope=”Url”…
+<img class="size-full wp-image-3681 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-5.png" alt="ResReader (5)" width="452" height="192" loading="lazy">
+And this time, when I run the app, I can see that I have a keyboard that is geared towards helping me type in URLs (note the .com key near the space bar at the bottom).
+&nbsp;
+Now let’s have a look at the ComboBox which will allow us to display multiple possible options as a series of ComboBoxItems;
+<img class="size-full wp-image-3691 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-6.png" alt="ResReader (6)" width="564" height="287" loading="lazy">
+In order to retrieve the selected ComboBoxItem, we’ll add the following code to my myButton_Click event handler;
+<img class="size-full wp-image-3701 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-7.png" alt="ResReader (7)" width="624" height="158" loading="lazy">
+Also, to provide an initially selected / default value, I’ll set the IsSelected=”True” attribute value:
+<img class="size-full wp-image-3711 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-8.png" alt="ResReader (8)" width="624" height="243" loading="lazy">
+And when we run the app, notice that the ComboBox is already set to “Second Item”:
+<img class="size-full wp-image-3961 aligncenter" src="../../assets/images/uploads/2016/03/download-3.png" alt="download (3)" width="492" height="341" loading="lazy">
+Hahaha… Isn’t it great!
+And When we click on that item, a list control appears displaying all the possible items in the ComboBox. we can select on of them and click the checkmark icon in the command bar to accept that choice;
+<img class="size-full wp-image-4041 aligncenter" src="../../assets/images/uploads/2016/03/download-4.png" alt="download (4)" width="787" height="370" loading="lazy">
+Now Let’s look at the CheckBox. It is useful when you want to retrieve a yes or no answer from the user:
+<img class="size-full wp-image-3721 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-9.png" alt="ResReader (9)" width="404" height="137" loading="lazy">
+In Order to retrieve the value from the CheckBox, we’ll use the IsChecked property. Here, I use the decision operator to return one of two strings depending on whether IsChecked is true or false;
+<img class="size-full wp-image-3511 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-10.png" alt="ResReader (10)" width="624" height="198" loading="lazy">
+Now if we run the app and check the CheckBox, then click the Button, we can see the value returned in each “state” of the CheckBox;
+<img class="size-full wp-image-4051 aligncenter" src="../../assets/images/uploads/2016/03/download-5.png" alt="download (5)" width="784" height="279" loading="lazy">
+Similar to the CheckBox is the RadioButton. The only difference: RadioButtons work in groups so that no two RadioButtons in a group can be selected at the same time. This is useful where you want to present a limited set of options to the user (otherwise you should use the ComboBox). Here I create two RadioButtons:
+<img class="size-full wp-image-3521 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-11.png" alt="ResReader (11)" width="448" height="298" loading="lazy">
+Here in logic we can determine which RadioButton was checked:
+<img class="size-full wp-image-3531 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-12.png" alt="ResReader (12)" width="571" height="155" loading="lazy">
+Now When we run the app, we can see my selection and the associated text when we choose a RadioButton then click the Button;
+<img class="size-full wp-image-4061 aligncenter" src="../../assets/images/uploads/2016/03/download-6.png" alt="download (6)" width="486" height="299" loading="lazy">
+Now let’s do another move. Add a few more RadioButtons;
+<img class="size-full wp-image-3541 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-13.png" alt="ResReader (13)" width="475" height="299" loading="lazy">
+Now we’ve total buttons. They all are in the same group.
+<img class="size-full wp-image-4052 aligncenter" src="../../assets/images/uploads/2016/03/download-7.png" alt="download (7)" width="317" height="244" loading="lazy">
+So let’s split these four RadioButtons into two separate groups. Let’s give the last two RadioButton controls a GroupName. The GroupName must be spelled the same in order for them to be grouped together:
+<img class="size-full wp-image-3551 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-14.png" alt="ResReader (14)" width="440" height="353" loading="lazy">
+It is important to add GrroupName to RadioButtons, otherwise, they will be added to a default group.
+Now when you run the app, we have two groups of RadioButtons, each group allowing a selection of a single RadioButton:
+<img class="size-full wp-image-4062 aligncenter" src="../../assets/images/uploads/2016/03/download-8.png" alt="download (8)" width="142" height="178" loading="lazy">
+Now let’s play with DatePicker with Binding which allows the user to enter a reliable date using a special flyout;
+<img class="size-full wp-image-3561 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-15.png" alt="ResReader (15)" width="480" height="154" loading="lazy">
+To retrieve the selected date from the DatePicker, add the following code in logical file:
+<img class="size-full wp-image-4071 aligncenter" src="../../assets/images/uploads/2016/03/download-9.png" alt="download (9)" width="562" height="39" loading="lazy">
+When you run the app and tap the DatePicker, a flyout displays a three-column selection control. You can change the month, day and year independently by scrolling the date part up or down. Once I’ve found the date I’m looking for, I select the check mark icon to accept the selection or the x icon to cancel:
+<img class="size-full wp-image-3751 aligncenter" src="../../assets/images/uploads/2016/03/download-10.png" alt="download (10)" width="495" height="624" loading="lazy">
+You could use the many built-in DateTime formatting options on this string before you display it or you could use String.Format’s special formatting codes;
+<img class="size-full wp-image-3761 aligncenter" src="../../assets/images/uploads/2016/03/download-11.png" alt="download (11)" width="487" height="435" loading="lazy">
+Now let’s play with the TimePicker. This is almost identical to the DatePicker except it only deals with the Time part:
+<img class="size-full wp-image-3571 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-16.png" alt="ResReader (16)" width="412" height="129" loading="lazy">
+In order to retrieve the current selected Time from the TimePicker and display it in the TextBlock;
+<img class="size-full wp-image-3581 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-17.png" alt="ResReader (17)" width="567" height="67" loading="lazy">
+Now when you run the app, you will get a cool TimePicker;
+<img class="size-full wp-image-3771 aligncenter" src="../../assets/images/uploads/2016/03/download-12.png" alt="download (12)" width="492" height="628" loading="lazy">
+Just like DateTime you could use the many built-in DateTime formatting options on this string before you display it or you could use String.Format’s special formatting codes;
+<img class="size-full wp-image-3781 aligncenter" src="../../assets/images/uploads/2016/03/download-13.png" alt="download (13)" width="483" height="459" loading="lazy">
+Now Let’s Play with the Slider control which allows a user to choose a value between a Minimum and Maximum value. In this case, the Minimum will be 0 (the default) and the Maximum will be 100.
+<img class="size-full wp-image-3591 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-18.png" alt="ResReader (18)" width="440" height="177" loading="lazy">
+When you run the app, you can drag the slider to the right (higher value) or to the left (lower value);
+The Slider simplifies numerical input as long as there’s only a limited set of values and precision is not important.
+<img class="size-full wp-image-3791 aligncenter" src="../../assets/images/uploads/2016/03/download-14.png" alt="download (14)" width="488" height="518" loading="lazy">
+Now let’s do some binding with Slider. Add a TextBlock and Bind its Text with Slider Value;
+<img class="size-full wp-image-3801 aligncenter" src="../../assets/images/uploads/2016/03/download-15.png" alt="download (15)" width="544" height="273" loading="lazy">
+Now when you run the app. You’ll see the value of TextBlock will change as you change the ScrollBar position;
+<img class="size-full wp-image-3811 aligncenter" src="../../assets/images/uploads/2016/03/download-16.png" alt="download (16)" width="304" height="177" loading="lazy">
+Now similarly insert demonstrate the use of a ProgressBar. You typically use a ProgressBar to display feedback to the end user as to the progression of a given operation. As the bar creeps from left to right, it lets the user know the approximate progress and pace of the operation.
+In our case, we’ll use the ProgressBar to mirror the current value of the Slider control. In other words, as you drag the Slider left and right, we’ll retrieve the value of the Slider and set it to the value of the ProgressBar. We’ll use a binding to do that. Here, we’ll set the Value attribute of the ProgressBar to the Value of the mySlider control using a special binding syntax:
+<img class="size-full wp-image-4101 aligncenter" src="../../assets/images/uploads/2016/03/Untitled.png" alt="Untitled" width="624" height="194" loading="lazy">
+Now when you will run the app as you change the value of the Slider, the ProgressBar’s and TextBlock value changes as well.
+<img class="size-full wp-image-3821 aligncenter" src="../../assets/images/uploads/2016/03/download-17.png" alt="download (17)" width="248" height="187" loading="lazy">
+Similar to the ProgressBar is the ProgressRing. While the ProgressBar provides feedback as to the estimated completion of a given task, the ProgressRing only provides feedback to the user that the operation is in progress with no indication how long until completion. We’ll add the ProgressRing’s XAML to our MainPage.xaml:
+<img class="size-full wp-image-3621 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-20.png" alt="ResReader (20)" width="423" height="163" loading="lazy">
+And pair this control up with another common control, the ToggleButton. The ToggleButton has three states: On, Off, and Unknown. First, we’ll add the ToggleButton:
+<img class="size-full wp-image-3631 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-21.png" alt="ResReader (21)" width="463" height="171" loading="lazy">
+If you want to respond each time the user taps the ToggleButton, simply handle the Click event. Once again, right-click the event handler method name “myToggleButton_Click” and select “Go To Definition” from the context menu:
+<img class="size-full wp-image-3641 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-22.png" alt="ResReader (22)" width="584" height="167" loading="lazy">
+To create a method stub. Inside the method, I’ll add the following code:
+&nbsp;
+<img class="size-full wp-image-3651 aligncenter" src="../../assets/images/uploads/2016/03/ResReader-23.png" alt="ResReader (23)" width="624" height="125" loading="lazy">
+Based on the IsChecked property of the ToggleButton, simply set the ProgressRing’s IsActive property to true (turns it on) or false (turns it off). When you run the app and click the ToggleButton to the On state, the ring pulsates:
+<img class="size-full wp-image-3831 aligncenter" src="../../assets/images/uploads/2016/03/download-18.png" alt="download (18)" width="300" height="159" loading="lazy">
+Now Let's play with TextBox by binding one TextBox with another;
+<img class="size-full wp-image-3841 aligncenter" src="../../assets/images/uploads/2016/03/download-19.png" alt="download (19)" width="539" height="307" loading="lazy">
+And when you’ll run the app because the second TextBox is Bind with the first TextBox; whatever you type in Second TextBox will be shown in First TextBlox;
+<img class="size-full wp-image-3861 aligncenter" src="../../assets/images/uploads/2016/03/download-20.png" alt="download (20)" width="489" height="148" loading="lazy">
+See, how cool is that!
+These are some of the very most common controls. Some of them like our DatePicker, TimePicker, the ComboBox employ other controls like the Flyout that will display other options on another “page” and when you make the selection, it will return to the original page with the given control set to the selection the user made.
+There are literally hundreds of additional properties, dozens for each of the controls that are displayed here for the specific purpose.
+For further deep dive, take a view over the list of properties for a given control to get an idea of what it can do. And whenever you come across a property you do not understand, take a moment and search MSDN for more information to see if it can help you accomplish what you need…
+So! When building UWP Apps, you use the Binding syntax as we play above with different objects. We played how to bind to a static resource for the purpose of styling.
+So, you bind to data in a similar way using a similar syntax.
+<p style="text-align: center;">&lt;TextBlock Text="{Binding Title}" … /&gt;</p>
+At the most fundamental level, binding is simply a mechanism for updating one property from another. Rather than having write the code (Or doing hardcode that code) to push the date from the source to the target that binding framework does the job;
+<img class="size-full wp-image-3871 aligncenter" src="../../assets/images/uploads/2016/03/download-21.png" alt="download (21)" width="1024" height="356" loading="lazy">
+So here’s an example of Binding in a XAML file;<span style="color: #000000;">
+<img class="size-full wp-image-4111 aligncenter" src="../../assets/images/uploads/2016/03/Untitled-1.png" alt="Untitled" width="624" height="140" loading="lazy"></span>
+On First line of above code, We have a text block. That is serving as the binding target. On Text Line, we’re specifying the text property as the binding data property. At runtime, this text property is set by the Binding Framework. The curly braces indicated that we’re using the markup extension. i.e. It's a Class that invokes at runtime to do some work. This above case its invoke to do some binding work. We chose our data source with element name property in the binding. And we indicate that we want the data to come from the text box, named TexBox1. We also indicate which property will supply the data, the Text Property.
+So we’re taking Text as the source and applying to the text in the target. And on very text line we define the source of the data. A UI element name ‘TextBox1’.
+It's also possible to bind a Non-UI element. In next two lines of above code, we show a TextBlock binding to a Business class.
+Data can flow from Source into the Target property, it can do this continuously every time there’s some update in the source, the target gets the updates. That is ‘One Way’ Binding.
+Alternatively, you can bind the data as ‘One Time’, which only updates the Target once. No matter how much the underline data changes. There’s also a ‘Two-Way’ binding. Which means says, updates back to the source. The TextBox uses the two-way binding by default.
+The Binding Framework is well suited for setting the data on the target. The framework cannot provide continues updates to the target unless source implements the contain rules. For Example;
+For User Controls and UI Elements, if you want its property under control by updateable source, it must be written in the dependency property.
+For Business Classes, You must have to implement the INotifyPropertyChanged Interface in the class.
+Sometimes the data is stored in Updateable collection. Usually, that data are shown in the list control of the source.
+Binding Framework cannot provide the update from collection source unless; Create a class the implements INotifyCollectionChanged interface but the easiest and recommended way to handled it by using ObservableCollection&lt;T&gt; as collection type.
+Sometimes the Data is not in the correct format or shape desired the binding target. E.g. you’ve numeric data in the source, you can write a value converter to change the numeric value into Red Solid Color Brush! This converter is called whenever the data is updated to the target. BTW the converters are bi-directional, so the converter can modify the data as it has back to be the data source from the target.
+In Simple words, if you want to display some words on the screen or some content on the button. You can hardcode that code directly in the XAML;
+<img class="size-full wp-image-3891 aligncenter" src="../../assets/images/uploads/2016/03/download-23.png" alt="download (23)" width="965" height="196" loading="lazy">
+<img class="size-full wp-image-3901 aligncenter" src="../../assets/images/uploads/2016/03/download-24.png" alt="download (24)" width="281" height="208" loading="lazy">
+But they problems will be that it difficult to change, you can’t bind it to the data inside the app. So it’s very static way of doing things. And it will not dynamic, that you run it and change it;
+<img class="size-full wp-image-3911 aligncenter" src="../../assets/images/uploads/2016/03/download-25.png" alt="download (25)" width="1024" height="335" loading="lazy">
+<img class="size-full wp-image-3921 aligncenter" src="../../assets/images/uploads/2016/03/download-26.png" alt="download (26)" width="240" height="163" loading="lazy">
+That is saying is whatever object, the data context applying or pointing to the element or a container element. We look at the property of that object and pull that out from Data Source or View Model and put it over the View layer or on the screen. And Its doesn’t matter with Data Source that where it is consumed. Here, the UI is like an observer of the presenter. The View Model Classes are representing that’s, whoever wants to consume it. But UI needs to know whatever is changes. That’s why we can use; INotifyPropertyChanged; Implement in a view model class &amp; Raised by View Model when property value changes and INotifyCollectionChanged; Implemented in ObservableCollection&lt;T&gt; and ReadOnlyObservableCollection&lt;T&gt; Raised by the collection when the collection is modified (also IObservableVector).
+So that was the simple example of Classic Data Binding.
+Let’s play and do some Element to Element Binding;
+<img class="size-full wp-image-3931 aligncenter" src="../../assets/images/uploads/2016/03/download-27.png" alt="download (27)" width="554" height="152" loading="lazy">
+See, we simply create two TextBox and bind the SourceTB Text in TargetTB Text. Now If you run the App;
+<img class="size-full wp-image-3941 aligncenter" src="../../assets/images/uploads/2016/03/download-28.png" alt="download (28)" width="790" height="149" loading="lazy">
+But if try to modify the Text from the Target then it only changes in Target;
+<img class="size-full wp-image-3951 aligncenter" src="../../assets/images/uploads/2016/03/download-29.png" alt="download (29)" width="791" height="143" loading="lazy">
+That is because we’ve done One Way Binding! The Data is bind only one way so when we change Data from another side it will only be affected on that side…
+Now, if you want to make it two-way data binding. i.e. weather you change on source or target, both sides will see that change…
+But Let’s do this by another way. Simply select the TextBox which we’re going to Bind and go to properties and in Common Property, go to Text and in click upon the Black Rectangle and go to Create Data Binding;
+<img class="size-full wp-image-3971 aligncenter" src="../../assets/images/uploads/2016/03/download-30.png" alt="download (30)" width="312" height="597" loading="lazy">
+And simply select the Binding Type as ElementName and bind the SourceTB with Text: (String) in path. Moreover, from Fewer settings, select the Binding Direction as TwoWay;
+<img class="size-full wp-image-3981 aligncenter" src="../../assets/images/uploads/2016/03/download-31.png" alt="download (31)" width="430" height="680" loading="lazy">
+You’ll see, Visual Studio will smartly create code for you;
+<img class="size-full wp-image-3991 aligncenter" src="../../assets/images/uploads/2016/03/download-32.png" alt="download (32)" width="643" height="103" loading="lazy">
+And now when you’ll run the application. You’ll see that two-way binding will be occurring…
+Here’s another example of the element to element binding. The TextBox is Bound with TextBlock and it is bound in such a way that Text.Length shows in TextBox.
+<img class="size-full wp-image-4001 aligncenter" src="../../assets/images/uploads/2016/03/download-33.png" alt="download (33)" width="528" height="278" loading="lazy">
+So When you run the App. How many characters you’re typing will be shown in TextBox;
+<img class="size-full wp-image-4011 aligncenter" src="../../assets/images/uploads/2016/03/download-34.png" alt="download (34)" width="260" height="118" loading="lazy">
+See How cool is it.
+Now let’s play another trick and change the size of a text icon based upon movement of a slider;
+<img class="size-full wp-image-4021 aligncenter" src="../../assets/images/uploads/2016/03/download-35.png" alt="download (35)" width="691" height="158" loading="lazy">
+Now when you move the slider, you’ll see the size of the text image will also change;
+<img class="size-full wp-image-4031 aligncenter" src="../../assets/images/uploads/2016/03/download-36.png" alt="download (36)" width="258" height="77" loading="lazy">
+So! You See! How interesting is it to play with Data Binding. You can use Data Binding tricks in your app in different domains and make your apps smart and cool… &nbsp;: - )
+<blockquote>
+<h3>FOR HANDS ON DEMO</h3>
+In order to get a best hands-on experience along with the Blog. Try out the code either By&nbsp;<a href="https://code.msdn.microsoft.com/Data-Binding-in-UWP-b5c98114" target="_blank" rel="noopener noreferrer">MSDN Code Samples</a>&nbsp;or By&nbsp;<a href="https://github.com/SoftwareWarrior/DATA-BINDING-IN-UWP" target="_blank" rel="noopener noreferrer">GitHub</a>.</blockquote>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/jumpstart-with-data-binding-in-uwp/&text=JUMPSTART WITH DATA BINDING IN UWP" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/jumpstart-with-data-binding-in-uwp/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/jumpstart-with-data-binding-in-uwp/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=JUMPSTART WITH DATA BINDING IN UWP%20https://www.justsajid.com/posts/jumpstart-with-data-binding-in-uwp/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  <div class="single-tags"><span class="tag-label">Tags:</span><a href="../../tags/blend/" class="tag-link">blend</a> <a href="../../tags/blend2015/" class="tag-link">blend2015</a> <a href="../../tags/databinding/" class="tag-link">DataBinding</a> <a href="../../tags/developinguwpapps/" class="tag-link">developingUWPApps</a> <a href="../../tags/jumpstart/" class="tag-link">JumpStart</a> <a href="../../tags/uwp/" class="tag-link">uwp</a> <a href="../../tags/windows/" class="tag-link">windows</a> <a href="../../tags/windows10/" class="tag-link">Windows10</a></div>
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/digital-transformation-justsajidbank/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Case Study: Digital Transformation of &quot;justSajid Bank&quot;" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2022-10-17 04:34:43">October 17, 2022</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/digital-transformation-justsajidbank/">Case Study: Digital Transformation of &quot;justSajid Bank&quot;</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/%f0%9d%97%94%f0%9d%97%bf%f0%9d%97%b0%f0%9d%97%b5%f0%9d%97%b6%f0%9d%98%81%f0%9d%97%b2%f0%9d%97%b0%f0%9d%98%81%f0%9d%98%82%f0%9d%97%bf%f0%9d%97%b2%f0%9d%97%96%f0%9d%97%b5%f0%9d%97%ae%f0%9d%97%bf/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="𝗧𝗼𝗽 𝟭𝟬 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲 𝗖𝗵𝗮𝗿𝗮𝗰𝘁𝗲𝗿𝗶𝘀𝘁𝗶𝗰𝘀 || Milan" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2022-10-02 18:39:34">October 02, 2022</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/%f0%9d%97%94%f0%9d%97%bf%f0%9d%97%b0%f0%9d%97%b5%f0%9d%97%b6%f0%9d%98%81%f0%9d%97%b2%f0%9d%97%b0%f0%9d%98%81%f0%9d%98%82%f0%9d%97%bf%f0%9d%97%b2%f0%9d%97%96%f0%9d%97%b5%f0%9d%97%ae%f0%9d%97%bf/">𝗧𝗼𝗽 𝟭𝟬 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲 𝗖𝗵𝗮𝗿𝗮𝗰𝘁𝗲𝗿𝗶𝘀𝘁𝗶𝗰𝘀 || Milan</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/steps-to-generate-another-ssh-key/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Steps to Generate Another ssh key:" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2021-06-11 10:03:55">June 11, 2021</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/steps-to-generate-another-ssh-key/">Steps to Generate Another ssh key:</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/pendulum-oscillation-with-animations-in-blend-2015/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">PENDULUM OSCILLATION WITH ANIMATIONS IN BLEND 2015</span>
+      </a>
+    <a href="../../posts/build-2016-is-here-keynote-is-going-to-live-at-2030-pkt/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">BUILD 2016 IS HERE ::  KeyNote is going to live at 20:30 PKT.</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Development</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/digital-transformation-justsajidbank/">Case Study: Digital Transformation of &quot;justSajid Bank&quot;</a>
+        <div class="post-small-date">October 17, 2022</div>
+      </div><div class="post-small">
+        <a href="../../posts/%f0%9d%97%94%f0%9d%97%bf%f0%9d%97%b0%f0%9d%97%b5%f0%9d%97%b6%f0%9d%98%81%f0%9d%97%b2%f0%9d%97%b0%f0%9d%98%81%f0%9d%98%82%f0%9d%97%bf%f0%9d%97%b2%f0%9d%97%96%f0%9d%97%b5%f0%9d%97%ae%f0%9d%97%bf/">𝗧𝗼𝗽 𝟭𝟬 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲 𝗖𝗵𝗮𝗿𝗮𝗰𝘁𝗲𝗿𝗶𝘀𝘁𝗶𝗰𝘀 || Milan</a>
+        <div class="post-small-date">October 02, 2022</div>
+      </div><div class="post-small">
+        <a href="../../posts/steps-to-generate-another-ssh-key/">Steps to Generate Another ssh key:</a>
+        <div class="post-small-date">June 11, 2021</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-devops/">JumpStart with DevOps</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/publish-your-app-to-windows-store/">Publish Your App To Windows Store</a>
+        <div class="post-small-date">June 03, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

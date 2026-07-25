@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Objects: Everything is an Object in C# | justSajid</title>
+  <meta name="description" content="Objects: Everything is an Object in C# — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/objects-everything-is-an-object-in-c/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Objects: Everything is an Object in C# | justSajid">
+  <meta property="og:description" content="Objects: Everything is an Object in C# — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/objects-everything-is-an-object-in-c/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2016/04/03fig05.gif">
+  <meta property="article:published_time" content="2016-04-26T23:17:21Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Objects: Everything is an Object in C# | justSajid">
+  <meta name="twitter:description" content="Objects: Everything is an Object in C# — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2016/04/03fig05.gif">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2016/04/03fig05.gif" alt="Objects: Everything is an Object in C#" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Objects: Everything is an Object in C#</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2016-04-26 23:17:21" itemprop="datePublished">Published April 26, 2016</time></span>
+      <span class="meta-category">in <a href="../../categories/csharp/" class="cat-link">Microsoft Visual C#.</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">5 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<p>Microsoft Visual C# is an object-oriented language. This makes it similar to Java, C++ and many others. Not all object-oriented languages are the same. Some languages are mostly procedural and incorporate some object-oriented features. C#, however, is a strict object-oriented language. That means that all values are stored as objects or as members of objects.</p>
+
+<p>:: An object is an area of memory that stores data and behaviors.</p>
+
+<p>C# doesn't support the concept of global variables or functions that you might find in procedural languages. For example, in JavaScript in a browser, you can define a variable that's global to the entire web page. And in Visual Basic 6, the predecessor to today's Visual Basic for .NET, you could define variables that were global to an entire application.</p>
+
+<p>But in C#, everything belongs to something. Objects in C# are instances of things called classes and structures. Classes and structures are very similar to each other in that they both define member objects. For example, if you want to work with some data in C#, you would define it as a member of a class or a structure. Persistent data is stored in something called a field, which is defined as a member of the class or structure.</p>
+
+<p>Fields are typically private to the class or structure, that is, their values can only be read by code within the class or structure. But you can then expose those values as properties that can be read and set by the rest of the application. And behaviors are also defined as members of classes or structures, encapsulated in methods. A method is just like a function in a non-object-oriented language, but like fields and properties, it's a member of a class or structure.</p>
+
+<p>Everything is a part of a class or structure, and much of what you work with are instances of these classes or structures. These instances are the objects we're talking of, and so that's why we say everything is an object in C#.</p>
+
+<p>Here's what the definition of a class looks like in C#.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zpsjdpb6hh2.png" alt="Objects: Everything is an Object in C#" loading="lazy"></figure></div>
+
+<p>It starts with a namespace declaration. I'll talk about namespaces later but in brief, a namespace is a way of organizing your code.</p>
+
+<p>By placing each class in a namespace, you can avoid conflicts in names or identifiers. So for example, you could have two classes of the same name in a single application, as long as their members of different namespaces. In C#, namespaces are defined purely in code. Unlike say, in Java, which organizes classes in packages, you don't have to relate the namespace to a folder of the same name.</p>
+
+<p>But many developers do follow this practice and it's supported by Visual Studio. It's just not required by the C# compiler. Within the namespace, you declare the class or structure, and you assign it a name. Names of classes in C# are typically spelled with Pascal casing. That means it starts with an initial uppercase character and then uses lowercase or CamelCase for the rest of the name. Within the class, you'll find the member fields and properties.</p>
+
+<p>This class has a single method called Main. The reason we do that is because console applications always start with a Main method, spelled just like this. In a console application, your executable code is placed within the Main method. This code is writing some output to the console and then waiting for some input. In addition to the classes you write, your C# applications have access to the framework class library.</p>
+
+<p>This library contains classes that are available for all application frameworks, and it's included in both the .NET and WinRT frameworks. Examples of such classes are file management tools, mathematical functions and other common operations.</p>
+
+<p>Here's an example. Let's say you wanted to execute a mathematical operation. In some languages, simple mathematical functions might be implemented as a member of the language itself or as a global function.</p>
+
+<p>But in C#, these tasks are defined as part of a class called “System.Math”. System is the namespace and Math is the name of the class. Most common mathematical operations are defined in this class as something called a static method. A static method is called as a member of the class itself, and not from an instance of the class. The Math class also has some common values that are stored as fields, or constants.</p>
+
+<p>So for example, if you wanted to call some functionality from the Math class, first you would add this line of code, using System.Math. That's like the import statement in Java. It means I want to use this class in my code and make it available to the compiler. Once I've declared the using statement, I can refer to any of the member fields or methods of the class. So if I wanted to get the value of the mathematical constant pi, that's a field called Math.PI.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zpspwasmefc.png" alt="Objects: Everything is an Object in C#" loading="lazy"></figure></div>
+
+<p>And if I wanted to round a numeric value, I could use Math.Round, and then I could output that value or do some other operation. You'll find that a lot of the things you might want to do in an application, such as mathematical operations, working with files, communicating over the Internet, and so on, are already implemented in the framework class library. And so it's a good idea to get to know that library. There are a lot of namespaces and classes in it, and you can't learn it all at the same time, but as you need a particular class, take a look at the documentation.</p>
+
+<p>You can diagram your classes using Unified Modeling Language, or UML. This UML diagram for example, shows that there are two fields in the Math class called E and PI, and then many methods. Again, most of them are implemented as static methods that are called directly from the class. As you get to know C# as a pure object-oriented language, you'll find that learning the library is as much a part of the process as the language itself.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zps06b6y9ck.png" alt="Objects: Everything is an Object in C#" loading="lazy"></figure></div>
+
+<p>You'll see that there are some parts of the library that you use all the time, and you'll memorize their functionality and syntax. And then there will be other parts that you only use occasionally, and you'll have to go back to the documentation to learn the details as you need them.</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/objects-everything-is-an-object-in-c/&text=Objects: Everything is an Object in C#" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/objects-everything-is-an-object-in-c/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/objects-everything-is-an-object-in-c/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Objects: Everything is an Object in C#%20https://www.justsajid.com/posts/objects-everything-is-an-object-in-c/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/structures/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Structures" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2016-04-26 23:22:48">April 26, 2016</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/structures/">Structures</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/pointers-strings-a-simple-understanding/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Pointers &amp; Strings: A Simple Understanding" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2016-04-26 23:21:47">April 26, 2016</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/pointers-strings-a-simple-understanding/">Pointers &amp; Strings: A Simple Understanding</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/develop-a-windows-desktop-application-in-c/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2016/04/admin-ajax-4.png" alt="Develop a Windows Desktop Application in C#" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2016-04-25 23:12:00">April 25, 2016</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/develop-a-windows-desktop-application-in-c/">Develop a Windows Desktop Application in C#</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/create-a-sample-uwp-app-in-c/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Create a Sample UWP App in C#</span>
+      </a>
+    <a href="../../posts/develop-your-first-uwp-app-using-javascript/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">Develop Your First UWP App Using JavaScript</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Microsoft Visual C#.</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/structures/">Structures</a>
+        <div class="post-small-date">April 26, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/pointers-strings-a-simple-understanding/">Pointers &amp; Strings: A Simple Understanding</a>
+        <div class="post-small-date">April 26, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/develop-a-windows-desktop-application-in-c/">Develop a Windows Desktop Application in C#</a>
+        <div class="post-small-date">April 25, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-microsoft-visual-c/">JumpStart with Microsoft Visual C#</a>
+        <div class="post-small-date">April 25, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/develop-a-c-console-project/">Develop a C# Console Project</a>
+        <div class="post-small-date">April 25, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

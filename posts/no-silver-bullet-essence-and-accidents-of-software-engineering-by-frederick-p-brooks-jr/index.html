@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>No Silver Bullet:  “Essence and Accidents of Software Engineering” | By: Frederick P. Brooks, Jr. | justSajid</title>
+  <meta name="description" content="No Silver Bullet:  “Essence and Accidents of Software Engineering” | By: Frederick P. Brooks, Jr. — justSajid's blog covering IBM, blockchain, quantum comput...">
+  <link rel="canonical" href="https://www.justsajid.com/posts/no-silver-bullet-essence-and-accidents-of-software-engineering-by-frederick-p-brooks-jr/">
+  <meta property="og:type" content="article"><meta property="og:title" content="No Silver Bullet:  “Essence and Accidents of Software Engineering” | By: Frederick P. Brooks, Jr. | justSajid">
+  <meta property="og:description" content="No Silver Bullet:  “Essence and Accidents of Software Engineering” | By: Frederick P. Brooks, Jr. — justSajid's blog covering IBM, blockchain, quantum comput..."><meta property="og:url" content="https://www.justsajid.com/posts/no-silver-bullet-essence-and-accidents-of-software-engineering-by-frederick-p-brooks-jr/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2016/04/bullet5.jpg">
+  <meta property="article:published_time" content="2016-04-26T23:20:00Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="No Silver Bullet:  “Essence and Accidents of Software Engineering” | By: Frederick P. Brooks, Jr. | justSajid">
+  <meta name="twitter:description" content="No Silver Bullet:  “Essence and Accidents of Software Engineering” | By: Frederick P. Brooks, Jr. — justSajid's blog covering IBM, blockchain, quantum comput..."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2016/04/bullet5.jpg">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2016/04/bullet5.jpg" alt="No Silver Bullet:  “Essence and Accidents of Software Engineering” | By: Frederick P. Brooks, Jr." loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">No Silver Bullet:  “Essence and Accidents of Software Engineering” | By: Frederick P. Brooks, Jr.</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2016-04-26 23:20:00" itemprop="datePublished">Published April 26, 2016</time></span>
+      <span class="meta-category">in <a href="../../categories/tech/" class="cat-link">Technology</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">37 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<p>Of all the monsters that fill the nightmares of our folklore, none terrify more than werewolves, because they transform unexpectedly from the familiar into horrors. For these, one seeks bullets of silver that can magically lay them to rest.</p>
+
+<p>The familiar software project, at least as seen by the nontechnical manager, has something of this character; it is usually innocent and straightforward, but is capable of becoming a monster of missed schedules, blown budgets, and flawed products. So we hear desperate cries for a silver bullet—something to make software costs drop as rapidly as computer hardware costs do.</p>
+
+<p>But, as we look to the horizon of a decade hence, we see no silver bullet. There is no single development, in either technology or in management technique that by itself promises even one order of-magnitude improvement in productivity, in reliability, in simplicity. In this article, I shall try to show why, by examining both the nature of the software problem and the properties of the bullets proposed.</p>
+
+<p>Scepticism is not pessimism, however. Although we see no startling breakthroughs--and indeed, I believe such to be inconsistent with the nature of software--many encouraging innovations are under way. A disciplined, consistent effort to develop, propagate, and exploit these innovations should indeed yield an order-of-magnitude improvement. There is no royal road, but there is a road.</p>
+
+<p>The first step toward the management of disease was replacement of&nbsp;demon theories&nbsp;and&nbsp;humours theories&nbsp;by the&nbsp;germ theory. That very step, the beginning of hope, in itself dashed all hopes of magical solutions. It told workers that progress would be made stepwise, at great effort, and that a persistent, unremitting care would have to be paid to a discipline of cleanliness. So it is with software engineering today.</p>
+
+<h2><strong>Does It Have to Be Hard?-- Essential Difficulties</strong></h2>
+
+<p>Not only are there no silver bullets now in view, the very nature of software makes it unlikely that there will be any--no inventions that will do for software productivity, reliability, and simplicity what electronics, transistors, and large-scale integration did for computer hardware. We cannot expect ever to see twofold gains every two years.</p>
+
+<p><strong>First</strong>, one must observe that the anomaly is not that software progress is so slow, but that computer hardware progress is so fast. No other technology since civilization began has seen&nbsp;six orders&nbsp;of magnitude in performance price gain in 30 years. In no other technology can one choose to take the gain in either improved performance or in reduced costs. These gains flow from the transformation of computer manufacture from an assembly industry into a process industry.</p>
+
+<p><strong>Second</strong>, to see what rate of progress one can expect in software technology, let us examine the difficulties of that technology. Following Aristotle, I divide them into essence, the difficulties inherent in the nature of software, and accidents, those difficulties that today attend its production but are not inherent.</p>
+
+<p>The essence of a software entity is a construct of interlocking concepts: data sets, relationships among data items, algorithms, and invocations of functions. This essence is abstract in that such a conceptual construct is the same under many different representations. It is nonetheless highly precise and richly detailed.</p>
+
+<p>“I believe the hard part of building software to be the specification, design, and testing of this conceptual construct, not the labour of representing it and testing the fidelity of the representation.” We still make syntax errors, to be sure; but they are fuzz compared with the conceptual errors in most systems.</p>
+
+<p>If this is true, building software will always be hard. There is inherently no silver bullet.</p>
+
+<p>Let us consider the inherent properties of this irreducible essence of modern software systems:&nbsp;<strong>complexity, conformity, changeability, and invisibility</strong>.</p>
+
+<h3><strong>Complexity:</strong></h3>
+
+<p>Software entities are more complex for their size than perhaps any other human construct because no two parts are alike (at least above the statement level). If they are, we make the two similar parts into a subroutine--open or closed. In this respect, software systems differ profoundly from computers, buildings, or automobiles, where repeated elements abound.</p>
+
+<p>Digital computers are themselves more complex than most things people build: They have very large numbers of states. This makes conceiving, describing, and testing them hard. Software systems have orders-of-magnitude more states than computers do.</p>
+
+<p>Likewise, a scaling-up of a software entity is not merely a repetition of the same elements in larger sizes, it is necessarily an increase in the number of different elements. In most cases, the elements interact with each other in some nonlinear fashion and the complexity of the whole increases much more than linearly.</p>
+
+<p>The complexity of software is an essential property, not an accidental one. Hence, descriptions of a software entity that abstract away its complexity often abstract away its essence. For three centuries, mathematics and the physical sciences made great strides by constructing simplified models of complex phenomena, deriving properties from the models, and verifying those properties by experiment. This paradigm worked because the complexities ignored in the models were not the essential properties of the phenomena. It does not work when the complexities are the essence.</p>
+
+<p>Many of the classic problems of developing software products derive from this essential complexity and its nonlinear increases with size. From the complexity comes the difficulty of communication among team members, which leads to product flaws, cost overruns, and schedule delays. From the complexity comes the difficulty of enumerating, much less understanding, all the possible states of the program, and from that comes the unreliability. From complexity of function comes the difficulty of invoking function, which makes programs hard to use. From complexity of structure comes the difficulty of extending programs to new functions without creating side effects. From complexity of structure come the un-visualized states that constitute security trapdoors.</p>
+
+<p>Not only technical problems, but management problems as well come from the complexity. It makes overview hard, thus impeding conceptual integrity. It makes it hard to find and control all the loose ends. It creates the tremendous learning and understanding burden that makes personnel turnover a disaster.</p>
+
+<h3><strong>Conformity:</strong></h3>
+
+<p>Software people are not alone in facing complexity. Physics deals with terribly complex objects even at the "fundamental" particle level. The physicist labours on, however, in a firm faith that there are unifying principles to be found, whether in quarks or in unified field theories. Einstein argued that there must be simplified explanations of nature, because God is not capricious or arbitrary.</p>
+
+<p>No such faith comforts the software engineer. Much of the complexity that he must master is arbitrary complexity, forced without rhyme or reason by the many human institutions and systems to which his interfaces must conform. These differ from interface to interface and from time to time, not because of necessity but only because they were designed by different people, rather than by God.</p>
+
+<p>In many cases, the software must conform because it is the most recent arrival on the scene. In others, it must conform because it is perceived as the most conformable. But in all cases, much complexity comes from conformation to other interfaces; this complexity cannot be simplified out by any redesign of the software alone.</p>
+
+<h3><strong>Changeability:</strong></h3>
+
+<p>The software entity is constantly subject to pressures for change. Of course, so are buildings, cars, and computers. But manufactured things are infrequently changed after manufacture; they are superseded by later models, or essential changes are incorporated into later-serial-number copies of the same basic design. Call-backs of automobiles are really quite infrequent; field changes of computers somewhat less so. Both are much less frequent than modifications to fielded software.</p>
+
+<p>In part, this is so because the software of a system embodies its function, and the function is the part that most feels the pressures of change. In part it is because software can be changed more easily--it is pure thought-stuff, infinitely malleable. Buildings do in fact get changed, but the high costs of change, understood by all, serve to dampen the whims of the changers.</p>
+
+<p>All successful software gets changed. Two processes are at work.</p>
+
+<p>First, as a software product is found to be useful, people try it in new cases at the edge of or beyond the original domain. The pressures for extended function come chiefly from users who like the basic function and invent new uses for it.</p>
+
+<p>Second, successful software survives beyond the normal life of the machine vehicle for which it is first written. If not new computers, then at least new disks, new displays, new printers come along; and the software must be conformed to its new vehicles of opportunity.</p>
+
+<p>In short, the software product is embedded in a cultural matrix of applications, users, laws, and machine vehicles. These all change continually, and their changes inexorably force change upon the software product.</p>
+
+<h3><strong>Invisibility:</strong></h3>
+
+<p>Software is invisible and un-visualize-able. Geometric abstractions are powerful tools. The floor plan of a building helps both architect and client evaluate spaces, traffic flows, and views.</p>
+
+<p>Contradictions and omissions become obvious. Scale drawings of mechanical parts and stick-figure models of molecules, although abstractions, serve the same purpose. A geometric reality is captured in a geometric abstraction.</p>
+
+<p>The reality of software is not inherently embedded in space. Hence, it has no ready geometric representation in the way that land has maps, silicon chips have diagrams, and computers have connectivity schematics. As soon as we attempt to diagram software structure, we find it to constitute not one, but several, general directed graphs superimposed one upon another. The several graphs may represent the flow of control, the flow of data, patterns of dependency, time sequence, name-space relationships. These graphs are usually not even planar, much less hierarchical. Indeed, one of the ways of establishing conceptual control over such structure is to enforce link cutting until one or more of the graphs becomes hierarchical.</p>
+
+<p>In spite of progress in restricting and simplifying the structures of software, they remain inherently un-visualize-able, and thus do not permit the mind to use some of its most powerful conceptual tools. This lack not only impedes the process of design within one mind, it severely hinders communication among minds.</p>
+
+<h2><strong>“Past Breakthroughs Solved Accidental Difficulties”</strong></h2>
+
+<p>If we examine the three steps in software technology development that have been most fruitful in the past, we discover that each attacked a different major difficulty in building software, but that those difficulties have been accidental, not essential, difficulties. We can also see the natural limits to the extrapolation of each such attack.</p>
+
+<h3><strong>High-level languages:</strong>&nbsp;</h3>
+
+<p>Surely the most powerful stroke for software productivity, reliability, and simplicity has been the progressive use of high-level languages for programming. Most observers credit that development with at least a factor of five in productivity, and with concomitant gains in reliability, simplicity, and comprehensibility.</p>
+
+<p>What does a high-level language accomplish? It frees a program from much of its accidental complexity. An abstract program consists of conceptual constructs: operations, data types, sequences, and communication. The concrete machine program is concerned with bits, registers, conditions, branches, channels, disks, and such. To the extent that the high-level language embodies the constructs one wants in the abstract program and avoids all lower ones, it eliminates a whole level of complexity that was never inherent in the program at all.</p>
+
+<p>The most a high-level language can do is to furnish all the constructs that the programmer imagines in the abstract program. To be sure, the level of our thinking about data structures, data types, and operations is steadily rising, but at an ever decreasing rate. And language development approaches closer and closer to the sophistication of users.</p>
+
+<p>Moreover, at some point the elaboration of a high-level language creates a tool-mastery burden that increases, not reduces, the intellectual task of the user who rarely uses the esoteric constructs.</p>
+
+<h3><strong>Time-sharing:</strong></h3>
+
+<p>Time-sharing brought a major improvement in the productivity of programmers and in the quality of their product, although not so large as that brought by high-level languages.</p>
+
+<p>Time-sharing attacks a quite different difficulty. Time-sharing preserves immediacy, and hence enables one to maintain an overview of complexity. The slow turnaround of batch programming means that one inevitably forgets the minutiae, if not the very thrust, of what one was thinking when he stopped programming and called for compilation and execution. This interruption is costly in time, for one must refresh one's memory. The most serious effect may well be the decay of the grasp of all that is going on in a complex system.</p>
+
+<p>Slow turnaround, like machine-language complexities, is an accidental rather than an essential difficulty of the software process. The limits of the potential contribution of time-sharing derive directly. The principal effect of timesharing is to shorten system response time. As this response time goes to zero, at some point it passes the human threshold of noticeability, about 100 milliseconds. Beyond that threshold, no benefits are to be expected.</p>
+
+<h3><strong>Unified programming environments:</strong></h3>
+
+<p>UNIX and Inter-lisp, the first integrated programming environments to come into widespread use, seem to have improved productivity by integral factors.</p>
+
+<p>Why?</p>
+
+<p>They attack the accidental difficulties that result from using individual programs together, by providing integrated libraries, unified file formats, and pipes and filters. As a result, conceptual structures that in principle could always call, feed, and use one another can indeed easily do so in practice.</p>
+
+<p>This breakthrough in turn stimulated the development of whole tool benches, since each new tool could be applied to any programs that used the standard formats.</p>
+
+<p>Because of these successes, environments are the subject of much of today's software-engineering research. We look at their promise and limitations in the next section.</p>
+
+<h2><strong>“Hopes for the Silver”</strong></h2>
+
+<p>Now let us consider the technical developments that are most often advanced as potential silver bullets. What problems do they address--the problems of essence, or the remaining accidental difficulties? Do they offer revolutionary advances, or incremental ones?</p>
+
+<p><strong>Ada and other high-level language advances:</strong>&nbsp;&nbsp;</p>
+
+<p>One of the most touted recent developments is Ada, &nbsp;&nbsp;&nbsp;&nbsp; a general-purpose high-level language of the 1980's. Ada not only reflects evolutionary improvements in language concepts, but indeed embodies features to encourage modern design and modularization.</p>
+
+<p>Perhaps the Ada philosophy is more of an advance than the Ada language, for it is the philosophy of modularization, of abstract data types, of hierarchical structuring. Ada is over-rich, a natural result of the process by which requirements were laid on its design. That is not fatal, for sub-settled working vocabularies can solve the learning problem, and hardware advances will give us the cheap MIPS to pay for the compiling costs. Advancing the structuring of software systems is indeed a very good use for the increased MIPS our dollars will buy. Operating systems, loudly decried in the 1960's for their memory and cycle costs, have proved to be an excellent form in which to use some of the MIPS and cheap memory bytes of the past hardware surge.</p>
+
+<p>Nevertheless, Ada will not prove to be the silver bullet that slays the software productivity monster. It is, after all, just another high-level language, and the biggest payoff from such languages came from the first transition -- the transition up from the accidental complexities of the machine into the more abstract statement of step-by-step solutions. Once those accidents have been removed, the remaining ones will be smaller, and the payoff from their removal will surely be less.</p>
+
+<p>I predict that a decade from now, when the effectiveness of Ada is assessed, it will be seen to have made a substantial difference, but not because of any particular language feature, nor indeed because of all of them combined. Neither will the new Ada environments prove to be the cause of the improvements.</p>
+
+<p>Ada's greatest contribution will be that switching to it occasioned training programmers in modern software-design techniques.</p>
+
+<h3><strong>Object-oriented programming:</strong>&nbsp;&nbsp;</h3>
+
+<p>Many students of the art hold out more hope for object-oriented programming than for any of the other technical fads of the day. [2] I am among them. Mark Sherman of Dartmouth notes on CS-net News that one must be careful to distinguish two separate ideas that go under that name: abstract data types and hierarchical types. The concept of the abstract data type is that an object's type should be defined by a name, a set of proper values, and a set of proper operations rather than by its storage structure, which should be hidden. Examples are Ada packages (with private types) and Modula's modules.</p>
+
+<p>Hierarchical types, such as Simula-67's classes, allow one to define general interfaces that can be further refined by providing subordinate types. The two concepts are orthogonal_one may have hierarchies without hiding and hiding without hierarchies. Both concepts represent real advances in the art of building software.</p>
+
+<p>Each removes yet another accidental difficulty from the process, allowing the designer to express the essence of the design without having to express large amounts of syntactic material that add no information content. For both abstract types and hierarchical types, the result is to remove a higher-order kind of accidental difficulty and allow a higher-order expression of design.</p>
+
+<p>Nevertheless, such advances can do no more than to remove all the accidental difficulties from the expression of the design. The complexity of the design itself is essential, and such attacks make no change whatever in that. An order-of-magnitude gain can be made by object-oriented programming only if the unnecessary type-specification underbrush still in our programming language is itself nine-tenths of the work involved in designing a program product. I doubt it.</p>
+
+<h3><strong>Artificial intelligence:</strong>&nbsp;&nbsp;</h3>
+
+<p>Many people expect advances in artificial intelligence to provide the revolutionary breakthrough that will give order-of-magnitude gains in software productivity and quality. I do not. To see why, we must dissect what is meant by "artificial intelligence." D.L. Parnas has clarified the terminological chaos:</p>
+
+<p>Two quite different definitions of AI are in common use today.</p>
+
+<ol><li>AI-1: The use of computers to solve problems that previously could only be solved by applying human intelligence.</li><li>Al- 2: The use of a specific set of programming techniques known as heuristic or rule-based programming. In this approach human experts are studied to determine what heuristics or rules of thumb they use in solving problems.... The program is designed to solve a problem the way that humans seem to solve it.</li></ol>
+
+<p>The first definition has a sliding meaning.... Something can fit the definition of Al-1 today but, once we see how the program works and understand the problem, we will not think of it as Al any more.... Unfortunately I cannot identify a body of technology that is unique to this field.... Most of the work is problem-specific, and some abstraction or creativity is required to see how to transfer it.</p>
+
+<p>I agree completely with this critique. The techniques used for speech recognition seem to have little in common with those used for image recognition, and both are different from those used in expert systems. I have a hard time seeing how image recognition, for example, will make any appreciable difference in programming practice. The same problem is true of speech recognition. The hard thing about building software is deciding what one wants to say, not saying it. No facilitation of expression can give more than marginal gains.</p>
+
+<p>Expert-systems technology, AI-2, deserves a section of its own.</p>
+
+<h3><strong>Expert systems:</strong>&nbsp;</h3>
+
+<p>The most advanced part of the artificial intelligence art, and the most widely applied, is the technology for building expert systems. Many software scientists are hard at work applying this technology to the software-building environment. [3, 5] What is the concept, and what are the prospects?</p>
+
+<p>An expert system is a program that contains a generalized inference engine and a rule base, takes input data and assumptions, explores the inferences derivable from the rule base, yields conclusions and advice, and offers to explain its results by retracing its reasoning for the user. The inference engines typically can deal with fuzzy or probabilistic data and rules, in addition to purely deterministic logic.</p>
+
+<p>Such systems offer some clear advantages over programmed algorithms designed for arriving at the same solutions to the same problems:</p>
+
+<ul><li>Inference-engine technology is developed in an application-independent way, and then applied to many uses. One can justify much effort on the inference engines. Indeed, that technology is well advanced.</li><li>The changeable parts of the application-peculiar materials are encoded in the rule base in a uniform fashion, and tools are provided for developing, changing, testing, and documenting the rule base. This regularizes much of the complexity of the application itself.</li></ul>
+
+<p>The power of such systems does not come from ever-fancier inference mechanisms but rather from ever richer knowledge bases that reflect the real world more accurately. I believe that the most important advance offered by the technology is the separation of the application complexity from the program itself.</p>
+
+<p>How can this technology be applied to the software-engineering task? In many ways: Such systems can suggest interface rules, advise on testing strategies, remember bug-type frequencies, and offer optimization hints.</p>
+
+<p>Consider an imaginary testing advisor, for example. In its most rudimentary form, the diagnostic expert system is very like a pilot's checklist, just enumerating suggestions as to possible causes of difficulty. As more and more system structure is embodied in the rule base, and as the rule base takes more sophisticated account of the trouble symptoms reported, the testing advisor becomes more and more particular in the hypotheses it generates and the tests it recommends. Such an expert system may depart most radically from the conventional ones in that its rule base should probably be hierarchically modularized in the same way the corresponding software product is, so that as the product is modularly modified, the diagnostic rule base can be modularly modified as well.</p>
+
+<p>The work required to generate the diagnostic rules is work that would have to be done anyway in generating the set of test cases for the modules and for the system. If it is done in a suitably general manner, with both a uniform structure for rules and a good inference engine available, it may actually reduce the total labour of generating bring-up test cases, and help as well with lifelong maintenance and modification testing. In the same way, one can postulate other advisors, probably many and probably simple, for the other parts of the software-construction task.</p>
+
+<p>Many difficulties stand in the way of the early realization of useful expert-system advisors to the program developer. A crucial part of our imaginary scenario is the development of easy ways to get from program-structure specification to the automatic or semiautomatic generation of diagnostic rules. Even more difficult and important is the twofold, task of knowledge acquisition: finding articulate, self-analytical experts who know why they do things, and developing efficient techniques for extracting what they know and distilling it into rule bases. The essential prerequisite for building an expert system is to have an expert.</p>
+
+<p>The most powerful contribution by expert systems will surely be to put at the service of the inexperienced programmer the experience and accumulated wisdom of the best programmers. This is no small contribution. The gap between the best software engineering practice and the average practice is very wide perhaps wider than in any other engineering discipline. A tool that disseminates good practice would be important.</p>
+
+<h3><strong>"Automatic" programming:</strong></h3>
+
+<p>For almost 40 years, people have been anticipating and writing about "automatic programming," or the generation of a program for solving a problem from a statement of the problem specifications. Some today write as if they expect this technology to provide the next breakthrough.</p>
+
+<p>Parnas [4] implies that the term is used for glamour, not for semantic content, asserting,</p>
+
+<p>In short, automatic programming always has been a euphemism for programming with a higher-level language than was presently available to the programmer.</p>
+
+<p>He argues, in essence, that in most cases it is the solution method, not the problem, whose specification has to be given.</p>
+
+<p>One can find exceptions. The technique of building generators is very powerful, and it is routinely used to good advantage in programs for sorting. Some systems for integrating differential equations have also permitted direct specification of the problem, and the systems have assessed the parameters, chosen from a library of methods of solution, and generated the programs.</p>
+
+<p>These applications have very favorable properties:</p>
+
+<ul><li>The problems are readily characterized by relatively few parameters.</li><li>There are many known methods of solution to provide a library of alternatives.</li><li>Extensive analysis has led to explicit rules for selecting solution techniques, given problem parameters.</li></ul>
+
+<p>It is hard to see how such techniques generalize to the wider world of the ordinary software system, where cases with such neat properties are the exception. It is hard even to imagine how this breakthrough in generalization could occur.</p>
+
+<h3><strong>Graphical programming:</strong>&nbsp;&nbsp;</h3>
+
+<p>A favourite subject for PhD dissertations in software engineering is graphical, or visual, programming--the application of computer graphics to software design. [6, 7] Sometimes the promise held out by such an approach is postulated by analogy with VLSI chip design, in which computer graphics plays so fruitful a role. Sometimes the theorist justifies the approach by considering flowcharts as the ideal program-design medium and by providing powerful facilities for constructing them.</p>
+
+<p>Nothing even convincing, much less exciting, has yet emerged from such efforts. I am persuaded that nothing will.</p>
+
+<p>In the first place, as I have argued elsewhere [8], the flowchart is a very poor abstraction of software structure. Indeed, it is best viewed as Burks, von Neumann, and Goldstine's attempt to provide a desperately needed high-level control language for their proposed computer. In the pitiful, multipage, connection-boxed form to which the flowchart has today been elaborated, it has proved to be useless as a design tool--programmers draw flowcharts after, not before, writing the programs they describe.</p>
+
+<p>Second, the screens of today are too small, in pixels, to show both the scope and the resolution of any seriously detailed software diagram. The so-called "desktop metaphor" of today's workstation is instead an "airplane-seat" metaphor. Anyone who has shuffled a lap full of papers while seated between two portly passengers will recognize the difference--one can see only a very few things at once. The true desktop provides overview of, and random access to, a score of pages. Moreover, when fits of creativity run strong, more than one programmer or writer has been known to abandon the desktop for the more spacious floor. The hardware technology will have to advance quite substantially before the scope of our scopes is sufficient for the software-design task.</p>
+
+<p>More fundamentally, as I have argued above, software is very difficult to visualize. Whether one diagrams control flow, variable-scope nesting, variable cross references, dataflow, hierarchical data structures, or whatever, one feels only one dimension of the intricately interlocked software elephant. If one superimposes all the diagrams generated by the many relevant views, it is difficult to extract any global overview. The VLSI analogy is fundamentally misleading--a chip design is a layered two-dimensional description whose geometry reflects its realization in 3-space. A software system is not.</p>
+
+<h3><strong>Program verification:</strong>&nbsp;</h3>
+
+<p>Much of the effort in modern programming goes into testing and the repair of bugs. Is there perhaps a silver bullet to be found by eliminating the errors at the source, in the system design phase? Can both productivity and product reliability be radically enhanced by following the profoundly different strategy of proving designs correct before the immense effort is poured into implementing and testing them?</p>
+
+<p>I do not believe we will find productivity magic here. Program verification is a very powerful concept, and it will be very important for such things as secure operating-system kernels. The technology does not promise, however, to save labour. Verifications are so much work that only a few substantial programs have ever been verified.</p>
+
+<p>Program verification does not mean error-proof programs. There is no magic here, either. Mathematical proofs also can be faulty. So whereas verification might reduce the program-testing load, it cannot eliminate it.</p>
+
+<p>More seriously, even perfect program verification can only establish that a program meets its specification. The hardest part of the software task is arriving at a complete and consistent specification, and much of the essence of building a program is in fact the debugging of the specification.</p>
+
+<h3><strong>Environments and tools:</strong></h3>
+
+<p>How much more gain can be expected from the exploding researches into better programming environments? One's instinctive reaction is that the big-payoff problems-- hierarchical file systems, uniform file formats to make possible uniform program interfaces, and generalized tools--were the first attacked, and have been solved. Language-specific smart editors are developments not yet widely used in practice, but the most they promise is freedom from syntactic errors and simple semantic errors.</p>
+
+<p>Perhaps the biggest gain yet to be realized from programming environments is the use of integrated database systems to keep track of the myriad details that must be recalled accurately by the individual programmer and kept current for a group of collaborators on a single system.</p>
+
+<p>Surely this work is worthwhile, and surely it will bear some fruit in both productivity and reliability. But by its very nature, the return from now on must be marginal.</p>
+
+<h3><strong>Workstations:</strong></h3>
+
+<p>What gains are to be expected for the software art from the certain and rapid increase in the power and memory capacity of the individual workstation? Well, how many MIPS can one use fruitfully? The composition and editing of programs and documents is fully supported by today's speeds.</p>
+
+<p>Compiling could stand a boost, but a factor of 10 in machine speed would surely leave think time the dominant activity in the programmer's day. Indeed, it appears to be so now.</p>
+
+<p>More powerful workstations we surely welcome. Magical enhancements from them we cannot expect.</p>
+
+<h2><strong>“Promising Attacks on the Conceptual Essence”</strong></h2>
+
+<p>Even though no technological breakthrough promises to give the sort of magical results with which we are so familiar in the hardware area, there is both an abundance of good work going on now, and the promise of steady, if unspectacular progress.</p>
+
+<p>All of the technological attacks on the accidents of the software process are fundamentally limited by the productivity equation:</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-u-31c8IpVIM/Vx7OtIYgXLI/AAAAAAAAA1k/XkkXMbj-foQ8sq8Sze5cJ7j-sSiE24WnACK4B/s1600/000.png" alt="No Silver Bullet:  “Essence and Accidents of Software Engineering” | By: Frederick P. Brooks, Jr." loading="lazy"></figure></div>
+
+<p>If, as I believe, the conceptual components of the task are now taking most of the time, then no amount of activity on the task components that are merely the expression of the concepts can give large productivity gains.</p>
+
+<p>Hence we must consider those attacks that address the essence of the software problem, the formulation of these complex conceptual structures. Fortunately, some of these attacks are very promising.</p>
+
+<h3><strong>Buy versus build:</strong>&nbsp;</h3>
+
+<p>The most radical possible solution for constructing software is not to construct it at all.</p>
+
+<p>Every day this becomes easier, as more and more vendors offer more and better software products for a dizzying variety of applications. While we software engineers have labored on production methodology, the personal-computer revolution has created not one, but many, mass markets for software. Every newsstand carries monthly magazines, which sorted by machine type, advertise and review dozens of products at prices from a few dollars to a few hundred dollars. More specialized sources offer very powerful products for the workstation and other UNIX markets. Even software tools and environments can be bought off-the-shelf. I have elsewhere proposed a marketplace for individual modules.</p>
+
+<p>Any such product is cheaper to buy than to build afresh. Even at a cost of one hundred thousand dollars, a purchased piece of software is costing only about as much as one programmer year. And delivery is immediate! Immediate at least for products, that really exists, products whose developer can refer products to a happy user. Moreover, such products tend to be much better documented and somewhat better maintained than home-grown software.</p>
+
+<p>The development of the mass market is, I believe, the most profound long-run trend in software engineering. The cost of software has always been development cost, not replication cost. Sharing that cost among even a few users radically cuts the per-user cost. Another way of looking at it is that the use of n copies of a software system effectively multiplies the productivity of its developers by n. That is an enhancement of the productivity of the discipline and of the nation.</p>
+
+<p>The key issue, of course, is applicability. Can I use an available off-the-shelf package to perform my task? A surprising thing has happened here. During the 1950's and 1960's, study after study showed that users would not use off-the-shelf packages for payroll, inventory control, accounts receivable, and so on. The requirements were too specialized, the case-to-case variation too high. During the 1980's, we find such packages in high demand and widespread use. What has changed? Not the packages, really. They may be somewhat more generalized and somewhat more customizable than formerly, but not much. Not the applications, either. If anything, the business and scientific needs of today are more diverse and complicated than those of 20 years ago.</p>
+
+<p>The big change has been in the hardware/software cost ratio. In 1960, the buyer of a two-million dollar machine felt that he could afford $250,000 more for a customized payroll program, one that slipped easily and non-disruptively into the computer-hostile social environment. Today, the buyer of a $50,000 office machine cannot conceivably afford a customized payroll program, so he adapts the payroll procedure to the packages available. Computers are now so commonplace, if not yet so beloved, that the adaptations are accepted as a matter of course. There are dramatic exceptions to my argument that the generalization of software packages has changed little over the years: electronic spread sheets and simple database systems. These powerful tools, so obvious in retrospect and yet so late in appearing, lend themselves to myriad uses, some quite unorthodox. Articles and even books now abound on how to tackle unexpected tasks with the spread sheet. Large numbers of applications that would formerly have been written as custom programs in Cobol or Report Program Generator are now routinely done with these tools.</p>
+
+<p>Many users now operate their own computers day in and day out on various applications without ever writing a program. Indeed, many of these users cannot write new programs for their machines, but they are nevertheless adept at solving new problems with them.</p>
+
+<p>I believe the single most powerful software-productivity strategy for many organizations today is to equip the computer-naive intellectual workers who are on the firing line with personal computers and good generalized writing, drawing, file, and spreadsheet programs and then to turn them loose. The same strategy, carried out with generalized mathematical and statistical packages and some simple programming capabilities, will also work for hundreds of laboratory scientists.</p>
+
+<h3><strong>Requirements refinement and rapid prototyping:</strong></h3>
+
+<p>The hardest single part of building a software system is deciding precisely what to build. No other part of the conceptual work is as difficult as establishing the detailed technical requirements, including all the interfaces to people, to machines, and to other software systems. No other part of the work so cripples the resulting system if done wrong. No other part is more difficult to rectify later.</p>
+
+<p>Therefore, the most important function that the software builder performs for the client is the iterative extraction and refinement of the product requirements. For the truth is, the client does not know what he wants. The client usually does not know what questions must be answered, and he has almost never thought of the problem in the detail necessary for specification. Even the simple answer “Make the new software system work like our old manual information-processing system “is in fact too simple. One never wants exactly that. Complex software systems are, moreover, things that act, that move, that work.</p>
+
+<p>The dynamics of that action are hard to imagine. So in planning any software-design activity, it is necessary to allow for an extensive iteration between the client and the designer as part of the system definition.</p>
+
+<p>I would go a step further and assert that it is really impossible for a client, even working with a software engineer, to specify completely, precisely, and correctly the exact requirements of a modern software product before trying some versions of the product.</p>
+
+<p>Therefore, one of the most promising of the current technological efforts, and one that attacks the essence, not the accidents, of the software problem, is the development of approaches and tools for rapid prototyping of systems as prototyping is part of the iterative specification of requirements.</p>
+
+<p>A prototype software system is one that simulates the important interfaces and performs the main functions of the intended system, while not necessarily being bound by the same hardware speed, size, or cost constraints. Prototypes typically perform the mainline tasks of the application, but make no attempt to handle the exceptional tasks, respond correctly to invalid inputs, or abort cleanly. The purpose of the prototype is to make real the conceptual structure specified, so that the client can test it for consistency and usability.</p>
+
+<p>Much of present-day software-acquisition procedure rests upon the assumption that one can specify a satisfactory system in advance, get bids for its construction, have it built, and install it. I think this assumption is fundamentally wrong, and that many software-acquisition problems spring from that fallacy. Hence, they cannot be fixed without fundamental revision-revision that provides for iterative development and specification of prototypes and products.</p>
+
+<p>Incremental development--grow, don't build, software. I still remember the jolt I felt in 1958 when I first heard a friend talk about building a program, as opposed to writing one. In a flash he broadened my whole view of the software process. The metaphor shift was powerful, and accurate. Today we understand how like other building processes the construction of software is, and we freely use other elements of the metaphor, such as specifications, assembly of components, and scaffolding.</p>
+
+<p>The building metaphor has outlived its usefulness. It is time to change again. If, as I believe, the conceptual structures we construct today are too complicated to be specified accurately in advance, and too complex to be built faultlessly, then we must take a radically different approach.</p>
+
+<p>Let us turn nature and study complexity in living things, instead of just the dead works of man. Here we find constructs whose complexities thrill us with awe. The brain alone is intricate beyond mapping, powerful beyond imitation, rich in diversity, self-protecting, and self-renewing. The secret is that it is grown, not built. So it must be with our software-systems. Some years ago Harlan Mills proposed that any software system should be grown by incremental development. [10] That is, the system should first be made to run, even if it does nothing useful except call the proper set of dummy subprograms. Then, bit by bit, it should be fleshed out, with the subprograms in turn being developed--into actions or calls to empty stubs in the level below.</p>
+
+<p>I have seen most dramatic results since I began urging this technique on the project builders in my Software Engineering Laboratory class. Nothing in the past decade has so radically changed my own practice, or its effectiveness. The approach necessitates top-down design, for it is a top-down growing of the software. It allows easy backtracking. It lends itself to early prototypes. Each added function and new provision for more complex data or circumstances grows organically out of what is already there.</p>
+
+<p>The morale effects are startling. Enthusiasm jumps when there is a running system, even a simple one. Efforts redouble when the first picture from a new graphics software system appears on the screen, even if it is only a rectangle. One always has, at every stage in the process, a working system. I find that teams can grow much more complex entities in four months than they can build.</p>
+
+<p>The same benefits can be realized on large projects as on my small ones.</p>
+
+<h3><strong>Great designers:</strong>&nbsp;</h3>
+
+<p>The central question in how to improve the software art centers, as it always has, on people.</p>
+
+<p>We can get good designs by following good practices instead of poor ones. Good design practices can be taught. Programmers are among the most intelligent part of the population, so they can learn good practice. Hence, a major thrust in the United States is to promulgate good modern practice. New curricula, new literature, new organizations such as the Software Engineering Institute, all have come into being in order to raise the level of our practice from poor to good. This is entirely proper.</p>
+
+<p>Nevertheless, I do not believe we can make the next step upward in the same way. Whereas the difference between poor conceptual designs and good ones may lie in the soundness of design method, the difference between good designs and great ones surely does not. Great designs come from great designers. Software construction is a creative process. Sound methodology can empower and liberate the creative mind; it cannot inflame or inspire the drudge.</p>
+
+<p>The differences are not minor--they are rather like the differences between Salieri and Mozart. Study after study shows that the very best designers produce structures that are faster, smaller, simpler, cleaner, and produced with less effort. [12] The differences between the great and the average approach an order of magnitude.</p>
+
+<p>A little retrospection shows that although many fine, useful software systems have been designed by committees and built as part of multipart projects, those software systems that have excited passionate fans are those that are the products of one or a few designing minds, great designers. Consider UNIX,</p>
+
+<p>APL, Pascal, Modula, the Smalltalk interface, even Fortran; and contrast them with Cobol, PL/I, Algol, MVS/370, and MS-DOS.(See Table-1.)</p>
+
+<p>Hence, although I strongly support the technology-transfer and curriculum development efforts now under way, I think the most important single effort we can mount is to develop ways to grow great designers.</p>
+
+<p>No software organization can ignore this challenge. Good managers, scarce though they be, are no scarcer than good designers. Great designers and great managers are both very rare. Most organizations spend considerable effort in finding and cultivating the management prospects; I know of none that spends equal effort in finding and developing the great designers upon whom the technical excellence of the products will ultimately depend.</p>
+
+<figure class="wp-block-table"><table class=""><tbody><tr><td>Table-1. Exciting Vs. Useful But Unexciting Software Products.</td></tr><tr><td><strong>Exciting Products</strong></td></tr><tr><td><strong>Yes</strong></td><td><strong>No</strong></td></tr><tr><td>UNIX</td><td>Cobol</td></tr><tr><td>APL</td><td>PL/I</td></tr><tr><td>Pascal</td><td>ALGOL</td></tr><tr><td>Modula</td><td>MVS/370</td></tr><tr><td>Smalltalk</td><td>MS-DOS</td></tr><tr><td>Fortran</td><td>&nbsp;</td></tr></tbody></table></figure>
+
+<p>My first proposal is that each software organization must determine and proclaim that great designers are as important to its success as great managers are, and that they can be expected to be similarly nurtured and rewarded. Not only salary, but the perquisites of recognition—office size, furnishings, personal technical equipment, travel funds, staff support--must be fully equivalent.</p>
+
+<p>How to grow great designers? Space does not permit a lengthy discussion, but some steps are obvious:</p>
+
+<ul><li>Systematically identify top designers as early as possible. The best are often not the most experienced.</li><li>Assign a career mentor to be responsible for the development of the prospect, and carefully keep a career file.</li><li>Devise and maintain a career development plan for each prospect, including carefully selected apprenticeships with top designers, episodes of advanced formal education, and short courses, all interspersed with solo-design and technicalleadership assignments.</li><li>Provide opportunities for growing designers to interact with and stimulate each other.</li></ul>
+
+<h3><strong>Acknowledgments</strong></h3>
+
+<p>I thank Gordon Bell, Bruce Buchanan, Rick Hayes-Roth, Robert Patrick, and, most especially, David Parnas for their insights and stimulating ideas, and Rebekah Bierly for the technical production of this article.</p>
+
+<hr class="wp-block-separator"/>
+
+<h3><strong>REFERENCES</strong></h3>
+
+<ol><li>D.L. Parnas, "Designing Software for Ease of Extension and Contraction," IEEE Transactions on Software Engineering, Vol. 5, No. 2, March 1979, pp. 128-38.</li><li>G. Booch, "Object-Oriented Design," Software Engineering with Ada, 1983, Menlo Park, Calif.: Benjamin/ Cummings.</li></ol>
+
+<ul><li>lEEE Transactions on Software Engineering (special issue on artificial intelligence and software engineering), l. Mostow, guest ed., Vol. 11, No. 11, November 1985.</li></ul>
+
+<ol><li>D.L. Parnas, "Software Aspects of Strategic Defense Systems:" American Scientist, November 1985.</li><li>R. Balzer, "A 15-year Perspective on Automatic Programming," IEEE Transactions on Software Engineering (special issue on artificial intelligence and software engineering), J. Mostow, guest ed., Vol. 11, No. 11 (November 1985), pp. 1257-67. Modula MVS/370 Smalltalk MS-DOS Fortran</li><li>Computer (special issue on visual programrning), R.B. Graphton and T. Ichikawa, guest eds., Vol. 18, No. 8, August 1985.</li></ol>
+
+<ul><li>G. Raeder, "A Survey of Current Graphical Programming Techniques," Computer (special issue on visual programming), R.B. Graphton and T. Ichikawa, guest eds., Vol. 18, No. 8, August 1985, pp. 11-25.</li><li>F.P. Brooks, the Mythical Man Month, Reading, Mass.: Addison-Wesley, 1975, Chapter 14.</li></ul>
+
+<ol><li>Defense Science Board, Report of the Task Force on Military Software in press.</li><li>H.D. Mills, "Top-Down Programming in Large Systems," in Debugging Techniques in Large Systems, R. Ruskin, ed., Englewood Cliffs, N.J.: Prentice-Hall, 1971.</li><li>B.W. Boehm, "A Spiral Model of Software Development and Enhancement," 1985, TRW Technical Report 21-371-85, TRW, Inc., 1 Space Park, Redondo Beach, Calif. 90278.</li></ol>
+
+<ul><li>H. Sackman, W.J. Erikson, and E.E. Grant, "Exploratory Experimental Studies Comparing Online and Offline Programming Performance," Communications of the ACM, Vol. 11, No. 1 (January 1968), pp. 3-11.</li></ul>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/no-silver-bullet-essence-and-accidents-of-software-engineering-by-frederick-p-brooks-jr/&text=No Silver Bullet:  “Essence and Accidents of Software Engineering” | By: Frederick P. Brooks, Jr." target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/no-silver-bullet-essence-and-accidents-of-software-engineering-by-frederick-p-brooks-jr/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/no-silver-bullet-essence-and-accidents-of-software-engineering-by-frederick-p-brooks-jr/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=No Silver Bullet:  “Essence and Accidents of Software Engineering” | By: Frederick P. Brooks, Jr.%20https://www.justsajid.com/posts/no-silver-bullet-essence-and-accidents-of-software-engineering-by-frederick-p-brooks-jr/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/metaverse-a-whole-new-world/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Metaverse || A Whole New World." loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2022-05-09 01:34:48">May 09, 2022</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/metaverse-a-whole-new-world/">Metaverse || A Whole New World.</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/password-choose-the-secure-easy-and-cool-password/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2016/05/How-to-Pick-A-Secure-Password.jpg" alt="Password: Choose the Secure, Easy and Cool Password" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 23:28:45">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/password-choose-the-secure-easy-and-cool-password/">Password: Choose the Secure, Easy and Cool Password</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/grand-challenge-in-computer-science/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Grand Challenge in Computer Science" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 22:11:51">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/grand-challenge-in-computer-science/">Grand Challenge in Computer Science</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/develop-your-first-uwp-app-using-javascript/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Develop Your First UWP App Using JavaScript</span>
+      </a>
+    <a href="../../posts/pointers-strings-a-simple-understanding/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">Pointers &amp; Strings: A Simple Understanding</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Technology</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/metaverse-a-whole-new-world/">Metaverse || A Whole New World.</a>
+        <div class="post-small-date">May 09, 2022</div>
+      </div><div class="post-small">
+        <a href="../../posts/password-choose-the-secure-easy-and-cool-password/">Password: Choose the Secure, Easy and Cool Password</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/grand-challenge-in-computer-science/">Grand Challenge in Computer Science</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-xamarin/">JumpStart with XAMARIN</a>
+        <div class="post-small-date">August 10, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/linkedin-microsoft-to-acquire-linkedin-for-26-2-billion/">LinkedIn: Microsoft to Acquire LinkedIn for $26.2 Billion</a>
+        <div class="post-small-date">June 13, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

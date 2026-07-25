@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>.NET Core | justSajid</title>
+  <meta name="description" content=".NET Core — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/net-core/">
+  <meta property="og:type" content="article"><meta property="og:title" content=".NET Core | justSajid">
+  <meta property="og:description" content=".NET Core — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/net-core/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2016/04/Difference-between-.NET-Framework-and-.NET-Core.png">
+  <meta property="article:published_time" content="2016-04-25T07:51:13Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content=".NET Core | justSajid">
+  <meta name="twitter:description" content=".NET Core — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2016/04/Difference-between-.NET-Framework-and-.NET-Core.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2016/04/Difference-between-.NET-Framework-and-.NET-Core.png" alt=".NET Core" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">.NET Core</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2016-04-25 07:51:13" itemprop="datePublished">Published April 25, 2016</time></span>
+      <span class="meta-category">in <a href="../../categories/tech/" class="cat-link">Technology</a> <a href="../../categories/skills/" class="cat-link">Skills</a> <a href="../../categories/csharp/" class="cat-link">Microsoft Visual C#.</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">22 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      <h3><span style="color: #3366ff;">.NET Core 1.0 </span></h3>
+.NET Core 1.0 is a major new investment in the future of .NET and laying the foundation for decades to come. Still, it is in its early stage, and for some time you might still focus .NET Framework 4.6 depending on your application needs. But for many scenarios, especially in cloud/server scenarios, it will be the ideal framework, since .NET Core 1.0 and ASP.NET 5 have being designed from the ground-up as an optimized stack for server and cloud workloads.
+.NET Core 1.0 is a completely open source stack and can run on multiple operating systems. In addition, not only are Microsoft contributing .NET Core 1.0 to the .NET Foundation but Microsoft will openly collaborate with the community and ensure that Microsoft continue our strong relationship with existing .NET open source communities, in particular the Mono community. Here are a set of announcement around open source and cross platform from Connect(); event:
+<ul>
+ 	<li>.NET Core 1 is open source on GitHub</li>
+ 	<li>Microsoft will support .NET Core 1.0 on Windows, Linux and Mac.</li>
+ 	<li>Microsoft has contributed .NET Core 1.0 to the .NET Foundation</li>
+ 	<li>Renewed collaboration with the Mono Project</li>
+</ul>
+.NET Core is a modular implementation that can be used in a wide variety of verticals, scaling from the data center to touch based devices, is available as open source, and is supported by Microsoft on Windows, Linux and Mac OSX.
+.NET Core is optimized around factoring concerns. Even though the scenarios of .NET Native (initially touch based devices) and ASP.NET 1.0 (server side web development) are quite different, Microsoft has been able to provide a unified Base Class Library (BCL).
+So, this is a diagram summarizing .NET Core:
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/2783.Pic3.png-350x0_zpse7wr4dfd.png" width="566" height="509"  loading="lazy" alt=".NET Core">
+The API surface area for the .NET Core BCL is identical for both .NET Native as well ASP.NET 5. At the bottom of the BCL Microsoft have a very thin layer that is specific to the .NET runtime. Microsoft have currently two implementations: one is specific to the .NET Native runtime and one that is specific to CoreCLR, which is used by ASP.NET 5. The majority of the BCL are pure MSIL assemblies that can be shared as-is.
+On top of the BCL, there are app-model specific APIs. For instance, the .NET Native side provides APIs that are specific to Windows client development, such as WinRT interop. ASP.NET 5 adds APIs such as MVC that are specific to server- side web development.
+.NET Core is not specific to either .NET Native nor ASP.NET 5 – the BCL and the runtimes are general purpose and designed to be modular. As such, it forms the foundation for all future .NET verticals, even additional to ASP.NET or Windows Store.
+<ul>
+ 	<li><strong>NuGet is mainstream in .NET Core;</strong></li>
+</ul>
+In contrast to the .NET Framework, the .NET Core platform is delivered as a set of NuGet packages thru NuGet.org.
+In order to continue our effort of being modular and well factored Microsoft don’t just provide the entire .NET Core platform as a single NuGet package. Instead, it’s a set of fine grained NuGet packages. For the BCL layer, Microsoft will have a 1-to-1 relationship between assemblies and NuGet packages.
+NuGet allows us to deliver .NET Core in an agile fashion. So if Microsoft provide an upgrade to any of the NuGet packages, you can simply upgrade the corresponding NuGet reference.
+The NuGet based delivery also turns the .NET Core platform into an app-local framework. The modular design of .NET Core ensures that each application only needs to deploy what it needs. Microsoft is also working on enabling smart sharing if multiple applications use the same framework bits. However, the goal is to ensure that each application is logically having its own framework so that upgrading doesn’t interfere with other applications running on the same machine.
+<ul>
+ 	<li><strong>.NET Core with NuGet deployment is Enterprise ready;</strong></li>
+</ul>
+Although .NET Core is delivered as a set of NuGet packages it doesn’t mean that you have to download packages each time you need to create a project. Microsoft will provide an offline installer for distributions and also include them with Visual Studio so that creating new projects will be as fast as today and not require internet connectivity in the development process.
+Let see how the .NET platform was packed in the past.
+<h3><span style="color: #3366ff;">.NET – a set of verticals</span></h3>
+When Microsoft originally shipped the .NET Framework in 2002 there was only a single framework. Shortly after, Microsoft released the .NET Compact Framework which was a subset of the .NET Framework that fit within the footprint of smaller devices, specifically Windows Mobile. The compact framework was a separate code base from the .NET Framework. It included the entire vertical: a runtime, a framework, and an application model on top.
+Since then, Microsoft have repeated this sub setting exercise many times: Silverlight, Windows Phone and most recently for Windows Store. This yields to fragmentation because the .NET Platform isn’t a single entity but a set of platforms, owned by different teams, and maintained independently.
+Of course, there is nothing wrong with offering specialized features in order to cater to a particular need. But it becomes a problem if there is no systematic approach and specialization happens at every layer with little to no regards for corresponding layers in other verticals. The outcome is a set of platforms that only share APIs by the fact that they started off from a common code base. Over time this causes more divergence unless explicit (and expensive) measures are taken to converge APIs.
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/3173.Pic1.png-550x0_zpsxpm0xo5q.png" width="675" height="297"  loading="lazy" alt=".NET Core">
+<strong><span style="text-decoration: underline;">What is the problem with fragmentation</span>?</strong> If you only target a single vertical then there really isn’t any problem. You’re provided with an API set that is optimized for your vertical. The problem arises as soon as you want to target the horizontal, that is multiple verticals. Now you have to reason about the availability of APIs and come up with a way to produce assets that work across the verticals you want to target.
+Today it’s extremely common to have applications that span devices: there is virtually always a back end that runs on the web server, there is often an administrative front end that uses the Windows desktop, and a set of mobile applications that are exposed to the consumer, available for multiple devices. Thus, it’s critical to support developers in building components that can span all the .NET verticals.
+<ul>
+ 	<li><strong>Birth of portable class libraries</strong></li>
+</ul>
+Originally, there was no concept of code sharing across verticals. No portable class libraries, no shared projects. You were essentially stuck with creating multiple projects, linked files, and #if. This made targeting multiple verticals a daunting task.
+During the Windows 8 era Microsoft came up with a plan to deal with this problem. When Microsoft designed the Windows Store profile Microsoft introduced a new concept to model the sub-setting in a better way: contracts.
+Originally, the .NET Framework was designed around the assumption that it’s always deployed as a single unit, so factoring was not a concern. The very core assembly that everything else depends on is mscorlib. The mscorlib provided by the .NET Framework contains many features that that can’t be supported everywhere (for example, Remoting and AppDomains). This forces each vertical to subset even the very core of the platform. This made it very complicated to tool a class library experience that lets you target multiple verticals.
+The idea of contracts is to provide a well factored API surface area. Contracts are simply assemblies that you compile against. In contrast to regular assemblies contract assemblies are designed around proper factoring. Microsoft deeply care about the dependencies between contracts and that they only have a single responsibility instead of being a grab bag of APIs. Contracts version independently and follow proper versioning rules, such as adding APIs results in a newer version of the assembly.
+Microsoft is using contracts to model API sets across all verticals. The verticals can then simply pick and choose which contracts they want to support. The important aspect is that verticals must support a contract either wholesale or not at all. In other words, they can’t subset the contents of a contract.
+This allows reasoning about the API differences between verticals at the assembly level, as opposed to the individual API level that Microsoft had before. This aspect enabled us to provide a class library experience that can target multiple verticals, also known as portable class libraries.
+<ul>
+ 	<li><strong>Unifying API shape versus unifying implementation</strong></li>
+</ul>
+You can think of portable class libraries as an experience that unifies the different .NET verticals based on their API shape. This addressed the most pressing need, which is the ability to create libraries that run on different .NET verticals. It also served as a design tool to drive convergence between verticals, for instance, between Windows 8.1 and Windows Phone 8.1.
+However, Microsoft still have different implementations – or forks – of the .NET platform. Those implementations are owned by different teams, version independently, and have different shipping vehicles. This makes unifying API shape an ongoing challenge: APIs are only portable when the implementation is moved forward across all the verticals but since the code bases are different that’s fairly expensive and thus always subject to (re-)prioritization. And even if Microsoft could do a perfect job with converging the APIs: the fact that all verticals have different shipping vehicles means that some part of the ecosystem will always lag behind.
+A much better approach is unifying the implementations: instead of only providing a well factored view, Microsoft should provide a well factored implementation. This would allow verticals to simply share the same implementation. Convergence would no longer be something extra; it’s achieved by construction. Of course, there are still cases where Microsoft may need multiple implementations. A good example is file I/O which requires using different technologies, based on the environment. However, it’s a lot simpler to ask each team owning a specific component to think about how their APIs work across all verticals than trying to retroactively providing a consistent API stack on top. That’s because portability isn’t a something you can provide later. For example, .NET file APIs include support for Windows Access Control Lists (ACL) which can’t be supported in all environments. The design of the APIs must take this into consideration, and, for instance, provide this functionality in a separate assembly that can be omitted on platforms that don’t support ACLs.
+<h3><span style="color: #3366ff;">Machine-wide frameworks versus application-local frameworks</span></h3>
+Another interesting challenge has to do with how the .NET Framework is deployed.
+The .NET Framework is a machine-wide framework. Any changes made to it affect all applications taking a dependency on it. Having a machine-wide framework was a deliberate decision because it solves those issues:
+<ul>
+ 	<li>It allows centralized servicing</li>
+ 	<li>It reduces the disk space</li>
+ 	<li>Allows sharing native images between applications</li>
+ 	<li>But it also comes at a cost.</li>
+</ul>
+For one, it’s complicated for application developers to take a dependency on a recently released framework. You either have to take a dependency on the latest OS or provide an application installer that is able to install the .NET Framework when the application is installed. If you’re a web developer, you might not even have this option as the IT department tells you which version you’re allowed to use. And if you’re a mobile developer you really don’t have choice but the OS you target.
+But even if you’re willing to go through the trouble of providing an installer in order to chain in the .NET Framework setup you may find that upgrading the .NET Framework can break other applications.
+Hold on – isn’t Microsoft saying that our upgrades are highly compatible? And Microsoft take compatibility extremely seriously. Microsoft have rigorous reviews for any changes made to the .NET Framework. And for anything that could be a breaking change Microsoft have dedicated reviews to investigate the impact. Microsoft run a compat lab where Microsoft test many popular .NET applications to ensure that Microsoft don’t regress them. Microsoft also have the ability to tell which .NET Framework the application was compiled against. This allows us to maintain compatibility with existing applications while providing a better behavior for applications that opted-into targeting a later version of the .NET Framework.
+Unfortunately, Microsoft have also learned that even compatible changes can break applications. Let me provide a few examples:
+<ul>
+ 	<li>Adding an interface to an existing type can break applications because it might interfere with how the type is being serialized.</li>
+ 	<li>Adding an overload to a method that previously didn’t had any overloads can break reflection consumers that never handled finding more than one method.</li>
+ 	<li>Renaming an internal type can break applications if the type name was surfaced via a ToString() method.</li>
+</ul>
+Those are all rare cases but when you have a customer base of 1.8 billion machines being 99.9% compatible can still mean that 1.8 million machines are affected.
+Interestingly enough, in many cases fixing impacted applications is fairly trivial. But the problem is that the application developer isn’t necessarily involved when the break occurs. Let’s look at a concrete example.
+&nbsp;
+You tested your application on .NET Framework 4 and that’s what you installed with your app. But some day one of your customers installed another application that upgraded the machine to .NET Framework 4.5. You don’t know your application is broken until that customer calls your support. At this point addressing the compat issue in your application is fairly expensive as you have to get the corresponding sources, setup a repro machine, debug the application, make the necessary changes, integrate them into the release branch, produce a new version of your software, test it, and finally release an update to your customers.
+Contrast this with the case where you decide you want to take advantage of a feature released in a later version of the .NET Framework. At this point in the development process, you’re already prepared to make changes to your application. If there is a minor compat glitch, you can easily handle it as part of the feature work.
+Due to these issues, it takes us a while to release a new version of the .NET Framework. And the more drastic the change, the more time Microsoft need to bake it. This results in the paradoxical situation where our betas are already fairly locked down and Microsoft have pretty much unable to take design change requests.
+Two years ago, Microsoft have started to ship libraries on NuGet. Since Microsoft didn’t add those libraries to the .NET Framework Microsoft refer to them as “out-of-band”. Out-of- band libraries don’t suffer from the problem Microsoft just discussed because they are application-local. In other words, the libraries are deployed as if they were part of your application.
+This pretty much solves all the problems that prevent you from upgrading to a later version. Your ability to take a newer version is only limited by your ability to release a newer version of your application. It also means you’re in control which version of the library is being used by a specific application. Upgrades are done in the context of a single application without impacting any other application running on the same machine.
+This enables us to release updates in a much more agile fashion. NuGet also provides the notion of preview versions which allow us to release bits without yet committing on a specific API or behavior. This supports a workflow where Microsoft can provide you with our latest design and – if you don’t like it – simply change it. A good example of this is immutable collections. It had a beta period of about nine months. Microsoft spend a lot of time trying to get the design right before Microsoft shipped the very first version. Needless to say that the final design – thanks to the extensive feedback you provided – is way better than the initial version.
+<ul>
+ 	<li>Enter .NET Core</li>
+</ul>
+All these aspects caused us to rethink and change the approach of modelling the .NET platform moving forward. This resulted in the creation of .NET Core:
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/5488.Pic2.png-550x0_zpscq9ds6pn.png" width="754" height="395"  loading="lazy" alt=".NET Core">
+.NET Core is a modular implementation that can be used in a wide variety of verticals, scaling from the data center to touch based devices, is available as open source, and is supported by Microsoft on Windows, Linux and Mac OSX.
+Let me go into a bit more detail of how .NET Core looks like and how it addresses the issues I discussed earlier.
+<ul>
+ 	<li><strong>Unified implementation for .NET Native</strong></li>
+</ul>
+When Microsoft designed .NET Native it was clear that Microsoft can’t use the .NET Framework as the foundation for the framework class libraries. That’s because .NET Native essentially merges the framework with the application, and then removes the pieces that aren’t needed by the application before it generates the native code. As I explained earlier, the .NET Framework implementation isn’t factored which makes it quite challenging for a linker to reduce how much of the framework gets compiled into the application – the dependency closure is just too large.
+.NET Core is essentially a fork of the NET Framework whose implementation is also optimized around factoring concerns. Even though the scenarios of .NET Native (touch based devices) are quite different, Microsoft were able to provide a unified Base Class Library (BCL).
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/2783.Pic3.png-350x0_zpse7wr4dfd.png" width="489" height="440"  loading="lazy" alt=".NET Core">
+The API surface area for the .NET Core BCL is identical for Native. At the bottom of the BCL Microsoft have a very thin layer that is specific to the .NET runtime. Microsoft have currently two implementations: one is specific to the .NET Native runtime and one that is specific to Core-CLR, which is used by ASP.NET 5. However, that layer doesn’t change very often. It contains types like String and Int32. The majority of the BCL are pure MSIL assemblies that can be shared as-is. In other words, the APIs don’t just look the same – they share the same implementation. For example, there is no reason to have different implementations for collections.
+On top of the BCL, there are app-model specific APIs. For instance, the .NET Native side provides APIs that are specific to Windows client development, such as WinRT interop. ASP.NET 5 adds APIs such as MVC that are specific to server- side web development.
+Microsoft think of .NET Core as not being specific to .NET Native – the BCL and the runtimes are general purpose and designed to be modular. As such, it forms the foundation for all future .NET verticals.
+<ul>
+ 	<li><strong>NuGet as a first class delivery vehicle;</strong></li>
+</ul>
+In contrast to the .NET Framework, the .NET Core platform will be delivered as a set of NuGet packages. Microsoft have settled on NuGet because that’s where the majority of the library ecosystem already is.
+In order to continue our effort of being modular and well factored Microsoft don’t just provide the entire .NET Core platform as a single NuGet package. Instead, it’s a set of fine grained NuGet packages:
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/0841.Pic4_zpsi4g2mqwt.png" width="730" height="659"  loading="lazy" alt=".NET Core">
+For the BCL layer, Microsoft will have a 1-to-1 relationship between assemblies and NuGet packages.
+Moving forward, the NuGet package will have the same name as the assembly. For example, immutable collections will no longer be delivered in a NuGet package called Microsoft.Bcl.Immutable but instead be in a package called System.Collections.Immutable.
+In addition, Microsoft have decided to use semantic versioning for our assembly versioning. The version number of the NuGet package will align with the assembly version.
+The alignment of naming and versioning between assemblies and packages help tremendously with discovery. There is no longer a mystery which NuGet packages contains System.Foo, Version=1.2.3.0 – it’s provided by the System.Foo package in version 1.2.3.
+NuGet allows us to deliver .NET Core in an agile fashion. So if Microsoft provide an upgrade to any of the NuGet packages, you can simply upgrade the corresponding NuGet reference.
+Delivering the framework itself on NuGet also removes the difference between expressing 1st party .NET dependencies and 3rd party dependencies – they are all NuGet dependencies. This enables a 3rd party package to express, for instance, that they need a higher version of the System.Collections library. Installing this 3rd party package can now prompt you to upgrade your reference to System.Collections. You don’t have to understand the dependency graph – you only need to consent making changes to it.
+The NuGet based delivery also turns the .NET Core platform into an app-local framework. The modular design of .NET Core ensures that each application only needs to deploy what it needs. Microsoft have also working on enabling smart sharing if multiple applications use the same framework bits. However, the goal is to ensure that each application is logically having its own framework so that upgrading doesn’t interfere with other applications running on the same machine.
+Our decision to use NuGet as a delivery mechanism doesn’t change our commitment to compatibility. Microsoft continue to take compatibility extremely seriously and will not perform API or behavioral breaking changes once a package is marked as stable. However, the app-local deployment ensures that the rare case where a change that is considered additive breaks an application is isolated to development time only. In other words, for .NET Core these breaks can only occur after you upgraded a package reference. In that very moment, you have two options: addressing the compat glitch in your application or rolling back to the previous version of the NuGet package. But in contrast to the .NET Framework those breaks will not occur after you deployed the application to a customer or the production server.
+<ul>
+ 	<li><strong>Enterprise ready;</strong></li>
+</ul>
+The NuGet deployment model enables agile releases and faster upgrades. However, Microsoft don’t want to compromise the one-stop-shop experience that the .NET Framework provides today.
+One of the great things of the .NET Framework is that it ships as a holistic unit, which means that Microsoft tested and supports all components as a single entity. For .NET Core Microsoft will provide the same experience. Microsoft will create the notion of a .NET Core distribution. This is essentially just a snapshot of all the packages in the specific version Microsoft tested them.
+The idea is that our teams generally own individual packages. Shipping a new version of the team’s package only requires that the team tests their component, in the context of the components they depend on. Since you’ll be able to mix- and-match NuGet packages there can obviously be cases where certain combinations of components don’t play well together. Distributions will not have that problem because all components are tested in combination.
+Microsoft expect distributions to be shipped at a lower cadence than individual packages. Microsoft are currently thinking of up to four times a year. This allows for the time it will take us to run the necessary testing, fixing and sign off.
+Although .NET Core is delivered as a set of NuGet packages it doesn’t mean that you have to download packages each time you need to create a project. Microsoft will provide an offline installer for distributions and also include them with Visual Studio so that creating new projects will be as fast as today and not require internet connectivity in the development process.
+While app-local deployment is great for isolating the impact of taking dependencies on newer features it’s not appropriate for all cases. Critical security fixes must be deployed quickly and holistically in order to be effective. Microsoft are fully committed to making security fixes as Microsoft always have for .NET.
+In order to avoid the compatibility issues Microsoft have seen in the past with centralized updates to the .NET Framework it’s essential that these only target the security vulnerabilities. Of course, there is still a small chance that those break existing applications. That’s why Microsoft only do this for truly critical issues where it’s acceptable to cause a very small set of apps to no longer work rather than having all apps run with the vulnerability.
+<ul>
+ 	<li><strong>Foundation for open source and cross platform</strong></li>
+</ul>
+In order to take .NET cross platform in a sustainable way Microsoft decided to open source .NET Core.
+From past experience Microsoft understand that the success of open source is a function of the community around it. A key aspect to this is an open and transparent development process that allows the community to participate in code reviews, read design documents, and contribute changes to the product.
+Open source enables us to extend the .NET unification to cross platform development. It actively hurts the ecosystem if basic components like collections need to be implemented multiple times. The goal of .NET Core is having a single code base that can be used to build and support all the platforms, including Windows, Linux and Mac OSX.
+Of course, certain components, such as the file system, require different implementations. The NuGet deployment model allows us to abstract those differences away. Microsoft can have a single NuGet package that provides multiple implementations, one for each environment. However, the important part is that this is an implementation detail of this component. All the consumers see a unified API that happens to work across all the platforms.
+Another way to look at this is that open source is a continuation of our desire to release .NET components in an agile fashion:
+<ol>
+ 	<li>Open Source offers quasi real-time communication for the implementation and overall direction</li>
+ 	<li>Releasing packages to NuGet.org offers agility at the component level</li>
+ 	<li>Distributions offer agility at the platform level</li>
+</ol>
+Having all three elements allows us to offer a broad spectrum of agility and maturity.
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/8475.Pic5.png-550x0_zpsg6hyhuqt.png" width="550" height="289"  loading="lazy" alt=".NET Core">
+<h3><span style="color: #3366ff;">Relationship of .NET Core with existing platforms;</span></h3>
+Although Microsoft have designed .NET Core so that it will become the foundation for all future stacks, Microsoft is very much aware of the dilemma of creating the “one universal stack” that everyone can use:
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/7725.Pic6.png-550x0_zpsrtnwdoip.png" width="550" height="335"  loading="lazy" alt=".NET Core">
+Microsoft believe its found a good balance between laying the foundation for the future while maintaining great interoperability with the existing stacks. I’ll go into more detail by looking at several of these platforms.
+<ul>
+ 	<li><strong>Summary;</strong></li>
+</ul>
+Long thing short; The .NET Core platform is a new .NET stack that is optimized for open source development and agile delivery on NuGet. Microsoft is working with the Mono community to make it great on Windows, Linux and Mac, and Microsoft will support it on all three platforms.
+Microsoft is retaining the values that the .NET Framework brings to enterprise class development. Microsoft will offer .NET Core distributions that represent a set of NuGet packages that Microsoft tested and support together. Visual Studio remains your one- stop-shop for development. Consuming NuGet packages that are part of a distribution doesn’t require an internet connection.
+Microsoft acknowledge our responsibility and continue to support shipping critical security fixes without requiring any work from the application developer, even if the affected component is exclusively distributed as NuGet package.
+<img class="aligncenter" src="https://pbs.twimg.com/media/Ce6RrazWEAAKf7Y.jpg" width="721" height="405"  loading="lazy" alt=".NET Core">
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/net-core/&text=.NET Core" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/net-core/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/net-core/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=.NET Core%20https://www.justsajid.com/posts/net-core/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  <div class="single-tags"><span class="tag-label">Tags:</span><a href="../../tags/net/" class="tag-link">.NET</a> <a href="../../tags/netcore/" class="tag-link">.NETCore</a> <a href="../../tags/core/" class="tag-link">Core</a></div>
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/metaverse-a-whole-new-world/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Metaverse || A Whole New World." loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2022-05-09 01:34:48">May 09, 2022</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/metaverse-a-whole-new-world/">Metaverse || A Whole New World.</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/password-choose-the-secure-easy-and-cool-password/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2016/05/How-to-Pick-A-Secure-Password.jpg" alt="Password: Choose the Secure, Easy and Cool Password" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 23:28:45">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/password-choose-the-secure-easy-and-cool-password/">Password: Choose the Secure, Easy and Cool Password</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/grand-challenge-in-computer-science/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Grand Challenge in Computer Science" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 22:11:51">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/grand-challenge-in-computer-science/">Grand Challenge in Computer Science</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/architecture-of-net-framework/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Architecture of .NET Framework</span>
+      </a>
+    <a href="../../posts/c-memory-management/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">C# Memory Management</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Technology</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/metaverse-a-whole-new-world/">Metaverse || A Whole New World.</a>
+        <div class="post-small-date">May 09, 2022</div>
+      </div><div class="post-small">
+        <a href="../../posts/password-choose-the-secure-easy-and-cool-password/">Password: Choose the Secure, Easy and Cool Password</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/grand-challenge-in-computer-science/">Grand Challenge in Computer Science</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-xamarin/">JumpStart with XAMARIN</a>
+        <div class="post-small-date">August 10, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/linkedin-microsoft-to-acquire-linkedin-for-26-2-billion/">LinkedIn: Microsoft to Acquire LinkedIn for $26.2 Billion</a>
+        <div class="post-small-date">June 13, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Architecture of .NET Framework | justSajid</title>
+  <meta name="description" content="Architecture of .NET Framework — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/architecture-of-net-framework/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Architecture of .NET Framework | justSajid">
+  <meta property="og:description" content="Architecture of .NET Framework — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/architecture-of-net-framework/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2016/04/image_60140ec0-ce46-4dbf-a14f-4210eab7f42c.png">
+  <meta property="article:published_time" content="2016-04-25T05:36:04Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Architecture of .NET Framework | justSajid">
+  <meta name="twitter:description" content="Architecture of .NET Framework — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2016/04/image_60140ec0-ce46-4dbf-a14f-4210eab7f42c.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2016/04/image_60140ec0-ce46-4dbf-a14f-4210eab7f42c.png" alt="Architecture of .NET Framework" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Architecture of .NET Framework</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2016-04-25 05:36:04" itemprop="datePublished">Published April 25, 2016</time></span>
+      <span class="meta-category">in <a href="../../categories/tech/" class="cat-link">Technology</a> <a href="../../categories/skills/" class="cat-link">Skills</a> <a href="../../categories/csharp/" class="cat-link">Microsoft Visual C#.</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">5 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      .NET Framework is developed by Microsoft.
+The .NET Framework is Microsoft platform for Software Development. It provides a Universal Platform that let Microsoft Developers Program in same way and with the same languages regardless of whether for working for the Web, for Desktop or for Mobile.
+There’re also class libraries available for particular type of applications! So if someone working upon a particular environment then appropriate libraries are available. Like when someone working upon Web then libraries like Sockets and other communication standards are available.
+Basically .NET Framework has following Components;
+<ul>
+ 	<li><strong>Framework Class Library (FCL)</strong></li>
+</ul>
+It is Standard class library for .NET development that provides core capabilities such as UI Management, Data Access, Security etc. It Delivers basic functionality for developing: XML, ADO.NET, LINQ, ASP.NET, WPF, WCF, WWF, Silverlight, Web services, Windows Forms.
+The C# runs in a Managed Code Environment;
+<ul>
+ 	<li><strong>Common Language Runtime (CLR):</strong></li>
+</ul>
+It is the Environment for controlled execution of programmed code – like a virtual machine. It Executes .NET applications.
+<ul>
+ 	<li><strong>SDK, Compilers and Tools.</strong></li>
+</ul>
+<ul>
+ 	<li><strong>.NET Framework Architecture</strong></li>
+</ul>
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/The%20.NET%20Stacka_zpsz5saelor.jpg" width="990" height="632"  loading="lazy" alt="Architecture of .NET Framework">
+<ul>
+ 	<li><strong>The Operating System;</strong></li>
+</ul>
+The OS manages the resources, the processes and the users of the machine. Provides to the applications some services (threads, I/O, GDI+, DirectX, COM, COM+, MSMQ, IIS, WMI, …). CLR is a separate process in the OS.
+<ul>
+ 	<li><strong>Common Language Runtime (CLR);</strong></li>
+</ul>
+CLR is the nucleus of .NET Framework. It manages the execution of the .NET code. Manages the memory, concurrency, security…
+<ul>
+ 	<li><strong>Base Class Library (BCL);</strong></li>
+</ul>
+Rich object-oriented library with fundamental classes. Input-output, collections, text processing, networking, security, multi-threading…
+<ul>
+ 	<li><strong>Application Class Libraries and Services;</strong></li>
+</ul>
+It includes Services. i.e. Database access, ADO.NET, LINQ, LINQ-to-SQL and Entity Framework. Strong XML support
+<ul>
+ 	<li><strong>WCF and WWF (Communication and Workflow Tier);</strong></li>
+</ul>
+Windows Communication Foundation (WCF) and Windows Workflow Foundation (WWF) for the SOA world.
+<ul>
+ 	<li><strong>Common Language Specification;</strong></li>
+</ul>
+User interface technologies: Web based, Windows GUI, WPF, Silverlight, mobile. Including ASP.NET, WPF, Web forms, others…
+<ul>
+ 	<li>Programming Languages;</li>
+</ul>
+And then the top layer of Programming Languages come, in which lot of language include; C#, C++, VB, J#, F#, Jscript, F# etc…
+<h3><span style="color: #3366ff;"><strong>CLR;</strong></span></h3>
+Managed execution environment and Controls the execution of managed .NET programming code
+Something like virtual machine Like the Java Virtual Machine (JVM).
+Not an interpreter. Compilation on-demand is used Known as Just in Time (JIT) compilation.
+Possible compilation in advance.
+<ul>
+ 	<li>Responsibility of CLR;
+<ul>
+ 	<li>Execution of the IL code and the JIT compilation</li>
+ 	<li>Managing memory and application resources</li>
+ 	<li>Ensuring type safety</li>
+ 	<li>Interaction with the OS</li>
+ 	<li>Managing security
+<ul>
+ 	<li>Code access security</li>
+ 	<li>Role-based security</li>
+</ul>
+</li>
+ 	<li>Managing exceptions</li>
+ 	<li>Managing concurrency – controlling the parallel execution of application threads</li>
+ 	<li>Managing application domains and their isolation</li>
+ 	<li>Interaction with unmanaged code</li>
+ 	<li>Supporting debug / profile of .NET code</li>
+</ul>
+</li>
+ 	<li><strong>CLR Architecture;</strong></li>
+</ul>
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zpszyhznnpg.png" width="624" height="519"  loading="lazy" alt="Architecture of .NET Framework">
+<h3><span style="color: #3366ff;">Managed Code;</span></h3>
+CLR executed code is called managed code. Represents programming code in the low level language MSIL (MS Intermediate Language) Contains metadata. i.e. Description of classes, interfaces, properties, fields, methods, parameters, etc.
+Programs, written in any .NET language are Compiled to managed code (MSIL). Packaged as assemblies (.exe or .dll files)
+Object-oriented, Secure, Reliable, Protected from irregular use of types (type-safe), Allows integration between components and data types of different programming languages, Portable between different platforms, Windows, Linux, Max OS X, etc.
+<h3><span style="color: #3366ff;"><strong>Unmanaged (Win32) Code;</strong></span></h3>
+No protection of memory and type-safety. Reliability problems and Safety problems.
+Doesn’t contain metadata. Needs additional overhead like (e.g. use COM), Compiled to machine-dependent code, Need of different versions for different platforms, Hard to be ported to other platforms.
+<ul>
+ 	<li><strong>Memory Management;</strong></li>
+</ul>
+CLR manages memory automatically. Dynamically loaded objects are stored in the managed heap. Unusable objects are automatically cleaned up by the garbage collector. Some of the big problems are solved. Memory leaks and Access to freed or unallocated memory. Objects are accessed through a reference.
+<ul>
+ 	<li><strong>Intermediate Language (MSIL);</strong></li>
+</ul>
+Low level language (machine language) for the .NET CLR. It has independent set of CPU instructions. Loading and storing data, calling methods, Arithmetic and logical operations, Exception handling, Etc.
+MSIL is converted to instructions for the current physical CPU by the JIT compiler.
+<h3><span style="color: #3366ff;"><strong>Sample</strong> <strong>MSIL Program;</strong></span></h3>
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zpsmjelnyf0.png" width="622" height="294"  loading="lazy" alt="Architecture of .NET Framework">
+<h3><span style="color: #3366ff;"><strong>Compilation and Execution;</strong></span></h3>
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zpsz8b9laf9.png" width="657" height="388"  loading="lazy" alt="Architecture of .NET Framework">
+<h3><span style="color: #3366ff;"><strong>How CLR Executes</strong> <strong>MSIL</strong><strong>?</strong></span></h3>
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/Untitled_zpskqfktyd8.png" width="659" height="527"  loading="lazy" alt="Architecture of .NET Framework">
+C# Does not compile to machine code, its code compile to Bytecode. A format that can be interpreted and executed on multiple operating systems. While the .NET framework is built for Windows, so there’ve been number of efforts to create environment for C# that can be executed by a layer called Common Language Runtime (CLR). The CLR is a Virtual Machine similar to JVM (Java Virtual Machine). It Provides Machine Level Security, memory management and OS level security and much more…
+<h3><span style="color: #3366ff;">The .NET Stack;</span></h3>
+<img class="aligncenter" src="http://i1030.photobucket.com/albums/y362/SoftwareWarrior/The%20.NET%20Stacka_zpsz5saelor.jpg" width="990" height="632"  loading="lazy" alt="Architecture of .NET Framework">
+So! All of these framework supports C#. And you can also build Universal Windows App for Windows 10. Moreover, now through Bridge Tools you can also build Native Apps through C#. So Distinct Compilers are required for each OS!
+Microsoft Visual C# is the managed language that is compiled to Byte code. As compare to this, there’re are native languages which are compiled to machine code. For them we need distinct compilers across each OS. Common Native Languages are C, C++, Objective C.
+As the C# is the managed language, so it is compiled to intermediate format. It also typically are cross OS compatible (like Java). So it compiles to Byte code, note the machine code. Then that bytecode is executed at Runtime by CLR (Common Language Runtime) on Windows. Similarly, that bytecode can also be executed at Runtime on another OS without having to be recompile by the third party compilers...
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/architecture-of-net-framework/&text=Architecture of .NET Framework" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/architecture-of-net-framework/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/architecture-of-net-framework/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Architecture of .NET Framework%20https://www.justsajid.com/posts/architecture-of-net-framework/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  <div class="single-tags"><span class="tag-label">Tags:</span><a href="../../tags/net/" class="tag-link">.NET</a> <a href="../../tags/netarchitecture/" class="tag-link">.NETArchitecture</a> <a href="../../tags/netframework/" class="tag-link">.NETFramework</a> <a href="../../tags/architecture/" class="tag-link">Architecture</a></div>
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/metaverse-a-whole-new-world/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Metaverse || A Whole New World." loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2022-05-09 01:34:48">May 09, 2022</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/metaverse-a-whole-new-world/">Metaverse || A Whole New World.</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/password-choose-the-secure-easy-and-cool-password/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2016/05/How-to-Pick-A-Secure-Password.jpg" alt="Password: Choose the Secure, Easy and Cool Password" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 23:28:45">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/password-choose-the-secure-easy-and-cool-password/">Password: Choose the Secure, Easy and Cool Password</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/grand-challenge-in-computer-science/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/theme/thumbnail-medium.png" alt="Grand Challenge in Computer Science" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 22:11:51">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/grand-challenge-in-computer-science/">Grand Challenge in Computer Science</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/microsoft-imagine-cup-an-awesome-journey-with-full-of-pressure-and-anxiety/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Microsoft Imagine Cup: An Awesome Journey With Full of Pressure and Anxiety.</span>
+      </a>
+    <a href="../../posts/net-core/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">.NET Core</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Technology</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/metaverse-a-whole-new-world/">Metaverse || A Whole New World.</a>
+        <div class="post-small-date">May 09, 2022</div>
+      </div><div class="post-small">
+        <a href="../../posts/password-choose-the-secure-easy-and-cool-password/">Password: Choose the Secure, Easy and Cool Password</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/grand-challenge-in-computer-science/">Grand Challenge in Computer Science</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-xamarin/">JumpStart with XAMARIN</a>
+        <div class="post-small-date">August 10, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/linkedin-microsoft-to-acquire-linkedin-for-26-2-billion/">LinkedIn: Microsoft to Acquire LinkedIn for $26.2 Billion</a>
+        <div class="post-small-date">June 13, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

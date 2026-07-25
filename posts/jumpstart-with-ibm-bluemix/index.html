@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>JumpStart with IBM Bluemix | justSajid</title>
+  <meta name="description" content="JumpStart with IBM Bluemix — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/jumpstart-with-ibm-bluemix/">
+  <meta property="og:type" content="article"><meta property="og:title" content="JumpStart with IBM Bluemix | justSajid">
+  <meta property="og:description" content="JumpStart with IBM Bluemix — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/jumpstart-with-ibm-bluemix/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2016/08/Welcome-to-Bluemix-1.jpg">
+  <meta property="article:published_time" content="2016-08-12T17:45:00Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="JumpStart with IBM Bluemix | justSajid">
+  <meta name="twitter:description" content="JumpStart with IBM Bluemix — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2016/08/Welcome-to-Bluemix-1.jpg">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2016/08/Welcome-to-Bluemix-1.jpg" alt="JumpStart with IBM Bluemix" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">JumpStart with IBM Bluemix</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2016-08-12 17:45:00" itemprop="datePublished">Published August 12, 2016</time></span>
+      <span class="meta-category">in <a href="../../categories/ibmcloud/" class="cat-link">IBM Cloud</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">10 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<p>IBM Bluemix is the world most exclusive cloud platform that provides developers to quickly develop, Deploy and manage Apps over the cloud without dealing with any underline infrastructure. Bluemix provides great open source platforms for your needs.</p>
+
+<p>Tech experts believe that up to 2020 the computing era would completely change. As in the beginning of PC computing, apps were run from (and data was stored on) individual systems locally. As the time went on, companies recognized the benefits of centralized computing and control and moved to a model where data is stored on, and many apps were run from servers on the local network. The next step moves apps and data storage even farther away from the end user, into the "Cloud" with everything placed at remote servers. That allow users to access programs and data anywhere, from any Internet-connected machine, including low-powered (and low-cost) netbooks...</p>
+
+<p>So, Let’s do see a video clip to understand Bluemix;</p>
+
+<figure><iframe width="1020" height="574" src="https://www.youtube.com/embed/Hcu664HbfS4?feature=oembed" allowfullscreen=""></iframe></figure>
+
+<p>So, the one question which might be coming in our mind is;</p>
+
+<h2>What is IBM Bluemix???</h2>
+
+<p>There is not an official definition found for that! Perhaps we can define it in such a way;</p>
+
+<p>“IBM Bluemix allows you to perform Virtually any compute or data storage operation by provisioning and scaling the necessary resources on demand on a pay-as-you-go basis.”</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-owsVBKl3r-4/V612Kdf6DTI/AAAAAAAAATw/REwMTyvFK5MovjwGCgQ4aknUgA8PCDTBQCK4B/s1600/1.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now the second question which might be coming in our mind is;</p>
+
+<h2>Why Do We Need IBM Bluemix???</h2>
+
+<p>Well, there can by dozens of ways to answers that. Perhaps following points would justify why would you need Bluemix;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-kJZi2O_R09E/V614gclGCiI/AAAAAAAAAVc/WzKoTtx1V3gBqXQdOB-mgIMdj0LhvJuFACK4B/s1600/1a.jpg" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<h3>Scalability and Flexibility</h3>
+
+<p>By using Bluemix, you can easily create reliable and scalable apps that can run for 10 to 10 thousand or even 10 million users — without any additional coding. IBM Storage provides scalable, secure, performance-efficient storage services in the cloud.</p>
+
+<h3>Easy Environment;</h3>
+
+<p>The Environment is according to your ease. You can easily create, develop and deploy anything by using Bluemix by following few easy steps or by just a few clicks.</p>
+
+<h3>SDKs and APIs</h3>
+
+<p>You can easily be worked with different Software Development Kits and appropriate APIs of different platforms to develop and integrate into your own solutions.</p>
+
+<h3>Cost Models and Benefits</h3>
+
+<p>You can take advantages of resources in the cloud that allows you to decrease your costs for building and expanding your on-premises resources. You can also reduce the cost of IT administration because the hardware is being taken care of for you, off-premises. The cost of creating, testing, debugging, and distributing Web-based applications goes down because you have to pay only for the computer processing time and storage space you need at a given time.</p>
+
+<h3>Cloud Data Centers;</h3>
+
+<p>IBM Bluemix provides organizations with all the benefits of an enterprise-class data center without the hassle, headaches, and cost of maintaining such an entity. You can get high availability and reliability with redundant copies of your data and automatic failover. No more worries about backing up data yourself.</p>
+
+<h3>Hybridization;</h3>
+
+<p>Through IBM Bluemix you can develop hybrid apps that allow your on-premises apps to use cloud services, such as the cloud database and storage services. Communications services work between on-premises apps and the cloud, as well as remote devices.</p>
+
+<h3>Security;</h3>
+
+<p>IBM designed Bluemix with security in mind. As the security is one of the biggest concerns for companies considering a move to the cloud. So with Bluemix, you don’t have to worry about security.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-cB052xR7KTY/V614_xOu7_I/AAAAAAAAAVk/oj1Gb_qGZ74gKKJBhTIz25ezcegmchCWwCK4B/s1600/1b.jpg" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<h2>Easy To Build Apps With Bluemix;</h2>
+
+<p>Bluemix has built on Cloud Foundry which is an open source cloud platform.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-f_zRs5bU7FM/V615oBQDKdI/AAAAAAAAAVw/dk40UmxOhy816Jtk-r0vKa6Gn77-zMNfwCK4B/s1600/1c.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>It’s really easy to build apps with Bluemix. There are just three easy and major steps to build cloud foundry apps very easily;</p>
+
+<ol><li><strong>Choose the runtime that we need to use.</strong></li><li><strong>Choose the services that we are looking for.</strong></li><li><strong>Deploy our app by pushing our code up.</strong></li></ol>
+
+<p>And! Kaboom!!! Your app is up and running.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-Ll4rLetKKHY/V616HuQaVFI/AAAAAAAAAV8/OE7uLwHbLSYlb19FsP5u86YayrLUaZG8QCK4B/s1600/1d.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Bluemix is just more than Platform as a service. It provides IBM Containers that uses Docker containers. Also, there are Virtual Machines that is powered by OpenStack.</p>
+
+<h2>Create an Account at Bluemix;</h2>
+
+<p>It is quite easy to develop an account at Bluemix. Simply go to SignUp Page of Bluemix;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-flZQJOT37cI/V612KmTZjfI/AAAAAAAAASU/-jZR7KMbpIIH87DH0FxoOmsEBxP_ofGcQCK4B/s1600/2.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Simply enter the credentials and click the button of Create Account.</p>
+
+<p>Now you will get the confirmation Email at your email which you provide. Simply go to verification link and so you have verified your account.</p>
+
+<p>Now, it will show you the message here;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-Hk6rs-wDWdg/V612KlfSGjI/AAAAAAAAATU/C8Tf-DeY1gAvXsutsQE6N9Zjj6XkUzcvwCK4B/s1600/3.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now simply do login</p>
+
+<p>Now it will ask you for a simple login;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-NDj7lcGcZl8/V612JcOBf-I/AAAAAAAAAP8/M4Sw8gqISMc1lex-Sc55vJicwd-7YKleQCK4B/s1600/4.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now right after first login, it will ask you to choose a company name;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-WXh_B9RJdH8/V612Kre5ELI/AAAAAAAAASA/3mAwHtdWkRYYeMjaA5CQ83qJDb3FbKANgCK4B/s1600/5.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>The Company name is like a project name or team name that shares resources, such as apps, databases, and other services. Orgs exist in geographic regions, so decide where you'd like to put your first one.</p>
+
+<p>Now simply enter the name of the space;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-zG7K2uGLCEc/V612Kerd5WI/AAAAAAAAAQ4/eIRAlL_7kVo8tG_Jt0Df-zj1UuBSSHj-ACK4B/s1600/6.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Spaces help us to manage access and permissions for a set of resources and map different development stages like dev, test, and prod.</p>
+
+<p>Now you will see the Summary of your first organization and space which you have create so far.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-3vO3dSl899A/V612KTqYhdI/AAAAAAAAAUQ/oZJYQ1zKPa00h1uo0Adg0bRswtSd4ad2QCK4B/s1600/7.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now when you are done with everything and click I’m Ready button.</p>
+
+<p>That would take you to your dashboard of Bluemix;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-Y9tZYnROEKY/V612KiFgiQI/AAAAAAAAASI/2blP3GlFNh4z2TS2C5xW9foqci1gaRzLgCK4B/s1600/8.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>You can also try the new Bluemix portal;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-G6BBkOEtpys/V612Kn2nhSI/AAAAAAAAAS0/kvvLS271C-cfQELFCHQWRzE_2Lmw9l0LwCK4B/s1600/9.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So, from here you can go anywhere you want.</p>
+
+<h2>Create a Solution in Bluemix;</h2>
+
+<p>If we want to create a Software solution, Mobile First App Solution, IoT Solution or any other solution. Bluemix provides you a great solution through its services and by following few easy steps we can easily create our solutions through Bluemix.</p>
+
+<p>Again! There are both ways available to deploy the app;</p>
+
+<ol><li>Through the Portal.</li><li>Through the Command Line.</li></ol>
+
+<p>And it's upon you, either you are easy with UI and want to deploy apps through Portal or you are easy with Command Line and want to deploy apps through that.</p>
+
+<p>So, Let’s do develop a Web App and deploy over Bluemix in both ways;</p>
+
+<ul><li>Deploy App Using Portal UI;</li></ul>
+
+<p>So we simply follow the three major steps as we mentioned above to build cloud foundry app;</p>
+
+<ol><li>Choose the runtime that we need to use.</li></ol>
+
+<p>Simply go to Bluemix Dashboard;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-ID7qPdp_xfM/V612KgFC0LI/AAAAAAAAASk/HvdEPVJXxv8ETjp4Q3zn6qi8mx-9IxdXwCK4B/s1600/10.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And click on CREATE App on Cloud Foundry Apps;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-rscsQjS9JhM/V612KBqQQgI/AAAAAAAAAT8/drBySSvuZWUu5vMCV-me7t_hbOaDJGEtgCK4B/s1600/11.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<h4>&nbsp; &nbsp; &nbsp; &nbsp;2.Choose the services that we are looking for.</h4>
+
+<p>Now simply select the WEB as we are going to develop a Web App;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-otcK8p82w0A/V612KvXkS0I/AAAAAAAAASY/3s2LG8b73X8qdZlLaZq18zC9FddCTT_ugCK4B/s1600/12.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now simply select the language with you want to use. For now, we are using ASP.NET Core do deploy the app.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-PB2FFB_Y6tk/V612KjND0qI/AAAAAAAAASE/p559xvLl6CcL8rfuPuV6i3dJPU1uH4lpgCK4B/s1600/13.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now simply click Continue button, it will ask you for the App Name. Simply Named the App and Click the FINISH Button;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-mVmJ_qtRMPc/V612KbWmTsI/AAAAAAAAASw/ulPrkGpVkb4iUO4BhB4bfgsVkE_1-X-xwCK4B/s1600/14.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now, IBM Bluemix would create a moment to create WebApp named justSajid for you.</p>
+
+<p>As soon you app would create it would create redirect to the dashboard of your web app;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-bAIiDylXWnk/V612Kpre2bI/AAAAAAAAAR0/AgiP9paM3VQWkHsNgX-pJuEbSPmLdj3cwCK4B/s1600/15.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So you see your app, up and running! Simply go the URL as you can see on the Dashboard and you can see your web app;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-u9NjSMYji6o/V612KqVFcLI/AAAAAAAAASo/Unhd0gZDmq0zHQIK094JPSXgCw__pr9VACK4B/s1600/16.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So, you see how easy and fun is to develop a Web App Project over IBM Bluemix.</p>
+
+<p>3.&nbsp;Deploy our app by pushing our code up;</p>
+
+<p>Now this part is quite interesting. Once you have created your app and that is up and running then next is to update it with your own data.&nbsp;Simply go to the link according to the selected region here;</p>
+
+<ul><li><a href="https://bluemix.net/" target="_blank" rel="noopener noreferrer">https://bluemix.net</a>&nbsp;- For default location.</li><li><a href="https://console.ng.bluemix.net/" target="_blank" rel="noopener noreferrer">https://console.ng.bluemix.net</a>&nbsp;- For US South region.</li><li><a href="https://console.eu-gb.bluemix.net/" target="_blank" rel="noopener noreferrer">https://console.eu-gb.bluemix.net</a>&nbsp;- For United Kingdom Region</li><li><a href="https://console.au-syd.bluemix.net/" target="_blank" rel="noopener noreferrer">https://console.au-syd.bluemix.net</a>&nbsp;– For Sydney Region</li></ul>
+
+<p>Now go to Dashboard. The Web App which we created earlier will be showing in Dashboard in Applications section.</p>
+
+<p>By using IBM DevOps Services you can easily modify your code. IBM DevOps is SaaS service on the cloud that supports continuous delivery. And by using that you can easily develop, track, plan and deploy the app in once place. And from your project, you can access everything.</p>
+
+<p>So, simply go to Dashboard of your app click ADD GIT;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-xhkytFRuRSA/V612Ka4YxYI/AAAAAAAAAUg/X2t3F2Vv-fEdlQrobsjpAWi5_bgAgCmpQCK4B/s1600/28.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So, that would create IBM DevOps Service (IDS) project. A GIT Repository would contain the app code and a delivery pipeline that would automatically re-deploy the app on “get-push”.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-RLWewNVRLjY/V612KVFmKsI/AAAAAAAAATg/8znXLIe4DvwQwlFarJfAybWBZoKQ_rEwwCK4B/s1600/29.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So that would create the alias.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-ACMf9QiKG5E/V612KYn7p9I/AAAAAAAAAUA/3eWepMl2680f1InfJ-l9EadBEv6vMGEeQCK4B/s1600/30.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And that would create GIT Repository for your app and your app Starter code is added to that repository by default.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-eP5LyhBVWug/V612KTkjuLI/AAAAAAAAATc/awxiXaz_2UEbr8SZXfbafQqJG96o-MqyQCK4B/s1600/31.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>On your app dashboard you can easily see Git URL;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-MwSpRj9ljHg/V612Kf2bOxI/AAAAAAAAAUM/Pcsp3j-wY-whfFTEbXb-i7jmNq44SY5MQCK4B/s1600/32.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And by following the URL you can easily see your data in that repository;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-p91xc49Q74E/V612KqUFSWI/AAAAAAAAARU/sGoYQqVcjqMM9Uai9j1rjtQz_3Fr-YcVgCK4B/s1600/33.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now simply Start the Visual Studio and Clone that repository in that;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-krH3z1E81oM/V62CTppy6lI/AAAAAAAAAWQ/4ndt00BHcmUnCSmIhxr6TE9G6j1FviTSQCK4B/s1600/34.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So now after clone the project you would have everything at the front of you;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-HbEi4ZRAXXo/V612KIC5yRI/AAAAAAAAAVI/mlsz65Pp7Vo76g6bq06X1iZRcVKnTzKkACK4B/s1600/35.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And now you can customize however you want to and then update the project;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-MKOEUcxpx00/V612K7o98YI/AAAAAAAAARg/o-L9_p_y-0Ym52kD62y4FVEzGeNrGgFFwCK4B/s1600/36.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now simply commit the changes to save everything over the cloud;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-1lyPHubHeBY/V612KMVk1AI/AAAAAAAAAUo/zs2t-K8w1QUuPDvKw3UN7VqkxKYpPM9hACK4B/s1600/37.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now in GIT logs you can easily see your commits history and the commit which we just did;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-IpCiBsGhTE0/V612Kj-UZgI/AAAAAAAAARQ/Tb4WntRO2tsch43sJmPVpRAY6CK5kaymwCK4B/s1600/39.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>But! The changes are still not occurred. We need to Switch back to DevOps Services;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-ZqoIQp0U40I/V612KtGUrPI/AAAAAAAAARw/BU1m46eLClcqALEmLenQXattWQ6uZTDDACK4B/s1600/40.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And in Deploy Stages simply run the app and it would deploy your app for you;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-8d1yIj9EFsE/V612KbPTuMI/AAAAAAAAATE/8VFMEzSK6MEX_fZ2546kPINWZA_gVXtLwCK4B/s1600/41.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And when it's complete you would see the Succeeded message;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-B-o3HtaRcRk/V612KCDsqoI/AAAAAAAAAUk/GiywUBaRM5Q_pKL3URN_Ukdn5cOIHhEUACK4B/s1600/42.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So that would automatically build and redeploy upon you git commit and push. The IDS BUILD &amp; DEPLOY tab allows you to keep tabs on what’s going on.</p>
+
+<p>And when its finish your changes would be updated in Bluemix.</p>
+
+<p>Now you can see your updated Web App;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-zYKW5sYcMT0/V612Kbd9MkI/AAAAAAAAATA/ntOzyEukJLE-GXEzJkwshI-gPMhyYbBcgCK4B/s1600/43.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So you see how easy and fun is to play with Bluemix services.</p>
+
+<ul><li>Deploy App Using Command Line;</li></ul>
+
+<p>If you feel easy with Command Line then congratulations! Bluemix provides you a great support that by following few easy steps and commands you can go up and running with your app.</p>
+
+<p>So, simply go to the Portal and in App overview, delete the sample deployed app so that you can deploy your app from the command line.</p>
+
+<p>Simply click the gear wheel in the application, and then click Delete App;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-Pc4nTMAuIhI/V612Kkr3qlI/AAAAAAAAARk/aKHP6VEk-ssb5e_JwA7k_qXaj8gbuN1gACK4B/s1600/17.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now simply confirm the service;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-ahFLDC2BNG8/V612KZbrufI/AAAAAAAAATk/o3Gh6SwKKZA8_TyML77bGyaIrBU-cThGACK4B/s1600/18.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So, open the command prompted and simply run the command for login;</p>
+
+<pre class="wp-block-preformatted">cf login</pre>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-S9yikIbuKyk/V612Jwk5nlI/AAAAAAAAAQM/zPMmnUXCwIcXS9keypoZq67tLqMGI_aMQCK4B/s1600/19.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now for the first time, enter your region URL, whatever it is;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-qU4kClL1bHA/V612J7-zJ9I/AAAAAAAAAQI/i6SqLXjR3XIli-0V3cnaIiQY2GoAqa3FACK4B/s1600/20.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now it will ask for your Bluemix Email, simply enter the Email &amp; Password for Bluemix;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-sVHY3Q9FCSg/V612KIHWF0I/AAAAAAAAAU8/o50OdwAnQT8vbdN7JjKcfQOVtzE01T3zACK4B/s1600/21.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>It will do Authentication. AND! Kaboom. You are in your organization;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-K7o9flz5o1s/V612KSoYEYI/AAAAAAAAAU0/ylAi-OgycioaZfEd3zEJSEUzX3MVBAX2wCK4B/s1600/22.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now before you deploy the application, deploy a Cloudant database. For that view the available services by running this command;</p>
+
+<pre class="wp-block-preformatted">cf marketplace</pre>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-ixGKUvK-BEA/V612KQz85VI/AAAAAAAAAUc/PeeMD14RWm4Ygj9AXiTuviCmNVTsELzGACK4B/s1600/23.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now in a while, you would see the list services. So find the ‘cloudantNoSQLDB’ service;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-pjgL1xYoiKg/V612KvaxINI/AAAAAAAAARE/jDtaBPDWWJAgiLRL2zPfRsTqZgGlp4gDQCK4B/s1600/24.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>And create the service by running the following command;</p>
+
+<pre class="wp-block-preformatted">cf cs cloudantNoSQLDB Shared BICloudant</pre>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-_6JAgvOyjCY/V612Kcyrc-I/AAAAAAAAATQ/VdmZCDDhVB8XINLtZ83PRApHy8L1SCz4QCK4B/s1600/25.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Here, cloudantNoSQLDB is the name of the service, Shared is the name of the service plan that you want to use from the cf marketplace command and BICloudant is the name of the service instant that we want to use. You may enter your own name rather than BICloudant. You will use the new name when connecting or binding the service to the app.</p>
+
+<p>So, if you go to the portal then you would see the deployed service named ‘BICloudant’ which we deployed through cmd;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-zhdLSqFJmCg/V612KBbYIjI/AAAAAAAAAVM/IIeTfJHCerYK9nhfmOzfxq59Oh1DcEmdwCK4B/s1600/26.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Now let’s deploy the app. Simply push the app to Bluemix by entering the following command;</p>
+
+<pre class="wp-block-preformatted">cf push justSajidWebApp -c "node app.js" -m 128M --no-manifest --no-start</pre>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-qCMZ2Y2DGs8/V612KO--XsI/AAAAAAAAAU4/mwK2MK9j5ywRkCwJT2euK9No1BfnowJ7ACK4B/s1600/27.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>Here, justSajidWebApp is your unique application name and host name, -c specifies the command to start the application, -m specifies the amount of memory to allocate to each application instance (The default is 1 GB), --no-manifest instructs to CLI tool to ignore the supplied manifest file. This will allow the Cloudant database instance that we just created to be linked to the app and --no-start instructs to CLI tool not to automatically start the app.</p>
+
+<p>(The reason not start the app automatically is to because it needs a DB to run. So we first need to link the DB instance to the app before the app start).</p>
+
+<p>So, to link the DB and App simply use the following command;</p>
+
+<pre class="wp-block-preformatted">cf bs justSajidWebApp BICloudant</pre>
+
+<p>So that would link the app and DB.</p>
+
+<p>Now simply Start the App by running this simple command;</p>
+
+<pre class="wp-block-preformatted">cf start justSajidWebApp</pre>
+
+<p>Now let's go to the portal and you would see your app up and running.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-PoV9xrS7b0o/V62h0oEpb5I/AAAAAAAAAWg/4HVIs_4Eul0O_EcD25uT3Lf3k_9rErlwgCK4B/s1600/44.png" alt="JumpStart with IBM Bluemix" loading="lazy"></figure></div>
+
+<p>So! You see how easy is it to play with Bluemix services. : - )</p>
+
+<p>This is just the JumpStart of Bluemix, you can do everything which you can imagine with Bluemix services.</p>
+
+<h3>FOR HANDS ON DEMO</h3>
+
+<p>In order to get a best hands-on experience along with the Blog. Try out the code either By MSDN Code Samples or By&nbsp;<a href="https://github.com/SoftwareWarrior/JumpStart-With-Bluemix" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/jumpstart-with-ibm-bluemix/&text=JumpStart with IBM Bluemix" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/jumpstart-with-ibm-bluemix/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/jumpstart-with-ibm-bluemix/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=JumpStart with IBM Bluemix%20https://www.justsajid.com/posts/jumpstart-with-ibm-bluemix/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/deploy-to-bluemix-button-an-easy-way-to-share-your-app-with-others/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2017/06/1-1.png" alt="Deploy To Bluemix Button | An Easy Way To Share Your App With Others" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2017-06-19 11:35:13">June 19, 2017</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/deploy-to-bluemix-button-an-easy-way-to-share-your-app-with-others/">Deploy To Bluemix Button | An Easy Way To Share Your App With Others</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/say-hello-with-node-red-starter/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2017/06/home.png" alt="Say Hello With Node-RED Starter" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2017-06-08 11:31:52">June 08, 2017</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/say-hello-with-node-red-starter/">Say Hello With Node-RED Starter</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/configuring-your-bluemix-application-environment-ibm-bluemix/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2017/02/43.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2017-02-10 23:02:00">February 10, 2017</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/configuring-your-bluemix-application-environment-ibm-bluemix/">Configuring Your Bluemix Application Environment | IBM Bluemix</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/build-windows-app-version-of-your-website/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Build Windows App Version of Your Website</span>
+      </a>
+    <a href="../../posts/create-a-wordpress-blog-in-bluemix/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">Create a WordPress Blog in Bluemix</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from IBM Cloud</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/deploy-to-bluemix-button-an-easy-way-to-share-your-app-with-others/">Deploy To Bluemix Button | An Easy Way To Share Your App With Others</a>
+        <div class="post-small-date">June 19, 2017</div>
+      </div><div class="post-small">
+        <a href="../../posts/say-hello-with-node-red-starter/">Say Hello With Node-RED Starter</a>
+        <div class="post-small-date">June 08, 2017</div>
+      </div><div class="post-small">
+        <a href="../../posts/configuring-your-bluemix-application-environment-ibm-bluemix/">Configuring Your Bluemix Application Environment | IBM Bluemix</a>
+        <div class="post-small-date">February 10, 2017</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-development-with-bluemix/">JumpStart Development with Bluemix</a>
+        <div class="post-small-date">February 07, 2017</div>
+      </div><div class="post-small">
+        <a href="../../posts/create-a-wordpress-blog-in-bluemix/">Create a WordPress Blog in Bluemix</a>
+        <div class="post-small-date">August 13, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

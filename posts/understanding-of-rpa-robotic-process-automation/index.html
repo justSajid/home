@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Understanding of RPA - Robotic Process Automation | justSajid</title>
+  <meta name="description" content="Understanding of RPA - Robotic Process Automation — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/understanding-of-rpa-robotic-process-automation/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Understanding of RPA - Robotic Process Automation | justSajid">
+  <meta property="og:description" content="Understanding of RPA - Robotic Process Automation — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/understanding-of-rpa-robotic-process-automation/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2019/07/0.png">
+  <meta property="article:published_time" content="2019-07-11T09:17:18Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Understanding of RPA - Robotic Process Automation | justSajid">
+  <meta name="twitter:description" content="Understanding of RPA - Robotic Process Automation — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2019/07/0.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2019/07/0.png" alt="Understanding of RPA - Robotic Process Automation" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Understanding of RPA - Robotic Process Automation</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2019-07-11 09:17:18" itemprop="datePublished">Published July 11, 2019</time></span>
+      <span class="meta-category">in <a href="../../categories/rpa/" class="cat-link">Robotic Process Automation</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">5 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<h2>Motivation</h2>
+
+<p>Well, if you’re working in a company where you have to perform a lot of&nbsp;business processes every day in the same&nbsp;routine then you can better understand the pain behind that. What if all those processes get automated, then imagine the time and effort you can spend on other creative tasks. Tasks like collect email attachments, Extract PDF Data and Copy to Excel, Log Excel Data into Web-based Forms or Send out conform process completion via emails are few that many of us may need to perform on daily basis.</p>
+
+<p>So, what if we train robots to do the same work faster and better? Software bots can train to do our repetitive daily tasks. Now we have&nbsp;<strong>RPA – Robotic Process Automation</strong>&nbsp;that automates your daily business processes that occupy most of our day at work.</p>
+
+<p>All we have to do is to simply train the bot to perform the required things and deploy, and that’s it. The bot would easily do that tasks like pick up attachments from the inbox, save pdf doc into a separate folder. Similarly, it can complete the business process by sending emails.</p>
+
+<h2>What is RPA?</h2>
+
+<p>So, RPA is a feature of intelligent process automation (IPA), a way to automate&nbsp;<strong>repetitive</strong>&nbsp;and&nbsp;<strong>rule-based</strong>&nbsp;processes. It records actions a human does to complete a computer-based process and then replicates those actions as many times as necessary, error-free and fast.</p>
+
+<p>Hence&nbsp;Employees can focus on processes that required creativity, judgment, and personal interaction.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-gDOyX3vEIg4/XSbYOq0Hf5I/AAAAAAAACoQ/D6ZBNhY4xn83ZLkLrudydMJz1DqchLAfgCK4BGAYYCw/s1600/1.png" alt="Understanding of RPA - Robotic Process Automation" loading="lazy"></figure></div>
+
+<h1>How it Works!</h1>
+
+<p>RPA can help to enhance our process significantly.</p>
+
+<ul><li>It includes features that faster the fast work. It has features to create and run processes quickly and effectively. Among these features like drag and drop commands and clean friendly interface.</li><li>It is quick to implement and scale. Users can be up and running automating processes, literally in minutes. And ease of use lenses its self in rapid adoption throughout an organization by both business and IT users.</li><li>It is non-invasive, instead of messing with custom programming or direct interaction coding, in RPA platform it integrates with the front end, easy to set up and smooth passaging b/w systems.</li><li>It can easily navigate to the different digital landscape, it adjusts itself in changing environments, movement in icons or buttons, differences in screen sizes and a host of other variants.</li><li>It built for complexity, make things easier where thousands of lines of code used. It made for enterprise, the best use is when it uses at the enterprise level.</li><li>It is easy to integrate with other systems. Users would be able to create automated processes that utilize all of their line of business systems without a single hiccup.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-DpbbQ0Y8_dw/XSbYM3JLupI/AAAAAAAACnY/jWUKYJwOTNsTr0nH8PmjkIi3rca3bg2EACK4BGAYYCw/s1600/4.png" alt="Understanding of RPA - Robotic Process Automation" loading="lazy"></figure></div>
+
+<h1>Business Benefits</h1>
+
+<p>Well,&nbsp;if we talk about the business benefits of RPA then this is the tool that is going to change a lot of things in our daily business processes including the following;</p>
+
+<ol><li>Decreased cycle times and improved throughput;<ul><li>Bots can perform processes faster than humans can. Make the 24/7 operation possible. Hence save a lot of costs.</li></ul></li><li>Flexibility and Scalability;<ul><li>Once a process has been defined as the series of instructions that a bot can execute, it can be scheduled for a particular time, thus as many bots as required can be quickly deployed to perform it, equally, bots can be easily reassigned when other important processes arise.</li></ul></li><li>Improved Accuracy;<ul><li>Bots are the programs to follow rules, they don't make typos. As there are lesser human interventions, the possiblity of errors is also low.</li></ul></li><li>Improved Employee Morale;<ul><li>Processes more suitable for automation typically the most burden and least enjoyed. Employees relief from that can more focus on rewarding and high-value activities.</li></ul></li><li>Detailed data capture;<ul><li>Processes performed by a bot can be monitored and recorded at every step, producing valuable data and audit trail.</li></ul></li></ol>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-3k6TBD-PDxs/XSbY3f--mgI/AAAAAAAACpA/LWdaJXXrE8Upcnk2QvjBSk62QD-fcyLiQCK4BGAYYCw/s1600/3.png" alt="Understanding of RPA - Robotic Process Automation" loading="lazy"></figure></div>
+
+<h2>RPA helps complete a "Digital Workforce"</h2>
+
+<p>RPA bots rapidly deliver the next wave of productivity improvement to business process operations.</p>
+
+<ul><li>They supply processing capacity to meet the demand that is spiky or cyclical in nature, such as a high volume of applicants for a product at a certain time of a year, or to support a product launch.</li><li>They build a bridgehead to automate work for a short to medium term requirement, e.g. prior to deployment of a strategic app, or for processing work with a finite duration.</li><li>They respond quickly to a fiscal or regulatory change that demands additional manual processing.</li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/--E1bBdv1iGs/XSbZRR_Y3_I/AAAAAAAACpQ/234x6YZJxlg_YPXhH3iyuD9FRbyOqpEcACK4BGAYYCw/s1600/4.png" alt="Understanding of RPA - Robotic Process Automation" loading="lazy"></figure></div>
+
+<h2>Identifying Business Case for RPA</h2>
+
+<p>If there are so many benefits from RPA, its indeed worth a try.</p>
+
+<ol><li>The process should be rule-based and not replay on human assumption.</li><li>Should be initiated by a digital trigger and should be sported by the digital data.</li><li>It should be functioning and stable.</li><li>The process could involve a large number of process executions in fact, higher the volume more the reason for automation.</li></ol>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-i7kvsQyUl20/XSbYNdpHQmI/AAAAAAAACng/MsK-7fSfcmkSVsU-VYwNoPebTDZIiZDSwCK4BGAYYCw/s1600/5.png" alt="Understanding of RPA - Robotic Process Automation" loading="lazy"></figure></div>
+
+<h2>Industry Use-Cases for RPA</h2>
+
+<ul><li>Financial and Banking Sector</li></ul>
+
+<p>In the Financial and Banking sector, RPA use as Data Validations, Report Creation, Data Migration between banking apps and customer account management.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-ufnPBPvjPnw/XSbYOr79-gI/AAAAAAAACoU/Vm8cUEzqjWYoZM0yl0IdDZYndXaDVW9GACK4BGAYYCw/s1600/6.png" alt="Understanding of RPA - Robotic Process Automation" loading="lazy"></figure></div>
+
+<ul><li>Software Industry</li></ul>
+
+<p>In the Software Industry, RPA is being used as Software testing for functional, load and mobile performance. As well as app integration.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-tZVIgd6YXZU/XSbYOpX4vvI/AAAAAAAACoM/hJcv4AfrnscnA5wV4bVruHtAG7q1f8M7QCK4BGAYYCw/s1600/7.png" alt="Understanding of RPA - Robotic Process Automation" loading="lazy"></figure></div>
+
+<ul><li><strong>Manufacturing Domain</strong></li></ul>
+
+<p>In the manufacturing domain, a process that got benefits from RPA are&nbsp;<strong>Automating ERP</strong>,&nbsp;<strong>Logistics data</strong>,&nbsp;<strong>Data monitoring</strong>,&nbsp;<strong>Product pricing comparisons</strong>.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-FeOh01JYr4Y/XSbYOuLZevI/AAAAAAAACoA/RLb_Z6GyLTEwYO-ByEhwgKS8VByMbhVjQCK4BGAYYCw/s1600/8.png" alt="Understanding of RPA - Robotic Process Automation" loading="lazy"></figure></div>
+
+<ul><li>Telecom Industry</li></ul>
+
+<p>In telco, RPA plays are a major role in the Business process like collecting and consolidating data from client phone systems.&nbsp;<strong>Backing up information from client systems</strong>,&nbsp;<strong>Uploading data</strong>,<strong>&nbsp;Extracting data about</strong>&nbsp;<strong>competitor pricing</strong>&nbsp;and&nbsp;<strong>Phone manufacturing information</strong>.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-CMbpMj_Y3lM/XSbYNnlcWOI/AAAAAAAACno/dnzgrP2K5nMzmsCxVcZQEskXOgCWCRwcgCK4BGAYYCw/s1600/9.png" alt="Understanding of RPA - Robotic Process Automation" loading="lazy"></figure></div>
+
+<ul><li>Government Sector</li></ul>
+
+<p>In Gov sector, RPA may be used to&nbsp;reduce time in&nbsp;<strong>populating subcontractor forms</strong>,<strong>&nbsp;Verification processes</strong>,&nbsp;<strong>Integrating legacy systems with newer systems</strong>,&nbsp;<strong>Automating daily reports</strong>.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-x5dPsi1zpmQ/XSbYOh4P1nI/AAAAAAAACoY/-Yhm286eQ08jW2u_0Wg2Vv0jeZ4jWncFgCK4BGAYYCw/s1600/10.png" alt="Understanding of RPA - Robotic Process Automation" loading="lazy"></figure></div>
+
+<ul><li>Healthcare Industry</li></ul>
+
+<p>In the healthcare industry, RPA is widely used in patient data migration and processing.&nbsp;Reporting for doctors,&nbsp;Medical Bill processing,&nbsp;Insurance data automation, and claim processing,&nbsp;Triggering emails from medical billing systems,&nbsp;Claim status and eligibility automation and&nbsp;Patient record storage.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-XYYRBneg4nk/XSbYOalNheI/AAAAAAAACnw/muNKHN8SUuYi190T2KGavCvnTrpMjIWlQCK4BGAYYCw/s1600/11.png" alt="Understanding of RPA - Robotic Process Automation" loading="lazy"></figure></div>
+
+<p>Usage to RPA is not limited to these industries. Usage of RPA, the possibility is endless.</p>
+
+<hr class="wp-block-separator"/>
+
+<h2>Conclusion</h2>
+
+<p>That was just the quick understanding of RPA, With Automation Anywhere Road to find RPA opportunities is easier. Its a product without boundaries which can automate even the most complex processes.</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/understanding-of-rpa-robotic-process-automation/&text=Understanding of RPA - Robotic Process Automation" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/understanding-of-rpa-robotic-process-automation/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/understanding-of-rpa-robotic-process-automation/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Understanding of RPA - Robotic Process Automation%20https://www.justsajid.com/posts/understanding-of-rpa-robotic-process-automation/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/understanding-of-automation-anyhwere-robotic-process-automation/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/07/0.jpg" alt="Understanding of Automation Anyhwere | Robotic Process Automation" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2019-07-27 09:14:00">July 27, 2019</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/understanding-of-automation-anyhwere-robotic-process-automation/">Understanding of Automation Anyhwere | Robotic Process Automation</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/types-of-bots-in-automation-anywhere-robotic-process-automation/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2020/02/3.png" alt="Types of Bots in Automation Anywhere | Robotic Process Automation" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2019-07-27 00:30:43">July 27, 2019</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/types-of-bots-in-automation-anywhere-robotic-process-automation/">Types of Bots in Automation Anywhere | Robotic Process Automation</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    
+    <a href="../../posts/types-of-bots-in-automation-anywhere-robotic-process-automation/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">Types of Bots in Automation Anywhere | Robotic Process Automation</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Robotic Process Automation</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/understanding-of-automation-anyhwere-robotic-process-automation/">Understanding of Automation Anyhwere | Robotic Process Automation</a>
+        <div class="post-small-date">July 27, 2019</div>
+      </div><div class="post-small">
+        <a href="../../posts/types-of-bots-in-automation-anywhere-robotic-process-automation/">Types of Bots in Automation Anywhere | Robotic Process Automation</a>
+        <div class="post-small-date">July 27, 2019</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

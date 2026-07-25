@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM | justSajid</title>
+  <meta name="description" content="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/understanding-the-architecture-of-universal-windows-platform/">
+  <meta property="og:type" content="article"><meta property="og:title" content="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM | justSajid">
+  <meta property="og:description" content="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/understanding-the-architecture-of-universal-windows-platform/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2016/03/Architecture-1.jpg">
+  <meta property="article:published_time" content="2019-08-15T12:00:50Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM | justSajid">
+  <meta name="twitter:description" content="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2016/03/Architecture-1.jpg">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2016/03/Architecture-1.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2019-08-15 12:00:50" itemprop="datePublished">Published August 15, 2019</time></span>
+      <span class="meta-category">in <a href="../../categories/widnowstech/" class="cat-link">Microsoft Windows</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">6 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<p>The architecture of Universal Windows Platform is most exclusive with the center of gravity which is One Windows Core. Now the whole development will follow the common refactored core that will common for all the windows Releases. It’s all about One Core, One Hardware Platform, Universal Hardware Driver and Standalone Network and I/O.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-nFEY15tOJ2w/XVTlotC1_7I/AAAAAAAACuU/hOIPZ-w91Bovas_qxoDSxbezP7_D_7dLgCK4BGAYYCw/s1600/Architecture0.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>For the First time, there is a true binary compatibility with loads of platforms. Microsoft has changed the tradition of shipping different sets of Operating System for different types of hardware devices, now it is only one core that is common for all the windows releases for all different devices. From small size IoT device up to large size surface hub including gaming station like Xbox, they all shared a single Binary.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-fmOIqVCmpbc/XVTf1SKpYmI/AAAAAAAACrw/otjRRmdCwmY8YcP2wCiYSFVdQMbcqFHYQCK4BGAYYCw/s1600/1.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>Windows Core is a very small and short subset of all the versions of windows. Now Windows has one single codebase rather than a shared codebase and the usage on an entire range of devices. Hence the apps that were Universal Apps had different and separate binaries whereas now the Windows Core has one single binary across all platforms.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-0K58UOLU3KU/XVTf1m1aJBI/AAAAAAAACr0/mo4FZ8x1-18cIZS5Fdn4v2eXiXsFKC2MQCK4BGAYYCw/s1600/2.png" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>The UAP (Universal App Platform) is a collection of versions. Now the App will not develop for the OS or the version of an OS but it will target a version of UAP. The UAP is built on the Windows Core that is the collection of low-level APIs that are arranged in the form of Contracts. These Contracts are a kind of assurance given by Microsoft to App Developers stating that they can now start building against the UAP. Microsoft will ensure that no matter what Windows platform and device the users are on, they will be able to run it and Microsoft will ensure that the App runs smoothly on the previous compatible version as well.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-u4SkMgRXK94/XVTf18UJYZI/AAAAAAAACr8/KcAi5wC4zDUhRzfJ4FGJr3rbr5zMf9NvACK4BGAYYCw/s1600/3.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>This essentially means that the developers will no longer write the application targeting Windows, rather they will write it against the UAP and Microsoft will guarantee that the applications will run on all platforms.</p>
+
+<p>UAP ensures that no matter what you target and whichever version you target. You will get the application running. So, developers don't need to worry much about which specific Windows to test on.</p>
+
+<blockquote class="wp-block-quote"><p>Let us take a quick view on app development convergence journey. An Image explain it briefly.</p></blockquote>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-lBGCPS_reR8/XVTmUE5E5jI/AAAAAAAACug/FjwM9cxSGU8Jiz7b1QImFsfyfYLck-zOwCK4BGAYYCw/s1600/convergence_journy.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>See, how the app development was so diverse in different platforms. Each platform’s app had its own way of development. For developers, it was extremely difficult to build app for other platforms.</p>
+
+<p>Before Windows 8, the way of development was extremely lost. Every platform had its own ways of development with a unique type of code.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-YrJFa5Oc5HE/XVTf2cNvbkI/AAAAAAAACsE/-_J0jKp7d7Mb97Ly8pLVo3Y7_zkNJwUOwCK4BGAYYCw/s1600/4.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>After Windows 8, Platforms come closer. Perhaps still the development was quite different in different platforms.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-KxlRgAVe-WY/XVTf3fkGXOI/AAAAAAAACsM/33jdsqY5ij0g8qqLtf8-vkXo20vqkszqACK4BGAYYCw/s1600/5.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>In Windows 8.1 the concept of Universal App was introduced first time with Windows 8.1 and Windows Phone 8.1 with shared code. i.e. there was a single project where three different projects exist, one for Windows 8.1, one for Windows Phone 8.1 and a shared project which contained the unique code which was run as platform-specific when the app run any of the platforms.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-fRCnRxN4Rn8/XVTiCIlLS9I/AAAAAAAACtM/-9AQ9dlXRMchhtqdgvBLfYm3uMpVv8c8gCK4BGAYYCw/s1600/8.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>But from Windows 10, the whole climate of development is changed. Now Windows 10 developer code for once for the only platform that is called Universal Windows Platform which runs on all Windows devices.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-v2mxzEvmn-s/XVTiALb4igI/AAAAAAAACss/1p0mZWu4xK4AKaWXkPPHbaImarf5Vm7NQCK4BGAYYCw/s1600/6.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>So it’s all about Single Binary, running on any device, testing for capabilities and adjust to all devices.</p>
+
+<p>If I do say to myself, it’s extremely cool! Now we, the Windows 10 developers can proudly stand among the developers’ community. Because now the developer story is;</p>
+
+<ul><li>When Writing for iOS</li></ul>
+
+<p>A developer writes for iPad &amp; iPhone</p>
+
+<ul><li>When Writing for iOS</li></ul>
+
+<p>A developer writes for all supported devices</p>
+
+<ul><li>When writing for Windows 8</li></ul>
+
+<p>A developer writes for each device</p>
+
+<ul><li><strong>And! When writing for Windows 10</strong></li></ul>
+
+<p>A developer writes for Every Device.</p>
+
+<p>So that’s the beauty of Windows 10 Development! Isn’t it?</p>
+
+<p>But again, technically you will not build for Windows 10, you will build for a range of version of UWP or Universal Windows Platform.</p>
+
+<p>It’s up to 96% of an app code is same that is compatible across all the devices. The remaining 4% is different according to different features of specific platforms, which is smartly handled by Visual Studio 2015.</p>
+
+<p>Perhaps Sometimes that default UWP that guarantees to run across all the devices is not enough! So, where Microsoft extend the UWP API set with device family-specific also. As one device family may use different set API than other device families. So to access those with extension SDKs for the platform. The extension SDK is not like adding an extension to your project, it’s the package you need to create for that device family. Because extensions don't invalidate binaries on other devices!</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-JpqfKbN6jCU/XVTiAZrDUII/AAAAAAAACs0/1osAQOz7aAgcAt2Q411enBMFy7H7G-8hwCK4BGAYYCw/s1600/7.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>For Development on Windows 10! Traditional Microsoft technologies are not the only way to create Windows apps like XAMAL &amp; C#!</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-Dyoy1S_zsvM/XVTiAsbaSEI/AAAAAAAACs8/sPK628LZRrg31FCkGGLm0HEqx-mvKH5IwCK4BGAYYCw/s1600/10.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>And Yes! Now you can build a native app on Windows 10 Platform by using Bridging Technologies. (Again That’s is the separate topic, required the separate ground to explain)! At this point, I can tell you that, now you can develop apps for iOS, Android, Web, and Win32 desktop by staying at Windows Platform and code. Not only that, by staying on Microsoft Visual Studio now you can code in Objective C for iOS, you can code in JAVA for Android by taking care of their platform-specific design.</p>
+
+<p>For the Design point of view, you have got a few awesome things;</p>
+
+<ul><li><strong>Responsive design</strong></li></ul>
+
+<p>Flexible layout responds to small changes. Many controls handle basic responsiveness</p>
+
+<ul><li><strong>Adaptive design</strong></li></ul>
+
+<p>Smart layout adjusts to large changes. Features like visual states aid in this design</p>
+
+<ul><li><strong>Tailored design</strong></li></ul>
+
+<p>A device-specific app can simplify the design. Some devices have unique design languages</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-YsOKelexYPI/XVTkeykiGrI/AAAAAAAACto/FmG54FzDQb8b06ARsIPM6PhwT_p2uWIzACK4BGAYYCw/s1600/11.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>Not only that, but the code is also adoptive;</p>
+
+<ul><li><strong>A compatible binary across devices</strong>; Universal API with device-specific implementation</li><li><strong>Light up our app with capabilities</strong>; Testing for capabilities and namespaces</li></ul>
+
+<p>Also, make the app test compatible at run time by using the Adaptive Code to light-up your app on specific devices.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-VzHKzSBD0FQ/XVTke2NC23I/AAAAAAAACts/X8wogjpnNc0R2B1oMIijkTecna0LbXUjQCK4BGAYYCw/s1600/12.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>You can end with lots of ‘if’s! That what your app will run. What device family which your app is going to target. So if you don’t need any API or extension of any device family which your app is not supporting then you may exclude them and it will not compatible for that.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-wva_Ak7SkkM/XVTkfDEAZ1I/AAAAAAAACt4/fN4BnDCWfcoHC7RoFITQs3mALjsV8z3HgCK4BGAYYCw/s1600/13.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>And Combine as one they work as one UAP;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-JVfAoHvDGNo/XVTkfB3PpXI/AAAAAAAACt8/_2PPwF7Sf2MHHIqv3XsroaJ1qfsIyZPHwCK4BGAYYCw/s1600/14.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy"></figure></div>
+
+<p>So the device families you choose determines which APIs you can call freely! That creates One simple, unified, integrated development environment!</p>
+
+<p>So! Long story short. It’s all about Universal Windows Platform;</p>
+
+<ul><li><strong>One Operating System.</strong></li></ul>
+
+<p>One Windows core for all devices.</p>
+
+<ul><li><strong>One App Platform</strong></li></ul>
+
+<p>Apps run across every device family</p>
+
+<ul><li><strong>One Dev Center</strong></li></ul>
+
+<p>Single submission flow and dashboard.</p>
+
+<ul><li><strong>One Store</strong></li></ul>
+
+<p>Global reach, local monetization. Consumers, Business and Education.</p>
+
+<p>For Detailed Understanding from Windows 10 experts, take a view on the great online session named&nbsp;<strong>A Developer's Guide to Windows 10 App Development</strong>&nbsp;given bellow;</p>
+
+<figure><iframe width="1020" height="574" src="https://www.youtube.com/embed/vyDsS1rEadw?feature=oembed" allowfullscreen=""></iframe></figure>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/understanding-the-architecture-of-universal-windows-platform/&text=UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/understanding-the-architecture-of-universal-windows-platform/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/understanding-the-architecture-of-universal-windows-platform/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM%20https://www.justsajid.com/posts/understanding-the-architecture-of-universal-windows-platform/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  <div class="single-tags"><span class="tag-label">Tags:</span><a href="../../tags/architecture/" class="tag-link">Architecture</a> <a href="../../tags/uwp/" class="tag-link">uwp</a> <a href="../../tags/uwparchitecture/" class="tag-link">uwpArchitecture</a> <a href="../../tags/windows/" class="tag-link">windows</a> <a href="../../tags/windows10/" class="tag-link">Windows10</a></div>
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/simple-navigation-in-windows-application/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/08/1.png" alt="SIMPLE NAVIGATION IN WINDOWS APPLICATION" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2019-08-15 12:25:43">August 15, 2019</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/simple-navigation-in-windows-application/">SIMPLE NAVIGATION IN WINDOWS APPLICATION</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/build-windows-app-version-of-your-website/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2016/08/ImagineCup.png" alt="Build Windows App Version of Your Website" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2016-08-10 22:46:29">August 10, 2016</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/build-windows-app-version-of-your-website/">Build Windows App Version of Your Website</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/jumpstart-with-xamarin/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2016/04/XamarinEvolve-956x502.png" alt="JumpStart with XAMARIN" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2016-08-10 22:44:09">August 10, 2016</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/jumpstart-with-xamarin/">JumpStart with XAMARIN</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/understanding-of-automation-anyhwere-robotic-process-automation/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Understanding of Automation Anyhwere | Robotic Process Automation</span>
+      </a>
+    <a href="../../posts/simple-navigation-in-windows-application/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">SIMPLE NAVIGATION IN WINDOWS APPLICATION</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Microsoft Windows</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/simple-navigation-in-windows-application/">SIMPLE NAVIGATION IN WINDOWS APPLICATION</a>
+        <div class="post-small-date">August 15, 2019</div>
+      </div><div class="post-small">
+        <a href="../../posts/build-windows-app-version-of-your-website/">Build Windows App Version of Your Website</a>
+        <div class="post-small-date">August 10, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-xamarin/">JumpStart with XAMARIN</a>
+        <div class="post-small-date">August 10, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/uwp-things-required-to-do-right-after-creation-of-new-project/">UWP: Things Required To Do Right After Creation of New Project.</a>
+        <div class="post-small-date">May 17, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/create-a-sample-uwp-app-in-c/">Create a Sample UWP App in C#</a>
+        <div class="post-small-date">April 26, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

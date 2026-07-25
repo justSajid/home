@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>JumpStart Development with Bluemix | justSajid</title>
+  <meta name="description" content="JumpStart Development with Bluemix — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/jumpstart-development-with-bluemix/">
+  <meta property="og:type" content="article"><meta property="og:title" content="JumpStart Development with Bluemix | justSajid">
+  <meta property="og:description" content="JumpStart Development with Bluemix — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/jumpstart-development-with-bluemix/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2017/02/M8Vj25stMN_1420636467227.jpg">
+  <meta property="article:published_time" content="2017-02-07T23:00:00Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="JumpStart Development with Bluemix | justSajid">
+  <meta name="twitter:description" content="JumpStart Development with Bluemix — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2017/02/M8Vj25stMN_1420636467227.jpg">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2017/02/M8Vj25stMN_1420636467227.jpg" alt="JumpStart Development with Bluemix" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">JumpStart Development with Bluemix</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2017-02-07 23:00:00" itemprop="datePublished">Published February 07, 2017</time></span>
+      <span class="meta-category">in <a href="../../categories/ibmcloud/" class="cat-link">IBM Cloud</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">27 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<h1>Introduction</h1>
+
+<p>Are you looking for JumpStart your development with Bluemix? Well, you are just at the right place. We will be doing a good understanding of what IBM Bluemix is and how it can enable developers to rapidly build, deploy, scale and manage apps in the cloud. We will learn how to compose apps quickly, in a language of your choice and leverage a wide range of useful API's and services. Starting with a high-level overview of the Bluemix architecture, we will then move to the online portal. Learn how to register and login. Look at some of the runtimes, services and boilerplates available and finally, walk through the process of building our first application on Bluemix.</p>
+
+<h1>Bluemix: The Big Picture</h1>
+
+<figure><iframe width="1020" height="574" src="https://www.youtube.com/embed/-s5EpR0eRXY?feature=oembed" allowfullscreen=""></iframe></figure>
+
+<p>Bluemix is a cloud platform as a service (PAAS), developed by IBM that supports a range of programming languages and services, as well as integrated dev apps to build, run, scale, manage, integrate, and secure apps in the cloud.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-L9WgpU_1ni4/WJf2b0hBd1I/AAAAAAAAA3Q/xhXseTN1lmQiQ9bPOsDZG3fbPZ7wUCDIQCK4B/s1600/1.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>Bluemix is based on CloudFoundry open technology and runs of soft layered infrastructure. It offers different compute choices to build your apps, including CloudFoundry apps, Docker Containers, and OpenStack Virtual Machines. A catalog of composable services are available through provision on demand and used within your apps. The IBM Cloud Marketplace is a way of allowing you to commercialize your innovative services and make them available to other developers within the catalog. IBM Bluemix offers three infrastructure compute technology choices to deploy apps: CloudFoundry apps, Docker Containers, and OpenStack Virtual Machines.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-GkUSG4p6jdA/WJf2bgMRmII/AAAAAAAAA3I/ftq-2eHKeJsUiZ8aYXHchYT8BWJOqDGzACK4B/s1600/2.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>With these multiple compute options, you can run a variety of both new and existing apps in the cloud, on one cloud platform. These can be back-end processing apps or modern cloud-centric web apps. An existing app can be cloud-enabled. This is an app that is moved to the cloud but was originally developed for deployment in a traditional data center. Some characteristics of the app may be changed or customized for the cloud. On the other hand, a cloud-centric app, also known as cloud-native and cloud ready, is an app developed with the cloud principles within it's design, including multitenancy, elastic scaling, easy integration, and administration. CloudFoundry apps contain everything you need when you want to develop an app and focus only on your app code. You can let the platform handle the rest, including runtime, scaling, networking OS. And if you're writing a new app, you may want to start here. If in the future, you decide you need more control over your environment, you can move to IBM containers or virtual machines. IBM containers are Docker-based containers, you can think of these as lightweight virtual machines, containing code, runtime, and dependencies. These are designed for enterprise production</p>
+
+<p>You can let the platform handle the rest, including runtime, scaling, networking OS. And if you're writing a new app, you may want to start here. If in the future, you decide you need more control over your environment, you can move to IBM containers or virtual machines.</p>
+
+<p>IBM containers are Docker-based containers, you can think of these as lightweight virtual machines, containing code, runtime, and dependencies. These are designed for enterprise production workloads, and can be securely deployed with integrated scalability and reliability. A user can obtain access through a hosted private repository of images where they can store, certify, and manage access to container images for their organization. This option provides more control over your environment in comparison to CloudFoundry apps.</p>
+
+<figure><iframe width="1020" height="574" src="https://www.youtube.com/embed/q8gbe5P5Ob8?feature=oembed" allowfullscreen=""></iframe></figure>
+
+<p>Finally, you can deploy an OpenStack virtual machine, complete with an operating system pre-installed. You can run applications inside these virtual machines, configure your VM to autoscale dynamically and load balance automatically, and this option gives you the most control, however you must manage most of the environment yourself.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-Pe3hdDLZYEM/WJf2bh2DzWI/AAAAAAAAA3A/gnLSMzJVa3Qd0svps8JhDsxVxWKJnGj0wCK4B/s1600/3.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>A Platform as a Service lets the developer focus on what's important to them, the app. The platform provides all of the building blocks needed to develop and run apps in the cloud. It controls the runtimes and any provision services, ensures the number of instances are allocated based upon your configuration, and generally manages the health of your applications. Bluemix platform can eliminate or dramatically simplify various tasks: such as OS patching, security hardening, deployment, load-balancing, scaling, and health management. IBM Bluemix contains an ecosystem of services that are available through provision on demand. These services are from IBM, third parties, and open source. An example of some of these services are databases, such as Cloudant NoSQL Database, MongoDB, and dashDB.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-FXolgh_9VaE/WJf2cNrLf8I/AAAAAAAAA3Y/-ny52BoKnW8-2vSZyTFWMvpV6kZmSUJ8QCK4B/s1600/4.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>There are mobile services, including Push notifications and Mobile Application Security. We have web and application services, such as message queues or caching, Internet of Things, including IBM Internet of Things, and Flowthings.io. There are Big Data tools such as analytics for Apache Hadoop or Geospatial Analytics and you can leverage the power of cognitive services with your applications using Watson Personality Insights, Relationship Extraction, and Visual Recognition Tools. There are many more services available.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-n69CEgxKm18/WJf0W0VwbFI/AAAAAAAAAwA/P08xR-vks80lFmfGDJ3ypEPu4JGd-ERaQCK4B/s1600/5.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>With Bluemix, you can pay for what you use, which enables a low barrier to entry. You can register online in minutes and start a free 30 day trial. That will allow you to test an entire application and all of the Bluemix features. There is also a Free tier, to enable and promote prototyping and experimenting with services. Multiple pricing models are available, such as the pay-as-you-go model which provides flexibility without any term commitment and a subscription offering, which provides cost savings when committed to a fixed term. The self-service nature of Bluemix allows you to grow your application as needed. You can have an environment up and running in minutes, allowing you to get coding straight away. You can provision and scale-out resources as your application demands, it offers the ability to monitor your application costs and charges, and set up notifications to keep informed when a certain threshold has been reached.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-w_BOdKiJQwM/WJf3tPjuXLI/AAAAAAAAA3o/tcnNphvLJwY2eppC6n4kk6yczdaw5yrlQCK4B/s1600/5a.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>Bluemix can help you address many different types of use cases. You can expand existing applications by adding or enhancing the user experience, such as mobile or social media support. You can add new capabilities by integrating others services and API's. You can API enable your existing applications by adding an API layer over an existing service or simplifying how an existing set of service capabilities are exposed. And finally, you can build a new, or greenfield application, including rapid-prototyping and trying different services leveraging the power of dev app tuning to manage your development and deployment life-cycle, and scaling as your application grows.</p>
+
+<figure><iframe width="1020" height="574" src="https://www.youtube.com/embed/p9dZiMpbVH0?feature=oembed" allowfullscreen=""></iframe></figure>
+
+<h1>Registration, Login, and Pricing</h1>
+
+<p>Registering for your Bluemix account is very easy and it should only take you a few moments to get signed up and logged in to your dashboard. From your browser, navigate to www.getbluemix.net. From here, you can click Get Started Free or Sign Up from the top right of the page. You can fill in your details and click Create Account at the bottom;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-qw3bvp67Lbk/WJf0XPqZHkI/AAAAAAAAAvE/s1xzCzpa3iITmuAD94Ogqg8KexUyOXhgACK4B/s1600/6.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>You should receive a verification email to the email address you've specified and once you receive this and verify, you will be able to log in. Once registered, you can now navigate to www.bluemix.net and click Log In to get started;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-g7_0_v7IMZ4/WJf0WiLNl7I/AAAAAAAAAqw/Hvy1KMWKCLkMMBi-tUoCrVfYnhWq4pOBwCK4B/s1600/7.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>You will be prompted for the email and password you used during the registration process. Then you will be asked to create an Organization;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-W62IcEEfhPE/WJf0XCaAWQI/AAAAAAAAAuc/DMWIStrd4ZY5PRnEJRoZSkylNr2zxvlqgCK4B/s1600/8.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>Bluemix allows you to create applications and services in different regions. You can select the region that is nearest to your customers and deploy your apps to this region to get low application latency, or you can select a region where you want to keep application data to address security or compliance issues. When you build apps in multiple regions, if one region goes down, the apps in the other regions continue to run.</p>
+
+<p>Your resource alliance is the seam for each region that you use. Spaces are tied to a region, so if I was to switch to the United Kingdom, it would enable me to work with the spaces I have created under that region. And when I switch back to US South, I will have access to the spaces that we can currently see on the left-hand side. Bluemix is currently deployed and available in three regions and new additional regions will be added soon.</p>
+
+<p>Now simply Create a Space;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-ojFGocOb7_8/WJf0WsZ0N7I/AAAAAAAAAq0/9j3CjAWfPwsg-IWhfXa0TnVCq-CB-wdFQCK4B/s1600/9.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>And That’s it;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-z1U2omD9y8I/WJf0W3Sdj5I/AAAAAAAAA2o/fzgPoTwIxp8fVfub2Mk8hqKXfLF4JksIACK4B/s1600/10.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>And once authenticated, you will arrive at the Bluemix dashboard;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-9qe_2PMSNDE/WJf0W-iRanI/AAAAAAAAA1M/2ATUOUzq-lsWnfh9Wp742MGXyt06SsC1QCK4B/s1600/11.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>First, let's have a look at the pricing area of the portal by clicking on Pricing in the main menu or by going to the URL Here;&nbsp;<a href="https://new-console.ng.bluemix.net/pricing/" target="_blank" rel="noopener noreferrer">https://new-console.ng.bluemix.net/pricing/</a></p>
+
+<p>You can get everything about the pricing here;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-2bqG1RyOxfQ/WJf0X8eh3RI/AAAAAAAAAtY/jbl3UdhLDQMhuqbwLmCt0C5ErEqeExKHACK4B/s1600/12.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>When you first sign up, for the first 30 days, everything is free and will allow you to really jump in and try out as many of the cool services and features as you wish without worrying about costs. After the free trial has completed, you will continue to get half a gigabyte of free memory every month for runtimes and containers. Looking down the pricing page, you will see some examples of application use cases to get a better understanding of what a monthly bill might look like. These are guidelines only, however you can also use the pricing estimator to better understand what your app will cost. Further down, you will see a similar tool for estimating the cost of containers and further down the page, we have a link to a down to the penny pricing calculator, to get a better idea of costs for services, containers, and VM's. Finally, at the bottom, you can find some FAQ's for some of the common pricing and building queries. You can monitor your application costs within your account area, including previous charges and your current usage for this month. We will look at that later in this module.</p>
+
+<h1>Walkthrough the Dashboard, Services, and Runtimes</h1>
+
+<p>When logging in to Bluemix, the first screen you're presented with is the Bluemix dashboard;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-9qe_2PMSNDE/WJf0W-iRanI/AAAAAAAAA1M/2ATUOUzq-lsWnfh9Wp742MGXyt06SsC1QCK4B/s1600/11.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>This is a one-stop shop for all of your cloud assets. You can see, at a glance, the health status of any of your provision services or applications and perform a range of activities, such as provisioning a new service,</p>
+
+<p>CloudFoundry app, virtual machine, or container. The dashboard provides a guided experience when provisioning your applications and services to get you up and running in minutes. And we will explore this process in the next module. If you are on the Classic Dashboard then at the top, we have our main menu, we have links for Solutions, the Catalog, Pricing, Docs, and the Community;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-iHdWTVaf3wg/WJf0WzHhCgI/AAAAAAAAA1c/M4vL2boU-Fsf5n1p_siC_mSGiDo70ERhwCK4B/s1600/14.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>There are also notifications, access to your user account, and some quickstarts;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-7YO32o_71eo/WJf0WzCAs4I/AAAAAAAAAzM/kvsmlk6ZXXsv6kIhppycF70-9zkXm996gCK4B/s1600/15.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>First, let's click on Docs from the Dashboard menu bar. This will open the comprehensive online documentation area;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-oQ4f6TB--Ys/WJf0W-vn3BI/AAAAAAAAAvw/qkTn-kMSfrkTZtkz6Q9Ut6QWYU4MaPztACK4B/s1600/16.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>From here, you can search for keywords and get results. If I view the documentation for Push, you can see I can customize documentation for Java, JavaScript, and Objective-C. And you can also use the categories on the left to navigate the documentation. Next, if we click on Community from the Dashboard main menu, it will launch developerWorks at developer.ibm.com/bluemix DeveloperWorks has some great content to get you started, including how-to's and tutorials, videos, and links to Bluemix events;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-WdqmEGD7__c/WJf0XnFv7WI/AAAAAAAAAtA/CLVrh686K4cP8SpIn-dFgNQSRMcNPSKPwCK4B/s1600/17.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>There are also links to the Bluemix area of Stack Overflow and the dW answers forum. The Bluemix development team actively monitor questions on dW answers, so this may be a great place to start when asking your questions. Back on the dashboard, the next feature we will look at is organizations and spaces, and this is on the left-hand side of your dashboard. Spaces are a mechanism to collect related applications, services, and the users that can collaborate on resources. An organization can contain multiple spaces. You can see, I have several spaces created already;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-W0n3Aa_qzMo/WJf-7EsYwlI/AAAAAAAAA4I/4dZm-DxOu2IAn4IY3CCPTlrAzmidQRULgCK4B/s1600/17a.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>You can create a space easily if you need as we create in the start.</p>
+
+<p>Next, we will look at the User Account, and you can access this by clicking on the icon at the top-right of the page. From here, you can update your account details and subscription, and view your app usage and billing. You can check the status of the Bluemix platform or get access to Bluemix Support. Another important feature found here, is the ability to select your region.</p>
+
+<p>We will now explore the catalog, and we can do this by clicking 'Catalog' from the top&nbsp;menu bar on the right side. This is where you can access and provision all of the runtimes, services, and boilerplates that are available on Bluemix;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-JRR6lvDt-PM/WJgAG5gtjuI/AAAAAAAAA4Y/T32wVRKJbRIXaQHE3Hm2CBcAuBPND-X2ACK4B/s1600/18a.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>Here, on the left side you can see all categories available on Bluemix;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/--_HwZ7eigEo/WJgDle1_fXI/AAAAAAAAA4k/vrck-bLToLM9i0g_4GqbtNzK1Hggg3U4gCK4B/s1600/18b.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>You can filter from here&nbsp;and you can use the search box at the top to find your services, boilerplates, and runtimes. At the top, we can see the boilerplates. Boilerplates are a great way to get started very quickly with runtimes and services already preconfigured.</p>
+
+<p>For example, looking at the MobileFirst Services Starter boilerplate, we can see the SDK for Node.js along with the Mobile Client Access: Push and Cloudant NoSQLDB.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-925lQ3pvea0/WJgF7RDCHxI/AAAAAAAAA4w/Uh9hOT40NdYwzdyojp3wp1bWq_-xnhWjgCK4B/s1600/19a.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>Services will be created automatically when we create this type of app. Now similarly if we go back, we can have a look at the ASP.NET Core Cloudant Starter.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-iU-VcrSL4mk/WJgG8QLxpTI/AAAAAAAAA48/K8esNKxmAgk9Wu186hfhkEov_1doHc3WwCK4B/s1600/20a.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>And again, you can see it has the necessary runtimes and services to start building an ASP.NET Core application with a Cloudant NoSQL database.</p>
+
+<p>If we continue down the catalog, we're next presented with the runtimes. So there are the number of runtimes including Java, Node, Go, PHP, Python, Ruby and others. If a runtime you wish to use isn't there, please make sure and check out the community buildpacks. This will take you to a GitHub page showing all community created buildpacks for CloudFoundry.</p>
+
+<figure><iframe width="1020" height="574" src="https://www.youtube.com/embed/Hcu664HbfS4?feature=oembed" allowfullscreen=""></iframe></figure>
+
+<p>If we continue down the catalog, we're presented with their container images. The IBM container service is super easy to use. No need to deploy and manage virtual machines, set up a Docker Engine, or manage your own registries.</p>
+
+<p>Next, we have the services. In the left-hand menu, you can see the categories for the services. We have services for Watson, Mobile, DevOps, Web and Application, Integration, Data and Analytics, Security, Business Analytics, and finally the Internet of Things. First, we have the Watson services. These enable you to build cognitive apps that help enhance, scale and accelerate human expertise. Cognitive services are adaptable, interactive, and contextual in the way they provide information. Instead of simply returning prepared responses, these services provide answers based on what they know to be correct, relying on information they've acquired over time. Services include Personality Insights, which helps derive insights from transactional and social media data to identify psychological traits. Next, we have Language Translation. This can enable you to dynamically translate content, such as news, persons, or conversational documents and instantly publish content in multiple languages. You can also see a range of other services, some from third parties, and other's currently still in beta. As we continue down the catalog, we can see services for Mobile, including Mobile Data, Push Notifications, and iOS Services. We have DevOps that can support your processes from developing through to deploying and monitoring your applications. Under the Web and Application category, there are lots of services covering everything from workflows and caching through to message queues, queue coding, and much more. Integration services can be very powerful in an enterprise environment to help enable secure integration with existing on-premise data and systems. Data and Analytics contains a lot of storage and persistence options, as well as modeling and analytics services. Use the Help Me Pick tool if you aren't sure which of these services you should use. Enable single sign-on across your applications or scan your web or mobile applications for vulnerabilities using the services under Security. There are services for Business Analytics, including reporting and insights. And finally, build your IoT, or Internet of Things applications using IBM Internet of Things, Real-Time Insights, and</p>
+
+<p>Cognitive services are adaptable, interactive, and contextual in the way they provide information. Instead of simply returning prepared responses, these services provide answers based on what they know to be correct, relying on information they've acquired over time. Services include Personality Insights, which helps derive insights from transactional and social media data to identify psychological traits. Next, we have Language Translation. This can enable you to dynamically translate content, such as news, persons, or conversational documents and instantly publish content in multiple languages.You can also see a range of other services, some from third parties, and other's currently still in beta. As we continue down the catalog, we can see services for Mobile, including Mobile Data, Push Notifications, and iOS Services. We have DevOps that can support your processes from developing through to deploying and monitoring your applications. Under the Web and Application category, there are lots of services covering everything from workflows and caching through to message queues, queue coding, and much more. Integration services can be very powerful in an enterprise environment to help enable secure integration with existing on-premise data and systems. Data and Analytics contains a lot of storage and persistence options, as well as modeling and analytics services. Use the Help Me Pick tool if you aren't sure which of these services you should use. Enable single sign-on across your applications or scan your web or mobile applications for vulnerabilities using the services under Security. There are services for Business Analytics, including reporting and insights. And finally, build your IoT, or Internet of Things applications using IBM Internet of Things, Real-Time Insights, and</p>
+
+<p>You can also see a range of other services, some from third parties, and other's currently still in beta. As we continue down the catalog, we can see services for Mobile, including Mobile Data, Push Notifications, and iOS Services. We have DevOps that can support your processes from developing through to deploying and monitoring your applications. Under the Web and Application category, there are lots of services covering everything from workflows and caching through to message queues, queue coding, and much more. Integration services can be very powerful in an enterprise environment to help enable secure integration with existing on-premise data and systems. Data and Analytics contains a lot of storage and persistence options, as well as modeling and analytics services. Use the Help Me Pick tool if you aren't sure which of these services you should use. Enable single sign-on across your applications or scan your web or mobile applications for vulnerabilities using the services under Security. There are services for Business Analytics, including reporting and insights. And finally, build your IoT, or Internet of Things applications using IBM Internet of Things, Real-Time Insights, and</p>
+
+<p>Under the Web and Application category, there are lots of services covering everything from workflows and caching through to message queues, queue coding, and much more. Integration services can be very powerful in an enterprise environment to help enable secure integration with existing on-premise data and systems. Data and Analytics contains a lot of storage and persistence options, as well as modeling and analytics services. Use the Help Me Pick tool if you aren't sure which of these services you should use. Enable single sign-on across your applications or scan your web or mobile applications for vulnerabilities using the services under Security. There are services for Business Analytics, including reporting and insights. And finally, build your IoT, or Internet of Things applications using IBM Internet of Things, Real-Time Insights, and</p>
+
+<p>Use the Help Me Pick tool if you aren't sure which of these services you should use. Enable single sign-on across your applications or scan your web or mobile applications for vulnerabilities using the services under Security. There are services for Business Analytics, including reporting and insights. And finally, build your IoT, or Internet of Things applications using IBM Internet of Things, Real-Time Insights, and</p>
+
+<p>And finally, build your IoT, or Internet of Things applications using IBM Internet of Things, Real-Time Insights, and Flowthings.io. As you can see, the catalog is very comprehensive and is growing all of the time. In the next module, we will walk through the process of provisioning some of these runtimes, services, and boilerplates to show you how easy it really is.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-9TJ8xqJeNmI/WJf0W2B0GYI/AAAAAAAAArY/NXKu_Z9QtNMHguRAnxhXjOB36MdV2n4fQCK4B/s1600/21.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>IBM Bluemix DevOps services is a SAAS (software as a service) on the cloud that supports continuous delivery. With DevOps services, you can develop, track, plan, and deploy software in one place. From your projects, you can access everything you need to build all of kinds of apps. You can work on your own or use the collaboration tools to work with a team. After you build an app, you can deploy it to the Bluemix cloud platform.</p>
+
+<p>In minutes, you can go from source code to a running app. In DevOps services, you can develop software for any language, and supports deployment through Bluemix with predefined buildpacks for Java, Node, Go, PHP, Python, and Ruby apps. You can choose between a hosted Git repository or Jazz SCM for your source control management. And the WebIDE enables you to develop directly by using a browser without installing anything on your computer. It provides Content Assist, Tool Tips, Previews, Validation, and Syntax Highlighting for JavaScript, HTML, CSS, and Markdown files. Everything you need to go from zero to code in seconds.</p>
+
+<p>There are also plug-ins for Eclipse, Visual Studio, and you can bring a tool of your choice when building your applications. You can use the build and deploy tools, such as Delivery Pipeline to automatically build and deploy your application to Bluemix. Services such as Monitoring and Analytics and Auto-scaling can help support your application as it grows. In addition to supporting scaling and performance, IBM Bluemix also offers tiered services such as Load Impact to support stress tests.</p>
+
+<p>Finally, you can share your work and collaborate your expertise for Agile Development, this includes the Track and Plan services to create stories, tasks, and defects to describe and track project work and use agile planning tools for the product backlog releases on sprints. If you're more of a planner than a coder, you can even create a project just for planning. When you create a project, be sure to add the agile planning features.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-i_fKS2WG2BE/WJf0W75xVaI/AAAAAAAAAyk/ZxZOr0YkRg4YS-m0irFwLKwizqSz6qzdQCK4B/s1600/22.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>To get started with DevOps services, open your browser and navigate to hub.jazz.net, you will first want to register and once registered, you can continue to log in. Once authenticated, you will be presented with any of your existing DevOps projects and the ability to create a new project. Let's create a sample project. We will give it a name, demo. And you can see, that name's available and we have the option to create a new repository or link to an existing GitHub repository.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-LirfDXPfEGE/WJf0W-XPpZI/AAAAAAAAA2M/blvAi0SgcLwpk_IaSHgALcOCFLoU-rD9wCK4B/s1600/22a.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>We want to select Create a New Repository and we're presented with three options: We can create a Git repo on GitHub, Git repo on Bluemix, or a Jazz SCM repository. We want to select, Git repo on Bluemix. You will see, the Git URL will be created and you have some additional options.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-zkGjs_GGXr0/WJf0W9IVmZI/AAAAAAAAA18/U8n3jkLMoOcNWLQOTuFp5AHKz_HxT-cZwCK4B/s1600/23.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>For now, we want to click Create.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-QK3rUyakKLs/WJf0XRFSXEI/AAAAAAAAAsw/c1dWCk3NcXIJWqNIt26h-H77GtdFEMpUgCK4B/s1600/24.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>Once completed, you now have a new workspace to start developing your application. You can use Git on your local development machine, to work with your application code. You can use Eclipse plug-ins, Visual Studio plug-ins, or you can even add a code directly in the browser if we select the Edit Code option this will load the WebIDE. And the WebIDE has everything needed to start creating and updating your code directly within the browser.</p>
+
+<p>We will explore the WebIDE in more detail in the next module. Let's look at the Track and Plan services. Track and Plan have everything needed to create work items and tasks, build your sprints, and collaborate with your team. If we now look at Build and Deploy, this service will allow us to build our Delivery Pipeline that can include Build, Deployment, and even add steps for running your tests with.</p>
+
+<h1>Solutions: Internet of Things and Watson</h1>
+
+<p>IBM Bluemix provides a suite of ready-to-use solutions that are preconfigured services to help you assemble your apps faster. There are solutions for Data and Analytics, Watson, IoT, DevOps, Security, and more.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://4.bp.blogspot.com/-1ml5wmuYcXM/WJf0W8inLhI/AAAAAAAAA2Y/_Et460wQEvoAgjCrVSb2Fmr5fHUrhREqgCK4B/s1600/25.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>We will explore two solutions, Internet of Things and Watson.</p>
+
+<p>The Internet of Things, or IoT, is the network of physical objects or things embedded with electronics, software, sensors, and connectivity to enable objects to exchange data. This includes everything, from mobile phones, sensors, wearable devices, and almost anything else you can think of. Experts estimate that;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://3.bp.blogspot.com/-62Q8x98QZcI/WJf0WzRKIgI/AAAAAAAAA1s/5vcDHEIQO5EfBjpq7F4RuzPBVctJ0E2yACK4B/s1600/25a.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p><strong>IoT will consist of almost 25 billion connected things by 2020</strong>. Bluemix provides first-class support for building your Internet of Things apps, by providing all of the building blocks to connect your services and devices to the cloud and store and analyze all of the big data generated. Services such as Node-RED allow you to rapidly build workflows that can send and receive data from your sensors or devices, such as a Raspberry Pi and can easily leverage other services, such as Watson to build truly exciting and world-class applications.</p>
+
+<figure><iframe width="1020" height="574" src="https://www.youtube.com/embed/o0kc1Xe6ltQ?feature=oembed" allowfullscreen=""></iframe></figure>
+
+<p>Lets do understand with an example;</p>
+
+<figure><iframe width="1020" height="574" src="https://www.youtube.com/embed/AijIAPUh6ao?feature=oembed" allowfullscreen=""></iframe></figure>
+
+<p>To give a quick demo of the IoT capabilities on Bluemix, you can log in to your dashboard at bluemix.net and click on Solutions from your Dashboard in the main menu;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-tMxOcZmdtyk/WJgJOrpU6NI/AAAAAAAAA5I/cjyouuuQhqQadYRBWXwkycd-wj5PY2hXwCK4B/s1600/26a.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>From here, we have access to a range of different solutions, covering things like Data and Analytics, Watson, Hybrid Cloud, Security, and others. For now, we want to look at Internet of Things. On the Internet of Things solutions page, we have access to exciting case studies, information on the IoT configuration on Bluemix, details on how much it will cost, and we have access to a cool online sample app;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-xa_5_gTv02k/WJgLQZbhCZI/AAAAAAAAA5U/bl5-OEJuC0gYlNrv7kzTr3PhZ__mOb51ACK4B/s1600/27a.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>To get started with the sample app, you will need a smartphone with internet access. You can enter a device name... And a secret four digit code. Once entered, you can click Go Play. Once complete, you'll be presented with a custom URL. You will want to enter this within the browser on your smartphone. Once loaded on your smartphone, you will be prompted for the four digit code you entered. Once connected, if you move around your smartphone you will see the data for vibration motion and orientation starting to feed through into the browser;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-NuLlDMimf9o/WJf0XKfEBeI/AAAAAAAAAsI/pNAwi2alCQMVTejS5wsZBGnes2YCLAInQCK4B/s1600/28.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>This is just a simple demo, but shows the power of IoT and the possibilities are endless. Your application could be temperature sensors in the classroom, automatically warming or cooling the room. Or as one of the IBM case studies shows, using the IoT, find ease and service with Bluemix as the bases for it's real-time power boat telemetry platform, allowing it to run complex diagnostic analytics in real-time on racing boats traveling at high speeds on the ocean. The possibilities are endless.</p>
+
+<p>The next solution we will explore is Watson. Watson is an artificially intelligent computer system capable of answering questions posed in natural language. From hospitals to kitchens, Watson has clocked in to work and is already taking impressive strides across industries. But to understand the power of Watson, we must first understand cognitive computing and how it enhances skills and accelerates human expertise.</p>
+
+<p>Watson is built to mirror the same learning processes that we have through the power of cognition. What drives this process is a common cognitive framework that humans use to inform their decisions: observe, interpret, evaluate, and decide. Unlike other computing systems, Watson takes in data from all sorts of sources, from research reports to tweets, All the information humans produce for other humans to consume. However, Watson is not bind by volume or memory.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://1.bp.blogspot.com/-QieZinhlmZo/WJf0WxEMasI/AAAAAAAAA2c/65ImhsixzSUPkZTAF9BQh94iUOi5qQxgQCK4B/s1600/29.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>Watson can read IBM millions of unstructured documents in seconds.</p>
+
+<p>Next, Watson interprets data to expose patterns, connections, and insights. Watson pre-processes the information, organizing data that makes working with content more efficient. Now that Watson has ingested the corpus, or collection of information, it needs to be trained by the human expert to learn how to interpret the information. Now, Watson is revolutionizing the way we meet the seasons, become experts and share expertise in different industries. Further, Watson is discovering and offering answers and patterns we hadn't known existed, faster than any person or group of people ever could.</p>
+
+<figure><iframe width="1020" height="574" src="https://www.youtube.com/embed/PujCkDAXji8?feature=oembed" allowfullscreen=""></iframe></figure>
+
+<p>Watson services include Personality Insights, Concept Insights, Tradeoff Analytics, and Machine Translation. Also, recently added to the Watson catalog, is Alchemy, which can enable you to build cognitive infused applications with a combination of text analysis and visual recognition services. The text analysis services use sophisticated natural language processing to analyze content and add high-level semantic information. One the image service enables developers to extract and tag images to better understand content and context. Developers can access services through simple REST API's to pardon new apps and services. To give a quick demo of the Watson capabilities on Bluemix, you can log in to your Classic dashboard at bluemix.net. From here, click on Solutions in the main menu. From the solutions page, we can select Watson. The Watson solution page will provide details on the solution, including services available, a featured API and at the bottom, there are some case studies;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-f6HzYfrXtXs/WJgWAJYX4qI/AAAAAAAAA5k/5nfswT5ZqwIC6Ug2sk7rrNf0kQPDR8kWwCK4B/s1600/30a.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>We will explore some of the services.</p>
+
+<figure><iframe width="1020" height="574" src="https://www.youtube.com/embed/YdVVLWv3Fwo?feature=oembed" allowfullscreen=""></iframe></figure>
+
+<p>First, click on Personality Insights. This will display the Personality Insights page within the catalog. Next, click View Docs, this will provide some detailed documentation for the service;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-pshzy-BTdTQ/WJgZdnYFpcI/AAAAAAAAA5w/kfc2MoUvDns0KO9GwlwNxP4yfMl16r4RACK4B/s1600/32a.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>We can&nbsp;look at the online demo by clicking Demo;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-bNkN513Tld4/WJf0XEtsUYI/AAAAAAAAAsE/OaCG5d-5GvUC3T2Gix0NfkFTLkcRKoqZQCK4B/s1600/33.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>This demo will allow us to take some input text and analyze it. Once we click Analyze, it will provide details on the personality traits of the text. And if we scroll down, it gives some metrics and data about the personality. And we have a Visualization of the Personality Data. We will use the Personality Insights service when we develop our application later in this course. If we close the demo and return All Categories, you will see it returns us to the catalog.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://2.bp.blogspot.com/-8NUOsShw5YY/WJf0XGy83vI/AAAAAAAAAts/rfWnX1ISwao-Y2dzMYvyBauL7vgYnNxJACK4B/s1600/35.png" alt="JumpStart Development with Bluemix" loading="lazy"></figure></div>
+
+<p>We will now explore one of the other services. We will have a look at Alchemy API by clicking View More. And from here, again we will View Docs and click Try Demo. There are a series of demos and the one we will look at now is the Face Recognition Demo. The AlchemyVision Face API will automatically detect faces and identify people within images. We will select the first image. And if we scroll down, you will see that the Watson service has actually identified people from an image and mapped them to known names within its database. You should take some time to explore the Watson solutions on Bluemix and try out some of the exciting demos that are already available.</p>
+
+<h1>Exploring the IBM Cloud Marketplace</h1>
+
+<p>If you develop an innovative service and want to commercialize it, you have to start at IBM Cloud Marketplace process, which at the end will add your service to the Bluemix catalog. This process will take a maximum of 90 days and you will need to provide price policies, including the freemium one and add some API's to your code for metering and billing purposes. If you do not want to commercialize it and just want to use it internally within your applications, you can use the user provided services facility. There's more information on the IBM Cloud Marketplace at the following link.</p>
+
+<h1>Conclusion:</h1>
+
+<p>So we see&nbsp;some of the key components of IBM Bluemix to give you a better understanding of what the platform can offer and help you as a developer when building your new or existing apps. We looked at the powerful features and services available, including the ability to provide and compute runtimes and services on demand. How you can leverage DevOps services for your source control management, continuous delivery pipelines, and agile planning and tracking. We looked at the solutions, offering pre-built services that can help you build your apps faster, including the IoT demos and Watson. Finally, we looked at how you can commercialize your innovative services for the IBM Marketplace.</p>
+
+<hr class="wp-block-separator"/>
+
+<p>* For Discussion upon any service or query, feel free to ping me @ sajidalikhan@ibm.com</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/jumpstart-development-with-bluemix/&text=JumpStart Development with Bluemix" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/jumpstart-development-with-bluemix/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/jumpstart-development-with-bluemix/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=JumpStart Development with Bluemix%20https://www.justsajid.com/posts/jumpstart-development-with-bluemix/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/deploy-to-bluemix-button-an-easy-way-to-share-your-app-with-others/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2017/06/1-1.png" alt="Deploy To Bluemix Button | An Easy Way To Share Your App With Others" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2017-06-19 11:35:13">June 19, 2017</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/deploy-to-bluemix-button-an-easy-way-to-share-your-app-with-others/">Deploy To Bluemix Button | An Easy Way To Share Your App With Others</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/say-hello-with-node-red-starter/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2017/06/home.png" alt="Say Hello With Node-RED Starter" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2017-06-08 11:31:52">June 08, 2017</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/say-hello-with-node-red-starter/">Say Hello With Node-RED Starter</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/configuring-your-bluemix-application-environment-ibm-bluemix/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2017/02/43.png" alt="Configuring Your Bluemix Application Environment | IBM Bluemix" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2017-02-10 23:02:00">February 10, 2017</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/configuring-your-bluemix-application-environment-ibm-bluemix/">Configuring Your Bluemix Application Environment | IBM Bluemix</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/ibm-startup-bootcamp-i-comsats-islamabad/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">IBM Startup Bootcamp-I | Comsats Islamabad</span>
+      </a>
+    <a href="../../posts/configuring-your-bluemix-application-environment-ibm-bluemix/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">Configuring Your Bluemix Application Environment | IBM Bluemix</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from IBM Cloud</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/deploy-to-bluemix-button-an-easy-way-to-share-your-app-with-others/">Deploy To Bluemix Button | An Easy Way To Share Your App With Others</a>
+        <div class="post-small-date">June 19, 2017</div>
+      </div><div class="post-small">
+        <a href="../../posts/say-hello-with-node-red-starter/">Say Hello With Node-RED Starter</a>
+        <div class="post-small-date">June 08, 2017</div>
+      </div><div class="post-small">
+        <a href="../../posts/configuring-your-bluemix-application-environment-ibm-bluemix/">Configuring Your Bluemix Application Environment | IBM Bluemix</a>
+        <div class="post-small-date">February 10, 2017</div>
+      </div><div class="post-small">
+        <a href="../../posts/create-a-wordpress-blog-in-bluemix/">Create a WordPress Blog in Bluemix</a>
+        <div class="post-small-date">August 13, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-ibm-bluemix/">JumpStart with IBM Bluemix</a>
+        <div class="post-small-date">August 12, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>JumpStart with JAVA | For Dot NET Developers | justSajid</title>
+  <meta name="description" content="JumpStart with JAVA | For Dot NET Developers — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/jumpstart-with-java-for-dot-net-developers/">
+  <meta property="og:type" content="article"><meta property="og:title" content="JumpStart with JAVA | For Dot NET Developers | justSajid">
+  <meta property="og:description" content="JumpStart with JAVA | For Dot NET Developers — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/jumpstart-with-java-for-dot-net-developers/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2017/03/16114149_1444592722219238_7337116949261550102_n.png">
+  <meta property="article:published_time" content="2017-03-08T15:18:00Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="JumpStart with JAVA | For Dot NET Developers | justSajid">
+  <meta name="twitter:description" content="JumpStart with JAVA | For Dot NET Developers — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2017/03/16114149_1444592722219238_7337116949261550102_n.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2017/03/16114149_1444592722219238_7337116949261550102_n.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">JumpStart with JAVA | For Dot NET Developers</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2017-03-08 15:18:00" itemprop="datePublished">Published March 08, 2017</time></span>
+      <span class="meta-category">in <a href="../../categories/java/" class="cat-link">JAVA</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">10 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<p>So, if you’re a Dot NET developer and you are looking to do JumpStart with JAVA then my friend you are just at the right place.</p>
+
+<p>Sometimes you do not live with one language. Especially if you are working for an organization who is working in different dimensions.</p>
+
+<p>Let's start by viewing a small clip;</p>
+
+<figure><iframe width="1020" height="574" src="https://www.youtube.com/embed/t5Lym8lobMA?feature=oembed" allowfullscreen=""></iframe></figure>
+
+<p>So, if we talk about moving to JAVA from .NET then you must remember the concepts of Programming, development techniques which you were using during your Dot NET development. Moreover, as both languages are Object oriented or what we can say OOP based then you must know those concepts including Data Structures and Algorithms.</p>
+
+<p>Perhaps if you’re working upon some specific framework like in UWP or Windows Phone development and you want to move to android then that is the little bit more interesting. For that, you must lead to more hands-on with platform specific stuff.</p>
+
+<p>Although latest platforms start supporting you in a way that you can build cross-platform apps by staying into one language perhaps up till now it’s not much compatible. You’ve to go move beyond that and work upon platform-specific languages.</p>
+
+<p>So, if you’re moving to JAVA from Dot NET then my friend you want to actually play outside Microsoft services.</p>
+
+<p>So, let’s do it!</p>
+
+<p>Again, I’m not talking about which language or platform is good or bad. Just moving to do hands-on with JAVA.</p>
+
+<p>So, to do hands on with JAVA, you simply have to install and configure the JAVA environment on your machine. Simply install JVM, JRE and your favorite IDE and complete the configuration as per required for JAVA.</p>
+
+<p>For the understanding of Java Virtual Machine, Java Runtime Environment and how JAVA code actually works, you can better search for any other places.</p>
+
+<p>For the understanding of different frameworks in JAVA, you can move to the details in other places. Here we’ll be discussing about the Spring MVC framework along with RESTful APIs.</p>
+
+<p>So, let’s get started with Starting line;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-9xvgdddpmjY/WL-GIOk4bTI/AAAAAAAABDA/F1oRHaD_Ox8pk-JkGGgSLwKPeWMi3V7CwCK4B/s1600/1.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>You see, just like C#, we have main method here. We’ve “static” method which means don’t need to make the instance of the class. We’ve “void” mean the method is not returning anything. And we have “String[ ] args” means we can pass arguments, “[ ]” mean arguments are in Array.</p>
+
+<p>Just like C#, everything is an object in JAVA.</p>
+
+<p>Declaration of Variables are same;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-CmMW6jmPjek/WL-GICHQr7I/AAAAAAAABEo/gqLXSFwt-dYgvppsCav9g4lUjTVRaaKnQCK4B/s1600/2.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>Same primitives, complex Variables.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-fIBYEwoLm0A/WL-GIO6_6oI/AAAAAAAABDQ/mkFfs63yYh0xfrY-Bm6M8pNw6ghieaP_QCK4B/s640/3.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>And if we’re talking about primitive data types then it’s the same here;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-kTJDI6909JM/WL-GInoUUWI/AAAAAAAABEg/IJjb4rhiCfYXfL6frSyRf3xzMLy3CQqpQCK4B/s1600/4.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>And their values are also same;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-Px-HMe48isw/WL-GIdlDgUI/AAAAAAAABDw/_9OI33f1l10r3OpeO8XgGfRnK9vmfy_DgCK4B/s1600/5.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>Similarly, we’ve operators in JAVA;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-Rr4ysnHEqcU/WL-GI4skaNI/AAAAAAAABE4/xRGKBIEnzBQBJW7EWiUKlP2iP59tmAIywCK4B/s1600/6.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>And if we talk about conditional and iteration code then it’s also the same in JAVA.</p>
+
+<p>We’ve if, else, Switch-Case, for, while, do-while same like in C#.</p>
+
+<p>If we talk about the concept of Method Overloading, it’s also the same. We can easily create methods with the same name but having different Signatures.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-_6XRLECs7Dw/WL-GIdu2yII/AAAAAAAABEU/HZc4pada0Y8OLduJSg5NDXiNKGB865VlACK4B/s1600/7.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>Hence you will be able to overload the method as per circumstances.</p>
+
+<p>If we talk about Passing arguments then just like C#, in JAVA we always pass arguments by value, i.e. we’re always creating a new instance of the value instead of function (Except in certain conditions).</p>
+
+<p>Whenever we pass arguments by tvalue that means we are passing a variable in as an argument to the function. And within the function, there is a new copy of the value.</p>
+
+<p>i.e. The value outside the method and value inside the method are separated and due to which any changes we make inside the function won’t be reflected in the original value;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-p2YhymeeA7c/WL-GIK-GjhI/AAAAAAAABEw/j9EQ8yMfbrcnRq50qvYqUKKz8r1hn1b6gCK4B/s1600/8.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>Expected output would be;</p>
+
+<h6>x(1) = 20</h6>
+
+<h6>y(1) = 10</h6>
+
+<h6>x(2) = 10</h6>
+
+<h6>y(2) = 20</h6>
+
+<p>So logically when we pass the arguments by reference then variable outside the function and the variable inside the function are the same variable and due to which any changes we make inside the function would reflect in the original value, one the function is completed.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-AYyGKlfiK9M/WL-GIfnE5RI/AAAAAAAABEA/rq6VbdIYnnkvS3p5dFAh5Zamis0IFOkxgCK4B/s1600/9.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<h6>s1(1) = Rock</h6>
+
+<h6>s2(1) = You</h6>
+
+<h6>s1(2) = You</h6>
+
+<h6>s2(2) = Rock</h6>
+
+<p>If we talk about exception handling and Debugging, then everything is same in JAVA. Same type of errors, same Try-Catch and Finally blocks;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-YT5Jl9YnpGU/WL-GIerWWsI/AAAAAAAABEQ/NVVzULuvyCUL9PfD3NG0qK_tqgaRrF1QgCK4B/s1600/10.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>Now, if we talk about the Object-Oriented Programming then all concepts are same.</p>
+
+<p>Encapsulation mean that we are packaging complex functionality to make it easy to use. As being a good programmer we have to break our code into pieces into individual classes to get big advantages. Like we can restrict access to different parts or functions of a class. And we don’t have to tell user about the date, i.e. who is calling a particular class and whether the data is being stored as an array or a collection of some kind or any other object.</p>
+
+<p>We simply provide the method that the user of that class can call and all the complexity is hidden.</p>
+
+<p>So the main benefits of encapsulation are following;</p>
+
+<ul><li>Breaking functionality into small maintainable units | Easy to find bugs.</li><li>Grouping functions &amp; Data Together.</li><li>Supporting Testing of Software at a granular level.</li></ul>
+
+<p>Now if we talk about class instance and instance variables then the same concept is here. We create instance or object of a class to call the method of that class.</p>
+
+<p>And we use instance variables are used by class instances or objects to store their states. Variables which are defined without the STATIC keyword and are Outside any method declaration are Object specific and are known as instance variables. They are called instance variables because their values are the instance (object) specific and are not shared among instances.</p>
+
+<p>The concept of Constructors is same in JAVA. Used when we create an instance of a class. When we refer to any variable field, prefix it with word “this”. “this” in java means the current instance of a current class. (e.g. this.variable)</p>
+
+<p>In case of more than version of its arguments, we distinguish them by the number or DataType of Arguments.</p>
+
+<p>The concept of Getter and Setter methods are same in JAVA. As in OO development, fields should be private and data should only be accessed through what we call Getter and Setter Method.</p>
+
+<p>In C#, we can use the words set and get before method properties.</p>
+
+<p>In JAVA, we can use explicit setter and getters that are methods that start with word “get” as part of the method name.</p>
+
+<p>For Getter Method; It always has a return data type, which always matches the original data type;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-2CKq8vk7-Ww/WL-GIAIqxTI/AAAAAAAABDk/g90g1HcTynk1CV5AG5-2ApimQuV3d4abwCK4B/s1600/11.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>For Setter Method; it has a void return type and has a prefix of set before the field name. Perhaps in arguments, its receives a value that matches the data type of field and then it sets the field using “this” to distinguish the field from arguments.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-rmcMZy8sHpA/WL-GICI17XI/AAAAAAAABDU/EiUxTIlvMtsBJ_8rKssmSrhFvbisehi8gCK4B/s1600/12.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>Further, we can set the fields of class through these methods. When we wrap the access of Data in a setter, it lets you change the rules very easily.</p>
+
+<p>In JAVA, we do not have support of explicit ‘cost’ or ‘constant’ keyword, so instead we typically set constant values using a combination of “static” and “final” keyword, which mean the value can’t be changes once it’s been set (and in case of change it cause error).</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-yLAOKWac7Ss/WL-GIEk2AEI/AAAAAAAABDg/X6cbcyt1kL8W5jDJdIo4z_efA5oNmYzwgCK4B/s1600/13.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>Now the favorite part. The concept of Inheritance and Polymorphism is also similar in JAVA.</p>
+
+<p>Simply used “extend” keyword and easily inherit the parent class. : - )</p>
+
+<p>Like C#, each new class can extend or inherit functionality from only one other class. Perhaps in some cases we might need to do inherit from multiple places. Functionally, there is no multiple inheritance&nbsp;in JAVA, perhaps we can do want to calling interfaces and fulfilled our needs. In this case, we can call maximum one class by using ‘extend’ keyword and along with that, we call one or more interfaces by using “implements” keyword.</p>
+
+<p>Now for the understanding, you can see the details of interfaces, abstract class and when and where we can use them in different scenarios.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-6QUiyB2rMPk/WL-GIUJQ-zI/AAAAAAAABD0/bNeVW4Q734MjdnYaW6-WlLiNKoDGPzeawCK4B/s1600/14.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>Now, for polymorphism, we need do discuss about overloading and overriding. As discuss earlier about overloading, the overloaded methods may have different return types. The return type alone is insufficient to distinguish two versions of a method.</p>
+
+<p>It allows users to achieve compile-time polymorphism. An overloaded method can throw different exceptions and it can have different access modifiers.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-uGZ9JgK9Q_Y/WL-GIeX6TmI/AAAAAAAABEk/mP_I1PecAfo4OLlDO2gYHjcqkdoJdFoHwCK4B/s1600/15.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>Here the method&nbsp;<strong>demo()</strong>&nbsp;is overloaded 3 times: first having 1 int parameter, the second one has 2 int parameters and the third one is having double arg. The methods are invoked or called with the same type and the number of parameters used.</p>
+
+<p>Following things should be considered during Method overloading;</p>
+
+<ol><li>Overloading can take place in the same class or in its sub-class.</li><li>Constructor in Java can be overloaded</li><li>Overloaded methods must have a different argument list.</li><li>The overloaded method&nbsp;<del>should always be the part of the&nbsp;same class</del>&nbsp;(can also take place in subclass), with the same name but different parameters.</li><li>The parameters may differ in their type or number, or in both.</li><li>They may have the same or different return types.</li><li>It is also known as compile time polymorphism.</li></ol>
+
+<p>Now, the Method Overriding is more interesting.</p>
+
+<p>Here, the Child class has the same method as of base class. In such cases, child class overrides the parent class method without even touching the source code of the base class.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-gYBnvglHXzY/WL-GIaEhffI/AAAAAAAABEE/mm3SAF-UOqM7nYQB5KrusFOt9EWFz8-PgCK4B/s1600/16.png" alt="JumpStart with JAVA | For Dot NET Developers" loading="lazy"></figure></div>
+
+<p>Following things should be considered during Method overloading;</p>
+
+<ol><li>applies only to inherited methods</li><li>object type (NOT reference variable type) determines which overridden method will be used at runtime</li><li>Overriding method can have the different return type.</li><li>Overriding method must not have more restrictive access modifier</li><li>Abstract methods must be overridden</li><li>Static and final methods cannot be overridden</li><li>Constructors cannot be overridden</li><li>It is also known as Runtime polymorphism.</li></ol>
+
+<p>If we talk about the major differences in the JAVA project structure the one of the big difference is that, The mighty Visual Studio provide us great support to manage the project in almost every way. Perhaps with Eclipse, we have freedom to manage our project in almost every why.</p>
+
+<p>One of the big things is “<strong>Package</strong>”. Most Classes in a Java App are placed in Packages or subfolder of the project.</p>
+
+<p>As an app gets larger, it's very important to organized these classes in groups. We call these group as packages but they represent actual physical folder on disk.</p>
+
+<p>In the initial projects, in our src, we have (default packages) where we insert our main class. Perhaps for other classes like helper-classes in app, we have to create new package [helper] and insert our helper class in it.</p>
+
+<p>In large scale, JAVA development environments packages named typically are structured using a prefix of company’s domain in Reverse-Domain-Order. E.g.&nbsp;<strong>com.justSajid</strong></p>
+
+<p>The reason to do this so that we can eliminate any possible conflicts with other classes in JAVA environment. And we create universal uniqueness.</p>
+
+<p>JAVA compilation doesn’t create a single monolithic file. Instead, our runtime app consists of a whole bunch of compiled classes and it up to JVM to configure out which classes needed at runtime.</p>
+
+<p>Now, if we talk about the concepts of Data Structures, then all concepts including Stack, Ques, Linked List, Trees&nbsp;and Hashing etc are same. So, you can better consider to review these concepts across the internet.</p>
+
+<p>So, I believe we have enough talk about the comparison of JAVA with C# in all programming concepts. As both as OO languages definitely you see the same flow of programming in both languages.</p>
+
+<p>As per casual discussion with programming experts, it’s very clear that the major difference you can see is that, C# belongs to Microsoft and JAVA is belongs to Oracle (nowadays). So, Microsoft customized C# as per their own ease and compatibility with their tools and platforms. One big reason of C# big hit is Microsoft Visual Studio. I truly believe that, most of the developers start working on C# and .NET only because of Microsoft Visual Studio. As it is world greatest tool or IDE for building any kind of stuff.</p>
+
+<p>As compared to that, JAVA is quite famous among the open source developer community from day one. It gives you free hand to dev freely by customizing your techniques according to your own.</p>
+
+<p>Well, it’s the big debate when we are talking about the comparison of C#/.NET with JAVA and never ends. So let’s move forward.</p>
+
+<h1>Frameworks;</h1>
+
+<p>There are different frameworks available in JAVA. Each framework has its own pros and cons. Developers can use any framework as per then need, requirement and ease.</p>
+
+<p>We’ll be talking about MVC and String along with RESTful services here;</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/jumpstart-with-java-for-dot-net-developers/&text=JumpStart with JAVA | For Dot NET Developers" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/jumpstart-with-java-for-dot-net-developers/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/jumpstart-with-java-for-dot-net-developers/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=JumpStart with JAVA | For Dot NET Developers%20https://www.justsajid.com/posts/jumpstart-with-java-for-dot-net-developers/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/jumpstart-with-java-frameworks-mvc-spring-restful-services-2/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2017/03/1-2.png" alt="JumpStart with JAVA Frameworks | MVC, Spring, RESTful Services" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2017-03-15 21:54:16">March 15, 2017</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/jumpstart-with-java-frameworks-mvc-spring-restful-services-2/">JumpStart with JAVA Frameworks | MVC, Spring, RESTful Services</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/jumpstart-with-java-frameworks-mvc-spring-restful-services/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2017/03/1-2.png" alt="JumpStart with JAVA Frameworks | MVC, Spring, RESTful Services" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2017-03-15 20:53:45">March 15, 2017</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/jumpstart-with-java-frameworks-mvc-spring-restful-services/">JumpStart with JAVA Frameworks | MVC, Spring, RESTful Services</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/ibm-startup-bootcamp-iii-for-female-startups-and-entrepreneurs-wecreate-pakistan/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">IBM Startup Bootcamp-III for Female Startups and Entrepreneurs | WECREATE Pakistan</span>
+      </a>
+    <a href="../../posts/jumpstart-with-java-frameworks-mvc-spring-restful-services/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">JumpStart with JAVA Frameworks | MVC, Spring, RESTful Services</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from JAVA</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/jumpstart-with-java-frameworks-mvc-spring-restful-services-2/">JumpStart with JAVA Frameworks | MVC, Spring, RESTful Services</a>
+        <div class="post-small-date">March 15, 2017</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-java-frameworks-mvc-spring-restful-services/">JumpStart with JAVA Frameworks | MVC, Spring, RESTful Services</a>
+        <div class="post-small-date">March 15, 2017</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

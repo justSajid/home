@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>DRAWING IN MICROSOFT VISUAL STUDIO | justSajid</title>
+  <meta name="description" content="DRAWING IN MICROSOFT VISUAL STUDIO — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/drawing-in-microsoft-visual-studio/">
+  <meta property="og:type" content="article"><meta property="og:title" content="DRAWING IN MICROSOFT VISUAL STUDIO | justSajid">
+  <meta property="og:description" content="DRAWING IN MICROSOFT VISUAL STUDIO — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/drawing-in-microsoft-visual-studio/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2019/08/1-1.png">
+  <meta property="article:published_time" content="2016-03-28T23:28:38Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="DRAWING IN MICROSOFT VISUAL STUDIO | justSajid">
+  <meta name="twitter:description" content="DRAWING IN MICROSOFT VISUAL STUDIO — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2019/08/1-1.png">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2019/08/1-1.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">DRAWING IN MICROSOFT VISUAL STUDIO</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2016-03-28 23:28:38" itemprop="datePublished">Published March 28, 2016</time></span>
+      <span class="meta-category">in <a href="../../categories/widnowstech/" class="cat-link">Microsoft Windows</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">7 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<pre class="wp-block-preformatted">(The content is for Blend 2015 for visual studio, may be used for the current version of visual studio)</pre>
+
+<p class="has-drop-cap">Visual Studio is a perfect tool to design your app. Whatever you do with your project by staying at any of the platforms, the changes will automatically synchronous across the project among these two tools. Like Visual Studio, you can also create a project in Blend and start working upon it like Visual Studio and you feel exactly the home environment which you feel with Visual Studio, perhaps the main focus of Microsoft Blend is towards designing, so you will have more designer lover environment over here.</p>
+
+<p>So let’s start by creating an empty project in Microsoft Visual Studio;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/2.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<figure class="wp-block-embed-youtube aligncenter wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/sMXAvlJbqBU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="YouTube video"></iframe>
+</div></figure>
+
+<p>Visual Studio will start the project and open a great designer environment for you;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/3.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>To Create some UI, you need some hands-on with Blend features;</p>
+
+<p>Let’s Start one by one;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/4.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>On the left top side of Blend, you can see the Solution Explorer, Assets, States and Data. This section is related to your Project. Perhaps it is also designed in such a way that help you in the design of your app…</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/5.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>At the left bottom, you can see the section of Objects and Timeline that help you to animate your design.</p>
+
+<ol><li><strong>Objects view:</strong>&nbsp;You can drill down to varying levels of detail. You can also add layers to further organize objects on the artboard. That way you can lock and hide them as a group.</li><li><strong>Record mode indicator:</strong>&nbsp;That tells you whether you’re recording property changes in a timeline.</li><li>Storyboard picker:&nbsp;View a list of storyboards that you’ve created.</li><li>Close storyboard:&nbsp;Close the current storyboard.</li><li>Storyboard options:&nbsp;Create, duplicate, reverse, delete, rename, or close a storyboard.</li><li>Playback controls:&nbsp;It Navigates through the timeline. You can also drag the playhead to navigate through (or scrub) the timeline.</li><li>Return scope to:&nbsp;Scope the objects view back to the previous root object or previous scope. You can do this only when you’re modifying a style or template.</li><li>Record a keyframe:&nbsp;Record a snapshot of the properties of the selected object at the current point in time.</li><li>Snapping options:&nbsp;Set timeline snapping, snap resolution, and turn off timeline snapping.</li><li>Show/hide, Lock/unlock: Show or hide the visibility and locking options for the objects view.</li><li>Playhead position on the timeline:&nbsp;Show the current time in milliseconds. You can also enter a time value directly in this field to jump to a particular point in time. The precision depends on the snap resolution set in the Snapping Options.</li><li>Playhead:&nbsp;Determine what point in time the animation is at. You can drag the playhead across the timeline to preview the animation.</li><li><strong>Keyframes set on timelines:&nbsp;</strong>Change a property value at a specific point in time.</li><li><strong>Change order of objects:&nbsp;</strong>Set the display order of objects. Click this button to arrange objects in the structure view by Z order (front-to-back) or by markup order (the order in which they appear in XAML view).</li><li><strong>Timeline zoom:&nbsp;</strong>Set the zoom resolution of the timeline. Zooming in lets you edit an animation with more detail, and zooming out shows more of an overview of what is happening over longer periods of time. If you zoom in but can't set a keyframe at the position in time that you want, verify that the snap resolution is set high enough.</li><li><strong>Timeline composition area:&nbsp;</strong>View the timeline, and move keyframes around by dragging them or using their shortcut menus.</li></ol>
+
+<p>On the right side of the blend, there’s the property windows that will help you to customize your stuff;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/6.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<ul><li><strong>Name and Type&nbsp;</strong>View the icon, name and type of the selected object.</li><li><strong>Arrange by&nbsp;</strong>Arrange properties alphabetically by name, source, or category.</li><li><strong>Brush properties&nbsp;</strong>Set the visual properties for brushes such as Fill brush, Stroke brush, and Foreground brush.</li><li><strong>Color editor&nbsp;</strong>Use for solid color and gradient brushes.</li><li><strong>Color picker&nbsp;</strong>Select a color.</li><li><strong>Color chips&nbsp;</strong>View the initial color, current color, and last color</li><li><strong>Eyedroppers&nbsp;</strong>Use the color of any element on your screen. The Color eyedropper is available when the Solid color brush is selected. The Gradient eyedropper is available when the Gradient brush is selected.</li><li><strong>Properties and Events&nbsp;</strong>Set properties or choose events for a selected element.</li><li><strong>Search box&nbsp;</strong>Search for properties. Filter the properties that are displayed by typing in the Search box.</li><li><strong>Brush editor tabs&nbsp;</strong>Use to select a brush editor. You can choose No brush, Solid Color brush, Gradient brush, Tile brush, or Brush resource.</li><li><strong>Color resources&nbsp;</strong>Apply the exact same color to different properties. The Color Resources tab includes Local Resources and System Resources.</li><li><strong>RGB color space&nbsp;</strong>Modify the color by adjusting the values for the R, G, or B (red, green, blue) number editors.</li><li><strong>Alpha channel&nbsp;</strong>Modify the Alpha value by using the number editor next to A.</li><li><strong>Convert color to resource&nbsp;</strong>Convert the selected color to a color resource. Color resources are available when you click the Color resources tab.</li><li><strong>Hex value&nbsp;</strong>View the hexadecimal value of the color displayed.</li><li><strong>Gradient slider&nbsp;</strong>Appears only if a gradient brush is selected.</li><li><strong>Show advanced properties&nbsp;</strong>View categories of properties that are less commonly used.</li></ul>
+
+<p>The Asset window help you to manage your assets easily and utilize them according to need;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/7.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<ul><li><strong>Search box&nbsp;</strong>Type in the Search box to filter the list of assets.</li><li><strong>Grid mode and List mode&nbsp;</strong>Switch between the Grid mode view and the List mode view of assets.</li><li><strong>Assets categories</strong>&nbsp;Click a category or subcategory to view the list of assets in that category.</li><li><strong>Styles&nbsp;</strong>Show all the styles that are contained in the resource dictionary.</li><li><strong>Description&nbsp;</strong>View a description of the selected assets category or subcategory.</li></ul>
+
+<p>The Tools Panel of the Blend is really cool, its help you to directly design your app by using helpful tools from the tools panel.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/8.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<ul><li><strong>Selection tools&nbsp;</strong>Select objects and paths. Use the Direct Selection tool to select nested objects and path segments.</li><li><strong>View tools&nbsp;</strong>Adjust the view of the artboard, such as for panning and zooming.</li><li><strong>Brush tools&nbsp;</strong>Work with the visual attributes of an object, such as transforming a brush, painting an object, or selecting the attributes of one object to apply them to another object.</li><li><strong>Object tools&nbsp;</strong>Draw the most common objects on the artboard, such as paths, shapes, layout panels, text, and controls.</li><li><strong>Asset tools&nbsp;</strong>Access the Assets panel and to show the most recently used asset from the library.</li></ul>
+
+<p>So now do some hands-on experience by using these great features provided by Blend and see how easy is to design and develop your app in Blend 2015.</p>
+
+<p>Let’s start by using Tool Panels;</p>
+
+<p>On our MainPage Design Surface, let's start drawing by drawing a rectangle from Tools Panel;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/9.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>You will see, a rectangle will draw over the Design Surface...</p>
+
+<ul><li>Let’s start by hands-on with Pen Tool from the Tools Panel;</li></ul>
+
+<p>Simply select the Pen Tool and click upon the Design Surface were you want your path begins from that line forward a stretch line with draw over the surface upon each click. However, if you click and drag you create a buzzy point which will create a curve over the design surface;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/10.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>The longer you drag; the more curve you get. You can either open the path or close the path by clicking back to the starting point;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/11.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>Paths can be open means that's not a complete loop or they can be closed like here.</p>
+
+<p>Further, you can add or remove nodes by clicking upon the line.</p>
+
+<p>The Direct Selection tool will help you to select anything from the design surface;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/12.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>Now by simply go to properties, we can fill the shape with different colors;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/13.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>Now let’s start working with Gradients;</p>
+
+<p>Let’s create a Rectangle over the Design Surface;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/14.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>Now from the properties window, let's apply a Gradient from the brush editor;</p>
+
+<figure class="wp-block-image"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/15.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure>
+
+<p>By Default, the Gradient which we give is Black to while linear gradient as shown above, perhaps you can add additional gradient nodes by clicking upon the gradient bar;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/16.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>And you can change the color of the gradient as the color of the solid brush;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/16.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>From the Gradient Tool from the tools panel, you can more customize the gradient by changes the position of head and tail;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/18.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>So that’s how you can play with Gradients Tool in the Blend…</p>
+
+<p>So let’s play with shapes and use the Combine, Unit, Divide and Subtract operations upon it;</p>
+
+<p>Simply draw two eclipses from the Tools Panel and add some Gradients to it;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/19.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>Now simply select both objects from Object and Timeline window;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/20.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>Now simply right-click upon the shapes objects and go to combinations and then perform operations;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/21.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>When Click upon Unit it will make the app as one unit;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/22.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>When we perform the Divide operation it will show division b/w two shapes;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/23.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>If we perform the Intersect Operation, then it will show the intersection area of both shapes;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/24.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>If we perform the Subtract operation, it will show the subtract view of one shape from the other;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/25.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>And if we perform the Exclude Overlap operation it will exclude the overlap area of both shapes;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://www.sajidalikhan.com/blog/development/microsoft/windows/images/blog/post5/26.png" alt="DRAWING IN MICROSOFT VISUAL STUDIO" loading="lazy"></figure></div>
+
+<p>So! As you see how the magic happened in Blend by just a few clicks. Designs change very smartly and make our life easy. : - )</p>
+
+<h3>FOR HANDS ON DEMO</h3>
+
+<p>In order to get the best hands-on experience along with the Blog. Try out the code either By&nbsp;<a rel="noreferrer noopener" href="https://code.msdn.microsoft.com/DRAWING-IN-BLEND-2015-FOR-16ea9240" target="_blank">MSDN Code Samples</a>&nbsp;or By&nbsp;<a rel="noreferrer noopener" href="https://github.com/SoftwareWarrior/DRAWING-IN-MICROSOFT-BLEND-2015-FOR-VISUAL-STUDIO" target="_blank">GitHub</a>...</p>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/drawing-in-microsoft-visual-studio/&text=DRAWING IN MICROSOFT VISUAL STUDIO" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/drawing-in-microsoft-visual-studio/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/drawing-in-microsoft-visual-studio/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=DRAWING IN MICROSOFT VISUAL STUDIO%20https://www.justsajid.com/posts/drawing-in-microsoft-visual-studio/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  <div class="single-tags"><span class="tag-label">Tags:</span><a href="../../tags/blend/" class="tag-link">blend</a> <a href="../../tags/blend2015/" class="tag-link">blend2015</a> <a href="../../tags/drawinginblend/" class="tag-link">DrawingInBlend</a> <a href="../../tags/uwp/" class="tag-link">uwp</a> <a href="../../tags/windows/" class="tag-link">windows</a> <a href="../../tags/windows10/" class="tag-link">Windows10</a></div>
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/simple-navigation-in-windows-application/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/08/1.png" alt="SIMPLE NAVIGATION IN WINDOWS APPLICATION" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2019-08-15 12:25:43">August 15, 2019</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/simple-navigation-in-windows-application/">SIMPLE NAVIGATION IN WINDOWS APPLICATION</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/understanding-the-architecture-of-universal-windows-platform/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2016/03/Architecture-1.jpg" alt="UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2019-08-15 12:00:50">August 15, 2019</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/understanding-the-architecture-of-universal-windows-platform/">UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/build-windows-app-version-of-your-website/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2016/08/ImagineCup.png" alt="Build Windows App Version of Your Website" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2016-08-10 22:46:29">August 10, 2016</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/build-windows-app-version-of-your-website/">Build Windows App Version of Your Website</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/justsajid-a-place-for-my-thoughts/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">justSajid | A PLACE FOR MY THOUGHTS</span>
+      </a>
+    <a href="../../posts/developing-uwp-apps-with-sample-data/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">DEVELOPING UWP APPS WITH SAMPLE DATA</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Microsoft Windows</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/simple-navigation-in-windows-application/">SIMPLE NAVIGATION IN WINDOWS APPLICATION</a>
+        <div class="post-small-date">August 15, 2019</div>
+      </div><div class="post-small">
+        <a href="../../posts/understanding-the-architecture-of-universal-windows-platform/">UNDERSTANDING THE ARCHITECTURE OF UNIVERSAL WINDOWS PLATFORM</a>
+        <div class="post-small-date">August 15, 2019</div>
+      </div><div class="post-small">
+        <a href="../../posts/build-windows-app-version-of-your-website/">Build Windows App Version of Your Website</a>
+        <div class="post-small-date">August 10, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/jumpstart-with-xamarin/">JumpStart with XAMARIN</a>
+        <div class="post-small-date">August 10, 2016</div>
+      </div><div class="post-small">
+        <a href="../../posts/uwp-things-required-to-do-right-after-creation-of-new-project/">UWP: Things Required To Do Right After Creation of New Project.</a>
+        <div class="post-small-date">May 17, 2016</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

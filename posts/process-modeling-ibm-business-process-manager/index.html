@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Process Modeling | IBM Business Process Manager | justSajid</title>
+  <meta name="description" content="Process Modeling | IBM Business Process Manager — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/process-modeling-ibm-business-process-manager/">
+  <meta property="og:type" content="article"><meta property="og:title" content="Process Modeling | IBM Business Process Manager | justSajid">
+  <meta property="og:description" content="Process Modeling | IBM Business Process Manager — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/process-modeling-ibm-business-process-manager/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2019/01/0-3.jpg">
+  <meta property="article:published_time" content="2019-01-24T10:38:59Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Process Modeling | IBM Business Process Manager | justSajid">
+  <meta name="twitter:description" content="Process Modeling | IBM Business Process Manager — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2019/01/0-3.jpg">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2019/01/0-3.jpg" alt="Process Modeling | IBM Business Process Manager" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">Process Modeling | IBM Business Process Manager</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2019-01-24 10:38:59" itemprop="datePublished">Published January 24, 2019</time></span>
+      <span class="meta-category">in <a href="../../categories/bpm/" class="cat-link">IBM Business Process Manager</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">3 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<h2>The Modeling Phase in BPM Lifecycle</h2>
+
+<p>In the Bussiness Process Manager lifecycle, this&nbsp;phase is more than just the creation of the process model;</p>
+
+<ul><li>It also requires an&nbsp;<strong>understanding</strong>&nbsp;of how to adjust the model to meet evolving business requirements.</li><li>Throughout this phase, the process model goes through continued analysis and a series of adjustments and refactoring efforts to obtain a model that can be implemented into a process application.</li></ul>
+
+<p>Following is what involve in this modeling phase;</p>
+
+<ul><li>Process Discovery and Documentation</li><li>Process Analysis</li><li>Simulation and adjustment</li></ul>
+
+<p>All the adjustments and testing allow for a process model that meets what the business expects in terms of an improved and efficient business process at the end of project development.</p>
+
+<p>BPM&nbsp;do the results correctly in business processes that are&nbsp;<strong>modeled</strong>,&nbsp;<strong>analyzed</strong>, and&nbsp;<strong>adjusted</strong>&nbsp;early and often.</p>
+
+<p>The BPM effort goes far beyond basically applying technology to a process to&nbsp;produce a changed process.</p>
+
+<ul><li>Applying technology to automate a bad business process without regard to necessary analysis and adjustment efforts leads only to a more efficient, but still bad process.</li></ul>
+
+<h2>Process Modeling</h2>
+
+<p>An understanding of a business process is necessary before modeling it.</p>
+
+<ul><li><strong>Business Process;</strong>&nbsp;A set of activities that takes specific inputs and converts them into specific outputs in a defined, predictable fashion.</li></ul>
+
+<h3>What is Process Modeling?</h3>
+
+<p>It Captures the ordered sequence of the business process tasks or activities.</p>
+
+<ul><li>Further, it captures the responsible roles that are conducting the activities.</li><li>Also captures the conditional branching and the sequencing of the flow of work between activities, along with the supporting information from start to end.</li></ul>
+
+<h3>Three Phases Approach</h3>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-c-aPSG4EEVM/XEj9fOh9wRI/AAAAAAAABv8/RZ51ZZaZTL88hjVIO6mvdFzWq8_dMYTSACK4BGAYYCw/s1600/1.png" alt="Process Modeling | IBM Business Process Manager" loading="lazy"></figure></div>
+
+<p>Process modeling can be described as having a three-phase approach:</p>
+
+<ol><li>Phase#I;&nbsp;<strong>Descriptive Modeling</strong>:<ul><li>It describes the process.</li><li>This high-level model provides a description of the process that is based on business requirements. The model is easily communicated across the organization.</li></ul></li><li>Phase#II;&nbsp;<strong>Analytical modeling:</strong><ul><li>It Analyzes and improves the process.</li><li>This analytical, more detailed modeling shows all pertinent activities and flows that are used to detail process requirements.</li></ul></li><li>Phase#III;&nbsp;<strong>Executable modeling:</strong><ul><li>It Implements the process.</li><li>This model details the functional requirements to implement the executable process application.</li></ul></li></ol>
+
+<h2>Process Model;</h2>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-omjBD3WFAmQ/XEj_Y5h9XNI/AAAAAAAABwQ/88NhrHJDXpUt_EOvPd2uBBiUIl8ei2t4wCK4BGAYYCw/s1600/3.png" alt="Process Modeling | IBM Business Process Manager" loading="lazy"></figure></div>
+
+<p>It's just a graphical representation, or diagram, of the business process for understanding.</p>
+
+<ul><li>As business people required to have a quick understanding of business detail without going to extra or unnecessary&nbsp;details.&nbsp;So this process model diagrams can help business people understand it easily</li><li>That process model diagrams implement in BPM.</li></ul>
+
+<h3>Process model development</h3>
+
+<p>When it is established when and what must be accomplished in process modeling, the next thing is to focus on is how process modeling is accomplished in terms of development methods.</p>
+
+<ul><li>Understanding how to model a process requires comprehension of the project development methods that are used for BPM. Realize that project development strategy for process models differ from standard methods, especially when you consider the use of process models.</li></ul>
+
+<p>BPM process models are different. Going back to the BPM lifecycle, notice that the process model evolves in terms of usage.</p>
+
+<ul><li>The prolonged shelf life of a process model allows for the iterative BPM lifecycle because it is data-driven and not code-driven.</li><li>This setting provides the stability for a process application without fear of having to start from scratch when change is needed.</li></ul>
+
+<p>This data-driven process model is known as a business process definition (BPD) in IBM Process Designer.</p>
+
+<h3>The Right Process Model Development Strategy</h3>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-aCf4Hnh3Jsc/XEj9fKfckWI/AAAAAAAABwA/Br6kQUAAOz0azoApOoKvpV2GZQTHJQlYwCK4BGAYYCw/s1600/2.png" alt="Process Modeling | IBM Business Process Manager" loading="lazy"></figure></div>
+
+<p>IBM BPM&nbsp;uses a single shared environment for project design and development.</p>
+
+<ul><li>All process artifacts are stored in a single shared model architecture.</li><li>All parties that are involved in the effort to&nbsp;<strong>define</strong>,&nbsp;<strong>model</strong>,&nbsp;<strong>implement</strong>,&nbsp;<strong>measure</strong>, and&nbsp;<strong>improve</strong>&nbsp;the process are working from a common-shared model that encapsulates all of the various components.<ul><li>It helps maintain the vision of bringing business and IT together</li></ul></li></ul>
+
+<p>The following list shows various people who are all using the same business process definition or process model:</p>
+
+<ul><li><strong>Business analysts</strong>&nbsp;who are modeling the process.</li><li>The&nbsp;<strong>IT developers</strong>&nbsp;who are constructing the detailed implementation of the model.</li><li>The<strong>&nbsp;responsible process participants</strong>&nbsp;who are completing their activities in the process.</li><li>The&nbsp;<strong>process owner and analysts</strong>&nbsp;who monitor the process performance and identify improvements.</li></ul>
+
+<p>The model of the process that the analysts and developers build is the same one that completes at run time. It is the same one that is used to create reports on the performance and status of the process, and the same one that is used to implement process improvements.</p>
+
+<hr class="wp-block-separator"/>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/process-modeling-ibm-business-process-manager/&text=Process Modeling | IBM Business Process Manager" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/process-modeling-ibm-business-process-manager/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/process-modeling-ibm-business-process-manager/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=Process Modeling | IBM Business Process Manager%20https://www.justsajid.com/posts/process-modeling-ibm-business-process-manager/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/creating-implementing-playback-1-assets-hands-on-with-ibm-bpm-8-6/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/02/0-3.png" alt="Creating &amp; Implementing Playback 1 Assets | Hands-On with IBM BPM 8.6" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2019-02-11 09:58:46">February 11, 2019</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/creating-implementing-playback-1-assets-hands-on-with-ibm-bpm-8-6/">Creating &amp; Implementing Playback 1 Assets | Hands-On with IBM BPM 8.6</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/create-a-toolkit-hands-on-with-ibm-bpm-8-6/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/02/00-1.png" alt="Create a Toolkit | Hands-On with IBM BPM 8.6" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2019-02-06 11:16:00">February 06, 2019</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/create-a-toolkit-hands-on-with-ibm-bpm-8-6/">Create a Toolkit | Hands-On with IBM BPM 8.6</a></h3>
+      </div>
+    </article><article class="post-card" style="min-width:0">
+      <a href="../../posts/playback-hands-on-with-ibm-bpm-8-6/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/02/0-2-1.png" alt="Playback | Hands-On with IBM BPM 8.6" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2019-02-06 11:14:00">February 06, 2019</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/playback-hands-on-with-ibm-bpm-8-6/">Playback | Hands-On with IBM BPM 8.6</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/prepare-your-machines-for-blockchain-blockchain-6th-sig-meeting/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Prepare Your Machines for Blockchain | Blockchain 6th SIG Meeting</span>
+      </a>
+    <a href="../../posts/bpm-project-development-methodology-ibm-business-process-manager/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">BPM Project Development Methodology | IBM Business Process Manager</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from IBM Business Process Manager</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/creating-implementing-playback-1-assets-hands-on-with-ibm-bpm-8-6/">Creating &amp; Implementing Playback 1 Assets | Hands-On with IBM BPM 8.6</a>
+        <div class="post-small-date">February 11, 2019</div>
+      </div><div class="post-small">
+        <a href="../../posts/create-a-toolkit-hands-on-with-ibm-bpm-8-6/">Create a Toolkit | Hands-On with IBM BPM 8.6</a>
+        <div class="post-small-date">February 06, 2019</div>
+      </div><div class="post-small">
+        <a href="../../posts/playback-hands-on-with-ibm-bpm-8-6/">Playback | Hands-On with IBM BPM 8.6</a>
+        <div class="post-small-date">February 06, 2019</div>
+      </div><div class="post-small">
+        <a href="../../posts/model-the-gateways-and-intermediate-events-in-a-bpd-hands-on-with-ibm-bpm-8-6/">Model the Gateways and Intermediate Events in a BPD | Hands-On with IBM BPM 8.6</a>
+        <div class="post-small-date">February 05, 2019</div>
+      </div><div class="post-small">
+        <a href="../../posts/create-business-process-definition-bpd-hands-on-with-ibm-bpm-8-6/">Create Business Process Definition (BPD) | Hands-On with IBM BPM 8.6</a>
+        <div class="post-small-date">February 05, 2019</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>JumpStart Programming with Python 3 | justSajid</title>
+  <meta name="description" content="JumpStart Programming with Python 3 — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development.">
+  <link rel="canonical" href="https://www.justsajid.com/posts/jumpstart-programming-with-python-3/">
+  <meta property="og:type" content="article"><meta property="og:title" content="JumpStart Programming with Python 3 | justSajid">
+  <meta property="og:description" content="JumpStart Programming with Python 3 — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta property="og:url" content="https://www.justsajid.com/posts/jumpstart-programming-with-python-3/">
+  <meta property="og:image" content="https://www.justsajid.com/assets/images/uploads/2019/01/0-1.jpg">
+  <meta property="article:published_time" content="2020-02-22T10:30:35Z">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="JumpStart Programming with Python 3 | justSajid">
+  <meta name="twitter:description" content="JumpStart Programming with Python 3 — justSajid's blog covering IBM, blockchain, quantum computing, cloud, and development."><meta name="twitter:image" content="https://www.justsajid.com/assets/images/uploads/2019/01/0-1.jpg">
+  <link rel="icon" href="../../assets/images/uploads/2019/08/cu-1024x495.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="../../assets/css/newspaper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head><body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="wi-all"><div id="wi-wrapper">
+<div id="topbar-wrapper"><div class="wi-topbar" id="wi-topbar"><div class="container"><div class="topbar-inner">
+  <button class="toggle-menu" id="toggle-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="wi-mainnav">
+    <span class="hamburger-icon">&#9776;</span> <span>Menu</span></button>
+  <nav id="wi-mainnav" class="wi-mainnav" role="navigation" aria-label="Primary">
+    <ul class="menu"><li><a href="../../">Home</a></li>
+<li><a href="../../blog/" aria-current="page">Blog</a></li>
+<li><a href="../../pages/contact/" >About</a></li>
+<li><a href="../../categories/tech/" >Technology</a></li>
+<li><a href="../../categories/dev/" >Development</a></li>
+<li><a href="../../categories/ibmcloud/" >IBM</a></li>
+<li><a href="../../categories/widnowstech/" >Microsoft</a></li>
+<li><a href="../../categories/events/" >Events</a></li>
+</ul>
+  </nav>
+  <div id="header-social" class="social-list"><ul>
+    <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+  </ul></div>
+</div></div>
+  <button class="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">&#9680;</button></div></div>
+
+</div>
+
+<header id="wi-header" class="wi-header"><div class="container">
+  <div class="header-search" id="header-search">
+    <form role="search" method="get" action="../../search.html">
+      <label for="hs-inp" class="sr-only">Search</label>
+      <input type="text" id="hs-inp" name="q" class="s" placeholder="Type &amp; hit enter...">
+      <button class="submit" type="submit" aria-label="Search">Go</button>
+    </form>
+  </div>
+  <div id="logo-area">
+    <div id="wi-logo">
+      <h2><a href="../../" rel="home" aria-label="justSajid home">
+        <img src="../../assets/images/uploads/2019/08/cu-1024x495.jpg" alt="justSajid" width="1024" height="495" loading="eager" style="height:56px;width:auto;">
+      </a></h2>
+    </div>
+    <p class="slogan">A Place for my Research, Activities and Thoughts</p>
+  </div>
+</div></header>
+<div id="wi-main"><div id="main-content">
+<div class="container">
+<div class="content content-full">
+<main id="primary" class="content-area" role="main">
+
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="justSajid">
+  
+  <!-- Featured Image -->
+  <div class="post-featured-image">
+    <img src="../../assets/images/uploads/2019/01/0-1.jpg" alt="JumpStart Programming with Python 3" loading="eager" width="800" height="450" itemprop="image">
+  </div>
+  
+  <!-- Post Header -->
+  <header class="post-header">
+    <h1 class="post-title single-title" itemprop="headline">JumpStart Programming with Python 3</h1>
+    <div class="post-header-meta">
+      <span class="meta-time"><time datetime="2020-02-22 10:30:35" itemprop="datePublished">Published February 22, 2020</time></span>
+      <span class="meta-category">in <a href="../../categories/python/" class="cat-link">Python</a></span>
+      <span class="meta-author">by <a href="../../pages/contact/" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">justSajid</span></a></span>
+      <span class="meta-reading">28 min read</span>
+    </div>
+  </header>
+  
+  <!-- Table of Contents placeholder (populated by JS) -->
+  <div class="toc" id="toc-box" style="display:none">
+    <div class="toc-title">Table of Contents</div>
+    <div id="toc"></div>
+  </div>
+  
+  <!-- Post Content -->
+  <div class="single-body">
+    <div class="entry-content" itemprop="articleBody">
+      
+<h2>Motivation;</h2>
+
+<p>Well, if you want to play with data and deal with complex analytics problems then Python is the best for you.&nbsp;We can use Python for developing complex scientific and numeric apps. Python is designed with features to facilitate&nbsp;<strong>data analysis</strong>&nbsp;and&nbsp;<strong>visualization</strong>.</p>
+
+<p>The syntax in Python helps the programmers to do coding in fewer steps as compared to&nbsp;<strong>Java</strong>&nbsp;or&nbsp;<strong>C++</strong>.&nbsp;The language founded in the year 1991.</p>
+
+<h2>Why Python;</h2>
+
+<p>Python is the MOST popular, high-level, open-source programming language! It is a powerful, fast and dynamic programming language that runs everywhere.&nbsp;It’s also interactive, object-oriented, and very easy to learn.</p>
+
+<p>Anyone can create programs with it. It’s particularly great for web development and scientific computing. With its vast libraries, it’s also useful for data visualization and data analytics.</p>
+
+<p>The cool thing about Python is that it has&nbsp;versatile features and fewer programming codes. Further, it provides the language with a higher plethora over other programming languages used in the industry. Some of its advantages are;</p>
+
+<ul><li><strong>Extensive Support Libraries;&nbsp;</strong></li></ul>
+
+<p>It provides large standard libraries that include the areas like string operations, Internet, web service tools, operating system interfaces, and protocols. Most of the highly used programming tasks are already scripted into it that limits the length of the codes to be written in Python.</p>
+
+<ul><li><strong>Integration Feature;</strong></li></ul>
+
+<p>Python integrates the Enterprise Application Integration that makes it easy to develop Web services by invoking COM or COBRA components. It has powerful control capabilities as it calls directly through C, C++ or Java via Jython. Python also processes XML and other markup languages as it can run on all modern operating systems through same byte code.</p>
+
+<ul><li><strong>Improved Programmer’s Productivity</strong></li></ul>
+
+<p>The language has extensive support libraries and clean object-oriented designs that increase two to ten fold of programmer’s productivity while using the languages like Java, VB, Perl, C, C++, and C#.</p>
+
+<ul><li><strong>Productivity;</strong></li></ul>
+
+<p>With its strong process integration features, unit testing framework and enhanced control capabilities contribute towards the increased speed for most applications and productivity of applications. It is a great option for building scalable multi-protocol network applications.</p>
+
+<p>There’s a lot to go over but by practicing all these concepts you’ll be well on your way to using Python in your own applications. One can easily be up and running with Python in no time! So, let’s get started!</p>
+
+<p>BTW,&nbsp;Python executes with the help of an interpreter instead of the compiler, which causes it to slow down because compilation and execution help it to work normally. On the other hand, it can be seen that it is fast for many web applications too.</p>
+
+<p>Let's say hay to Python on Visual Studio;</p>
+
+<h3>Create Python Project in Visual Studio;</h3>
+
+<p>On Visual Studio, simply create a new python Project;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-yq4GYbF9F2s/XDtdKCOfunI/AAAAAAAABoo/ao2WEMlpqzwKbUnQEIjkvwIAoC2-aLlyACK4BGAYYCw/s1600/1.png" alt="JumpStart Programming with Python 3" loading="lazy"></figure></div>
+
+<p>Visual Studio will create a new project template with a proper structure from where we can simply focusing on the python code. Here we would have file hierarchy in the solution explorer including search paths, python environments and all the files that we would be using;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-vbOWK-hpZSM/XDtdKcdQrYI/AAAAAAAABo4/2ttj_OeUzbAkgSyHB4lCZgLEyKTUmd3vACK4BGAYYCw/s1600/2.png" alt="JumpStart Programming with Python 3" loading="lazy"></figure></div>
+
+<p>To add new items, we simply add it from the solution explorer;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-O9FE5SiRvLc/XDtdK7TITDI/AAAAAAAABpc/X7AA742HL3A_P6Y5IqKw9ik8LlLxZun2wCK4BGAYYCw/s1600/3.png" alt="JumpStart Programming with Python 3" loading="lazy"></figure></div>
+
+<p>A statement or expression is an instruction the computer will run or execute. Perhaps the simplest program you can write&nbsp;is a print statement.&nbsp;When you run the print statement, Python will&nbsp;simply display the value in the parentheses. The value in the parentheses is called the&nbsp;argument.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-rK-0RpvNesw/XDtdKpp_CdI/AAAAAAAABpE/m0eWLbfWPLADAYxjuPLOhnWgmyBTb2ESwCK4BGAYYCw/s1600/4.png" alt="JumpStart Programming with Python 3" loading="lazy"></figure></div>
+
+<p>Now if you simply run the program,&nbsp;The statement will execute. The result will be displayed in&nbsp;a console window;</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-Q62DFOsyFow/XDtdKpdhc0I/AAAAAAAABpI/AAD6eT7fZYsPMjLMtYf0AT2f3ALcI7aWQCK4BGAYYCw/s1600/5.png" alt="JumpStart Programming with Python 3" loading="lazy"></figure></div>
+
+<h2>Comments;</h2>
+
+<p>It’s customary to comment your code. This tells other people what your code does. You&nbsp;simply put a hash symbol proceeding your comment. When you run the code, Python will ignore the comment.</p>
+
+<h2>Errors</h2>
+
+<p>A<em><strong>&nbsp;Syntactic error</strong></em>&nbsp;is when Python does not understand your code. For example, if you spell print "frint", you will get an error<br>message.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-NxbG6vLmLLM/XDtdKjp2DRI/AAAAAAAABpQ/CHQAVimuKpQCilS7im6mN5AJdfYiUaeKwCK4BGAYYCw/s1600/6.png" alt="JumpStart Programming with Python 3" loading="lazy"></figure></div>
+
+<p>A&nbsp;<em><strong>Semantic error</strong></em>&nbsp;is when your logic is wrong.&nbsp;For example, if you enter Heelo Python instead of Hello Python, you don't get an error message,&nbsp;but your code is wrong as per expected logic.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://4.bp.blogspot.com/-CEK-LawmaGc/XDtdKmEI2CI/AAAAAAAABpY/JcKBw4bvOAsDxngMRmjRWeq8qa4_hhkXwCK4BGAYYCw/s1600/7.png" alt="JumpStart Programming with Python 3" loading="lazy"></figure></div>
+
+<h2>Data Types;</h2>
+
+<p>A type is how Python represents different types of data. We can have different types in Python.&nbsp;They can be integers like 11, real numbers like 21.213. They can even be words.&nbsp;Integers, real numbers, and words can be expressed as different data types.</p>
+
+<p>The following chart summarizes three data types for the&nbsp;given examples.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://1.bp.blogspot.com/-VevUQcJNwXA/XDtdMSPGoLI/AAAAAAAABpo/qqYEflfjRdEoHPxiOx0-a5VixBeU116TACK4BGAYYCw/s1600/8.png" alt="JumpStart Programming with Python 3" loading="lazy"></figure></div>
+
+<p>The first column indicates the expression. The second column indicates the data type.&nbsp;We can see the actual data type in Python by using the type command.&nbsp;We can have int, which stands for an integer, and float that stands for float, essentially&nbsp;a real number. The type string is a sequence of characters.</p>
+
+<ul><li>The integers can be negative or positive. E.g.&nbsp;N = {0, +-1, +-2, +-3, ... , +-n}<ul><li>Integers can be negative or positive.&nbsp;It should be noted that there is a finite range of integers, but it is quite large.</li></ul></li><li>The Floats are real numbers. E.g. R = {0, +-0.1,&nbsp;+-0.21, +-0.321, ... , +-n }<ul><li>They include the integers but also numbers in between the integers.&nbsp;Consider the numbers between 0 and 1. We can select numbers in between them; these numbers are floats.</li><li>Similarly, consider the numbers between 0.5&nbsp;and 0.6. We can select numbers in-between them; these are floats as well.</li><li>We can continue the process, zooming in for different numbers. Of course, there is a limit,<br>but it is quite small.</li></ul></li><li>&nbsp;Type Casting; We can change the type of the expression&nbsp;in Python; this is called type-casting.&nbsp;We can convert an int to a float.<ul><li>E.g. we can convert or cast the integer 2 to a float 2. Nothing really changes.</li><li>If we cast a float to an integer,&nbsp;we must be careful. e.g. if you cast the float 1.1 to&nbsp;1, you will lose some information.</li><li>If a string contains an integer value,&nbsp;we can convert it to int.</li><li>If we convert a string that contains a non-integer&nbsp;value, we get an error.</li></ul></li></ul>
+
+<p>* You can further do the practice over the Visual Studio,&nbsp;You can convert an int to a string or a float to a string.&nbsp;Boolean is another important type in Python. A Boolean can take on two values.&nbsp;The first value is true, just remember we use an uppercase T.&nbsp;Boolean values can also be false, with an uppercase F.&nbsp;Using the type command on a Boolean value, we obtain the term bool, this is short for&nbsp;Boolean. If we cast a Boolean true to an integer or&nbsp;float, we will get a 1. If we cast a Boolean false to an integer or&nbsp;float, we get a zero. If you cast a 1 to a Boolean, you get a true.&nbsp;Similarly, if you cast a 0 to a Boolean, you get a false.</p>
+
+<h2>Mathematical Expression;</h2>
+
+<p>Expressions are operations that Python performs. For example, basic arithmetic operations like&nbsp;adding multiple numbers. E.g. 40+50+90. We call the numbers "40" operands and the maths symbols "+"&nbsp;are called operators.</p>
+
+<p>We can perform multiplication operations using the asterisk *.&nbsp;We can also perform division with the forward slash /. E.g.&nbsp;25/6 is approximately 4.167.</p>
+
+<p>We can also use the double slash for integer division, where the result is rounded. E.g. 25//6 is 4.&nbsp;Be aware, in some cases, the results are not the same as in the regular division.</p>
+
+<p>Python follows mathematical conventions when performing mathematical expressions.</p>
+
+<h2>Variables;</h2>
+
+<p>We can use variables to store values. E.g. my_variable=1</p>
+
+<p>In this case, we assign a value of 1 to the variable my_variable using the assignment operator. i.e. the equals sign.</p>
+
+<p>We can then use the value somewhere else in the code by typing the exact name of the variable.&nbsp;<strong>my_variable:1,</strong>&nbsp;we will use a colon do denote the value of the variable.</p>
+
+<p>We can store the results of expressions, for example, we add several values and assign the result to x.&nbsp;x now stores the result. We can also perform operations on x and save&nbsp;the result to a new variable y.&nbsp;We can also perform operations on x and assign the value x.</p>
+
+<h2>Strings</h2>
+
+<p>In Python, a string is a sequence of characters.</p>
+
+<ul><li>A string is contained within two quotes. E.g. "justSajid"</li><li>You could also use single quotes. E.g. 'justSajid'</li><li>A string can be spaces or digits. E.g. 'just Sajid 007'</li><li>A string can also be special characters. E.g. "£R$£just £!$% Sajid )(*&amp;^"</li><li>We can bind or assign a string to another&nbsp;variable. E.g.&nbsp;<strong>Name&nbsp; = "justSajid"</strong><ul><li>*&nbsp;It is helpful to think of a string as an ordered&nbsp;sequence. Each element in the sequence can be accessed&nbsp;using an index represented by the array of numbers.</li><li>The first index can be accessed as follows. E.g. Name[0]:M<ul><li>We can access index 6. E.g. Name[6]:A</li></ul></li><li>We can also use negative indexing with strings.<ul><li>The last element is given by the index -1. E.g. Name[-1]:n</li><li>The first element can be obtained by index&nbsp;-14. E.g Name[-14]:S - and so on.</li></ul></li></ul></li><li>We can bind a string to another variable. Name = "justSajid",&nbsp;It is helpful to think of a string as a list or tuple.<ul><li><em><strong>Slicing:</strong></em>&nbsp;We can treat the string as a sequence and perform sequence operations.<ul><li>E.g. Name[0:4] = Saji&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; or&nbsp; &nbsp; &nbsp; &nbsp; Name[10:12] = Kha</li></ul></li><li><em><strong>Stride:</strong></em>&nbsp;We can also input a stride value as follows. Name[::2]:"Sjdaika"<ul><li>The 2 indicates we select every second variable.</li></ul></li><li>SWe can also incorporate slicing. Name[0:5:2]:"Sjd"<ul><li>In this case. we return every second value&nbsp;up to index four.</li></ul></li><li><em><strong>Slicing:</strong>&nbsp;</em>We can use the “len” command to obtain&nbsp;the length of the string. E.g. len("justSajid")<ul><li>As there are 14 elements, the result is 14.</li></ul></li></ul></li><li>We can concatenate or combine strings. We use the addition symbols.&nbsp;The result is a new string that is a combination of both.<ul><li>E.g.<ul><li>Name = "justSajid"</li><li>Statement = Name + " is the best"</li><li>The result will be as following; "justSajid is the best".</li></ul></li></ul></li><li>We can replicate the values of a string. We simply multiply the string by the number&nbsp;of times we would like to replicate it;<ul><li>E.g.<ul><li>3 * "justSajid "</li><li>The result will be a new strong "justSajid justSajid justSajid".</li><li>The result is a new string. The new string consists of three copies of&nbsp;the original string.</li></ul></li><li>This means you cannot change the value of&nbsp;the string.<ul><li>E.g. Name = "justSajid"<ul><li>Name [0] = "J" --&gt; This is not possible.</li></ul></li><li>But you can create a new string.&nbsp;For example, you can create a new string by&nbsp;setting it to the original variable and concatenated with a new string.<ul><li>E.g.<ul><li>Name = Name + " is the best".</li><li>Name: "justSajid is the best".</li></ul></li><li>The result is a new string that changes from&nbsp;justSajid to “justSajid is the best.”</li></ul></li></ul></li></ul></li><li><em><strong>Escape Sequences:</strong></em>&nbsp;Strings are immutable. "\" Backslashes represent the beginning of escape sequences.<ul><li>Escape sequences represent strings that may be difficult to input.<ul><li>For example, backslashes n "\
+" represents a new line.</li><li>Similarly, \t represents a tab.</li><li>If&nbsp;we want to place a backslash in your string,&nbsp;use a double backslash "\\". The result is a backslash "\" after the escape<br>sequence.</li></ul></li></ul></li></ul>
+
+<ul><li>String Methods:</li></ul>
+
+<p>Strings are sequences and, as such, have apply&nbsp;methods that work on lists and tuples. Strings also have a second set of methods<br>that just work on strings.</p>
+
+<ul><li>When we apply a method to the string "A”, we get a new string “B" that is different from "A".<ul><li>E.g.<ul><li>A = "This is all about justSajid"</li><li>B = A.upper()</li><li>B:"THIS IS ALL ABOUT JUSTSAJID"</li></ul></li></ul></li><li>The method replaces a segment of the string, i.e., a substring with a new string.<ul><li>E.g.<ul><li>A = "Sajid is the best"</li><li>B = A.replace('Sajid', 'justSajid')<ul><li>We input the part of the string we would like to change.&nbsp;The second argument is what we would like to exchange the segment with.</li><li>The result is a new string with the segment changed.</li></ul></li><li>B:'justSajid is the best'</li></ul></li></ul></li><li>The method "find" finds the sub-strings.<ul><li>The argument is the sub-string you would like to find.</li><li>E.g.<ul><li>Name = "justSajid"</li><li>Name.find('id'):3<ul><li>The output is the first index of the sequence.</li></ul></li></ul></li><li>We can find the sub-string Ali.<ul><li>E.g. Name.find('Ali'):6</li></ul></li><li>If the substring is not in the string, the&nbsp;output is a negative one.<ul><li>E.g. Name.find('&amp;*S'):-1</li></ul></li></ul></li></ul>
+
+<h2>Lists and Tuples:</h2>
+
+<p>These are called compound data types and are&nbsp;one of the key types of data structures in Python.</p>
+
+<h3>Tuples:</h3>
+
+<p>Tuples are an ordered sequence. They are expressed as comma-separated elements within parentheses.</p>
+
+<ul><li>Here is a Tuple “Ratings”<ul><li>Rating = (10, 9, 6, 5, 10, 8, 9, 6, 2)</li><li>These are values inside the parentheses.</li></ul></li></ul>
+
+<p>In Python, there are different types:</p>
+
+<ul><li>Strings, e.g. 'justSajid'.</li><li>Integer, e.g. '10'.</li><li>float, e.g. '1.2'.</li></ul>
+
+<p>They can all be contained in a tuple, e.g. tuple1 = ('justSajid', 10, 1.2). But the type of the variable is a tuple, e.g. type (tuple1) = tuple</p>
+
+<ul><li>Each element of a tuple can be accessed via an index.<ul><li>E.g.<ul><li>Tuple1[0]:"justSajid"</li><li>The first element can be accessed by the name of the tuple followed by a square bracket&nbsp;with the index number, in this case, zero.</li><li>We can access the second element as follows.<ul><li>Tuple1[1]:10</li></ul></li><li>Similarly, we can access the last element;<ul><li>Tuple1[2]:1.2</li></ul></li><li>In Python, we can use the negative index. E.g Tuple1[-3], Tuple1[-2], Tuple1[3].</li></ul></li></ul></li><li><em><strong>Concatenate Tuples:&nbsp;</strong></em>&nbsp;&nbsp;We can concatenate or combine tuples by adding them.&nbsp;The result is the following with the following index.<ul><li>tuple1 = ('justSajid', 10, 1.2)</li><li>tuple2 = tuple1 + ('rock', 10)</li><li>("justSajid", 10, 1.2, "rock", 10).</li><li>Index [0], [1],&nbsp;[2],&nbsp;[3],&nbsp;[4]</li></ul></li><li><em><strong>Slicing:&nbsp;</strong></em>If we would like multiple elements from a tuple, we could also slice tuples.<em></em><ul><li>E.g.<ul><li>If we&nbsp;want the first three elements, we use the following command;<ul><li>tuple2[0:3] : ('justSajid', 10, 1.2)</li><li>*&nbsp;The last index is 1 larger than the index you want. Like here we've got from 0 till the index 2.</li></ul></li></ul></li></ul></li><li>We can use&nbsp;the “len” command to obtain the length of a tuple.<ul><li>E.g.<ul><li>len(("justSajid", 10, 1.2, "rock", 10))</li><li>As there are 5 elements, the result is 5.</li></ul></li></ul></li><li><em><strong>Immutable:</strong></em>&nbsp;Tuples are immutable, which means we can't change them.<ul><li>E.g.<ul><li><strong>Ratings = (10, 9, 6, 5, 10, 8, 9, 6, 2)</strong></li></ul></li><li>To see why this is important, let's see what happens when we set the variable Ratings 1&nbsp;to ratings.<ul><li><strong>Ratings1 = Ratings</strong></li></ul></li><li>Each variable does not contain a tuple, but references the same immutable tuple object.</li><li>Let's say we want to change the element at index 2.&nbsp;Because tuples are immutable, we can't.<ul><li>i.e Ratings[2] = 4 (Not possible).</li></ul></li><li>Therefore,&nbsp;<em><strong>Ratings1</strong></em>&nbsp;will not be affected by a change in&nbsp;<em><strong>Ratings</strong></em>&nbsp;because the tuple is&nbsp;immutable i.e., we can't change it.</li><li>We can assign a different tuple to the Ratings variable.<ul><li>E.g.&nbsp;<em><strong>Ratings = (2, 10, 1)</strong></em></li><li>The variable&nbsp;<em><strong>Ratings</strong></em>&nbsp;now references another tuple.</li></ul></li><li>As a consequence of immutability, if we would like to manipulate a tuple, we must create&nbsp;a new tuple instead.<ul><li>For example, if we would like to sort a tuple, we use the function sorted.</li><li>E.g.&nbsp;<strong>RatingSorted = sorted(Ratings)</strong></li><li>The input is the original tuple. The output is a new sorted tuple.</li></ul></li><li><em><strong>Nesting:&nbsp;</strong></em>A tuple can contain other tuples as well as other complex data types; this is called nesting.&nbsp;We can access these elements using the standard indexing methods.<ul><li>If we select an index with a tuple, the same index convention applies.</li><li>E.g. NT = (1,2, ("alpha", "beta"), (3, 4), ("gemma", (1, 2)))<ul><li>NT[2]:("alpha", "beta")[1] = "rock"</li><li>NT[2][1]="beta"</li></ul></li><li>We can apply this indexing directly to the tuple variable NT.&nbsp;It is helpful to visualize this as a tree.&nbsp;We can visualize this nesting as a tree.<ul><li>E.g. NT[2][1]="beta"</li></ul></li><li>We can even access deeper levels of the tree by adding another square bracket.<ul><li>E.g. NT[2][1][0]="a"</li></ul></li></ul></li></ul></li></ul>
+
+<h3><em><strong>Lists;</strong></em>&nbsp;</h3>
+
+<p>Lists are also a popular data structure in Python.&nbsp;Lists are also an ordered sequence.</p>
+
+<ul><li>E.g.&nbsp;<em><strong>L = ["justSajid", 10.1, 1991]</strong></em></li><li>A list is represented with square brackets.</li><li>In many respects lists are like tuples, one key difference is they are&nbsp;<em><strong>mutable&nbsp;</strong></em>(But tuples are Immutable).</li><li>Lists can contain strings, floats, integers.</li><li>We can also nest other lists.<ul><li>E.g.&nbsp;L = ["justSajid", 10.1,&nbsp;<em><strong>[1,2]</strong></em>]</li></ul></li><li>We also nest tuples and other data structures;<ul><li>E.g.&nbsp;L = ["justSajid", 10.1,&nbsp;<em><strong>('A', 1)</strong></em>]</li></ul></li><li>The same indexing conventions apply for nesting.&nbsp;Like tuples, each element of a list can be accessed via an index.</li><li>Similarly, we can apply&nbsp;<em><strong>slicing</strong></em>&nbsp;to the lists.<ul><li>E.g. L = ["justSajid", 10.1, 1991, "JS", 1]<ul><li>L[3:5]:["JS", 1]</li></ul></li></ul></li><li>Concatinate;&nbsp;&nbsp;<em><strong>L = ["justSajid", 10.1, 1991]</strong></em><ul><li>E.g. L1 = L + ["alpha", 10]</li><li>L1 =&nbsp;["justSajid", 10.1, 1991, "alpha", 10]</li></ul></li><li>As Lists are mutable, therefore, we can change them.<ul><li>E.g. L.extend(["beta, 10"])<ul><li>L =&nbsp;["justSajid", 10.1, 1991, "beta", 10]</li></ul></li><li>E.g. L = L.append(["alpha", 10])<ul><li>L =&nbsp;["justSajid", 10.1, 1991, ["alpha", 10]]</li></ul></li><li>E.g. L[0] = "alpha"<ul><li>L =&nbsp;["alpha", 10.1, 1991]</li></ul></li></ul></li><li>Every time we apply a method, the lists changes.&nbsp;We can delete an element of a list using the "del" command; we simply indicate the list&nbsp;item we would like to remove as an argument.<ul><li>E.g. del(L[0])<ul><li>L = [10.1, 1991]</li></ul></li></ul></li><li>We can convert a string to a list using split.<ul><li>E.g. "just Sajid".split()<ul><li>["just", "Sajid"]</li></ul></li></ul></li><li>We can also use the split function to separate strings on a specific character, known as a delimiter.<ul><li>E.g. "A, B, C, D".split(",")<ul><li>["A", "B", "C", "D"]</li></ul></li></ul></li><li><em><strong>Aliasing;</strong></em>&nbsp;When we set one variable, B equal to A, both A and B are referencing the same list.&nbsp;Multiple names referring to the same object is known as aliasing.<ul><li>Now here is an interesting thing will happen.<ul><li>E.g.<ul><li>A = ["justSajid", 10, 1.2]</li><li>B = A</li></ul></li><li>Now,&nbsp;If we change the first element in “A” to “banana” we get a side effect; the&nbsp;value of B will change as a consequence.<ul><li>A [0] = "alpha"</li></ul></li><li><em>If we check the first element of B after changing list ”A” we get&nbsp;<strong>alpha</strong>&nbsp;instead of&nbsp;<strong>justSajid</strong></em>.</li></ul></li><li>You can clone list “A” by using the following syntax.<ul><li>B = A[:]<ul><li>Variable "A" references one list.&nbsp;Variable “B” references a new copy or clone of the original list.</li><li>Now if you change “A”, "B" will&nbsp;<strong>NOT</strong>&nbsp;change.</li></ul></li></ul></li></ul></li></ul>
+
+<h2>Sets;</h2>
+
+<p>They are also a type of collection.&nbsp;Sets are a type of collection. This means that like lists and tuples, we&nbsp;can input different python types.</p>
+
+<p>Unlike lists and tuples, they are unordered.&nbsp;This means sets do not record element position.</p>
+
+<p>Sets only have unique elements.&nbsp;This means there is only one of a particular element in a set.</p>
+
+<ul><li>Defining Set;&nbsp;To define a set, you use curly brackets.&nbsp;We place the elements of a set within the&nbsp;curly brackets.&nbsp;We notice there are duplicate items.<ul><li>E.g.<ul><li>Set1 = {"justSajid", "alpha", "beta", "delta", "justSajid"}</li><li>As we can see there are duplicate items in the Set1. Perhaps when the actual set is created, duplicate items will not be present.<ul><li>i.e.&nbsp;Set1 = {"justSajid", "alpha", "beta", "delta"}</li></ul></li></ul></li></ul></li><li>We can convert a list to a set by using the function set; this is called type-casting. We simply use the list as the input to the function set.&nbsp;The result will be a list converted to a set.<ul><li>E.g.<ul><li>List_1 = ["justSajid", "alpha", "beta", "delta", "justSajid"]</li><li>Set_1 = set(List_1)</li><li>Set_1:&nbsp;{"justSajid", "alpha", "beta", "delta"}</li></ul></li></ul></li><li>Set Operations; Used to change the function set.<ul><li>We can add an item to a set using the add method.</li><li>E.g. A.add("Software")<ul><li>A:{"justSajid", "alpha", "beta", "delta", "Software"}</li></ul></li><li>* If we add same item twice, nothing will&nbsp;happen as there can be no duplicates in a set.</li><li>We can also remove an item from a set using the remove method.</li><li>E.g. A.remove("justSajid")<ul><li>A: {"alpha", "beta", "delta"}</li></ul></li><li>We can verify if an element is in the set&nbsp;using the "in" command as follows.<ul><li>E.g. "justSajid" in A<ul><li>True</li></ul></li><li>If we look for an item that is not in the set, we will get a False.</li></ul></li><li>There are lots of useful mathematical operations we can do between sets.<ul><li>The Intersection of two sets is a new set containing elements which are in both of those&nbsp;sets.</li><li>The two circles that represent the sets combine; the overlap represents the new set.</li><li>We define the intersection&nbsp;in terms of “and.” In Python, we use the ampersand "&amp;" to find the&nbsp;union of two sets.<ul><li>E.g.<ul><li>set_1 = {"justSajid", "alpha", "beta", "delta"}</li><li>set_2 = {"alpha", "beta", "delta", "Software"}</li><li>set_3 = set_1 &amp; set_2</li><li>set_3:{"alpha", "beta"}</li></ul></li><li>That is containing all the elements in both album set 1 and album&nbsp;set 2.</li></ul></li><li>Similarly, we can find the&nbsp;<strong>Union</strong>&nbsp;of the set.<ul><li>E,g<ul><li>set_1.union(set_2)</li><li>{"justSajid", "alpha", "beta", "delta", Software}</li></ul></li></ul></li><li>We can check if a set is a subset using the is subset method.<ul><li>E.g.<ul><li>set_3.issubset(set_1)</li><li>True</li></ul></li></ul></li></ul></li><li>&nbsp;There is a lot more we can play with Sets.</li></ul></li></ul>
+
+<h2>Dictionaries:</h2>
+
+<ul><li>Dictionaries are a type of collection in Python.</li><li>E.g.&nbsp;A list has&nbsp;<strong>integer indexes</strong>. These are like&nbsp;<strong>addresses</strong>.&nbsp;A list also has&nbsp;<strong>elements</strong>.</li><li>A dictionary has&nbsp;<strong>keys</strong>&nbsp;and&nbsp;<strong>values</strong>.</li><li>The&nbsp;<strong>key</strong>&nbsp;is analogous to the&nbsp;<strong>index</strong>, they are like&nbsp;<strong>addresses</strong>&nbsp;but they don’t have to be&nbsp;<strong>integers</strong>. They are usually&nbsp;<strong>characters</strong>; the values are&nbsp;similar to the elements in a list and contain information.</li><li>To create a dictionary, we use curly brackets. The keys are the first elements; they must be immutable and unique.<ul><li>E.g.<ul><li>{"key1": 1, "key2":2, "key3":[333], ('key4'):5}</li><li>Each key is followed by a value separated&nbsp;by a colon. The values can be immutable, mutable and duplicates.</li><li>Each key and value pair is separated by a comma.</li></ul></li></ul></li><li>We can also assign the dictionary to a variable.<ul><li>The key is used to look up the value.</li><li>We use&nbsp;square brackets; the argument is the key.<ul><li>E.g.<ul><li>DICT["key1"]: 1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //&nbsp; This outputs the value.</li></ul></li></ul></li></ul></li><li>Similarly, we can further play with Dictionaries by applying different methods.</li></ul>
+
+<h2>Conditions;</h2>
+
+<p>Comparison operations compare some value or operand, then, based on some condition they produce a Boolean.</p>
+
+<ul><li>Let's say we assign "a" value of “a” to 6.<ul><li>E.g. a = 6</li></ul></li><li>We can use the equality operator denoted with two equal signs to determine if two values&nbsp;are equal,<ul><li>E.g. a == 7</li><li>In this case, as six is not equal to 7, the result is&nbsp;<strong>False</strong>.</li></ul></li><li>Perhaps if we performed an equality test for the value 6,<ul><li>E.g. a == 6</li></ul></li><li>As the two values would be equal. So, we would get a true.</li></ul>
+
+<p>Similarly,&nbsp;Consider the following equality comparison operator.</p>
+
+<ul><li>E.g.&nbsp;<strong>i&gt;5</strong><ul><li>If the value of the left operand, in this case, the variable “i” is greater than the value of the right operand, in this case, 5, the condition becomes true, or else we&nbsp;get a false.</li></ul></li><li>Branches;</li></ul>
+
+<p>Branching allows us to run different statements for a different input.</p>
+
+<p>It's helpful to think of an “if statement” as a locked room:</p>
+
+<ul><li>If the statement is true,<ul><li>We can enter the room, and your program can run some predefined&nbsp;task.</li></ul></li><li>If the statement is false,<ul><li>Our program will skip the task.</li></ul></li></ul>
+
+<p>In Python, we use the following syntax for the conditional statement.</p>
+
+<p><em><strong>if (age&gt;7):</strong></em></p>
+
+<p><em><strong>&nbsp; &nbsp; &nbsp;print("You can enter")</strong></em></p>
+
+<p><em><strong>print("move on")</strong></em></p>
+
+<p>Similarly for else statement;</p>
+
+<p><em><strong>if (age&gt;7):</strong></em></p>
+
+<p><em><strong>&nbsp; &nbsp; &nbsp;print("You can enter")</strong></em></p>
+
+<p><em><strong>else:</strong></em></p>
+
+<p><em><strong>&nbsp; &nbsp; &nbsp;print("go back")</strong></em></p>
+
+<p><em><strong>print("move on")</strong></em></p>
+
+<p>Else if syntex is also similar;&nbsp;<strong>elseif("age==8"): print ("please come")</strong></p>
+
+<ul><li>Logic Operators;&nbsp;They take Boolean values and produce different Boolean values.<ul><li>Its logic is the same as we use in our mathematics.</li><li>I.e. and(), or( ),<ul><li><em><strong>If (Year&lt;1992) or (Year&gt;1990)</strong></em></li></ul></li></ul></li></ul>
+
+<h2>Loops;</h2>
+
+<p>Before we talk about loops, let’s go over the range function.&nbsp;The range function outputs an ordered sequence as a list “i”.&nbsp;If the input is a positive integer, the output is a sequence; the sequence contains the same&nbsp;number of elements as the input but starts at zero.</p>
+
+<ul><li><em><strong>range(N) = [0..., n-1]</strong></em></li><li>E.g. range(3) = [0, 1, 2], range(10, 15) = [10, 11, 12, 13, 14]<ul><li>If the range function has two inputs where the first input is larger than the second input, the output is a sequence that starts at the first input.</li></ul></li></ul>
+
+<p>Loops perform a task over and over. The syntax in Python is following</p>
+
+<ul><li><em><strong>for i in variable:</strong></em></li><li><em><strong>&nbsp; &nbsp; &nbsp; x=x+1&nbsp; &nbsp; &nbsp;</strong></em></li><li><em><strong>&nbsp; &nbsp; &nbsp;print("Hello For Loop")</strong></em></li></ul>
+
+<p>“While loops” are similar to “for loops”, but instead of executing a statement a set&nbsp;number of times, a while loop will only run if a condition is met.<br>Let’s say we would like to copy all the orange squares from the list squares to the list new squares, but we would like to stop if we encounter a non-orange square.</p>
+
+<p>E.g.</p>
+
+<ul><li><em><strong>sum = 0</strong></em></li><li><em><strong>i = o</strong></em></li><li><strong>while i &lt; 10:</strong><ul><li><em><strong>sum = sum + i</strong></em></li><li><em><strong>print sum</strong></em></li><li><em><strong>i = i + 1</strong></em></li></ul></li><li><em><strong>for i in range (10):</strong></em><ul><li><em><strong>sum = sum +&nbsp;i</strong></em></li><li><em><strong>print sum</strong></em></li></ul></li></ul>
+
+<h2><strong>Functions:</strong></h2>
+
+<p>Functions take some input then produce some output or change.&nbsp;The function is just a piece of code&nbsp;we can&nbsp;<em><strong>reuse</strong></em>.&nbsp;We can implement our own function, but in many cases, you use other people’s or predefined functions.</p>
+
+<p>In some cases,&nbsp;you just have to know how the function works and in some cases how to import&nbsp;the functions.</p>
+
+<p><em><strong>&nbsp;def&nbsp; &nbsp; f1 (inp</strong><strong>ut):</strong></em></p>
+
+<p><em><strong>&nbsp; &nbsp; &nbsp;"""Add 1 to Input"""</strong></em></p>
+
+<p><em><strong>&nbsp; &nbsp; &nbsp;output = input + 1;</strong></em></p>
+
+<p><em><strong>return output</strong></em></p>
+
+<p>We can think of the process like this: when we call the function f1, we pass input&nbsp;to the function. These values are passed to all those lines of code you wrote.</p>
+
+<p>This returns a value; you can use the value. For example, you can input this value to a&nbsp;new function f2. When we call this new function f2, the value&nbsp;is passed to another set of lines of code. The function returns a value.&nbsp;The process is repeated passing the values to the function you call.</p>
+
+<p>You can save these functions and reuse them, or use other people’s functions.</p>
+
+<p>We can run the code using some input and get&nbsp;an output. If we define a function to do the task we&nbsp;just have to call the function.</p>
+
+<p>Python has many built-in functions; you don't have to know how those functions work internally, but simply what task those functions perform.</p>
+
+<ul><li>The function "<em><strong>len</strong></em>" takes an input of type&nbsp;sequences, such as a string or list, or type collection, such as a dictionary or set, and returns the length of that sequence or collection. Consider the following list.<ul><li>rating = [10.0, 8.6, 9.5, 7.0, 7.0, 9.6, 9.0, 9.6]</li><li>L = len(rating)<ul><li>The len function takes this list as an argument, and we assign the result to the variable L.&nbsp;The function determines there are 8 items in the list, then returns the length of the&nbsp;list, in this case, 8. The function sum takes in an iterable like&nbsp;a tuple or list and returns the total of all the elements.</li></ul></li><li>L:8</li></ul></li><li>Similarly;<ul><li>S = sum(rating)</li><li>S:70.3</li></ul></li></ul>
+
+<p>There are two ways to sort a list. The first is using the function sorted.&nbsp;We can also use the list method sort. Methods are similar to functions.<br>Let's use this as an example to illustrate the difference.&nbsp;The function sorted Returns a new sorted list or tuple.</p>
+
+<ul><li>E,g,<ul><li>sorted_rating = sorted(rating)<ul><li>sorted_rating: [7.0, 7.0, 8.6, 9.0, 9.6, 9.6, 10.0]</li></ul></li><li>The result is a new sorted list. If we look at the list&nbsp;<em><strong>rating</strong></em>, nothing&nbsp;has changed. Generally, functions take an input, in this&nbsp;case, a list. They produce a new output, in this instance, a sorted list.</li><li>If we use the method sort, the list album ratings will change and no new list will be created.<ul><li>rating.sort()<ul><li>When we apply the method sort to the list,&nbsp;the list album rating changes. Unlike the previous case, we see that the<br>list album rating has changed. In this case, no new list is created.</li></ul></li><li>rating:&nbsp;[10.0, 8.6, 9.5, 7.0, 7.0, 9.6, 9.0, 9.6]</li></ul></li></ul></li></ul>
+
+<p>Now let's play by creating our own functions.</p>
+
+<p>def add1 (a):</p>
+
+<p>b = a+1</p>
+
+<p>return b</p>
+
+<ul><li>After we define the function, we can call it.<ul><li>E.g.<ul><li>add1 (5)<ul><li>The function will add 1 to 5 and return a 6.</li></ul></li><li>c = add1 (10)<ul><li>C:11</li></ul></li></ul></li></ul></li><li>Multiple Parameters;&nbsp;A function can have multiple parameters.<ul><li>def Mult (a,b)</li><li>&nbsp; &nbsp; &nbsp;c = a*b</li><li>&nbsp; &nbsp; &nbsp;return c</li></ul></li><li>Now if we do this; Mult (2, 3) the result would be 6.</li><li>If we pass in the integer two and the string “justSajid;<ul><li>Mult (2, "justSajid ")</li></ul></li><li>The string justSajid is repeated two times; Mult: "justSajid justSajid"</li><li>This is because the multiplication symbol&nbsp;can also mean repeat a sequence.</li></ul>
+
+<p>If you accidentally multiply an integer and&nbsp;a String instead of two integers, you won’t get an error.&nbsp;Instead, you will get a String, and your program will progress, potentially failing later because&nbsp;you have a String where you expected an integer.</p>
+
+<p>In many cases a function does not have a return&nbsp;statement. In these cases, Python will return the special “None” object.</p>
+
+<ul><li>Practically, if your function has&nbsp;no return statement, you can treat it as if the function returns nothing at all.<ul><li>E.g.<ul><li>def jS(): 'justSajid'</li><li>jS()<ul><li>'justSajid'</li></ul></li><li>def NoWork(): pass</li><li>print (NoWork())<ul><li>None</li></ul></li><li>&nbsp;*&nbsp;Python doesn’t allow a function to have an empty body, so we can use the keyword pass,&nbsp;which doesn’t do anything, but satisfies the requirement of a non-empty body.&nbsp;If we call the function and print it out, the function returns a None.</li><li>In the background, if the return statement is not called, Python will automatically return&nbsp;a None. It is helpful to view the function NoWork&nbsp;with the following return statement.</li></ul></li></ul></li></ul>
+
+<p>Usually, functions perform more than one task.</p>
+
+<p>E.g</p>
+
+<ul><li><strong>def add2(a):</strong></li><li><strong>&nbsp; &nbsp; &nbsp;b = a + 1</strong></li><li><strong>&nbsp; &nbsp; &nbsp;print (a, "plus one equals ", b)</strong></li><li><strong>&nbsp; &nbsp; &nbsp;return b</strong></li></ul>
+
+<p>add2(2)</p>
+
+<ul><li>2 plus one equals 3.</li><li>3</li></ul>
+
+<ul><li>Loops in Functions;We can use loops in functions.<ul><li>E.g.<ul><li>def printStuff(Stuff):</li><li>&nbsp; &nbsp; &nbsp;for i,s in enumerate(Stuff):</li><li>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print("Item", i , "Rating is ", s)</li></ul></li><li>rating = [10.0, 8.5, 9.5]</li><li>printStuff(rating)<ul><li>The output comes</li><li>Item 0 Rating is 10</li><li>Item 1 Rating is 8.5</li><li>Item 2 Rating is 9.5<ul><li>* This function prints out the values and indexes&nbsp;of a loop or tuple. We call the function with the list album ratings&nbsp;as an input. The function will print the first index and&nbsp;the first value in the list. We continue iterating through the loop. The values of i and s are updated. The print statement is reached.</li></ul></li></ul></li></ul></li></ul>
+
+<p>Variadic parameters allow us to input a variable number of elements.</p>
+
+<ul><li><strong>def AllNames (*names):</strong></li><li><strong>&nbsp; &nbsp; &nbsp;for name in names:</strong></li><li><strong>&nbsp; &nbsp; &nbsp;print (name)</strong><ul><li>Consider the following function. The function has an asterisk on the parameter names.</li></ul></li><li><strong>AllNames ("justSajid", "AC/DC", "alpha")</strong><ul><li>When we call the function, three parameters are packed into the tuple names.&nbsp;We then iterate through the loop; the values are printed out accordingly.</li></ul></li><li><em><strong>AllNames: ["justSajid", "AC/DC", "alpha"]</strong></em></li><li>If we call the same function with only two parameters as inputs, the variable names only&nbsp;contain two elements. The result is only two values are printed&nbsp;out.</li></ul>
+
+<ul><li>Variable Scope:&nbsp;The scope of a variable is the part of the&nbsp;program where that variable is accessible. Variables that are defined outside of any&nbsp;function are said to be within the global scope, meaning they can be accessed anywhere&nbsp;after they are defined.<ul><li>A variable defined in the global scope is&nbsp;called a global variable. When we call the function, we enter a new&nbsp;scope. We pass as an argument to the function.</li><li>As compare to a global variable,&nbsp;Local variables only exist within the scope&nbsp;of a function.</li></ul></li><li>If a variable is not defined within a function, Python will check the global scope.<ul><li>If we define the variable in the global scope, then call the function, Python will&nbsp;see there is no value for the variable. As a result, python will leave the scope and&nbsp;check if the variable exists in the global scope.</li></ul></li></ul>
+
+<h2>Objects;</h2>
+
+<p>Python has many different kinds of data types: Integers, Floats, Strings, Lists, Dictionaries,&nbsp;Booleans. In Python, each is an object.</p>
+
+<ul><li>Every object has the following:<ul><li>A Type</li><li>An internal data representation (a blueprinting)</li><li>A&nbsp;set of procedures for interacting with the object (the method)</li></ul></li><li>An object is an instance of a particular type.</li></ul>
+
+<p>Every time we create an Integer, we are creating&nbsp;an instance of type integer, or we are creating an integer object.&nbsp;Similarly, every time we create a list, we are creating an instance of type list, or&nbsp;we are creating a list object.</p>
+
+<p>We can find out the type of an object by using the type command;</p>
+
+<ul><li>type()</li></ul>
+
+<h2>Classes</h2>
+
+<p>A class or type’s methods are functions&nbsp;that every instance of that class or type provides.&nbsp;It’s how&nbsp;we interact with the object.</p>
+
+<ul><li>We have been using methods all this time,&nbsp;for example, on lists.<ul><li>Sorting is an example of a method that interacts with the data in the object.<ul><li>Consider the list Rating.<ul><li>E.g.<ul><li>Rating = [10, 9, 6, 5, 10, 8, 9, 6, 2]</li><li>The data is a series of numbers contained within the list.</li></ul></li><li>The method sort will change the data within the object. We call the method by adding a period at the end of the object’s name and the method’s name we would like to call with parenthesis.<ul><li>Rating.sort()</li></ul></li></ul></li><li>The data contained in the list is a sequence of numbers. When we call the sort method, this changes the data contained in the object.&nbsp;You can say it changes the state of the object.</li></ul></li></ul></li></ul>
+
+<p>We can create our own class;</p>
+
+<ul><li>The class has data attributes.</li><li>The class has methods.<ul><li>We then create instances or instances of that class or objects.</li></ul></li><li>The class data attributes define the class.<ul><li><em><strong>class Name (object):</strong></em><ul><li>To create the class,&nbsp;we will need&nbsp;to include the class definition.<ul><li>i.e the word "<em><strong>class</strong></em>"</li><li>This tells Python you are creating your own class.</li></ul></li><li>Then the name of the class, i.e. "<em><strong>Name</strong></em>".</li><li>In parenthesis, you will place the term "<em><strong>object</strong></em>". This is the parent of the class.</li></ul></li></ul></li></ul>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://2.bp.blogspot.com/-11ru9Jt0KY8/XDtdMIPoOQI/AAAAAAAABpg/v8wgQrubRCEpuztLQrqOyaD_1Kr5y3euQCK4BGAYYCw/s1600/9.png" alt="JumpStart Programming with Python 3" loading="lazy"></figure></div>
+
+<p>Classes are outlines we have to set the attributes to create objects.</p>
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="http://3.bp.blogspot.com/-hlJEHVsvnWU/XDtdNe94tdI/AAAAAAAABps/fVE_1KMCncsA8iaoWREu5Oz8RG7Zh0VvACK4BGAYYCw/s1600/10.png" alt="JumpStart Programming with Python 3" loading="lazy"></figure></div>
+
+<p>Here,</p>
+
+<ul><li>The function "<em><strong>_init_</strong></em>" is a constructor. It’s a special function that tells Python you are&nbsp;making a new class.</li><li>The ‘radius’ and ‘color’ parameters&nbsp;are used to initialize the radius and color data attributes of the class instance.</li><li>The ’self’ parameter refers to the newly created instance of the class.<ul><li>*&nbsp;It is helpful to think of self as a box that contains all the data attributes of the object.</li></ul></li></ul>
+
+<p>Now, after we have created the class, in order to create an object of the class circle, we introduce&nbsp;a variable;</p>
+
+<ul><li>RedCircle = Circle (10, "red")<ul><li>This will be the name of the object. We create the object by using the object constructor. I.e. "RedCircle"</li><li>The object constructor consists of the name of the class, as well as the parameters.<ul><li>These are the data attributes.</li></ul></li></ul></li><li>When we create a Circle object we call the&nbsp;code like a function. The arguments passed to the Circle constructor&nbsp;are used to initialize the data attributes of the newly created Circle instance.</li><li>C1 = Circle (10, "red")<ul><li>C1.radius<ul><li>Typing the object's name followed by a dot and the data attribute name gives us the data&nbsp;attribute value, for example, radius. In this case, the radius is 10.&nbsp;We can do the same for color.</li></ul></li></ul></li></ul>
+
+<p>In Python, we can also set or change the data&nbsp;attribute directly.</p>
+
+<ul><li>E.g.<ul><li>C1 = Circle (10, "red")</li><li>C1.color = "blue"</li><li>C1.color<ul><li>"blue"</li></ul></li></ul></li><li>// Typing the object's name, followed by a dot&nbsp;and the data attribute name, and set it equal to the corresponding value.&nbsp;We can verify that the color data attribute has changed.</li></ul>
+
+<ul><li>Methods in Class</li></ul>
+
+<p>Usually, in order to change the data in an object, we define methods in the class.</p>
+
+<p>We have seen how data attributes consist of&nbsp;the data defining the objects. Methods are functions that interact and change the data attributes, changing or using the data attributes of the object.</p>
+
+<ul><li>E.g. we would like to change the size of a circle; this involves changing the radius&nbsp;attribute.<ul><li><strong>def add_radius(self, r)</strong></li><li><strong>&nbsp; &nbsp; &nbsp;self.radius = self.radius + r</strong></li></ul></li><li>We add a method "<em><strong>add_radius</strong></em>" to the class&nbsp;Circle.</li><li>The method is a function that requires the&nbsp;self as well as other parameters.<ul><li>In this case, we are going to add a value&nbsp;to the radius;<ul><li>we denote that value as r. We are going to add r to the data attribute&nbsp;radius.</li></ul></li></ul></li><li>We can also add default values to the parameters of a class’s constructor.</li></ul>
+
+<p>The “dir” function is useful for obtaining the list of data attributes and methods associated&nbsp;with a class.</p>
+
+<ul><li><em><strong>dir (NameOfObject):</strong></em><ul><li>The object you’re interested in is passed&nbsp;as an argument.</li><li>The return value is a list of that object’s&nbsp;data attributes.<ul><li>The attributes surrounded by underscores are for Internal Use and you shouldn’t have to worry about them.</li><li>The regular-looking attributes are the ones you should concern yourself with, these are&nbsp;the object’s methods and data attributes.</li></ul></li></ul></li></ul>
+
+<p>There is a lot more&nbsp;we can do with objects in Python. Let's keep playing with further examples for better hands-on. : - )</p>
+
+<hr class="wp-block-separator"/>
+
+<h2>Conclusion:</h2>
+
+<p>So this is just the JumpStart programming with Python. One who reviewed thus with complete focus would have a&nbsp;good understanding of python basic programming on his fingertips.</p>
+
+<pre class="wp-block-preformatted">* The Blog post was compiled with the help of the python course available at Cognitive class. It is highly recommended to review the course from here; https://cognitiveclass.ai/courses/python-for-data-science/</pre>
+    </div>
+    
+    <!-- Social Share -->
+    <div class="post-share share-4 single-share">
+      <ul>
+        <li class="li-twitter"><a href="https://twitter.com/intent/tweet?url=https://www.justsajid.com/posts/jumpstart-programming-with-python-3/&text=JumpStart Programming with Python 3" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter/X"><span>X (Twitter)</span></a></li>
+        <li class="li-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.justsajid.com/posts/jumpstart-programming-with-python-3/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook"><span>Facebook</span></a></li>
+        <li class="li-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.justsajid.com/posts/jumpstart-programming-with-python-3/" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn"><span>LinkedIn</span></a></li>
+        <li class="li-whatsapp"><a href="https://wa.me/?text=JumpStart Programming with Python 3%20https://www.justsajid.com/posts/jumpstart-programming-with-python-3/" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp"><span>WhatsApp</span></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Tags -->
+  
+  
+  <!-- Related Posts -->
+  <div class="related-posts">
+      <h3 class="related-heading">You might also like</h3>
+      <div class="related-list"><article class="post-card" style="min-width:0">
+      <a href="../../posts/programming-with-python/" style="display:block;overflow:hidden;border-radius:4px">
+        <img src="../../assets/images/uploads/2019/05/0.jpg" alt="Programming with Python" loading="lazy" width="300" height="188" style="width:100%;height:160px;object-fit:cover">
+      </a>
+      <div class="post-card-content">
+        <div class="post-meta"><time datetime="2020-02-22 09:39:18">February 22, 2020</time></div>
+        <h3 class="post-title" style="font-size:.95rem"><a href="../../posts/programming-with-python/">Programming with Python</a></h3>
+      </div>
+    </article></div>
+    </div>
+  
+  <!-- Author Box -->
+  <div id="authorbox">
+    <div class="authorbox-inner">
+      <div class="author-avatar">
+        <a href="../../pages/contact/" rel="author">
+          <img src="../../assets/images/uploads/2019/08/cu.jpg" alt="justSajid" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <div class="authorbox-content">
+        <div class="author-name">justSajid</div>
+        <p class="author-bio">A technology blog covering IBM, blockchain, quantum computing, cloud, development, and life lessons.</p>
+        <div class="author-social social-list">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Comments Placeholder -->
+  <div id="comments" style="padding:2rem;background:var(--color-surface);border-radius:4px;margin-top:2rem;text-align:center">
+    <p style="color:var(--color-text-muted);font-size:.9rem">Comments are disabled on the static version of this site. To discuss this post, connect on <a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </div>
+
+  </article>
+
+</main>
+
+</div>
+</div><nav class="post-nav" aria-label="Post navigation">
+  <div class="container">
+    <a href="../../posts/understanding-of-data-science-methodology/" rel="prev">
+        <span class="meta-nav">&larr; Previous Story</span>
+        <span class="post-title">Understanding of Data Science Methodology</span>
+      </a>
+    <a href="../../posts/jumpstart-with-devops/" rel="next" style="text-align:right">
+        <span class="meta-nav">Next Story &rarr;</span>
+        <span class="post-title">JumpStart with DevOps</span>
+      </a>
+  </div>
+</nav><div id="posts-small-wrapper">
+      <div class="container">
+        <h3 id="posts-small-heading">Latest from Python</h3>
+        <div id="posts-small"><div class="post-small">
+        <a href="../../posts/programming-with-python/">Programming with Python</a>
+        <div class="post-small-date">February 22, 2020</div>
+      </div></div>
+      </div>
+    </div><script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var tc=document.getElementById("toc-box");
+    var headings=document.querySelectorAll(".entry-content h2,.entry-content h3");
+    if(headings.length>=3){tc.style.display="block";}
+  });
+</script></div></div>
+<footer id="wi-footer">
+<div id="footer-widgets"><div class="container"><div class="footer-widgets-inner">
+  <div class="footer-col"><h4>About justSajid</h4><p>A personal blog by justSajid covering IBM, blockchain, cloud, development, data science, and personal growth.</p></div>
+  <div class="footer-col"><h4>Categories</h4><ul>
+    <li><a href="../../categories/tech/">Technology</a></li><li><a href="../../categories/dev/">Development</a></li>
+    <li><a href="../../categories/ibmcloud/">IBM Cloud</a></li><li><a href="../../categories/msbuild/">Microsoft Build</a></li>
+    <li><a href="../../categories/mentors/">Mentors</a></li><li><a href="../../categories/bpm/">IBM BPM</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul>
+    <li><a href="../../">Home</a></li><li><a href="../../blog/">All Posts</a></li>
+    <li><a href="../../pages/contact/">Contact</a></li><li><a href="../../search.html">Search</a></li><li><a href="../../sitemap.xml">Sitemap</a></li>
+  </ul></div>
+  <div class="footer-col"><h4>Connect</h4>
+    <div class="footer-search"><form action="../../search.html" method="get" role="search">
+      <input type="text" name="q" placeholder="Search..."><button type="submit" aria-label="Search">&#128269;</button>
+    </form></div>
+    <ul class="social-links" style="margin-top:.75rem">
+      <li><a href="https://www.linkedin.com/in/sajidalikhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/sajidalikhan" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+    </ul>
+  </div>
+</div></div></div>
+<div id="footer-bottom"><div class="container">
+  <p class="copyright">&copy; 2026 justSajid &mdash; justSajid. All rights reserved.</p>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+</div></div>
+</footer>
+</div></div>
+<script src="../../assets/js/newspaper.js" defer></script>
+<script src="../../assets/js/search.js" defer></script>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice" aria-live="polite">
+  <p>This site uses cookies to enhance your reading experience. By continuing to browse, you agree to our <a href="../../pages/contact/">privacy policy</a>.</p>
+  <button class="cookie-accept" aria-label="Accept cookies and dismiss this notice">Accept</button>
+</div>
+</body></html>
