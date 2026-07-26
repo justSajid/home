@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /home/
 
-Disallow: /assets/
 Sitemap: https://www.justsajid.com/sitemap.xml

@@ -1,0 +1,69 @@
+/* =============================================================================
+   SEO Enhancements — justSajid-static
+   Applied on top of newspaper.css (do not modify newspaper.css directly)
+   ============================================================================= */
+
+/* ---------------------------------------------------------------------------
+   1. DATE HIDING
+   Hide all visible date displays site-wide.
+   Dates are preserved in:
+     - HTML datetime="" attributes (machine-readable)
+     - JSON-LD structured data (search engines only)
+     - article:published_time meta tags (social sharing)
+   Only the human-visible rendered text is suppressed.
+   --------------------------------------------------------------------------- */
+
+/* All <time> elements — covers post headers, blog cards, related posts,
+   category/tag archives, pagination pages, homepage sections */
+time,
+time[itemprop="datePublished"],
+time[itemprop="dateModified"] {
+  display: none !important;
+}
+
+/* Homepage lead story date */
+.lead-date {
+  display: none !important;
+}
+
+/* Homepage mini-card (post-card-h) dates */
+.pch-date {
+  display: none !important;
+}
+
+/* Post-small sidebar date widget below single posts */
+.post-small-date {
+  display: none !important;
+}
+
+/* Generic meta-time wrapper (post single header) */
+.meta-time,
+span.meta-time {
+  display: none !important;
+}
+
+/* Any remaining date class patterns from the theme */
+.entry-date,
+.post-date,
+.published,
+.updated,
+.date-header {
+  display: none !important;
+}
+
+
+/* ---------------------------------------------------------------------------
+   2. READING TIME — keep visible
+   The .meta-reading <span> must NOT be hidden.
+   This rule is a safeguard (not strictly needed since we only target time/date).
+   --------------------------------------------------------------------------- */
+.meta-reading {
+  display: inline !important;
+}
+
+
+/* ---------------------------------------------------------------------------
+   3. POST META SEPARATOR — tidy up gap when date is hidden
+   When date is hidden, the separator dot between category and reading time
+   is already handled by newspaper.css flex layout (gap). No extra fix needed.
+   --------------------------------------------------------------------------- */
